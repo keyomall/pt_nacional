@@ -81,44 +81,70 @@ def health_check():
 
 @app.get("/api/v1/mapa/tiles/{cargo}/{z}/{x}/{y}")
 async def get_vector_tile_dynamic(
-    cargo: str, z: int, x: int, y: int, entidad_filter: Optional[int] = None
+    cargo: str,
+    z: int,
+    x: int,
+    y: int,
+    entidad_filter: Optional[int] = None,
+    municipio_filter: Optional[int] = None,
+    distrito_local_filter: Optional[int] = None,
+    distrito_federal_filter: Optional[int] = None,
 ):
-    """
-    Motor MVT Dinámico.
-    Selecciona la tabla de resultados según el cargo solicitado.
-    """
     cargo_key = cargo.upper()
     tabla_destino = TABLAS_VOTOS.get(cargo_key)
+
     if not tabla_destino:
         return Response(content=b"", media_type="application/x-protobuf")
 
-    where_clause = ""
-    params: dict[str, int] = {"z": z, "x": x, "y": y}
-    if entidad_filter is not None:
-        where_clause = "AND g.id_entidad = :ent_filter"
-        params["ent_filter"] = entidad_filter
+    where_clauses = []
+    params = {"z": z, "x": x, "y": y}
 
-    schema_sql = sa.text(
-        """
-        SELECT column_name, data_type
-        FROM information_schema.columns
-        WHERE table_schema = 'public' AND table_name = :table_name
-        """
-    )
+    if entidad_filter:
+        where_clauses.append("g.id_entidad = :ent_filter")
+        params["ent_filter"] = entidad_filter
+    if municipio_filter:
+        where_clauses.append("c.id_municipio = :mun_filter")
+        params["mun_filter"] = municipio_filter
+    if distrito_local_filter:
+        where_clauses.append("c.id_distrito_local = :dl_filter")
+        params["dl_filter"] = distrito_local_filter
+    if distrito_federal_filter:
+        where_clauses.append("c.id_distrito_federal = :df_filter")
+        params["df_filter"] = distrito_federal_filter
+
+    where_sql = " AND ".join(where_clauses)
+    if where_sql:
+        where_sql = " AND " + where_sql
+
     async with async_engine.connect() as conn:
+        schema_sql = sa.text(
+            """
+            SELECT column_name
+            FROM information_schema.columns
+            WHERE table_schema = 'public' AND table_name = :table_name
+            """
+        )
         schema_result = await conn.execute(schema_sql, {"table_name": tabla_destino})
         table_columns = {row[0] for row in schema_result.fetchall()}
 
-        id_ent_col = "id_entidad" if "id_entidad" in table_columns else "ID_ENTIDAD" if "ID_ENTIDAD" in table_columns else None
-        seccion_col = "seccion" if "seccion" in table_columns else "SECCION" if "SECCION" in table_columns else None
-        total_col = (
-            "total_votos_calculados"
-            if "total_votos_calculados" in table_columns
-            else "TOTAL_VOTOS_CALCULADOS"
-            if "TOTAL_VOTOS_CALCULADOS" in table_columns
+        id_ent_col = (
+            "id_entidad"
+            if "id_entidad" in table_columns
+            else "ID_ENTIDAD"
+            if "ID_ENTIDAD" in table_columns
             else None
         )
-        votos_json_col = (
+        seccion_col = (
+            "seccion"
+            if "seccion" in table_columns
+            else "SECCION"
+            if "SECCION" in table_columns
+            else None
+        )
+        if not id_ent_col or not seccion_col:
+            return Response(content=b"", media_type="application/x-protobuf")
+
+        votos_col = (
             "votos_desglosados"
             if "votos_desglosados" in table_columns
             else "votos_coaliciones"
@@ -129,25 +155,68 @@ async def get_vector_tile_dynamic(
             if "VOTOS_COALICIONES" in table_columns
             else None
         )
-
-        if not id_ent_col or not seccion_col:
-            return Response(content=b"", media_type="application/x-protobuf")
+        total_col = (
+            "total_votos_calculados"
+            if "total_votos_calculados" in table_columns
+            else "TOTAL_VOTOS_CALCULADOS"
+            if "TOTAL_VOTOS_CALCULADOS" in table_columns
+            else None
+        )
+        mun_col = (
+            "id_municipio"
+            if "id_municipio" in table_columns
+            else "ID_MUNICIPIO"
+            if "ID_MUNICIPIO" in table_columns
+            else None
+        )
+        dl_col = (
+            "id_distrito_local"
+            if "id_distrito_local" in table_columns
+            else "ID_DISTRITO_LOCAL"
+            if "ID_DISTRITO_LOCAL" in table_columns
+            else None
+        )
+        df_col = (
+            "id_distrito_federal"
+            if "id_distrito_federal" in table_columns
+            else "ID_DISTRITO_FEDERAL"
+            if "ID_DISTRITO_FEDERAL" in table_columns
+            else None
+        )
 
         id_ent_expr = f"v.{_quote_ident(id_ent_col)}"
         seccion_expr = f"v.{_quote_ident(seccion_col)}"
-        if votos_json_col:
-            votos_expr = f"COALESCE(v.{_quote_ident(votos_json_col)}::jsonb, '{{}}'::jsonb)"
-        else:
-            excluded = {"id_entidad", "ID_ENTIDAD", "seccion", "SECCION", "total_votos_calculados", "TOTAL_VOTOS_CALCULADOS"}
-            excluded_ops = "".join(f" - '{col}'" for col in sorted(table_columns.intersection(excluded)))
-            votos_expr = f"(to_jsonb(v){excluded_ops})"
-
-        if total_col:
-            total_expr = (
-                f"COALESCE(NULLIF(regexp_replace(v.{_quote_ident(total_col)}::text, '[^0-9-]', '', 'g'), '')::integer, 0)"
-            )
-        else:
-            total_expr = "0"
+        id_ent_int_expr = (
+            f"NULLIF(regexp_replace({id_ent_expr}::text, '[^0-9-]', '', 'g'), '')::integer"
+        )
+        seccion_int_expr = (
+            f"NULLIF(regexp_replace({seccion_expr}::text, '[^0-9-]', '', 'g'), '')::integer"
+        )
+        votos_expr = (
+            f"COALESCE(v.{_quote_ident(votos_col)}::jsonb, '{{}}'::jsonb)"
+            if votos_col
+            else "'{}'::jsonb"
+        )
+        total_expr = (
+            f"COALESCE(NULLIF(regexp_replace(v.{_quote_ident(total_col)}::text, '[^0-9.-]', '', 'g'), '')::numeric, 0)"
+            if total_col
+            else "0"
+        )
+        mun_expr = (
+            f"NULLIF(regexp_replace(v.{_quote_ident(mun_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
+            if mun_col
+            else "NULL::integer"
+        )
+        dl_expr = (
+            f"NULLIF(regexp_replace(v.{_quote_ident(dl_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
+            if dl_col
+            else "NULL::integer"
+        )
+        df_expr = (
+            f"NULLIF(regexp_replace(v.{_quote_ident(df_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
+            if df_col
+            else "NULL::integer"
+        )
 
         query = sa.text(
             f"""
@@ -155,34 +224,42 @@ async def get_vector_tile_dynamic(
                 SELECT ST_TileEnvelope(:z, :x, :y) AS geom
             ),
             geo_context AS (
-                -- Extraemos el linaje geográfico único por sección
-                SELECT DISTINCT id_entidad, seccion, id_municipio, id_distrito_local, id_distrito_federal
-                FROM eleccion_2024_casillas
+                -- Agrupación optimizada para inyectar IDs sin multiplicar filas
+                SELECT {id_ent_int_expr} AS id_entidad,
+                       {seccion_int_expr} AS seccion,
+                       MAX({mun_expr}) AS id_municipio,
+                       MAX({dl_expr}) AS id_distrito_local,
+                       MAX({df_expr}) AS id_distrito_federal
+                FROM {_quote_ident(tabla_destino)} v
+                WHERE {id_ent_int_expr} IS NOT NULL
+                  AND {seccion_int_expr} IS NOT NULL
+                GROUP BY {id_ent_int_expr}, {seccion_int_expr}
             ),
             mvtgeom AS (
-                SELECT
-                    ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
-                    g.id_entidad,
-                    g.seccion,
-                    c.id_municipio,
-                    c.id_distrito_local,
-                    c.id_distrito_federal,
-                    COALESCE(({votos_expr}), '{{}}'::jsonb) AS votos_desglosados,
-                    COALESCE(({total_expr}), 0) AS total_votos_calculados
+                SELECT ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
+                       g.id_entidad,
+                       g.seccion,
+                       c.id_municipio,
+                       c.id_distrito_local,
+                       c.id_distrito_federal,
+                       {votos_expr} AS votos_desglosados,
+                       {total_expr} AS total_votos_calculados
                 FROM geometria_secciones g
+                JOIN bounds
+                  ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
                 LEFT JOIN geo_context c
                   ON g.id_entidad = c.id_entidad AND g.seccion = c.seccion
                 LEFT JOIN {_quote_ident(tabla_destino)} v
-                  ON g.id_entidad = {id_ent_expr} AND g.seccion = {seccion_expr}
-                JOIN bounds
-                  ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
-                WHERE 1=1 {where_clause}
+                  ON g.id_entidad = {id_ent_int_expr} AND g.seccion = {seccion_int_expr}
+                WHERE 1=1 {where_sql}
             )
             SELECT ST_AsMVT(mvtgeom, 'elecciones') AS tile FROM mvtgeom;
             """
         )
+
         result = await conn.execute(query, params)
         tile = result.scalar()
+
 
     if not tile:
         return Response(content=b"", media_type="application/x-protobuf")
