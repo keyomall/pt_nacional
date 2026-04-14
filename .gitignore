@@ -10,6 +10,9 @@ venv/
 dist/
 build/
 pgdata/
+docker/db/data/
+docker/db/pgdata/
+docker/postgres/data/
 *.log
 .DS_Store
 Thumbs.db

@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: enterprise_password_2024
       POSTGRES_DB: elecciones_db
     ports:
-      - "5432:5432"
+      - "5454:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
