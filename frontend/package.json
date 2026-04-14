@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@deck.gl/geo-layers": "^9.3.0",
     "clsx": "^2.1.1",
     "deck.gl": "^9.3.0",
     "lucide-react": "^1.8.0",

@@ -11,6 +11,7 @@ Nota: El módulo solo define lógica y utilidades. No ejecuta carga automática 
 from __future__ import annotations
 
 import logging
+import os
 import re
 import unicodedata
 from contextlib import contextmanager
@@ -152,6 +153,8 @@ class INEDataProcessor:
             return None
 
         if text in NULL_SENTINELS:
+            return None
+        if text.lower() in {"nan", "none", "null"}:
             return None
 
         # Patrones Excel tipo ="004" y variantes.
@@ -313,6 +316,57 @@ class INEDataProcessor:
         )
         return transformed
 
+    def transform_integracion_candidaturas(self, chunk: pd.DataFrame) -> pd.DataFrame:
+        """
+        Normaliza y mapea archivos de integración de candidaturas locales (OPLE).
+        Incluye tolerancia a variaciones tipográficas en encabezados.
+        """
+        df = chunk.copy()
+
+        # 1. Normalización estricta de encabezados (Anti-trampas del INE)
+        df.columns = df.columns.str.strip().str.replace(" ", "_").str.upper()
+
+        defaults = {
+            "ID_ESTADO": 0,
+            "ID_MUNICIPIO": None,
+            "ID_DISTRITO_LOCAL": None,
+            "TIPO_DE_CANDIDATURA": "",
+            "NOMBRE_ACTOR_POLITICO": "",
+            "PARTIDO_POLITICO": "",
+            "NUMERO_LISTA": 1,
+            "PERSONA_CANDIDATA": "",
+            "IDENTIDAD_SEXO_GENERICA": None,
+            "ACCION_AFIRMATIVA": "",
+        }
+        for column, default_value in defaults.items():
+            if column not in df.columns:
+                df[column] = default_value
+
+        df_sql = pd.DataFrame(
+            {
+                "id_entidad": pd.to_numeric(df.get("ID_ESTADO", 0), errors="coerce").astype("Int64"),
+                "id_municipio": pd.to_numeric(df.get("ID_MUNICIPIO", None), errors="coerce").astype("Int64"),
+                "id_distrito_local": pd.to_numeric(df.get("ID_DISTRITO_LOCAL", None), errors="coerce").astype("Int64"),
+                "tipo_candidatura": df.get("TIPO_DE_CANDIDATURA", "").astype(str).str.strip(),
+                "actor_politico": df.get("NOMBRE_ACTOR_POLITICO", "").astype(str).str.strip(),
+                "partido_origen": df.get("PARTIDO_POLITICO", "").astype(str).str.strip(),
+                "numero_lista": pd.to_numeric(df.get("NUMERO_LISTA", 1), errors="coerce").astype("Int64"),
+                # Al normalizar arriba, "PERSONA CANDIDATA" se convierte en "PERSONA_CANDIDATA"
+                "candidato": df.get("PERSONA_CANDIDATA", "").astype(str).str.strip().str.upper(),
+                "genero": pd.to_numeric(df.get("IDENTIDAD_SEXO_GENERICA", None), errors="coerce").astype("Int64"),
+                # Al normalizar arriba, "ACCION AFIRMATIVA" se convierte en "ACCION_AFIRMATIVA"
+                "accion_afirmativa": df.get("ACCION_AFIRMATIVA", "").astype(str).str.strip(),
+            }
+        )
+
+        # Filtrar basura: Eliminar filas donde no hay candidato real
+        df_sql = df_sql[
+            (df_sql["candidato"] != "") & (df_sql["candidato"].notna()) & (df_sql["candidato"] != "NAN")
+        ]
+        df_sql = self._normalize_nulls(df_sql)
+        logger.info("Chunk integración transformado. Registros=%s", len(df_sql))
+        return df_sql
+
     def process_csv_chunks(
         self,
         csv_path: str | Path,
@@ -323,18 +377,65 @@ class INEDataProcessor:
         payload_column: str = "votos_coaliciones",
         drop_vote_columns: bool = False,
     ) -> Generator[pd.DataFrame, None, None]:
+        source_name = Path(csv_path).name.upper()
+        is_integracion = source_name.startswith("INTEGRACION_") and source_name.endswith(".CSV")
+
         for chunk_number, chunk in enumerate(
             self.read_csv_in_chunks(csv_path, skiprows=skiprows, sep=sep, encoding=encoding),
             start=1,
         ):
-            transformed = self.transform_chunk(
-                chunk=chunk,
-                metadata_columns=metadata_columns,
-                payload_column=payload_column,
-                drop_vote_columns=drop_vote_columns,
-            )
+            if is_integracion:
+                transformed = self.transform_integracion_candidaturas(chunk=chunk)
+            else:
+                transformed = self.transform_chunk(
+                    chunk=chunk,
+                    metadata_columns=metadata_columns,
+                    payload_column=payload_column,
+                    drop_vote_columns=drop_vote_columns,
+                )
             logger.info("[INFO] Chunk procesado #%s | filas=%s", chunk_number, len(transformed))
             yield transformed
+
+    def process_candidaturas_federales(self, csv_file_path: str | Path, table_name: str) -> int:
+        """
+        Procesa catálogos federales de candidaturas (PRES/SEN/DIP_FED).
+        Estos archivos no contienen metadatos iniciales de 7 renglones.
+        """
+        source = Path(csv_file_path)
+        logger.info("[INFO] Procesando Candidaturas Federales: %s", os.path.basename(source))
+
+        try:
+            df = pd.read_csv(source, sep="|", encoding="utf-8-sig", low_memory=False, dtype=str)
+        except UnicodeDecodeError:
+            df = pd.read_csv(source, sep="|", encoding="latin1", low_memory=False, dtype=str)
+
+        df.columns = df.columns.str.strip().str.replace(" ", "_").str.upper()
+
+        object_columns = df.select_dtypes(include=["object"]).columns
+        for col in object_columns:
+            df[col] = df[col].apply(
+                lambda x: (
+                    str(x)
+                    .replace('="', "")
+                    .replace('"', "")
+                    .replace("'", "")
+                    .strip()
+                    if pd.notnull(x)
+                    else x
+                )
+            )
+            df[col] = df[col].replace("N/A", None)
+            df[col] = df[col].replace("-", None)
+
+        if "ID_ENTIDAD" in df.columns:
+            df["ID_ENTIDAD"] = pd.to_numeric(df["ID_ENTIDAD"], errors="coerce").astype("Int64")
+        if "ID_DISTRITO_FEDERAL" in df.columns:
+            df["ID_DISTRITO_FEDERAL"] = pd.to_numeric(df["ID_DISTRITO_FEDERAL"], errors="coerce").astype("Int64")
+
+        df = self._normalize_nulls(df)
+        df.to_sql(table_name, self.db.engine, if_exists="replace", index=False)
+        logger.info("[INFO] Candidaturas federales insertadas en %s: %s filas.", table_name, len(df))
+        return int(len(df))
 
     def load_csv_to_postgres(
         self,
@@ -369,16 +470,18 @@ class INEDataProcessor:
                 logger.warning("[WARNING] Chunk omitido por quedar vacío tras sanitización.")
                 continue
             write_mode = if_exists if first_chunk else "append"
-            transformed_chunk.to_sql(
-                name=target_table,
-                con=self.db.engine,
-                schema=schema,
-                if_exists=write_mode,
-                index=False,
-                method="multi",
-                chunksize=self.chunk_size,
-                dtype={payload_column: JSONB},
-            )
+            to_sql_kwargs: Dict[str, Any] = {
+                "name": target_table,
+                "con": self.db.engine,
+                "schema": schema,
+                "if_exists": write_mode,
+                "index": False,
+                "method": "multi",
+                "chunksize": self.chunk_size,
+            }
+            if payload_column in transformed_chunk.columns:
+                to_sql_kwargs["dtype"] = {payload_column: JSONB}
+            transformed_chunk.to_sql(**to_sql_kwargs)
             inserted_rows += len(transformed_chunk)
             first_chunk = False
             logger.info(
