@@ -151,6 +151,7 @@ class INEDataProcessor:
         self,
         csv_path: str | Path,
         skiprows: int = 7,
+        sep: str = ",",
         encoding: str = "latin-1",
     ) -> Iterable[pd.DataFrame]:
         """
@@ -165,6 +166,7 @@ class INEDataProcessor:
             yield from pd.read_csv(
                 source,
                 skiprows=skiprows,
+                sep=sep,
                 chunksize=self.chunk_size,
                 dtype=str,
                 encoding=encoding,
@@ -200,11 +202,17 @@ class INEDataProcessor:
     def process_csv_chunks(
         self,
         csv_path: str | Path,
+        skiprows: int = 7,
+        sep: str = ",",
+        encoding: str = "latin-1",
         metadata_columns: Optional[Sequence[str]] = None,
         payload_column: str = "votos_coaliciones",
         drop_vote_columns: bool = False,
     ) -> Generator[pd.DataFrame, None, None]:
-        for chunk_number, chunk in enumerate(self.read_csv_in_chunks(csv_path), start=1):
+        for chunk_number, chunk in enumerate(
+            self.read_csv_in_chunks(csv_path, skiprows=skiprows, sep=sep, encoding=encoding),
+            start=1,
+        ):
             transformed = self.transform_chunk(
                 chunk=chunk,
                 metadata_columns=metadata_columns,
@@ -220,6 +228,9 @@ class INEDataProcessor:
         target_table: str,
         schema: str = "public",
         if_exists: str = "append",
+        skiprows: int = 7,
+        sep: str = ",",
+        encoding: str = "latin-1",
         metadata_columns: Optional[Sequence[str]] = None,
         payload_column: str = "votos_coaliciones",
         drop_vote_columns: bool = False,
@@ -233,6 +244,9 @@ class INEDataProcessor:
 
         for transformed_chunk in self.process_csv_chunks(
             csv_path=csv_path,
+            skiprows=skiprows,
+            sep=sep,
+            encoding=encoding,
             metadata_columns=metadata_columns,
             payload_column=payload_column,
             drop_vote_columns=drop_vote_columns,

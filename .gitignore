@@ -1,4 +1,5 @@
 node_modules/
+x/
 .env
 .env.local
 .env.production
