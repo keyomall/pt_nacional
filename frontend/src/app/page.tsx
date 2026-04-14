@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import DeckGL from "@deck.gl/react";
 import { MVTLayer } from "@deck.gl/geo-layers";
 import { Map } from "react-map-gl/maplibre";
@@ -42,12 +42,17 @@ type ViewState = typeof INITIAL_VIEW_STATE & {
 };
 
 export default function CommandCenter() {
+  const [isMounted, setIsMounted] = useState(false);
   const [query, setQuery] = useState("");
   const [hoverInfo, setHoverInfo] = useState<HoverInfo | null>(null);
   const [viewState, setViewState] = useState<ViewState>(INITIAL_VIEW_STATE);
   const [activeElection, setActiveElection] = useState("PRESIDENCIA");
   const [activeEntidadFilter, setActiveEntidadFilter] = useState<number | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && query.trim() !== "") {
@@ -144,13 +149,13 @@ export default function CommandCenter() {
     [activeElection, activeEntidadFilter, tileUrl]
   );
 
+  if (!isMounted) {
+    return <div className="w-full h-screen bg-gray-950"></div>;
+  }
+
   return (
-    // suppressHydrationWarning protege contra inyecciones tipo bis_skin_checked (Bitdefender/extensiones)
-    <div
-      suppressHydrationWarning
-      className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200"
-    >
-      <div suppressHydrationWarning className="absolute inset-0 z-0">
+    <div className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
+      <div className="absolute inset-0 z-0">
         <DeckGL
           viewState={viewState}
           onViewStateChange={({ viewState: nextViewState }) =>
