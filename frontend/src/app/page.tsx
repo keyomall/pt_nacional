@@ -96,6 +96,65 @@ const getPartyColor = (partyName: string): string => {
   return "#2DD4BF";
 };
 
+// --- UTILIDADES DE LEGIBILIDAD UX ---
+const ENTIDADES_MX: Record<number, string> = {
+  1: "Aguascalientes",
+  2: "Baja California",
+  3: "Baja California Sur",
+  4: "Campeche",
+  5: "Coahuila",
+  6: "Colima",
+  7: "Chiapas",
+  8: "Chihuahua",
+  9: "Ciudad de Mexico",
+  10: "Durango",
+  11: "Guanajuato",
+  12: "Guerrero",
+  13: "Hidalgo",
+  14: "Jalisco",
+  15: "Estado de Mexico",
+  16: "Michoacan",
+  17: "Morelos",
+  18: "Nayarit",
+  19: "Nuevo Leon",
+  20: "Oaxaca",
+  21: "Puebla",
+  22: "Queretaro",
+  23: "Quintana Roo",
+  24: "San Luis Potosi",
+  25: "Sinaloa",
+  26: "Sonora",
+  27: "Tabasco",
+  28: "Tamaulipas",
+  29: "Tlaxcala",
+  30: "Veracruz",
+  31: "Yucatan",
+  32: "Zacatecas",
+};
+
+const formatCargo = (cargo: string) => {
+  const map: Record<string, string> = {
+    PRESIDENCIA: "Presidencia de la Republica",
+    SENADURIA: "Senadurias",
+    DIPUTACION_FEDERAL: "Diputaciones Federales",
+    GUBERNATURA: "Gubernatura Estatal",
+    AYUNTAMIENTO: "Ayuntamientos y Alcaldias",
+    DIPUTACION_LOCAL: "Diputaciones Locales",
+  };
+  return map[cargo] || cargo.replace(/_/g, " ");
+};
+
+const toTitleCase = (str: string) => {
+  if (!str) return "";
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) =>
+      word.length > 2 || word === "df" ? word.charAt(0).toUpperCase() + word.slice(1) : word
+    )
+    .join(" ");
+};
+
 const parseVotesObject = (
   votosDesglosados: Record<string, number | string> | string | undefined
 ): Record<string, number | string> => {
@@ -137,6 +196,8 @@ export default function CommandCenter() {
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
   const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
+  const activeMunicipioFilter: number | null = null;
+  const activeDLFilter: number | null = null;
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- CSR mount guard requerido para evitar hydration mismatches por extensiones.
@@ -299,13 +360,23 @@ export default function CommandCenter() {
     ? processVotesData(selectedFeature.properties?.votos_desglosados)
     : [];
 
+  const hoverProperties = (
+    hoverInfo?.object as { properties?: { id_entidad?: number | string; seccion?: number | string } } | undefined
+  )?.properties;
+  const hoverEntidadRaw = hoverInfo?.object?.id_entidad ?? hoverProperties?.id_entidad;
+  const hoverSeccionRaw = hoverInfo?.object?.seccion ?? hoverProperties?.seccion;
+  const hoverEntidadId = Number(hoverEntidadRaw);
+  const hoverEntidadLabel = ENTIDADES_MX[hoverEntidadId] || `Entidad ${hoverEntidadRaw ?? "-"}`;
+
+  // 3. BLOQUEO DE RENDERIZADO SSR CON BLINDAJE ANTIVIRUS
   if (!isMounted) {
-    return <div className="w-full h-screen bg-gray-950"></div>;
+    return <div suppressHydrationWarning className="w-full h-screen bg-gray-950"></div>;
   }
 
+  // 4. Renderizado normal del lado del cliente
   return (
-    <div className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
-      <div className="absolute inset-0 z-0">
+    <div suppressHydrationWarning className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
+      <div suppressHydrationWarning className="absolute inset-0 z-0">
         <DeckGL
           viewState={viewState}
           onViewStateChange={({ viewState: nextViewState }) =>
@@ -324,8 +395,7 @@ export default function CommandCenter() {
           style={{ left: hoverInfo.x + 15, top: hoverInfo.y + 15 }}
         >
           <div className="font-bold text-teal-400 mb-1 border-b border-gray-700 pb-1">
-            Entidad: {hoverInfo.object.id_entidad} | Seccion:{" "}
-            {hoverInfo.object.seccion ?? (hoverInfo.object as { properties?: { seccion?: number } }).properties?.seccion}
+            {hoverEntidadLabel} | Seccion {hoverSeccionRaw ?? "-"}
           </div>
           <div className="text-gray-300">
             Total Votos:{" "}
@@ -379,9 +449,13 @@ export default function CommandCenter() {
             <PieChart className="w-4 h-4" />
             Inteligencia Electoral
           </h2>
-          <h3 className="text-xs text-teal-500 font-mono tracking-widest border-b border-gray-800 pb-2 mb-4">
-            CAPA: {activeElection.replace("_", " ")}{" "}
-            {activeEntidadFilter ? `| EDON: ${activeEntidadFilter}` : "| NACIONAL"}
+          <h3 className="text-xs text-teal-500 font-mono tracking-widest border-b border-gray-800 pb-2 mb-4 break-words">
+            CAPA: {formatCargo(activeElection)}
+            {activeEntidadFilter
+              ? ` | ${ENTIDADES_MX[activeEntidadFilter]?.toUpperCase() || activeEntidadFilter}`
+              : " | NACIONAL"}
+            {activeMunicipioFilter ? ` | MUN: ${activeMunicipioFilter}` : ""}
+            {activeDLFilter ? ` | DTTO: ${activeDLFilter}` : ""}
           </h3>
 
           {!selectedFeature?.properties ? (
@@ -415,7 +489,7 @@ export default function CommandCenter() {
                   {winnerIdentity ? (
                     <>
                       <p className="text-lg font-bold text-white leading-tight">
-                        {winnerIdentity.candidato}
+                        {toTitleCase(winnerIdentity.candidato)}
                       </p>
                       <p className="text-xs text-gray-400 mt-1">{winnerIdentity.detalle}</p>
                     </>
