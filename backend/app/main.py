@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from contextlib import asynccontextmanager
 from app.db import engine, Base
+from app.semantic_engine import SemanticIntentEngine
 import app.models  # Forzar carga de modelos SQLAlchemy antes de create_all
 
 POSTGRES_USER = os.getenv("POSTGRES_USER", "admin")
@@ -19,6 +20,7 @@ ASYNC_DB_URI = (
     f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 )
 async_engine = create_async_engine(ASYNC_DB_URI, pool_pre_ping=True)
+semantic_engine = SemanticIntentEngine()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -101,3 +103,10 @@ async def get_vector_tile(z: int, x: int, y: int):
     if not tile:
         return Response(content=b"", media_type="application/x-protobuf")
     return Response(content=bytes(tile), media_type="application/x-protobuf")
+
+
+@app.get("/api/v1/search/intent")
+async def search_intent(q: str):
+    async with async_engine.connect() as conn:
+        intent = await semantic_engine.parse_query(q, conn)
+    return intent

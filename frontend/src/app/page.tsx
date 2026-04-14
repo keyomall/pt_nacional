@@ -37,9 +37,40 @@ type MVTFeature = {
   };
 };
 
+type ViewState = typeof INITIAL_VIEW_STATE & {
+  transitionDuration?: number;
+};
+
 export default function CommandCenter() {
   const [query, setQuery] = useState("");
   const [hoverInfo, setHoverInfo] = useState<HoverInfo | null>(null);
+  const [viewState, setViewState] = useState<ViewState>(INITIAL_VIEW_STATE);
+
+  const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && query.trim() !== "") {
+      try {
+        const res = await fetch(
+          `http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`
+        );
+        const data: { bbox?: number[] } = await res.json();
+
+        if (Array.isArray(data.bbox) && data.bbox.length === 4) {
+          const longitude = (data.bbox[0] + data.bbox[2]) / 2;
+          const latitude = (data.bbox[1] + data.bbox[3]) / 2;
+
+          setViewState((prev) => ({
+            ...prev,
+            longitude,
+            latitude,
+            zoom: 7,
+            transitionDuration: 2500,
+          }));
+        }
+      } catch (error) {
+        console.error("Error en motor semantico:", error);
+      }
+    }
+  };
 
   const layers = useMemo(
     () => [
@@ -84,7 +115,14 @@ export default function CommandCenter() {
   return (
     <div className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
       <div className="absolute inset-0 z-0">
-        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true} layers={layers}>
+        <DeckGL
+          viewState={viewState}
+          onViewStateChange={({ viewState: nextViewState }) =>
+            setViewState(nextViewState as ViewState)
+          }
+          controller={true}
+          layers={layers}
+        >
           <Map mapStyle={MAP_STYLE} />
         </DeckGL>
       </div>
@@ -118,6 +156,7 @@ export default function CommandCenter() {
               placeholder="Ej: Analisis seccional en Uruapan..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleSearch}
             />
           </div>
         </div>
