@@ -9,10 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sistema Operativo Electoral 2024 | Command Center",
-  description:
-    "Plataforma de inteligencia electoral con mapas GPU (Deck.gl), análisis forense de votos, búsqueda semántica (pgvector) y cartografía GIS del proceso federal 2024.",
-  keywords: ["elecciones", "2024", "México", "INE", "MAGAR", "GIS", "análisis electoral"],
+  title: "Command Center Electoral 2024",
+  description: "Sistema Operativo de Inteligencia Electoral",
 };
 
 export default function RootLayout({
@@ -30,7 +28,10 @@ export default function RootLayout({
         className={`${inter.className} min-h-full flex flex-col bg-gray-950`}
         suppressHydrationWarning
       >
-        {children}
+        {/* Envoltura extra para bloquear inyecciones de extensiones a nivel de body */}
+        <div suppressHydrationWarning className="w-full h-full flex-1 flex">
+          {children}
+        </div>
       </body>
     </html>
   );

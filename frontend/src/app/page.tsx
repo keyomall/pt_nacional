@@ -6,7 +6,7 @@ import { MVTLayer } from "@deck.gl/geo-layers";
 import { Map } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { PickingInfo } from "@deck.gl/core";
-import { AlertCircle, Layers, PieChart, RotateCcw, Search } from "lucide-react";
+import { AlertCircle, PieChart, RotateCcw, Search } from "lucide-react";
 import {
   Bar,
   BarChart,
@@ -222,7 +222,6 @@ function CommandCenterUI() {
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
   const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
-  const [is3D, setIs3D] = useState(true);
   const activeMunicipioFilter: number | null = null;
   const activeDLFilter: number | null = null;
 
@@ -324,19 +323,6 @@ function CommandCenterUI() {
     setViewState({ ...INITIAL_VIEW_STATE, transitionDuration: 2000 });
   };
 
-  // Función para alternar la vista volumétrica
-  const toggle3D = () => {
-    setIs3D((prevIs3D) => {
-      const nextIs3D = !prevIs3D;
-      setViewState((prev) => ({
-        ...prev,
-        pitch: nextIs3D ? 45 : 0,
-        transitionDuration: 1000,
-      }));
-      return nextIs3D;
-    });
-  };
-
   const tileUrl = activeEntidadFilter
     ? `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}?entidad_filter=${activeEntidadFilter}`
     : `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}`;
@@ -348,8 +334,7 @@ function CommandCenterUI() {
         data: tileUrl,
         minZoom: 0,
         maxZoom: 14,
-        // OPACIDAD ADAPTATIVA: En 2D (is3D=false) es más transparente para leer toponimia
-        opacity: is3D ? 0.75 : 0.45,
+        opacity: 0.65,
         getFillColor: (f: MVTFeature) => {
           const rawVotos = f.properties?.votos_desglosados;
           const totalVotos = Number(f.properties?.total_votos_calculados || 0);
@@ -363,8 +348,7 @@ function CommandCenterUI() {
             votos = {};
           }
 
-          // UX: Zonas vacías son 100% transparentes para ver el relieve real del país
-          if (totalVotos === 0) return [0, 0, 0, 0];
+          if (totalVotos === 0 && Object.keys(votos).length === 0) return [0, 0, 0, 0];
 
           const maxParty = Object.keys(votos).reduce(
             (a, b) => (Number(votos[a]) > Number(votos[b]) ? a : b),
@@ -378,15 +362,10 @@ function CommandCenterUI() {
           if (maxParty.includes("MC")) return [242, 115, 32, 210];
           return [45, 212, 191, 150];
         },
-        getLineColor: [100, 116, 139, 50],
+        getLineColor: [100, 116, 139, 40],
         lineWidthMinPixels: 1,
-        getElevation: (feature: MVTFeature) => {
-          const totalVotos = Number(feature.properties?.total_votos_calculados || 0);
-          // UX ENTERPRISE: Relieve topográfico basado en Raíz Cuadrada para aplanar picos.
-          return totalVotos === 0 ? 0 : Math.max(5, Math.sqrt(totalVotos) * 20);
-        },
-        extruded: is3D,
-        wireframe: true,
+        extruded: false,
+        wireframe: false,
         pickable: true,
         autoHighlight: true,
         highlightColor: [255, 255, 255, 120],
@@ -402,7 +381,7 @@ function CommandCenterUI() {
         },
       }),
     ],
-    [activeElection, activeEntidadFilter, is3D, tileUrl]
+    [activeElection, activeEntidadFilter, tileUrl]
   );
 
   // OPTIMIZACIÓN: Extraer y procesar datos solo una vez cuando hay selección
@@ -572,16 +551,6 @@ function CommandCenterUI() {
           title="Vision Nacional"
         >
           <RotateCcw className="w-5 h-5 text-gray-400 hover:text-white" />
-        </button>
-        {/* NUEVO BOTON VISTA TACTICA */}
-        <button
-          onClick={toggle3D}
-          className={`bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-3 transition-colors ${is3D ? "text-teal-400" : "text-gray-400 hover:text-white"}`}
-          title={
-            is3D ? "Cambiar a mapa plano 2D y revelar nombres" : "Cambiar a volumétrico 3D"
-          }
-        >
-          <Layers className="w-5 h-5" />
         </button>
       </div>
 
