@@ -4,6 +4,7 @@ services:
   db:
     build: ./docker/db
     restart: always
+    shm_size: '2gb'  # Aumenta la memoria compartida para PostGIS
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: enterprise_password_2024
