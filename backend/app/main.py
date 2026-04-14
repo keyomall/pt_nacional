@@ -8,6 +8,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from contextlib import asynccontextmanager
 from app.db import engine, Base
+from app.analytics_engine import AnalyticsEngine
 from app.semantic_engine import SemanticIntentEngine
 import app.models  # Forzar carga de modelos SQLAlchemy antes de create_all
 
@@ -23,6 +24,7 @@ ASYNC_DB_URI = (
 )
 async_engine = create_async_engine(ASYNC_DB_URI, pool_pre_ping=True)
 semantic_engine = SemanticIntentEngine()
+analytics_engine = AnalyticsEngine()
 
 # Mapeo estricto de seguridad para tablas de votos (whitelist anti-inyección).
 TABLAS_VOTOS = {
@@ -182,3 +184,16 @@ async def search_intent(q: str):
     async with async_engine.connect() as conn:
         intent = await semantic_engine.parse_query(q, conn)
     return intent
+
+
+@app.get("/api/v1/analitica/ganador")
+async def get_ganador_nominal(cargo: str, entidad: int, seccion: int, partido: str):
+    async with async_engine.connect() as conn:
+        identidad = await analytics_engine.get_winner_identity(
+            cargo=cargo,
+            entidad=entidad,
+            seccion=seccion,
+            partido=partido,
+            db=conn,
+        )
+    return identidad

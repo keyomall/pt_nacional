@@ -48,6 +48,11 @@ type MVTFeature = {
   };
 };
 
+type WinnerIdentity = {
+  candidato: string;
+  detalle: string;
+};
+
 type ChartVoteItem = {
   name: string;
   votos: number;
@@ -91,6 +96,33 @@ const getPartyColor = (partyName: string): string => {
   return "#2DD4BF";
 };
 
+const parseVotesObject = (
+  votosDesglosados: Record<string, number | string> | string | undefined
+): Record<string, number | string> => {
+  if (!votosDesglosados) return {};
+  if (typeof votosDesglosados === "string") {
+    try {
+      return JSON.parse(votosDesglosados) as Record<string, number | string>;
+    } catch {
+      return {};
+    }
+  }
+  return votosDesglosados;
+};
+
+const getWinningParty = (
+  votosDesglosados: Record<string, number | string> | string | undefined
+): string => {
+  const rawData = parseVotesObject(votosDesglosados);
+  const keys = Object.keys(rawData);
+  if (keys.length === 0) return "";
+  return keys.reduce((a, b) => {
+    const va = Number(rawData[a] ?? 0);
+    const vb = Number(rawData[b] ?? 0);
+    return va >= vb ? a : b;
+  }, keys[0]);
+};
+
 type ViewState = typeof INITIAL_VIEW_STATE & {
   transitionDuration?: number;
 };
@@ -104,11 +136,59 @@ export default function CommandCenter() {
   const [activeEntidadFilter, setActiveEntidadFilter] = useState<number | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
+  const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- CSR mount guard requerido para evitar hydration mismatches por extensiones.
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!selectedFeature?.properties) return;
+
+    const idEntidad = Number(selectedFeature.properties.id_entidad ?? 0);
+    const seccion = Number(selectedFeature.properties.seccion ?? 0);
+    const winningParty = getWinningParty(selectedFeature.properties.votos_desglosados);
+    if (!idEntidad || !seccion || !winningParty) {
+      return;
+    }
+
+    const controller = new AbortController();
+    const fetchWinnerIdentity = async () => {
+      try {
+        const params = new URLSearchParams({
+          cargo: activeElection,
+          entidad: String(idEntidad),
+          seccion: String(seccion),
+          partido: winningParty,
+        });
+        const res = await fetch(
+          `http://localhost:8000/api/v1/analitica/ganador?${params.toString()}`,
+          { signal: controller.signal }
+        );
+        if (!res.ok) {
+          setWinnerIdentity({
+            candidato: "Sin registro",
+            detalle: "No fue posible resolver identidad nominal",
+          });
+          return;
+        }
+        const data = (await res.json()) as WinnerIdentity;
+        setWinnerIdentity(data);
+      } catch (error) {
+        if ((error as Error).name !== "AbortError") {
+          console.error("Error obteniendo identidad nominal:", error);
+          setWinnerIdentity({
+            candidato: "Error de conexión",
+            detalle: "Fallo de consulta al motor analítico",
+          });
+        }
+      }
+    };
+
+    fetchWinnerIdentity();
+    return () => controller.abort();
+  }, [selectedFeature, activeElection]);
 
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && query.trim() !== "") {
@@ -202,8 +282,10 @@ export default function CommandCenter() {
         onHover: (info: PickingInfo<HoverObject>) => setHoverInfo(info as HoverInfo),
         onClick: (info: PickingInfo<MVTFeature>) => {
           if (info.object) {
+            setWinnerIdentity(null);
             setSelectedFeature(info.object as MVTFeature);
           } else {
+            setWinnerIdentity(null);
             setSelectedFeature(null);
           }
         },
@@ -326,6 +408,25 @@ export default function CommandCenter() {
               </div>
 
               <div className="mb-6">
+                <div className="mb-4 bg-gradient-to-r from-teal-900/30 to-transparent p-4 rounded-xl border-l-2 border-teal-500">
+                  <p className="text-[10px] text-teal-400 uppercase tracking-wider mb-1">
+                    Fuerza Ganadora Estimada
+                  </p>
+                  {winnerIdentity ? (
+                    <>
+                      <p className="text-lg font-bold text-white leading-tight">
+                        {winnerIdentity.candidato}
+                      </p>
+                      <p className="text-xs text-gray-400 mt-1">{winnerIdentity.detalle}</p>
+                    </>
+                  ) : (
+                    <div className="animate-pulse flex flex-col gap-2 mt-2">
+                      <div className="h-4 bg-gray-800 rounded w-3/4"></div>
+                      <div className="h-3 bg-gray-800 rounded w-1/2"></div>
+                    </div>
+                  )}
+                </div>
+
                 <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">
                   Total Votos Emitidos
                 </p>
