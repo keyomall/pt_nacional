@@ -178,9 +178,19 @@ class SemanticIntentEngine:
             "entidad_id": None,
             "cargo_inferido": None,
             "partido_inferido": None,
+            "distrito_local_id": None,
+            "distrito_federal_id": None,
             "accion": "flyTo",
             "bbox": None,
+            "warning": None,
         }
+
+        # Detección de Año (solo operamos 2024 por ahora).
+        year_match = re.search(r"20\d\d", normalized_query)
+        if year_match and year_match.group(0) != "2024":
+            intent["warning"] = (
+                f"El archivo historico {year_match.group(0)} esta en preparacion. Mostrando datos 2024."
+            )
 
         # 1. Inferir Entidad
         for ent_id, aliases in self.entidades.items():
@@ -199,6 +209,15 @@ class SemanticIntentEngine:
             if any(self._contains_alias(normalized_query, alias) for alias in aliases):
                 intent["partido_inferido"] = partido_key
                 break
+
+        # NUEVO: Detección de Distritos ultra-flexible (Soporta "distrito local 14" o "distrito 14 local")
+        dl_match = re.search(r"distrito\s+(?:local\s+)?(\d+)(?:\s+local)?", normalized_query)
+        if dl_match:
+            intent["distrito_local_id"] = int(dl_match.group(1))
+
+        df_match = re.search(r"distrito\s+(?:federal\s+)?(\d+)(?:\s+federal)?", normalized_query)
+        if df_match:
+            intent["distrito_federal_id"] = int(df_match.group(1))
 
         # 4. Calcular Bounding Box si hay entidad detectada
         if intent["entidad_id"]:

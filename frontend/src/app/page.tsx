@@ -294,10 +294,10 @@ export default function CommandCenter() {
     [activeElection, activeEntidadFilter, tileUrl]
   );
 
-  const selectedVotesData = useMemo(
-    () => processVotesData(selectedFeature?.properties?.votos_desglosados),
-    [selectedFeature]
-  );
+  // OPTIMIZACIÓN: Extraer y procesar datos solo una vez cuando hay selección
+  const chartData = selectedFeature
+    ? processVotesData(selectedFeature.properties?.votos_desglosados)
+    : [];
 
   if (!isMounted) {
     return <div className="w-full h-screen bg-gray-950"></div>;
@@ -442,17 +442,19 @@ export default function CommandCenter() {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     layout="vertical"
-                    data={selectedVotesData}
+                    data={chartData}
                     margin={{ top: 0, right: 20, left: -20, bottom: 0 }}
                   >
                     <XAxis type="number" hide />
+                    {/* FIX: width ampliado a 130 para coaliciones y tick ajustado */}
                     <YAxis
                       dataKey="name"
                       type="category"
                       axisLine={false}
                       tickLine={false}
-                      tick={{ fill: "#9ca3af", fontSize: 10 }}
-                      width={90}
+                      tick={{ fill: "#9ca3af", fontSize: 10, fontWeight: 500 }}
+                      width={130}
+                      interval={0}
                     />
                     <RechartsTooltip
                       cursor={{ fill: "rgba(255,255,255,0.05)" }}
@@ -463,10 +465,10 @@ export default function CommandCenter() {
                         fontSize: "12px",
                       }}
                       itemStyle={{ color: "#fff", fontWeight: "bold" }}
-                      formatter={(value: number | string) => [Number(value).toLocaleString(), "Votos"]}
+                      formatter={(value: number) => [value.toLocaleString(), "Votos"]}
                     />
                     <Bar dataKey="votos" radius={[0, 4, 4, 0]} barSize={15}>
-                      {selectedVotesData.map((entry, index) => (
+                      {chartData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={getPartyColor(entry.name)} />
                       ))}
                     </Bar>
