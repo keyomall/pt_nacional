@@ -1,0 +1,59 @@
+﻿Base de datos
+Definición
+Base de datos y utilidad
+Carpeta de archivos
+Contenido
+Descargar
+Descomprimir
+Abrir
+Consulta
+Estructura de los datos
+
+
+Carpeta de archivos
+- Contenido -
+Se trata de un archivo comprimido global con una
+nomenclatura que indica el año, mes, día y hora del
+corte; por ejemplo: 20240605_2100_COMPUTOS, es
+de extensión .zip y se encuentra organizado en
+carpetas por tipo de elección:
+
+• 20240605_2100_COMPUTOS_PRES.zip
+
+• 20240605_2100_COMPUTOS_SEN.zip
+
+• 20240605_2100_COMPUTOS_DIP_FED.zip
+
+Cada una de ellas contiene tres tipos de archivos: los
+resultados y el catálogo de candidaturas ambos en
+formato .csv, por último, el archivo con la descripción
+de las variables en formato .txt.
+Archivos de resultados:
+• PRES_2024.csv
+
+• SEN_2024.csv
+
+• DIP_FED_2024.csv
+
+Contienen los resultados de la votación por acta a nivel
+federal. Muestran el número de votos recibidos por
+cada uno de los Partidos Políticos, combinaciones de
+coalición, Candidaturas Independientes, candidaturas
+no registradas y votos nulos.
+Catálogos de candidaturas:
+• PRES_CANDIDATURAS_2024.csv
+
+• SEN_CANDIDATURAS_2024.csv
+
+• DIP_FED_CANDIDATURAS_2024.csv
+
+Estos documentos contienen el listado de
+candidaturas por Partido Político y Candidaturas
+Independientes que participan en la elección federal en
+cada uno de los cargos.
+Descripción de variables:
+• LEEME.txt
+
+Describe a detalle cada uno de los campos que forman
+los archivos de resultados y candidaturas.
+*Nota: Recuerda, al realizar la descarga, el nombre del archivo .zip se complementará con la fecha, comenzando por el año, mes y día, así como la hora respecto al último corte, conservando siempre esta estructura: AAAAMMDD_HHMM_COMPUTOS.zip

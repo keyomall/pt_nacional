@@ -1,0 +1,540 @@
+CIRCUNSCRIPCION,ID_ESTADO,NOMBRE_ESTADO,ID_DISTRITO_LOCAL,CABECERA_DISTRITAL_LOCAL,ID_MUNICIPIO,MUNICIPIO,ID_DEMARCACION_LOCAL,DEMARCACION_LOCAL,TIPO_DE_ELECCION,NOMBRE_PARTICIPANTE,NUMERO_LISTA,CANDIDATO,SEXO_CANDIDATO,ACCION_AFIRMATIVA,RUTA_CONSTANCIA,PARTIDO_POLITICO
+2,28,TAMAULIPAS,,,1,ABASOLO,,,PRES_MUN,PT_PVEM_MORENA,1,YAZMIN ALEJANDRA SALDAÑA PEREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PT
+2,28,TAMAULIPAS,,,1,ABASOLO,,,SIND,PT_PVEM_MORENA,1,HERMENEGILDO ROJAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PT
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_MR,PT_PVEM_MORENA,1,MONICA YAZMIN ALVARADO DOMINGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PT
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_MR,PT_PVEM_MORENA,2,RIGOBERTO OVIEDO CERDA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PT
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_MR,PT_PVEM_MORENA,3,LINA GUADALUPE SILVA RDZ.,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,MORENA
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_MR,PT_PVEM_MORENA,4,MARTIN TORRES RAMIREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PVEM
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_RP,PAN_PRI,1,ARTURO RAFAEL CONDE SOSA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PRI
+2,28,TAMAULIPAS,,,1,ABASOLO,,,REG_RP,PAN_PRI,2,DOMITILA REYNA REYNA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Abasolo.PDF,PRI
+2,28,TAMAULIPAS,,,2,ALDAMA,,,PRES_MUN,PT_PVEM_MORENA,1,MARIA NOEMI SOSA VILLARREAL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,SIND,PT_PVEM_MORENA,1,MELCHOR ANTONIO LEAL ROMERO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,SIND,PT_PVEM_MORENA,2,MARIBEL FLORES VITE,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_MR,PT_PVEM_MORENA,1,GUILLERMO AMAYA TIJERINA,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_MR,PT_PVEM_MORENA,2,MARIA LUISA CHAVEZ CARCINI,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_MR,PT_PVEM_MORENA,3,MARCO ANTONIO SILVA BERNAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,PT
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_MR,PT_PVEM_MORENA,4,GEMMA MARIA GUADALUPE ESQUIVEL ALVAREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,PVEM
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_MR,PT_PVEM_MORENA,5,MIGUEL ANGEL RAGA GONZALEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MORENA
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_RP,PAN_PRI,1,CRISTINA VARGAS VAZQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,PAN
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_RP,MC,1,MARIANA NOHEMI LOPEZ FLORES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,MC
+2,28,TAMAULIPAS,,,2,ALDAMA,,,REG_RP,PAN_PRI,1,CARLOS ARROYO PEREZ,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Aldama.PDF,PAN
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,PRES_MUN,PT_PVEM_MORENA,1,ARMANDO MARTINEZ MANRIQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,SIND,PT_PVEM_MORENA,1,BLANCA LETICIA GUZMAN HINOJOSA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,SIND,PT_PVEM_MORENA,2,RICARDO VEGA BARRON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,1,DIANA ISABEL RANGEL RANGEL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,2,BERNARDINO ALVAREZ CEDILLO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,3,DAMARIS ORALIA GOMEZ CERVANTES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PVEM
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,4,EDGAR MAURICIO MEDINA MAGAÑA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PT
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,5,NADIA FLOR TORRES MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,6,JUAN FRANCISCO GUEVARA BARRON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,7,EPIFANIA MORAN VILLEDA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,8,JOSE ISMAEL MEX SANTIAGO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,9,MARTHA ELADIA GARCIA CARRIZALES,2,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,10,ABELARDO GARCES REYES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,11,ANA DELIA ZALETA AVALOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,12,LUIS GABRIEL MARQUEZ GONZALEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,13,NAIVI ARACELY CASTILLO DIAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_MR,PT_PVEM_MORENA,14,AZUCENA LEDEZMA CAMACHO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MORENA
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PAN_PRI,1,NANCY RUIZ MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PAN
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PRD,1,LETICIA BARRIOS CHAVERO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PRD
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,MC,1,URIEL ULISES PONCE GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,MC
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PAN_PRI,1,JULIO SALVADOR ALFARO FLORES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PRI
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PAN_PRI,1,FELIX MIGUEL GUILLU MERAZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PAN
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PAN_PRI,2,FLOR DE NUBIA VAZQUEZ CHAVEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PAN
+2,28,TAMAULIPAS,,,3,ALTAMIRA,,,REG_RP,PRD,3,OCTAVIO MOISES JIMENEZ MARQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Altamira.PDF,PRD
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,PRES_MUN,PAN_PRI,1,EVANGELINA AVILA CABRIALES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PAN
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,SIND,PAN_PRI,1,RENE DUQUE BALDERAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PAN
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_MR,PAN_PRI,1,JOSEFINA GOMEZ MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PAN
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_MR,PAN_PRI,2,ABRAHAM BARRON VEGA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PAN
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_MR,PAN_PRI,3,YESICA SELENE SOTO CASTILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PRI
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_MR,PAN_PRI,4,JESUS CRUZ HERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PAN
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_RP,PT_PVEM_MORENA,1,LIZETH PEREZ LOPEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,MORENA
+2,28,TAMAULIPAS,,,4,ANTIGUO MORELOS,,,REG_RP,PT_PVEM_MORENA,1,PEDRO TINAJERO MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_AntiguoMorelos.PDF,PVEM
+2,28,TAMAULIPAS,,,5,BURGOS,,,PRES_MUN,PAN_PRI,1,MARCO POLO GARZA MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,SIND,PAN_PRI,1,ANA CELIA BARRERA CANO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_MR,PAN_PRI,1,CARLOS ARNULFO GONZALEZ TREVIÑO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_MR,PAN_PRI,2,MA. DEL ROSARIO CUEVAS RAMIREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_MR,PAN_PRI,3,JOSE MA. GONZALEZ FLORES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_MR,PAN_PRI,4,MA CONCEPCION RODRIGUEZ ROBLES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PAN
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_RP,PT_PVEM_MORENA,1,NORA ELBA RESENDEZ DE LA FUENTE,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,MORENA
+2,28,TAMAULIPAS,,,5,BURGOS,,,REG_RP,PT_PVEM_MORENA,2,MANUELA RAMIREZ MENDOZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Burgos.PDF,PT
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,PRES_MUN,PAN_PRI,1,MARICELA RODRIGUEZ GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PAN
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,SIND,PAN_PRI,1,LUIS HUMBERTO CASTRO RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PAN
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_MR,PAN_PRI,1,MARIANA REYNA REYNA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PAN
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_MR,PAN_PRI,2,OSVALDO RODRIGUEZ NAVA,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PAN
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_MR,PAN_PRI,3,BARBARITA CORDOVA CAMACHO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PRI
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_MR,PAN_PRI,4,ELODIO GUERRERO RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,PAN
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_RP,PT_PVEM_MORENA,1,FIDEL TREJO ALVAREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,MORENA
+2,28,TAMAULIPAS,,,6,BUSTAMANTE,,,REG_RP,PT_PVEM_MORENA,1,MARIA DE JESUS HERNANDEZ PEREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Bustamante.PDF,MORENA
+2,28,TAMAULIPAS,,,7,CAMARGO,,,PRES_MUN,PT_PVEM_MORENA,1,ERNESTINA PERALES ORTIZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PVEM
+2,28,TAMAULIPAS,,,7,CAMARGO,,,SIND,PT_PVEM_MORENA,1,MARIA ELIZENDA FLORES SALINAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PVEM
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_MR,PT_PVEM_MORENA,1,BEATRIZ ADRIANA PINALES VAZQUEZ,2,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PVEM
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_MR,PT_PVEM_MORENA,2,JOSE SANCHEZ RAZO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PVEM
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_MR,PT_PVEM_MORENA,3,MELISSA MIRANDA OROZCO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,MORENA
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_MR,PT_PVEM_MORENA,4,DAGOBERTO ZAVALA AVALOS,3,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PT
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_RP,PAN_PRI,1,LAURA LETICIA DE LA ROSA MASCORRO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,PAN
+2,28,TAMAULIPAS,,,7,CAMARGO,,,REG_RP,MC,3,OMAR DELFINO NUÑEZ RIVAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Camargo.PDF,MC
+2,28,TAMAULIPAS,,,8,CASAS,,,PRES_MUN,PT_PVEM_MORENA,1,JORGE HUMBERTO HINOJOSA GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PT
+2,28,TAMAULIPAS,,,8,CASAS,,,SIND,PT_PVEM_MORENA,1,ISELA AVALOS CARREON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PT
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_MR,PT_PVEM_MORENA,1,MIGUEL ANGEL MARTINEZ GARZA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PT
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_MR,PT_PVEM_MORENA,2,YOLANDA CASTILLO CASTILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PT
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_MR,PT_PVEM_MORENA,3,ERIK JUVENCIO VERA CRESPO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,MORENA
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_MR,PT_PVEM_MORENA,4,MAYELA ELIZABETH TOVAR MONTELONGO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PVEM
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_RP,PAN_PRI,1,ANA ISABEL CASTRO RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PAN
+2,28,TAMAULIPAS,,,8,CASAS,,,REG_RP,PRD,1,EGIDIO LARA MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Casas.PDF,PRD
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,PRES_MUN,PT_PVEM_MORENA,1,ERASMO GONZALEZ ROBLEDO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,SIND,PT_PVEM_MORENA,1,PETRA ALICIA LERMA CERVANTES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,SIND,PT_PVEM_MORENA,2,ROBERTO CARLOS CHAVEZ GUTIERREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,1,NAILY BERENICE ALVARADO DIAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,2,OSCAR OSEGUERA KERNION,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,3,MARIA FERNANDA ORTEGA CRUZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PVEM
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,4,GREYCI BELINDA ALVAREZ GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PT
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,5,SILVIA RAQUEL WILLIAMS PINEDA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,6,FERNANDO IVAN RESENDIZ VELEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,7,SANDRA MARIA FLORES PAREDES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,8,ALIEK ORLANDO MORALES VAZQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,9,CYNTHIA ALEJANDRA BALDERAS JEREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,10,RAYMUNDO PECINA DIAZ DE LEON,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,11,SILVIA MAGDA DE LEON DE LEON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,12,HEBERTO RAGA NAVARRO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,13,MARIA GUADALUPE ANDRADE RAMIREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_MR,PT_PVEM_MORENA,14,MA. EUFEMIA GONZALEZ ROMERO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MORENA
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,1,LETICIA VARGAS ALVAREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PAN
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,MC,1,JORGE VLADIMIR SOSA POHL BYIK,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,MC
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,1,MAYRA ROCIO OJEDA CHAVEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PRI
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,1,SERGIO ARTURO CESPEDES RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PAN
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,1,ALBA ALICIA VERASTEGUI OSTOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PAN
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,2,OSCAR MORADO GAMEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PAN
+2,28,TAMAULIPAS,,,9,CIUDAD MADERO,,,REG_RP,PAN_PRI,3,IRIS ESTEFANIA CORTES HERRERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CiudadMadero.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,PRES_MUN,PAN_PRI,1,DIANA VANESSA LEAL LOPEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,SIND,PAN_PRI,1,ROLANDO GONZALEZ RIVERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_MR,PAN_PRI,1,MARICELA MUÑOZ FLORES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_MR,PAN_PRI,2,EDILBERTO LOPEZ NARVAEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_MR,PAN_PRI,3,MARIA MONCERRAT CONTRERAS BARRIENTOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PRI
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_MR,PAN_PRI,4,EVEN GARZA REYES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PAN
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_RP,PT_PVEM_MORENA,1,EVA GARCIA CAVAZOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,MORENA
+2,28,TAMAULIPAS,,,10,CRUILLAS,,,REG_RP,PT_PVEM_MORENA,1,CARLOS DANIEL GARCIA AGUILAR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Cruillas.PDF,PT
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,PRES_MUN,PAN_PRI,1,FRANK YUSSEF DE LEON AVILA,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PAN
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,SIND,PAN_PRI,1,ELIZABETH RUIZ GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PAN
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_MR,PAN_PRI,1,ELIAQUIN BARRIENTOS BORJON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PAN
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_MR,PAN_PRI,2,ELIZABETH MENDEZ DURAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PAN
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_MR,PAN_PRI,3,DIANA ESTEFANIA YAÑEZ GUZMAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PRI
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_MR,PAN_PRI,4,ESTEBAN BERRONES BENITEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PAN
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_RP,PT_PVEM_MORENA,2,MAGALY LIZETH CAMPOS BOLAÑOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,MORENA
+2,28,TAMAULIPAS,,,11,GOMEZ FARIAS,,,REG_RP,PT_PVEM_MORENA,1,RODOLFO ORLANDO LARA RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GomezFarias.PDF,PVEM
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,PRES_MUN,PT_PVEM_MORENA,1,MIGUEL ALEJANDRO ZUÑIGA RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,SIND,PT_PVEM_MORENA,1,JAZMIN GUADALUPE GONZALEZ CHAVEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,SIND,PT_PVEM_MORENA,2,OSCAR BERNAL SAN MARTIN,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_MR,PT_PVEM_MORENA,1,NADIA ZULEMA MARTINEZ COVARRUBIAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_MR,PT_PVEM_MORENA,2,URIEL SOSA ALMAZAN,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_MR,PT_PVEM_MORENA,3,SILVIA VERONICA RESENDIZ RAGA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,PVEM
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_MR,PT_PVEM_MORENA,4,ROBERTO AVILA MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,PT
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_MR,PT_PVEM_MORENA,5,ROSA IMELDA LARA HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MORENA
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_RP,PAN_PRI,1,ABUNDIO GALIAN DE JESUS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,PAN
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_RP,MC,1,BLANCA ESTHEFANIA MONTELONGO GOMEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,MC
+2,28,TAMAULIPAS,,,12,GONZALEZ,,,REG_RP,PAN_PRI,1,ELIZABETH FIERRO CORDOVA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Gonzalez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,PRES_MUN,PAN_PRI,1,JOSE LORENZO MORALES AMARO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,SIND,PAN_PRI,1,SAN JUANA FONSECA CALDERON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_MR,PAN_PRI,1,OMAR ESTRADA SANCHEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_MR,PAN_PRI,2,MINERVA TOVAR GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_MR,PAN_PRI,3,MA. AMALIA MONTOYA ESTRADA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PAN
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_MR,PAN_PRI,4,MARGARITA BALDERAS SALDIERNA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,PRI
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_RP,PT_PVEM_MORENA,1,CLAUDIA SARAHY RIVAS MENDOZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,MORENA
+2,28,TAMAULIPAS,,,13,GUEMEZ,,,REG_RP,MC,1,JUAN FRANCISCO BARRON OLVERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Güemez.PDF,MC
+2,28,TAMAULIPAS,,,14,GUERRERO,,,PRES_MUN,PT_PVEM_MORENA,1,LAURA VERONICA PEÑA MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PVEM
+2,28,TAMAULIPAS,,,14,GUERRERO,,,SIND,PT_PVEM_MORENA,1,ELIOENAI IBARRA MENDOZA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PVEM
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_MR,PT_PVEM_MORENA,1,ESTANISLADA MARGARITA LOPEZ MACIAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PVEM
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_MR,PT_PVEM_MORENA,2,JOSE ANTONIO RODRIGUEZ CANALES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PVEM
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_MR,PT_PVEM_MORENA,3,JESSICA LISBETH RAMOS CARMONA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,MORENA
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_MR,PT_PVEM_MORENA,4,MANUEL OCTAVIO GARZA SANTAANA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PT
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_RP,MC,1,JUAN ANTONIO LOPEZ HERRERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,MC
+2,28,TAMAULIPAS,,,14,GUERRERO,,,REG_RP,PAN_PRI,1,ALEJANDRA GARZA QUEZADA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Guerrero.PDF,PAN
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,PRES_MUN,PT_PVEM_MORENA,1,NATALY GARCIA DIAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PT
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,SIND,PT_PVEM_MORENA,1,ARTEMIO FLORES MILAN,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PT
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_MR,PT_PVEM_MORENA,1,TANIA TAPIA TREJO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PT
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_MR,PT_PVEM_MORENA,2,BRIAN LOPEZ RINCON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PT
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_MR,PT_PVEM_MORENA,3,BILMA ABELYN IBARRA VALADEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,MORENA
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_MR,PT_PVEM_MORENA,4,EVER GUDELIO CORTEZ LONGORIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PVEM
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_RP,PAN_PRI,1,CARLOS FERNANDO ROSAS ACOSTA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,PAN
+2,28,TAMAULIPAS,,,15,GUSTAVO DIAZ ORDAZ,,,REG_RP,MC,1,PAOLA ELIZABETH MENDEZ DOMINGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_GustavoDiazOrdaz.PDF,MC
+2,28,TAMAULIPAS,,,16,HIDALGO,,,PRES_MUN,PT_PVEM_MORENA,1,PRAXEDIS GUAJARDO REYNA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,MORENA
+2,28,TAMAULIPAS,,,16,HIDALGO,,,SIND,PT_PVEM_MORENA,1,GREGORIA CASTILLO ZUÑIGA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,MORENA
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_MR,PT_PVEM_MORENA,1,HUGO ALFREDO LEAL RENDON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,MORENA
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_MR,PT_PVEM_MORENA,2,ALBINA ESMERALDA BANDA DE LEON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,MORENA
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_MR,PT_PVEM_MORENA,3,MARCO ANTONIO SANTILLAN GUTIERREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,PT
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_MR,PT_PVEM_MORENA,4,MA. GUADALUPE MIRELES ORTIZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,PVEM
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_RP,PAN_PRI,3,MA. FERNANDA SALEH SOLIS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,PAN
+2,28,TAMAULIPAS,,,16,HIDALGO,,,REG_RP,MC,1,SILVIA GUADALUPE REYES DOMINGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Hidalgo.PDF,MC
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,PRES_MUN,PT_PVEM_MORENA,1,MANUEL BAEZ MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,MORENA
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,SIND,PT_PVEM_MORENA,1,MIRSHA ELIZABETH CRUZ VAZQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,MORENA
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_MR,PT_PVEM_MORENA,1,JORGE ALBERTO BALDERAS MENDOZA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,MORENA
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_MR,PT_PVEM_MORENA,2,YESENIA SOTO GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,MORENA
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_MR,PT_PVEM_MORENA,3,SAUL SILVESTRE ACOSTA VILLARREAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,PVEM
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_MR,PT_PVEM_MORENA,4,JUANA MARIA MEZQUITIC MARQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,PT
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_RP,CAN_IND2,1,DORA ELIA HERNANDEZ GUERRERO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,CAN_IND2
+2,28,TAMAULIPAS,,,17,JAUMAVE,,,REG_RP,CAN_IND3,1,OSVALDO REYNA SILVA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jaumave.PDF,CAN_IND3
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,PRES_MUN,PT_PVEM_MORENA,1,CORINA ESTHER GARZA ARREOLA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PVEM
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,SIND,PT_PVEM_MORENA,1,JAVIER GARZA SILVA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PVEM
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_MR,PT_PVEM_MORENA,1,KARLA ZORAYDA GONZALEZ AGUILERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PVEM
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_MR,PT_PVEM_MORENA,2,SERGIO OBREGON PALACIOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PVEM
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_MR,PT_PVEM_MORENA,3,MARY CRUZ SOTUYO GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,MORENA
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_MR,PT_PVEM_MORENA,4,YOLANDA TAMEZ CABRERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PT
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_RP,PAN_PRI,1,RIGOBERTO DE LA GARZA CABALLERO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,PRI
+2,28,TAMAULIPAS,,,18,JIMENEZ,,,REG_RP,MC,1,DANTE OVIDIO MARTINEZ PAULIN,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Jimenez.PDF,MC
+2,28,TAMAULIPAS,,,19,LLERA,,,PRES_MUN,PAN_PRI,1,MOISES ANTONIO BORJON OLVERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PAN
+2,28,TAMAULIPAS,,,19,LLERA,,,SIND,PAN_PRI,1,NORMA DELIA LARA ALEMAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PAN
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_MR,PAN_PRI,1,HECTOR AVALOS MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PAN
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_MR,PAN_PRI,2,LIZBETH ARGELIA PUGA COY,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PAN
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_MR,PAN_PRI,3,POLICARPO LARA MANRIQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PRI
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_MR,PAN_PRI,4,MA. PIEDAD GONZALEZ HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,PAN
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_RP,PT_PVEM_MORENA,1,ROLANDO PEREZ BALDERAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,MORENA
+2,28,TAMAULIPAS,,,19,LLERA,,,REG_RP,CAN_IND4,3,ROSA MARIA OBREGON GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Llera.pdf,CAN_IND4
+2,28,TAMAULIPAS,,,20,MAINERO,,,PRES_MUN,PT_PVEM_MORENA,1,MA. DOLORES MANSILLA HUERTA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,MORENA
+2,28,TAMAULIPAS,,,20,MAINERO,,,SIND,PT_PVEM_MORENA,1,ABELARDO ESTRELLA RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,MORENA
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_MR,PT_PVEM_MORENA,1,KARLA SERRATO LUNA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,MORENA
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_MR,PT_PVEM_MORENA,2,JOSE JAIME FRANCO MUÑOZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,MORENA
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_MR,PT_PVEM_MORENA,3,MAGDA YUDITH GONZALEZ GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,PT
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_MR,PT_PVEM_MORENA,4,RODOLFO MANUEL LERMA MUÑIZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,PVEM
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_RP,PAN_PRI,1,RAMIRO RODRIGUEZ REYNA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,PAN
+2,28,TAMAULIPAS,,,20,MAINERO,,,REG_RP,PAN_PRI,1,VERONICA ELIZABETH PEREZ ALFARO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mainero.PDF,PAN
+2,28,TAMAULIPAS,,,21,EL MANTE,,,PRES_MUN,PT_PVEM_MORENA,1,MARTHA PATRICIA CHIO DE LA GARZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,SIND,PT_PVEM_MORENA,1,FRANCISCO JAVIER RESENDIZ RUIZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,SIND,PT_PVEM_MORENA,2,ISAURA LILIANA TORO GUERRERO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,1,JOSE ISSAC AYALA MORALES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,2,MA. ELENA SEGOVIA MORENO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,3,JOSE RICARDO ESPINOZA VELAZQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PVEM
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,4,MARIA DEL ROSARIO HERNANDEZ ACUÑA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PT
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,5,LUIS GERARDO MONTES VEGA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,6,JUDITH AMARO RIVAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,7,JAIRA CRISTAL CARDONA MENDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,8,KRYSTEL TORRES CORDOVA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,9,OMAR SALOMON VARGAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,10,ASTRID SONTOYA MULLER,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,11,HOMERO VENANCIO AMADOR MORALES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_MR,PT_PVEM_MORENA,12,MARISA ANAGUELI TREVIÑO BAEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MORENA
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,PAN_PRI,1,SAN JUANA DORIA ARREDONDO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PAN
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,MC,1,EMIGDIO JESUS ILIZALITURRI ADAME,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,MC
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,PAN_PRI,1,BRUNO AROLDO DIAZ LARA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PRI
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,PAN_PRI,1,RAFAEL MARTIN PEREYRA PEREYRA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PAN
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,PAN_PRI,3,LIDIA MARTINEZ LOPEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PAN
+2,28,TAMAULIPAS,,,21,EL MANTE,,,REG_RP,PAN_PRI,1,JOSE ALFREDO RODRIGUEZ GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ManteEl.PDF,PAN
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,PRES_MUN,PT_PVEM_MORENA,1,JOSE ALBERTO GRANADOS FAVILA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,SIND,PT_PVEM_MORENA,1,ANGELICA SUSANA MALDONADO SAGUILAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,SIND,PT_PVEM_MORENA,2,JULIO HERNANDEZ MENDIOLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,1,MA. ERNESTINA LOZANO RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,2,HECTOR MANUEL DIAZ SANCHEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,3,MARIA GUADALUPE GARCIA DE LA ROSA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PT
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,4,RAMIRO CISNEROS TREMEAR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PVEM
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,5,LINDA MIREYA GONZALEZ ZUÑIGA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,6,RODRIGO DELGADO VERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,7,ALBA VIRIDIANA VILLASANA AGUILAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,8,ALEJANDRO VILLAFAÑEZ ZAMUDIO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,9,CLAUDIA CEPEDA GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,10,JORGE PRISCILIANO RENTERIA CAMPOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,11,KARINA JAZMIN ENSIGNIA MORALES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,12,ARMANDO GARCIA HERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,13,GUADALUPE CANTU DE LA GARZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_MR,PT_PVEM_MORENA,14,MARIA DEL CARMEN GARZA GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MORENA
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,PAN_PRI,1,RAFAEL MENDEZ LORENZO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PAN
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,MC,1,AMERICA LORENCEZ GUZMAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MC
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,PAN_PRI,1,YANIN ZALETA GARCIA DELGADO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PRI
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,PAN_PRI,1,LUCIA BIASI SERRANO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PAN
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,PAN_PRI,2,RODOLFO SIMON HERNANDEZ PIÑA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,PAN
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,MC,3,CHRISTIAN GUERRA LIZALDE,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MC
+2,28,TAMAULIPAS,,,22,MATAMOROS,,,REG_RP,MC,2,AMALIA MORALES COBOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Matamoros.PDF,MC
+2,28,TAMAULIPAS,,,23,MENDEZ,,,PRES_MUN,PAN_PRI,1,JUAN MENDOZA FUERTE,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PAN
+2,28,TAMAULIPAS,,,23,MENDEZ,,,SIND,PAN_PRI,1,JANETH DE JESUS PEREZ RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PAN
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_MR,PAN_PRI,1,MANUEL TREVIÑO TREVIÑO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PAN
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_MR,PAN_PRI,2,ALMA MIRIAM SALDAÑA MONREAL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PAN
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_MR,PAN_PRI,3,RICARDO DAVILA LEAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PRI
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_MR,PAN_PRI,4,YADIRA PRUNEDA VEGA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PAN
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_RP,PT_PVEM_MORENA,1,ERNESTO BARRERA PAZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,MORENA
+2,28,TAMAULIPAS,,,23,MENDEZ,,,REG_RP,PT_PVEM_MORENA,2,SAN JUANA BERRIOS BECERRA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mendez.pdf,PT
+2,28,TAMAULIPAS,,,24,MIER,,,PRES_MUN,PT_PVEM_MORENA,1,ADRIANA HINOJOSA IBAÑEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PVEM
+2,28,TAMAULIPAS,,,24,MIER,,,SIND,PT_PVEM_MORENA,1,ABDON CANALES DIAZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PVEM
+2,28,TAMAULIPAS,,,24,MIER,,,REG_MR,PT_PVEM_MORENA,1,VANESSA YANET ROBLES MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PVEM
+2,28,TAMAULIPAS,,,24,MIER,,,REG_MR,PT_PVEM_MORENA,2,ROBERTO ADRIAN SANTOS RAMIREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PVEM
+2,28,TAMAULIPAS,,,24,MIER,,,REG_MR,PT_PVEM_MORENA,3,LAURA YUDITH GUERRA SANTOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,MORENA
+2,28,TAMAULIPAS,,,24,MIER,,,REG_MR,PT_PVEM_MORENA,4,DIANA HERNANDEZ DEL ANGEL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PT
+2,28,TAMAULIPAS,,,24,MIER,,,REG_RP,PAN_PRI,1,MARIA GUADALUPE AGUILAR DUARTE,2,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PAN
+2,28,TAMAULIPAS,,,24,MIER,,,REG_RP,PAN_PRI,2,CORANDO RODRIGUEZ JIMENEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Mier.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,PRES_MUN,PAN_PRI,1,RAMIRO CORTEZ BARRERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,SIND,PAN_PRI,1,ROSA ELIA RAMIREZ HINOJOSA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_MR,PAN_PRI,1,ARMANDO MELENDES SEGOVIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_MR,PAN_PRI,2,LAURA IVONE HERNANDEZ GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_MR,PAN_PRI,3,JESUS SANTOS DIAZ GONZALEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PRI
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_MR,PAN_PRI,4,KARLA CECILIA BENITEZ BAZAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,PAN
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_RP,PT_PVEM_MORENA,1,OSCAR LUIS SANDOVAL NIEVES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,MORENA
+2,28,TAMAULIPAS,,,25,MIGUEL ALEMAN,,,REG_RP,PT_PVEM_MORENA,1,ARIADNA VARGAS RAMIREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_MiguelAleman.PDF,MC
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,PRES_MUN,PAN_PRI,1,GLADIS MAGALIS VARGAS RANGEL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PAN
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,SIND,PAN_PRI,1,NICOLAS TOVAR BARRON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PAN
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_MR,PAN_PRI,1,LILIA ORTENCIA URVINA CORTES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PAN
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_MR,PAN_PRI,2,GREGORIO ALEJOS SEGURA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PAN
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_MR,PAN_PRI,3,MARIA GUADALUPE JARAMILLO BARRON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PRI
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_MR,PAN_PRI,4,JOSE LUIS SOTO SEGURA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PAN
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_RP,PT_PVEM_MORENA,1,MA. CRISTINA LUGO LUMBRERAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,PVEM
+2,28,TAMAULIPAS,,,26,MIQUIHUANA,,,REG_RP,PT_PVEM_MORENA,1,MARTHA ZULEMA LIGUEZ URBINA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Miquihuana.pdf,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,PRES_MUN,PT_PVEM_MORENA,1,CARMEN LILIA CANTUROSAS VILLARREAL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,SIND,PT_PVEM_MORENA,1,ROBERTO MALDONADO SILLER,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,SIND,PT_PVEM_MORENA,2,MARIA MIRNA RENDON SANTOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,1,SERGIO FERNANDO PEREZ VILLARREAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,2,SAMANTHA KHIABETT RODRIGUEZ CANTU,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,3,JUAN DE DIOS JUANES CARRIZALEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PVEM
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,4,IMAYRA IVETH INOCENCIO GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PT
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,5,GUADALUPE ZAPATA MUÑIZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,6,CRISTABELL ZAMORA CABRERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,7,ENRIQUE FIGUEROA ROCHA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,8,MELISSA LIZETTE RIESTRA MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,9,SANTOS FRANCISCO HERNANDEZ AGUILAR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,10,MACARENA CORAZON GONZALEZ NUÑEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,11,JOSE HEMIN PASCACIO RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,12,ALMA MARGARITA SANCHEZ LERMA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,13,GABRIEL ALBERTO SOLORZANO PEREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_MR,PT_PVEM_MORENA,14,LETICIA YAZMIN MENESES CAMINO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MORENA
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,1,FELIX FERNANDO GARCIA AGUIAR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PAN
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,1,LETICIA JUDITH BARRERA GARZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PRI
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,MC,1,OSCAR JOSE TREVIÑO CARMONA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,MC
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,2,DELIA CORTES BENAVIDES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PAN
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,3,EDGARDO PEDRAZA QUINTANILLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PAN
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,4,ALMA ROSA CASTAÑO RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PAN
+2,28,TAMAULIPAS,,,27,NUEVO LAREDO,,,REG_RP,PAN_PRI,6,GAMALIEL ALBERTO INFANTE RAMIREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoLaredo.PDF,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,PRES_MUN,PAN_PRI,1,YANETH CRISTAL NAJERA CEDILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,SIND,PAN_PRI,1,LUIS ARELLANO TORRES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_MR,PAN_PRI,1,PATRICIA RODRIGUEZ PARDO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_MR,PAN_PRI,2,LAUREANO MANDUJANO HERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_MR,PAN_PRI,3,MARICRUZ PARDO DIAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PRI
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_MR,PAN_PRI,4,FELIPE FIGUEROA RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PAN
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_RP,PT_PVEM_MORENA,1,MA. TERESA SAENZ GUEVARA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,MORENA
+2,28,TAMAULIPAS,,,28,NUEVO MORELOS,,,REG_RP,PT_PVEM_MORENA,3,ABDIEL VILLANUEVA PROCTOR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_NuevoMorelos.pdf,PVEM
+2,28,TAMAULIPAS,,,29,OCAMPO,,,PRES_MUN,PAN_PRI,1,MELCHOR BUDARTH BAEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PAN
+2,28,TAMAULIPAS,,,29,OCAMPO,,,SIND,PAN_PRI,1,ALMA DELIA ROSAS MALDONADO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PAN
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_MR,PAN_PRI,1,FABIAN MARQUEZ RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PAN
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_MR,PAN_PRI,2,YOLANDA GARCIA MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PAN
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_MR,PAN_PRI,3,ALEJANDRO BANDA DOMINGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PRI
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_MR,PAN_PRI,4,MARIA CRUZ LOPEZ GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,PAN
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_RP,PT_PVEM_MORENA,1,ESTRELLA ALEJANDRA BADILLO CAMACHO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,MORENA
+2,28,TAMAULIPAS,,,29,OCAMPO,,,REG_RP,MC,2,CARINA GUADALUPE ESTRADA HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Ocampo.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,PRES_MUN,MC,1,CARLOS ERNESTO QUINTANILLA SELVERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,SIND,MC,1,VERONICA MACARENA MORALES SALDIVAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_MR,MC,1,MIGUEL RAMIREZ HERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_MR,MC,2,MARISA GAMEZ MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_MR,MC,3,DAVID PEREZ VILLARREAL,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_MR,MC,4,AMAIRANI PEREZ CARBAJAL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MC
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_RP,PT_PVEM_MORENA,3,HOMAR ALEJANDRO ARRATIA BANDA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,MORENA
+2,28,TAMAULIPAS,,,30,PADILLA,,,REG_RP,PAN_PRI,2,IDALIA TURRUBIATES GALLEGOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Padilla.pdf,PAN
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,PRES_MUN,PT,1,SINDY PAOLETH MONITA RAMIREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,SIND,PT,1,ROSALIO CAMACHO CARDENAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_MR,PT,1,GISELLA DE LA ROSA BARRON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_MR,PT,2,OLVER MONITA GUTIERREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_MR,PT,3,ISABEL DEL ANGEL HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_MR,PT,4,CRISTOBAL CHARLES CASTILLO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PT
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_RP,PVEM,1,EDILBERTO PEREZ CORDOVA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PVEM
+2,28,TAMAULIPAS,,,31,PALMILLAS,,,REG_RP,PAN_PRI,1,LIDIA MARGARITA CERVANTES PERALES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Palmillas.pdf,PAN
+2,28,TAMAULIPAS,,,32,REYNOSA,,,PRES_MUN,PT_PVEM_MORENA,1,CARLOS VICTOR PEÑA ORTIZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,SIND,PT_PVEM_MORENA,1,ZITA DEL CARMEN GUADARRAMA ALEMAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,SIND,PT_PVEM_MORENA,2,HUGO FELIPE CHAVEZ HERRERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,1,ORALIA CANTU CANTU,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,2,EDUARDO LOPEZ ARIAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,3,HIDILBERTA VELAZQUEZ MENDOZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PVEM
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,4,JOSE IRAM RODRIGUEZ LIMON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PT
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,5,OLALLA YADIRA DELGADILLO CHAPA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,6,JORGE ALFREDO SANTA ANA CASTRO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,7,MARIA ANSELMA HERRERA RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,8,TEOFILO RUBIO MALDONADO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,9,SANDRA ELIZABETH GARZA FAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,10,HECTOR ALEJANDRO OLIVARES ZAVALA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,11,MAGDALENA BERENICE CAMPOS TELLEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,12,MARIO SORIA JR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,13,ELISHEVA SARAI GUADARRAMA HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_MR,PT_PVEM_MORENA,14,JOSE EMMANUEL CORONADO ZAMORA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MORENA
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,PAN_PRI,1,SOFIA GARCIA GOMEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PAN
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,MC,1,MARYCARMEN PALMA NAVARRO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MC
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,PAN_PRI,1,ARMANDO BENITO DE JESUS SAENZ BARELLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PRI
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,PAN_PRI,1,VIANEY AZENETH ESCOBEDO PRADO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PRD
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,PAN_PRI,1,JUAN JOAQUIN RAMIREZ MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PAN
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,MC,1,JORGE EDUARDO GOMEZ FLORES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,MC
+2,28,TAMAULIPAS,,,32,REYNOSA,,,REG_RP,PAN_PRI,2,JUANA ALICIA SANCHEZ JIMENEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Reynosa.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,PRES_MUN,PAN_PRI,1,MIGUEL ANGEL ALMARAZ MALDONADO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,SIND,PAN_PRI,1,MARIA DE JESUS MAR PADILLA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,SIND,PAN_PRI,2,JOEL RAMIREZ OVIEDO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,1,NORA IVETT GARZA SEGURA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,2,RAMIRO HERNANDEZ RAMOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,3,MARIA DEL SOCORRO VEGA AVILA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,4,BERNARDO GOMEZ GUAJARDO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,5,MARIA GUADALUPE SALAS TORRES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,6,JUAN MACHUCA VALENZUELA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PRI
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,7,COPITZI YESENIA HERNANDEZ GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PRI
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,8,CARLOS ALBERTO GUERRERO GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,9,DANIELA HERNANDEZ SALAZAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,10,JOSE ARTURO GARCIA VAZQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,11,MARIA TERESA CANO VAZQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_MR,PAN_PRI,12,JUAN LUIS GUERRERO ESPINOZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PAN
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,PT_PVEM_MORENA,1,NANCY MAGALY ROMO FAVELA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,MORENA
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,PT_PVEM_MORENA,1,LAURA ADRIANA LEYVA CZARES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PT
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,PT_PVEM_MORENA,1,ROBERTO REYNA DE LEON,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PVEM
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,PT_PVEM_MORENA,1,MARIA DEL ROSARIO VARGAS SANCHEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,PRD
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,MC,1,FRANCISCO RAFAEL TAPIA CERVANTES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,MC
+2,28,TAMAULIPAS,,,33,RIO BRAVO,,,REG_RP,PT_PVEM_MORENA,1,JOSE MARIA GARCIA BAEZ,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_RIoBravo.PDF,MORENA
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,PRES_MUN,PT_PVEM_MORENA,1,GAUDISELA RAMIREZ ZAVALA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,MORENA
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,SIND,PT_PVEM_MORENA,1,JULIO CESAR BECERRA VAZQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,MORENA
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_MR,PT_PVEM_MORENA,1,ALICIA SOTO SUSTAITA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,MORENA
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_MR,PT_PVEM_MORENA,2,RICARDO RIOS LEAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,MORENA
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_MR,PT_PVEM_MORENA,3,KARLA ALEXANDRA SAUCEDO DE LA SERNA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,PVEM
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_MR,PT_PVEM_MORENA,4,EDWIN MITCHEL SAUCEDO GUAJARDO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,PT
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_RP,PAN_PRI,3,ELIVORIO REYES BUTANDA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,PRD
+2,28,TAMAULIPAS,,,34,SAN CARLOS,,,REG_RP,PAN_PRI,1,FRANCISCA GARCIA MEDRANO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanCarlos.PDF,PAN
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,PRES_MUN,PT_PVEM_MORENA,1,VERONICA ADRIANA AGUIRRE DE LOS SANTOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,SIND,PT_PVEM_MORENA,1,ROLANDO CAVAZOS DE LA PORTILLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,SIND,PT_PVEM_MORENA,2,JUANA BRIONES DE LA ROSA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,1,MARTIN CARRION SANTOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,2,JUANA CASTILLO VILLAFRANCA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,3,ERICK ALEJANDRO CANTU OCHOA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,PT
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,4,CAROLINA MADAI SOSA CERDAN,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,PVEM
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,5,NEIL EDGARDO OCHOA BECERRA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,6,MARILU BERRONES CASTILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,7,ARMANDO MOZQUEDA PADILLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_MR,PT_PVEM_MORENA,8,ERNESTO GARZA TORRES,3,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MORENA
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_RP,PAN_PRI,1,EFRAIN GARZA RAMIREZ,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,PAN
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_RP,PAN_PRI,1,GRISELDA DAVILA BEAZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,PRI
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_RP,MC,3,JOSE LUIS AGUIRRE SILVA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,MC
+2,28,TAMAULIPAS,,,35,SAN FERNANDO,,,REG_RP,PAN_PRI,1,MARIA GUADALUPE AGUILAR PACHECO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanFernando.PDF,PAN
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,PRES_MUN,PAN_PRI,1,ANALY BECERRA RESENDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PRI
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,SIND,PAN_PRI,1,RAFAEL TERAN BENAVIDES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PAN
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,REG_MR,PAN_PRI,1,BLANCA MARIVEL IZAGUIRRE CEPEDA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PAN
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,REG_MR,PAN_PRI,2,ANGEL EDUARDO CASTELLANOS RESENDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PAN
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,REG_MR,PAN_PRI,3,MARIA AZUCENA RESENDEZ BARRON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PAN
+2,28,TAMAULIPAS,,,36,SAN NICOLAS,,,REG_MR,PAN_PRI,4,RIGOBERTO TORRES DEL CASTILLO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SanNicolas.PDF,PAN
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,PRES_MUN,PT_PVEM_MORENA,1,GLYNNIS GEORGINA JIMENEZ VAZQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PVEM
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,SIND,PT_PVEM_MORENA,1,ANTONIO DE JESUS HINOJOSA ARELLANO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PVEM
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_MR,PT_PVEM_MORENA,1,YANNELI CEPEDA CEPEDA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PVEM
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_MR,PT_PVEM_MORENA,2,ANTONIO GALVAN MATA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PVEM
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_MR,PT_PVEM_MORENA,3,PAOLA ANAIS VALDEZ LEYVA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,MORENA
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_MR,PT_PVEM_MORENA,4,EMILIANA GARZA CRIZANTO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PT
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_RP,CAN_IND5,1,GRACIANO PEREIDA PORTILLO,3,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,CAN_IND5
+2,28,TAMAULIPAS,,,37,SOTO LA MARINA,,,REG_RP,PAN_PRI,2,ESTEBAN RIVERA FLORES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_SotoLaMarina.PDF,PAN
+2,28,TAMAULIPAS,,,38,TAMPICO,,,PRES_MUN,PT_PVEM_MORENA,1,MONICA ZACIL VILLARREAL ANAYA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,SIND,PT_PVEM_MORENA,1,GUILLERMO CUADRA PARGA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,SIND,PT_PVEM_MORENA,2,LAURA ELENA RAMIREZ SANCHEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,1,CUITLAHUAC ORTEGA MALDONADO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,2,SUSANA CAROLINA PINEDA CHAVEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,3,MARTIN CASTELLANOS CASTELAN,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PT
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,4,MARIA ELENA HERRERA ORDORICA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PVEM
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,5,ROGELIO PEREZ LARA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,6,NOEMI MAGAÑA GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,7,JUAN MANUEL PIZAÑA MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,8,DORENA CABALLERO BONILLA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,9,VLADIMIR CASTELLANOS GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,10,AMELIA CONCEPCION TREJO HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,11,GREGORIO PEGO CRUZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,12,LORENA ORTIZ RAMIREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,13,SILVIA OLVERA SALDIVAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_MR,PT_PVEM_MORENA,14,DIANA KAREN SANCHEZ SALAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MORENA
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,1,MA. DEL CARMEN DIAZ BARRIOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,MC,1,EDGAR ALBERTO TREVIÑO MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,MC
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,2,MARTA ALICIA QUIROZ CORTEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PRI
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,1,ALEJANDRO SAULI MARTINEZ CRUZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,1,GUILLERMINA ARRIAGA MORENO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,3,EDMUNDO JOSE MARON MANZUR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,38,TAMPICO,,,REG_RP,PAN_PRI,4,TRINIDAD MAXIMOTO TORRES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,39,TULA,,,PRES_MUN,PT_PVEM_MORENA,1,RENE LARA CISNEROS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,SIND,PT_PVEM_MORENA,1,BELLANIRA ORTIZ TOSCANO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,SIND,PT_PVEM_MORENA,2,RIGOBERTO PUENTE LARA,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,REG_MR,PT_PVEM_MORENA,1,DORA MA. NIÑO HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,REG_MR,PT_PVEM_MORENA,2,RENE DE LEON WALLE,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,REG_MR,PT_PVEM_MORENA,3,ALFONSA CERVANTES MOLINA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,PVEM
+2,28,TAMAULIPAS,,,39,TULA,,,REG_MR,PT_PVEM_MORENA,4,ALFREDO CASTILLO CAMACHO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,PT
+2,28,TAMAULIPAS,,,39,TULA,,,REG_MR,PT_PVEM_MORENA,5,EDNA LISEY CANTERO BAEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,MORENA
+2,28,TAMAULIPAS,,,39,TULA,,,REG_RP,PAN_PRI,1,LILIANA ALVAREZ LARA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,PAN
+2,28,TAMAULIPAS,,,39,TULA,,,REG_RP,CAN_IND6,1,VIOLETA TORRES CRUZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,CAN_IND6
+2,28,TAMAULIPAS,,,39,TULA,,,REG_RP,CAN_IND7,1,DULCE GABRIELA ROSALES DIAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Tula.pdf,CAN_IND7
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,PRES_MUN,PAN_PRI,1,ALBERTO ENRIQUE ALANIS VILLARREAL,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,SIND,PAN_PRI,1,ROSA NELDA GARZA LEAL,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,SIND,PAN_PRI,2,JAIME GUERRERO ELIZARRARAS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,1,ALMA LUCIA GARCIA VELOZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,2,HECTOR MANUEL GALVAN GARCIA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,3,GRACIELA TORRES GUTIERREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,4,CARLOS ALFONSO TREVIÑO DUEÑES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,5,MARIA MAGDALENA ESTRADA PEREZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,6,ADELA MANRIQUE BALDERAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PRI
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,7,GRISELDA LORENA CONTRERAS SANTILLANA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_MR,PAN_PRI,8,PERLA LOPEZ MAGAÑA,2,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PAN
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_RP,PT_PVEM_MORENA,1,JESUS ERNESTO REYES GARZA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,MORENA
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_RP,PT_PVEM_MORENA,1,ANA GRACIELA PESINA HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PVEM
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_RP,PT_PVEM_MORENA,3,GABRIELA JASSO AVILA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,PT
+2,28,TAMAULIPAS,,,40,VALLE HERMOSO,,,REG_RP,MC,1,ROGELIO VILLEGAS NUÑEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_ValleHermoso.PDF,MC
+2,28,TAMAULIPAS,,,41,VICTORIA,,,PRES_MUN,MORENA,1,EDUARDO ABRAHAM GATTAS BAEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,SIND,MORENA,1,LILI GARCIA FUENTES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,SIND,MORENA,2,ERNESTO AVALOS BUSTOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,1,GUADALUPE PEREA ALMANZA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,2,OSCAR ALBERTO NARVAEZ RAMOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,3,ROSA BELIA RUIZ MARTINEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,4,MARIO ALBERTO CHAVEZ HERRERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,5,ADRIANA BEJAR FLORES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,6,JOSE MANUEL HINOJOSA HACES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,7,ALEXIA XUNAXI GAMUNDI VILLARREAL,2,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,8,RUY MATIAS CANALES SALAZAR,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,9,MA DE LA LUZ MARTINEZ COVARRUBIAS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,10,HUMBERTO MARIN ESTRADA MEDINA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,11,NORA CYNTHIA BARRIOS CONSTANTE,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,12,ENRIQUE ALEJANDRO SILVA HERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,13,JOSEFA EDITH MATA GRACIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_MR,MORENA,14,KENIA LIZBETH ZAPATA MEDINA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MORENA
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,PAN_PRI,1,MAYRA ELIZABETH SANCHEZ PACHECO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,PAN
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,MC,1,MELISSA JAYTZEL MIRELES ESCOBEDO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MC
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,PAN_PRI,1,JOSE MERCEDES BENITES RODRIGUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,PRI
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,PAN_PRI,1,ALFREDO VANZZINI AGUIÑAGA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,PAN
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,PAN_PRI,1,CARMEN MAGDALENA SERNA MERCADO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,PAN
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,MC,2,DANIEL ALEXANDRO PEREZ VAZQUEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,MC
+2,28,TAMAULIPAS,,,41,VICTORIA,,,REG_RP,PAN_PRI,2,NORA MARIANELA GARCIA RODRIGUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Victoria.PDF,PRI
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,PRES_MUN,PT_PVEM_MORENA,1,MARIA ISABEL RIOS TOVAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,MORENA
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,SIND,PT_PVEM_MORENA,1,JESUS RAFAEL GUERRERO ESTRELLA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,MORENA
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_MR,PT_PVEM_MORENA,1,ELSA GUADALUPE VILLARREAL HERNANDEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,MORENA
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_MR,PT_PVEM_MORENA,2,CARLOS JAVIER PINEDA ACOSTA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,MORENA
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_MR,PT_PVEM_MORENA,3,REBECA MARTINEZ MARQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,PT
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_MR,PT_PVEM_MORENA,4,GUILLERMO SANCHEZ GONZALEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,PVEM
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_RP,PAN_PRI,1,STYBALYS SARAHI ROJAS GALINDO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,PAN
+2,28,TAMAULIPAS,,,42,VILLAGRAN,,,REG_RP,PAN_PRI,3,JOSE ALAN TREVIÑO GAMEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Villagran.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,PRES_MUN,PAN_PRI,1,MARIELA LOPEZ SOSA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,SIND,PAN_PRI,1,EFREN HERNANDEZ COBOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_MR,PAN_PRI,1,MARIA DE JESUS HERNANDEZ CABRERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_MR,PAN_PRI,2,ANHUAR CASTILLO MUÑOZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_MR,PAN_PRI,3,YAZMIN GUADALUPE GONZALEZ GARCIA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PRI
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_MR,PAN_PRI,4,ROBERTO SCOTT BRAVO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PAN
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_RP,PT_PVEM_MORENA,1,ROSA MARIA PEÑA BAÑUELOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,MORENA
+2,28,TAMAULIPAS,,,43,XICOTENCATL,,,REG_RP,PT_PVEM_MORENA,1,JUANA GUADALUPE ZUÑIGA TOVAR,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_Xicotencatl.PDF,PVEM
+2,28,TAMAULIPAS,1,NUEVO LAREDO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,GABRIELA REGALADO FUENTES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD01_Nuevo Laredo.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,2,NUEVO LAREDO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ANA LAURA HUERTA VALDOVINOS,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD02_Nuevo Laredo.pdf,PT_PVEM_MORENA
+2,28,TAMAULIPAS,3,NUEVO LAREDO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,SERGIO ARTURO OJEDA CASTILLO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD03_Nuevo Laredo.pdf,PT_PVEM_MORENA
+2,28,TAMAULIPAS,4,REYNOSA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,MARCO ANTONIO GALLEGOS GALVAN,1,Candidaturas de discapacidad,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD04_Reynosa.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,5,REYNOSA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,GUILLERMINA MAGALY DEANDAR ROBINSON,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD05_Reynosa.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,6,REYNOSA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,EVA ARACELI REYES GONZALEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD06_Reynosa.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,7,REYNOSA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,HUMBERTO ARMANDO PRIETO HERRERA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD07_Reynosa.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,8,RIO BRAVO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,FRANCISCA CASTRO ARMENTA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD08_Riobravo.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,9,VALLE HERMOSO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ELIPHALETH GOMEZ LOZANO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD09_ValleHermoso.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,10,MATAMOROS,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,VICTOR MANUEL GARCIA FUENTES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD10_HMatamoros.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,11,MATAMOROS,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ELVIA EGUIA CASTILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD11_HMatamoros.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,12,MATAMOROS,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ISIDRO JESUS VARGAS FERNANDEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD12_HMatamoros.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,13,SAN FERNANDO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,SILVIA ISABEL CHAVEZ GARAY,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD13_SanFernando.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,14,VICTORIA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,BLANCA AURELIA ANZALDUA NAJERA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD14_CiudadVictoria.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,15,VICTORIA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,JUDITH KATALYNA MENDEZ CEPEDA,2,Candidaturas de personas jóvenes,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD15_CiudadVictoria.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,16,XICOTENCATL,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,FRANCISCO HERNANDEZ NIÑO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD16_Xicotencatl.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,17,EL MANTE,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ALBERTO MOCTEZUMA CASTILLO,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD17_CiudadMante.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,18,ALTAMIRA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,MARCELO ABUNDIZ RAMIREZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD18_Altamira.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,19,MIRAMAR,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,CYNTHIA LIZABETH JAIME CASTILLO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD19_Miramar.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,20,CIUDAD MADERO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,CLAUDIO ALBERTO DE LEIJA HINOJOSA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD20_CiudadMadero.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,21,TAMPICO,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,URSULA PATRICIA SALAZAR MOJICA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD21_Tampico.PDF,PT_PVEM_MORENA
+2,28,TAMAULIPAS,22,TAMPICO,,,,,DIP_LOC_MR,PAN,1,JOSE ABDO SCHEKAIBAN ONGAY,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsMay_CD22_Tampico.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,1,MA DEL ROSARIO GONZALEZ FLORES,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP01.pdf,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,2,ISMAEL GARCIA CABEZA DE VACA,1,Candidaturas migrantes,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP02.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,3,MARINA EDITH RAMIREZ ANDRADE,2,Candidaturas migrantes,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP03.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,4,VICENTE JAVIER VERASTEGUI OSTOS,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP04.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,5,PATRICIA MIREYA SALDIVAR CANO,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP05.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PAN,6,GERARDO PEÑA FLORES,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP06.PDF,PAN
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,PRI,1,MERCEDES DEL CARMEN GUILLEN VICENTE,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP07.PDF,PRI
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MC,1,MAYRA BENAVIDES VILLAFRANCA,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP08.PDF,MC
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MC,2,JUAN CARLOS ZERTUCHE,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP09.PD,MC
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MORENA,1,ARMANDO JAVIER ZERTUCHE ZUANI,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP10.PDF,MORENA
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MORENA,2,YURIRIA ITURBE VAZQUEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP11.PDF,MORENA
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MORENA,3,ALBERTO LARA BAZALDUA,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP12.PDF,MORENA
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MORENA,4,LUCERO DEOSDADY MARTINEZ LOPEZ,2,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP13.PDF,MORENA
+2,28,TAMAULIPAS,,,,,,,DIP_LOC_RP,MORENA,5,FRANCISCO ADRIAN CRUZ MARTINEZ,1,,https://www.ietam.org.mx/Portal/documentos/PE2024/Resultados/Constancias/ConsRP_DIP14.PDF,MORENA

@@ -1,0 +1,319 @@
+CIRCUNSCRIPCION,ID_ESTADO,NOMBRE_ESTADO,ID_DISTRITO_LOCAL,CABECERA_DISTRITAL_LOCAL,ID_MUNICIPIO,MUNICIPIO,ID_DEMARCACION_LOCAL,DEMARCACION_LOCAL,TIPO_DE_CANDIDATURA,NOMBRE_ACTOR_POLITICO,NUMERO_LISTA,PERSONA_CANDIDATA,IDENTIDAD_SEXO_GENERICA,ACCION_AFIRMATIVA,RUTA_CONSTANCIA,PARTIDO_POLITICO
+3,4,CAMPECHE,1,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,PAUL ALFREDO ARCE ONTIVEROS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D01_DIP.pdf,MC
+3,4,CAMPECHE,2,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,IGNACIO JOSE MUNOZ HERNANDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D02_DIP.pdf,MC
+3,4,CAMPECHE,3,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,HIPSI MARISOL ESTRELLA GUILLERMO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D03_DIP.pdf,MC
+3,4,CAMPECHE,4,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,ALDO ROMAN CONTRERAS UC,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D04_DIP.pdf,MC
+3,4,CAMPECHE,5,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,MONICA FERNANDEZ MONTUFAR,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D05_DIP.pdf,MC
+3,4,CAMPECHE,6,SAN FRANCISCO DE CAMPECHE,,,,,DIP_LOC_MR,MC,1,DIANA LUISA AGUILAR RUELAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D06_DIP.pdf,MC
+3,4,CAMPECHE,7,TENABO ,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,OMAR ALBERTO TALANGO CERVANTES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D07_DIP.pdf,MORENA
+3,4,CAMPECHE,8,CIUDAD DEL CARMEN ,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,FRANCISCA ZARATE LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D08_DIP.pdf,MORENA
+3,4,CAMPECHE,9,CIUDAD DEL CARMEN ,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,JORGE PEREZ FALCONI,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D09_DIP.pdf,MORENA
+3,4,CAMPECHE,10,CIUDAD DEL CARMEN ,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,DALILA DEL CARMEN MATA PEREZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D10_DIP.pdf,MORENA
+3,4,CAMPECHE,11,CIUDAD DEL CARMEN ,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ISMAEL LOPEZ GARCES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D11_DIP.pdf,MORENA
+3,4,CAMPECHE,12,SABANCUY,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,GLADYS SOFIA RIVERA LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D12_DIP.pdf,MORENA
+3,4,CAMPECHE,13,ESCARCEGA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ABIGAIL GUTIERREZ MORALES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D13_DIP.pdf,PT
+3,4,CAMPECHE,14,CANDELARIA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ENA AMERICA GARCIA GARCIA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D14_DIP.pdf,MORENA
+3,4,CAMPECHE,15,CHAMPOTON,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,BALBINA ALEJANDRA HIDALGO ZAVALA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D15_DIP.pdf,MORENA
+3,4,CAMPECHE,16,SEYBAPLAYA,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,ELIAS NOE BAEZA AKE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D16_DIP.pdf,MORENA
+3,4,CAMPECHE,17,CALKINI,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,MAYDA ARACELY MAS TUN,2,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D17_DIP.pdf,MORENA
+3,4,CAMPECHE,18,HOPELCHEN,,,,,DIP_LOC_MR,PRI_PRD,1,MIGUEL ANGEL POOL ALPUCHE,1,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D18_DIP.pdf,PRI
+3,4,CAMPECHE,19,HECELCHAKAN,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,GASPAR DE JESUS NAH MISS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D19_DIP.pdf,MORENA
+3,4,CAMPECHE,20,PALIZADA,,,,,DIP_LOC_MR,MORENA,1,DAHER ANTONIO PUCH RIVERA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D20_DIP.pdf,MORENA
+3,4,CAMPECHE,21,CALAKMUL,,,,,DIP_LOC_MR,PT_PVEM_MORENA,1,MARIA DEL CARMEN AVALOS TRUJILLO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_D21_DIP.pdf,PVEM
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PAN,1,JHOSUE JESUS RODRIGUEZ GOLIB,1,,,PAN
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PAN,2,MARIA DEL ROSARIO CRUZ HERNANDEZ,2,,,PAN
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PRI,3,DELMA DEL CARMEN RABELO CUEVAS,2,,,PRI
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PRI,4,JORGE SALIM ABRAHAM QUIJANO,1,,,PRI
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PT,5,ANA MARIA LOPEZ HERNANDEZ,2,,,PT
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,PVEM,6,ANDRES FERNANDEZ DEL VALLE LAISEQUILLA,1,,,PVEM
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MC,7,PEDRO ARMENTIA LOPEZ,1,,,MC
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MC,8,TANIA DOMINGUEZ FERNANDEZ,2,,,MC
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MC,9,PEDRO HERNANDEZ MACDONALD,1,,,MC
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MC,10,TANIA GONZALEZ PEREZ,2,,,MC
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MORENA,11,MARICELA FLORES MOO,2,Candidaturas indigenas,,MORENA
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MORENA,12,JOSE ANTONIO JIMENEZ GUTIERREZ,1,,,MORENA
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MORENA,13,VERONICA MARGARITA ROCA MENDEZ,2,,,MORENA
+3,4,CAMPECHE,,,,,,,DIP_LOC_RP,MORENA,14,CARLOS ENRIQUE UCAN YAM,1,,,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,,,PRES_MUN,MC,1,BIBY KAREN RABELO DE LA TORRE,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,1,VICENTE EXIQUIO CRUZ RAMIREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,2,VERONICA VILLEGAS SAUCEDO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,3,JOSE MANUEL CAMBRANIS CABALLERO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,4,CLAUDIA PATRICIA LAVALLE RUBIO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,5,LUIS ANGEL MAY TUN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,6,ROSARIO DE LA CRUZ ROSADO RODRIGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_MR,MC,7,RAFAEL FELIPE LEZAMA MINAYA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,SIND_MR,MC,1,YESMY YARET DEL PILAR CASTILLO COUOH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,SIND_MR,MC,2,ERICKA YUVISA CANCHE RODRIGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCAMPECHE.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,PRES_MUN,MC,1,MILTON ULISES MILLAN ATOCHE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,REG_MR,MC,1,KARLA MARLENE AVILES REYES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,REG_MR,MC,2,JUAN JOSE LOPEZ PEREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,REG_MR,MC,3,MARIA GILDA DOLORES TUN CUY,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,REG_MR,MC,4,JESUS SANTIAGO SOSA MAGANA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,REG_MR,MC,5,ANDREA GUADALUPE PALOMO CUEVAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,,,SIND_MR,MC,1,JUAN DE DIOS CAAMAL MOO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALKINI.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,,,PRES_MUN,PT_PVEM_MORENA,1,PABLO GUTIERREZ LAZARUS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,1,MARTHA PATRICIA DIAZ MONTES DE OCA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,2,JOSE SALVADOR GOMEZ HERNANDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,3,MARIA GUADALUPE HERNANDEZ GUTIERREZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,4,ISAAC ELIHU DIAZ BRICENO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,PT
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,5,MONICA GUADALUPE MUGARTEGUI GARCIA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,PVEM
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,6,ZACARIAS DAGER RODRIGUEZ RIOS,1,Candidaturas de la diversidad sexual,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,REG_MR,PT_PVEM_MORENA,7,NANCY DEL CARMEN ALEJANDRO DOMINGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,SIND_MR,PT_PVEM_MORENA,1,MARCIA JANNETT HERNANDEZ TORAL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,,,SIND_MR,PT_PVEM_MORENA,2,JULIO MANUEL SANCHEZ SOLIS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCARMEN.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,,,PRES_MUN,PT_PVEM_MORENA,1,CLAUDETH SARRICOLEA CASTILLEJO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_MR,PT_PVEM_MORENA,1,CARMEN RAMON ROSADO JIMENEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_MR,PT_PVEM_MORENA,2,CLAUDIA ARACELY DZIB DIAZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_MR,PT_PVEM_MORENA,3,JUAN RAMON PEREZ ESCAMILLA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_MR,PT_PVEM_MORENA,4,TILA DEL SOCORRO FUENTES SALVATIERRA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,PT
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_MR,PT_PVEM_MORENA,5,JOSE LUIS ARANDA GARCIA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,PVEM
+3,4,CAMPECHE,,,4,CHAMPOTON,,,SIND_MR,PT_PVEM_MORENA,1,YAMILET ROJAS CORONA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCHAMPOTON.pdf,MORENA
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,PRES_MUN,MC,1,JOSE CEVASTIAN YAM POOT,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_MR,MC,1,YAREMY ARAINY CHI COLLI,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_MR,MC,2,ROBERTO ALFONSO POOT DE LA ROSA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_MR,MC,3,TERESITA DE JESUS TAX CHAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_MR,MC,4,WILBER JAVIER CANCHE UC,1,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_MR,MC,5,MARIA GUADALUPE CETZ TORRES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,SIND_MR,MC,1,MICHEL GILBERTO COOX MAAS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHECELCHAKAN.pdf,MC
+3,4,CAMPECHE,,,6,HOPELCHEN,,,PRES_MUN,PRI_PRD,1,HIRAM ARANDA CALDERON,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_MR,PRI_PRD,1,MARIA JOSE TORAYA CANUL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_MR,PRI_PRD,2,ROMAN DE JESUS CANTO MORENO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_MR,PRI_PRD,3,SOFIA HERNANDEZ COLLI,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_MR,PRI_PRD,4,LIZANDRO PECH ACOSTA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_MR,PRI_PRD,5,RAMONA ANTONIA CHAB CAAMAL,2,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,,,SIND_MR,PRI_PRD,1,ERIC JASIER UC MOO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuHOPELCHEN.pdf,PRI
+3,4,CAMPECHE,,,7,PALIZADA,,,PRES_MUN,PT,1,PEDRO JAVIER AYALA CAMARA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_MR,PT,1,MARIA DEL ROSARIO REYES LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_MR,PT,2,JOSE JUAN GUZMAN ROSADO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_MR,PT,3,ROSARIO DEL CARMEN UC HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_MR,PT,4,ANTONIO MARTINEZ HERNANDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_MR,PT,5,DELFILIA GOMEZ LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,7,PALIZADA,,,SIND_MR,PT,1,CANDELARIO CRUZ PERALTA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuPALIZADA.pdf,PT
+3,4,CAMPECHE,,,8,TENABO,,,PRES_MUN,PT_PVEM_MORENA,1,MARIELA SANCHEZ ESPINOZA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,PVEM
+3,4,CAMPECHE,,,8,TENABO,,,REG_MR,PT_PVEM_MORENA,1,JOSE PABLO UC VILLANUEVA,1,Candidaturas de discapacidad,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,,,REG_MR,PT_PVEM_MORENA,2,DALIA EVELINA POOL CIME,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,,,REG_MR,PT_PVEM_MORENA,3,JOSE ENRIQUE MARTINEZ UICAB,1,Candidaturas de personas jovenes,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,,,REG_MR,PT_PVEM_MORENA,4,MARTHA DEL SOCORRO LOPEZ CHABLE,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,PT
+3,4,CAMPECHE,,,8,TENABO,,,REG_MR,PT_PVEM_MORENA,5,LUIS FERNANDO PECH BAAS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,PVEM
+3,4,CAMPECHE,,,8,TENABO,,,SIND_MR,PT_PVEM_MORENA,1,MIRNA DEL CARMEN EK KUK,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuTENABO.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,PRES_MUN,PT_PVEM_MORENA,1,JUAN CARLOS HERNANDEZ RATH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_MR,PT_PVEM_MORENA,1,MELIDA COJ PADILLA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_MR,PT_PVEM_MORENA,2,MANUEL ALEJANDRO MEDERO MALACON,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_MR,PT_PVEM_MORENA,3,TELVINA PEDRAZA HERNANDEZ,2,Candidaturas de la diversidad sexual,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_MR,PT_PVEM_MORENA,4,RAMON LEONARDO DIMAS GOMEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,PT
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_MR,PT_PVEM_MORENA,5,MATILDE ENRIQUETA SARMIENTO MALDONADO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,PVEM
+3,4,CAMPECHE,,,9,ESCARCEGA,,,SIND_MR,PT_PVEM_MORENA,1,OSWALDO DEL CARMEN GONZALEZ PEREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuESCARCEGA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,,,PRES_MUN,PT_PVEM_MORENA,1,JAIME MUNOZ MORFIN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_MR,PT_PVEM_MORENA,1,MARTHA PATRICIA HIDALGO JIMENEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_MR,PT_PVEM_MORENA,2,CRISPIN ANTONIO DEL ANGEL CORONEL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_MR,PT_PVEM_MORENA,3,PRUDENCIA ARCOS VAZQUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_MR,PT_PVEM_MORENA,4,MATEO SANCHEZ ALVARO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,PT
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_MR,PT_PVEM_MORENA,5,TERESA FARIAS GONZALEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,PVEM
+3,4,CAMPECHE,,,10,CANDELARIA,,,SIND_MR,PT_PVEM_MORENA,1,JESUS MANUEL MORALES LOPEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCANDELARIA.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,,,PRES_MUN,PT_PVEM_MORENA,1,GUADALUPE ACEVEDO RODRIGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,PT
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_MR,PT_PVEM_MORENA,1,MACARIO DURAN PEREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_MR,PT_PVEM_MORENA,2,CAROLINA COBOS GONZALEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_MR,PT_PVEM_MORENA,3,SAMUEL VASQUEZ RAMIREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_MR,PT_PVEM_MORENA,4,SANDY GUTIERREZ BAUTISTA,2,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,PT
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_MR,PT_PVEM_MORENA,5,RAUL MONTEJO VASQUEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,PVEM
+3,4,CAMPECHE,,,11,CALAKMUL,,,SIND_MR,PT_PVEM_MORENA,1,SANDRA YUSELMY MARTINEZ LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuCALAKMUL.pdf,MORENA
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,PRES_MUN,PT_PVEM_MORENA,1,MAGDALENA DEL SOCORRO JIMENEZ PACHECO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,PT
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_MR,PT_PVEM_MORENA,1,EMIGDIO DZIB PAVON,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,MORENA
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_MR,PT_PVEM_MORENA,2,MANUELA CHAN DOMINGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,MORENA
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_MR,PT_PVEM_MORENA,3,FRANCISCO ENRIQUE KUC VILLARINO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,MORENA
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_MR,PT_PVEM_MORENA,4,GUADALUPE DE LOS ANGELES CARVAJAL PACHECO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,PT
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_MR,PT_PVEM_MORENA,5,YMARAL JOSE ALVAREZ QUINTAL,1,Candidaturas de personas jovenes,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,PVEM
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,SIND_MR,PT_PVEM_MORENA,1,ESMERALDA NOHEMI HUCHIN CRUZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuSEYBAPLAYA.pdf,MORENA
+3,4,CAMPECHE,,,12,DZITBALCHE,,,PRES_MUN,MC,1,LUIS ANTONIO CHAN PUC,1,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_MR,MC,1,OLGA MARIA CHUC TUN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_MR,MC,2,CARLOS ARMANDO COOL ORTIZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_MR,MC,3,MARIA ISABEL AKE COOL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_MR,MC,4,OSCAR HAZAEL CANUL TUN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_MR,MC,5,MELANIA AKE POOT,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,12,DZITBALCHE,,,SIND_MR,MC,1,CRISTINA SINAI MARTINEZ SOSA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_AyuDZITBALCHE.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_RP,PRI,1,RICARDO MIGUEL MEDINA FARFAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCAMPECHE.pdf,PRI
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_RP,MORENA,2,HILDA ISABEL GOMEZ CAUICH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCAMPECHE.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_RP,MORENA,3,FERNANDO MIGUEL MOGUEL COYOC,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCAMPECHE.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,,,REG_RP,MORENA,4,BLANCA NEFERTARI HEREDIA COSGAYA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCAMPECHE.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,,,SIND_RP,PAN,1,RAFAEL ALBERTO ROSADO OMMUNDSEN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCAMPECHE.pdf,PAN
+3,4,CAMPECHE,,,2,CALKINI,,,REG_RP,MORENA,1,JOSE FERNANDO EUAN UCAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALKINI.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,,,REG_RP,MORENA,2,LOURDES DEL SOCORRO KUMUL MENDOZA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALKINI.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,,,REG_RP,MORENA,3,ISAIAS ESTRELLA LLANES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALKINI.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,,,SIND_RP,PRI,1,SILVIA MARIA AVILES RIVERA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALKINI.pdf,PRI
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_RP,PRI,1,SILVIA SERRANO MORA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALAKMUL.pdf,PRI
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_RP,CL,2,PASCUAL ALVARO MENDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALAKMUL.pdf,CL
+3,4,CAMPECHE,,,11,CALAKMUL,,,REG_RP,CL,3,MANUELA GUTIERREZ LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALAKMUL.pdf,CL
+3,4,CAMPECHE,,,11,CALAKMUL,,,SIND_RP,MC,4,MIGUEL ENRIQUE HERNANDEZ MAYO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCALAKMUL.pdf,MC
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_RP,PAN,1,VICTOR VELASCO VIVEROS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCANDELARIA.pdf,PAN
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_RP,MC,1,RIGOBERTO FIGUEROA ORTIZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCANDELARIA.pdf,MC
+3,4,CAMPECHE,,,10,CANDELARIA,,,REG_RP,MC,2,YOLANDA VALLES PECH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCANDELARIA.pdf,MC
+3,4,CAMPECHE,,,10,CANDELARIA,,,SIND_RP,PAN,3,NICOLASA DEL CARMEN JIMENEZ CHAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCANDELARIA.pdf,PAN
+3,4,CAMPECHE,,,3,CARMEN,,,REG_RP,MC,1,MARIO HERNANDEZ MAY,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCARMEN.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,,,REG_RP,MC,1,NAVIL GUADALUPE CENTELLA PORTAL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCARMEN.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,,,REG_RP,MC,2,GUSTAVO FERRER KURI,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCARMEN.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,,,REG_RP,MC,3,GUADALUPE DEL CARMEN LOPEZ HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCARMEN.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,,,SIND_RP,MC,1,MARLON EFRAIN PEREZ BENITEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCARMEN.pdf,MC
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_RP,PAN,1,WENDY ELIZABETH DEL VALLE JIMENEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCHAMPOTON.pdf,PAN
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_RP,MC,2,MARIBEL VALDEZ VARGAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCHAMPOTON.pdf,MC
+3,4,CAMPECHE,,,4,CHAMPOTON,,,REG_RP,MC,3,FRANCISCO MEDINA AMPARAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCHAMPOTON.pdf,MC
+3,4,CAMPECHE,,,4,CHAMPOTON,,,SIND_RP,PRI,1,GINI MARGELI GONGORA SOSA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuCHAMPOTON.pdf,PRI
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_RP,PRI,1,MIRIAM AMAYA HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuDZITBALCHE.pdf,PRI
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_RP,PRI,2,ROGELIO UCAN PECH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuDZITBALCHE.pdf,PRI
+3,4,CAMPECHE,,,12,DZITBALCHE,,,REG_RP,MORENA,3,ANA ROSA ALBINA KU MAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuDZITBALCHE.pdf,MORENA
+3,4,CAMPECHE,,,12,DZITBALCHE,,,SIND_RP,MORENA,1,ROBERTO HIRAM HERRERA DZIB,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuDZITBALCHE.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_RP,MC,1,LOURDES THAILY SALA GOMEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuESCARCEGA.pdf,MC
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_RP,MC,2,NOEL VALENCIA VALLADARES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuESCARCEGA.pdf,MC
+3,4,CAMPECHE,,,9,ESCARCEGA,,,REG_RP,CL,3,MARINA ESPERANZA UC YAH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuESCARCEGA.pdf,CL
+3,4,CAMPECHE,,,9,ESCARCEGA,,,SIND_RP,PRI,1,YURINA HUCHIN CARRILLO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuESCARCEGA.pdf,PRI
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_RP,MORENA,1,ROSARIO ADRIANA SIMA CITALAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHECELCHAKAN.pdf,MORENA
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_RP,MORENA,2,JOEL ANDRES CHUC AVILA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHECELCHAKAN.pdf,MORENA
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,REG_RP,MORENA,3,PAULA ILIANA ORTIZ PECH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHECELCHAKAN.pdf,MORENA
+3,4,CAMPECHE,,,5,HECELCHAKAN,,,SIND_RP,MORENA,1,VICTOR MANUEL AKE COUOH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHECELCHAKAN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_RP,MORENA,1,SAMUEL CERVERA CAMPOS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHOPELCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_RP,MORENA,2,SARA EMILIA BAEZA CAMPOS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHOPELCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,,,REG_RP,MORENA,3,HEBERT RAFAEL INFANTE YE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHOPELCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,,,SIND_RP,MC,1,PAULINA SOLIS BIRRUETA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuHOPELCHEN.pdf,MC
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_RP,PAN,1,FRANCISCO ALEX GUZMAN PERALTA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuPALIZADA.pdf,PAN
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_RP,PRI,2,JOSE MARTINEZ DIAZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuPALIZADA.pdf,PRI
+3,4,CAMPECHE,,,7,PALIZADA,,,REG_RP,PAN,3,ADRIANA DEL CARMEN CLEMENTE HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuPALIZADA.pdf,PAN
+3,4,CAMPECHE,,,7,PALIZADA,,,SIND_RP,MORENA,1,KARINA AURORA DEL JESUS DIAZ HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuPALIZADA.pdf,MORENA
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_RP,PRI,1,GABRIELA VELAZQUEZ RODRIGUEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuSEYBAPLAYA.pdf,PRI
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_RP,PRI,2,ROMAN REBOLLEDO MARTINEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuSEYBAPLAYA.pdf,PRI
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,REG_RP,PRI,3,MARIA GUADALUPE UC CAAMAL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuSEYBAPLAYA.pdf,PRI
+3,4,CAMPECHE,,,13,SEYBAPLAYA,,,SIND_RP,PRI,1,YAIR OTHONIEL MUT REBOLLEDO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuSEYBAPLAYA.pdf,PRI
+3,4,CAMPECHE,,,8,TENABO,,,REG_RP,PAN,1,SINTIA VANESA UC TUZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuTENABO.pdf,PAN
+3,4,CAMPECHE,,,8,TENABO,,,REG_RP,PRI,2,JAIRO ROMAN CHAN MENA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuTENABO.pdf,PRI
+3,4,CAMPECHE,,,8,TENABO,,,REG_RP,PRI,3,MARTHA DEL SOCORRO GARCIA MUNOZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuTENABO.pdf,PRI
+3,4,CAMPECHE,,,8,TENABO,,,SIND_RP,MC,1,MARIA GUADALUPE CHABLE CAB,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_AyuTENABO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,PRES_JUN,PT_PVEM_MORENA,1,JOSE MANUEL PEDRAZA PECH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPICH.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,REG_JUN_MR,PT_PVEM_MORENA,1,GLADYS ROSMERY GARCIA GARCIA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPICH.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,REG_JUN_MR,PT_PVEM_MORENA,2,RUBEN GONZALEZ GUEVARA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPICH.pdf,PT
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,REG_JUN_MR,PT_PVEM_MORENA,3,JACQUELINE YURITH CHI CAHUICH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPICH.pdf,PVEM
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,SIND_JUN_MR,PT_PVEM_MORENA,1,JUAQUIN ALBERTO DE LA CRUZ YEH BRITO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPICH.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,PRES_JUN,PT_PVEM_MORENA,1,LINI FLORENCIA NOH CU,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTIXMUCUY.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,REG_JUN_MR,PT_PVEM_MORENA,1,FERNANDO UICAB ALPUCHE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTIXMUCUY.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,REG_JUN_MR,PT_PVEM_MORENA,2,VERONICA ARACELY REYES SANDOVAL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTIXMUCUY.pdf,PVEM
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,REG_JUN_MR,PT_PVEM_MORENA,3,BLANCA DE LA CRUZ ZAMORA PECH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTIXMUCUY.pdf,PT
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,SIND_JUN_MR,PT_PVEM_MORENA,1,NOEMI ALEJANDRA KU CANTUN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTIXMUCUY.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,PRES_JUN,MC,1,LUIS ARMANDO GARCIA SALAZAR,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunALFREDO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,REG_JUN_MR,MC,1,BRENDA ARACELY PEREZ GONZALEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunALFREDO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,REG_JUN_MR,MC,2,JOSE DE LOS ANGELES SALAZAR HUCHIN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunALFREDO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,REG_JUN_MR,MC,3,ROSA MARIA BENAVIDES MARTINEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunALFREDO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,SIND_JUN_MR,MC,1,FERNANDO MUNOZ LEDEZMA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunALFREDO.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,PRES_JUN,PT_PVEM_MORENA,1,MARCELINO CHAN PAREDES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHAMPOLOL.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,REG_JUN_MR,PT_PVEM_MORENA,1,SULEYMA DE JESUS COLLI CHUC,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHAMPOLOL.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,REG_JUN_MR,PT_PVEM_MORENA,2,MARIO MAGDALENO MAY PANTI,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHAMPOLOL.pdf,PT
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,REG_JUN_MR,PT_PVEM_MORENA,3,MARIA LIBRADA QUEN FLORES,2,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHAMPOLOL.pdf,PVEM
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,SIND_JUN_MR,PT_PVEM_MORENA,1,CARLOS MANUEL BAH AKE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHAMPOLOL.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,PRES_JUN,PT_PVEM_MORENA,1,LEIDY RUBY CAUICH AQUINO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBECAL.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,REG_JUN_MR,PT_PVEM_MORENA,1,MARTIN ANTONIO AGUILAR FERRAEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBECAL.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,REG_JUN_MR,PT_PVEM_MORENA,2,NUBIA ENEDINA CHI MARTINEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBECAL.pdf,PT
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,REG_JUN_MR,PT_PVEM_MORENA,3,ROMAN DE LOS ANGELES CENTENO KU,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBECAL.pdf,PVEM
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,SIND_JUN_MR,PT_PVEM_MORENA,1,LIBIA ARINDA CHI NOCEDA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBECAL.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,PRES_JUN,PT_PVEM_MORENA,1,RAFAEL RENE NAAL NAAL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunNUNKINI.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,REG_JUN_MR,PT_PVEM_MORENA,1,MARIA LEONIDES KANTUN CANUL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunNUNKINI.pdf,MORENA
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,REG_JUN_MR,PT_PVEM_MORENA,2,GERARDO ENRIQUE KANTUN CAHUICH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunNUNKINI.pdf,PT
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,REG_JUN_MR,PT_PVEM_MORENA,3,MARIA TOMASA CHIM HUCHIN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunNUNKINI.pdf,PVEM
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,SIND_JUN_MR,PT_PVEM_MORENA,1,FELIPE CAHUM HAAS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunNUNKINI.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,PRES_JUN,PT_PVEM_MORENA,1,ROMEO REYES HERNANDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunATASTA.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,REG_JUN_MR,PT_PVEM_MORENA,1,ISELA MENDEZ CORDERO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunATASTA.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,REG_JUN_MR,PT_PVEM_MORENA,2,FREDDY PANTOJA HUERTA,1,Candidaturas de personas jovenes,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunATASTA.pdf,PVEM
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,REG_JUN_MR,PT_PVEM_MORENA,3,DAMARIS PEREZ CRUZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunATASTA.pdf,PT
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,SIND_JUN_MR,PT_PVEM_MORENA,1,JAIME AGUSTIN SOSA ARREGOITA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunATASTA.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,PRES_JUN,PT_PVEM_MORENA,1,GUADALUPE JANETH IZQUIERDO MORALES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMAMANTEL.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,REG_JUN_MR,PT_PVEM_MORENA,1,ERNESTO HERNANDEZ LOPEZ,1,Candidaturas de discapacidad,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMAMANTEL.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,REG_JUN_MR,PT_PVEM_MORENA,2,PATRICIA PALOMEQUE MORALES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMAMANTEL.pdf,PVEM
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,REG_JUN_MR,PT_PVEM_MORENA,3,ALEJANDRO LEYVA CORTES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMAMANTEL.pdf,PT
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,SIND_JUN_MR,PT_PVEM_MORENA,1,GLADYS VICTORIA MAGANA DAMIAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMAMANTEL.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,PRES_JUN,PT_PVEM_MORENA,1,ZAIDE JOSSELIN DIAZ CHAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSABANCUY.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,REG_JUN_MR,PT_PVEM_MORENA,1,RUBEN ACOSTA DIAZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSABANCUY.pdf,MORENA
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,REG_JUN_MR,PT_PVEM_MORENA,2,EVELIA AGUILAR SALAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSABANCUY.pdf,PVEM
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,REG_JUN_MR,PT_PVEM_MORENA,3,EFREN OSORIO REYES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSABANCUY.pdf,PT
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,SIND_JUN_MR,PT_PVEM_MORENA,1,ANGELICA PATRICIA HERRERA CANUL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSABANCUY.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,PRES_JUN,PT_PVEM_MORENA,1,ERIKA LETICIA BRAVO PABLO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHOOL.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,REG_JUN_MR,PT_PVEM_MORENA,1,ALEJANDRO PEDRO JUAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHOOL.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,REG_JUN_MR,PT_PVEM_MORENA,2,MARIA DEL CARMEN VARGAS SANDOVAL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHOOL.pdf,PT
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,REG_JUN_MR,PT_PVEM_MORENA,3,JOSE ALBERTO HUCHIN ARGUELLES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHOOL.pdf,PVEM
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,SIND_JUN_MR,PT_PVEM_MORENA,1,ANGELICA MUY XICAY,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunHOOL.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,PRES_JUN,PT_PVEM_MORENA,1,MARISOL CERVERA POOL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSIHOCHAC.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,REG_JUN_MR,PT_PVEM_MORENA,1,SALVADOR MARTIN CACERES CHI,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSIHOCHAC.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,REG_JUN_MR,PT_PVEM_MORENA,2,JAVIER CHAN PECH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSIHOCHAC.pdf,PT
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,REG_JUN_MR,PT_PVEM_MORENA,3,FERNANDO ENRIQUE CHI BARANDA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSIHOCHAC.pdf,PVEM
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,SIND_JUN_MR,PT_PVEM_MORENA,1,YENIFER ROCHA MEDINA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunSIHOCHAC.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,PRES_JUN,PT_PVEM_MORENA,1,JOSE SANTOS DZIB EC,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCARRILLO.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,REG_JUN_MR,PT_PVEM_MORENA,1,WENDOLINE AVILA PUC,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCARRILLO.pdf,MORENA
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,REG_JUN_MR,PT_PVEM_MORENA,2,JAVIER ELISEO EUAN CAUICH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCARRILLO.pdf,PVEM
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,REG_JUN_MR,PT_PVEM_MORENA,3,MARIA GRACIELA DEL SOCORRO CANUL ONTIVEROS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCARRILLO.pdf,PT
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,SIND_JUN_MR,PT_PVEM_MORENA,1,ALDRI GUADALUPE DELGADO YAH,1,Candidaturas de personas jovenes,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCARRILLO.pdf,MORENA
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,PRES_JUN,MC,1,ALEIDA GUADALUPE POOT EUAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPOMUCH.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,REG_JUN_MR,MC,1,BALDOMERO AKE EUAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPOMUCH.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,REG_JUN_MR,MC,2,MARIANA EUAN MARTIN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPOMUCH.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,REG_JUN_MR,MC,3,MARTIN GERARDO PECH CHABLE,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPOMUCH.pdf,MC
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,SIND_JUN_MR,MC,1,ARACELI DEL ROCIO KUK CHI,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunPOMUCH.pdf,MC
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,PRES_JUN,PT_PVEM_MORENA,1,RICARDO CANCHE CHABLE,1,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBOLONCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,REG_JUN_MR,PT_PVEM_MORENA,1,MARIA LUISA ESTRELLA TZAKUN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBOLONCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,REG_JUN_MR,PT_PVEM_MORENA,2,VALERIO DOMINGUEZ MAY,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBOLONCHEN.pdf,PT
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,REG_JUN_MR,PT_PVEM_MORENA,3,CINTIA ROCELY CONTRERAS RAMIREZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBOLONCHEN.pdf,PVEM
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,SIND_JUN_MR,PT_PVEM_MORENA,1,VICTOR ENRIQUE CAL CAAMAL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunBOLONCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,PRES_JUN,PT_PVEM_MORENA,1,OCELLI FALCONERI PECH UC,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDZIBALCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,REG_JUN_MR,PT_PVEM_MORENA,1,CRISTINO PECH CAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDZIBALCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,REG_JUN_MR,PT_PVEM_MORENA,2,RAQUEL FRANCISCA RUIZ CHAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDZIBALCHEN.pdf,PVEM
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,REG_JUN_MR,PT_PVEM_MORENA,3,JUAN CARLOS AKE VILLARREAL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDZIBALCHEN.pdf,PT
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,SIND_JUN_MR,PT_PVEM_MORENA,1,LAURA PATRICIA US PUC,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDZIBALCHEN.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,PRES_JUN,PT_PVEM_MORENA,1,MARCELO CHAN EUAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunUKUM.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,REG_JUN_MR,PT_PVEM_MORENA,1,NUBIA YAMILI VARGUEZ TEC,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunUKUM.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,REG_JUN_MR,PT_PVEM_MORENA,2,NO REGISTRO CANDIDATURA,,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunUKUM.pdf,PT
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,REG_JUN_MR,PT_PVEM_MORENA,3,EMILIA VERA COH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunUKUM.pdf,PVEM
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,SIND_JUN_MR,PT_PVEM_MORENA,1,REYES ROBERTO COH KITUC,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunUKUM.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,PRES_JUN,PT_PVEM_MORENA,1,ALEJANDRA CONCEPCION CEN TUZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTINUN.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,REG_JUN_MR,PT_PVEM_MORENA,1,JOSE ROBERTO KU MUKUL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTINUN.pdf,MORENA
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,REG_JUN_MR,PT_PVEM_MORENA,2,JESSICA YARELY ESCALANTE SALAZAR,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTINUN.pdf,PT
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,REG_JUN_MR,PT_PVEM_MORENA,3,MIGUEL ANTONIO CUPUL TUZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTINUN.pdf,PVEM
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,SIND_JUN_MR,PT_PVEM_MORENA,1,FABIOLA DEL CARMEN MAY EUAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunTINUN.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,PRES_JUN,PT_PVEM_MORENA,1,AURELIA EUNICE CASANOVA PANTOJA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCENTENARIO.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,REG_JUN_MR,PT_PVEM_MORENA,1,JULIAN GARCIA REYES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCENTENARIO.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,REG_JUN_MR,PT_PVEM_MORENA,2,YOSELIN DE LOS ANGELES COBARRUBIAS COJ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCENTENARIO.pdf,PVEM
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,REG_JUN_MR,PT_PVEM_MORENA,3,JOSE IGNACIO UVIETA CUNIL,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCENTENARIO.pdf,PT
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,SIND_JUN_MR,PT_PVEM_MORENA,1,CASSANDRA JIMENEZ LOPEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCENTENARIO.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,PRES_JUN,PT_PVEM_MORENA,1,GLORIA ESPERANZA PELAYO MORAN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDIVISION.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,REG_JUN_MR,PT_PVEM_MORENA,1,JORGE MOLINA AGUILAR,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDIVISION.pdf,MORENA
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,REG_JUN_MR,PT_PVEM_MORENA,2,ALICIA GARCIA GARCIA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDIVISION.pdf,PT
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,REG_JUN_MR,PT_PVEM_MORENA,3,LEONEL TORRES CARRASCO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDIVISION.pdf,PVEM
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,SIND_JUN_MR,PT_PVEM_MORENA,1,FABIANA SALES JACINTO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunDIVISION.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,PRES_JUN,PT_PVEM_MORENA,1,JULIO CESAR GUILLEN MENDOZA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMIGUEL.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,REG_JUN_MR,PT_PVEM_MORENA,1,SONIA SOTO ARA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMIGUEL.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,REG_JUN_MR,PT_PVEM_MORENA,2,FERNANDO PELAGIO JAIMES,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMIGUEL.pdf,PT
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,REG_JUN_MR,PT_PVEM_MORENA,3,RAQUEL SALAZAR ROJAS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMIGUEL.pdf,PVEM
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,SIND_JUN_MR,PT_PVEM_MORENA,1,CARLOS DOMINGUEZ JOB,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMIGUEL.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,PRES_JUN,PT_PVEM_MORENA,1,PETRONA VAZQUEZ SANCHEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMONCLOVA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,REG_JUN_MR,PT_PVEM_MORENA,1,ISIDRO HERNANDEZ MENDEZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMONCLOVA.pdf,MORENA
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,REG_JUN_MR,PT_PVEM_MORENA,2,YESICA CRUZ HERNANDEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMONCLOVA.pdf,PT
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,REG_JUN_MR,PT_PVEM_MORENA,3,CARMEN CAMARGO SAUCEDO,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMONCLOVA.pdf,PVEM
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,SIND_JUN_MR,PT_PVEM_MORENA,1,ABRIL DE NAZARETH CETZ CASTILLO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunMONCLOVA.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,PRES_JUN,PT_PVEM_MORENA,1,VICTOR MANUEL MENDOZA COLLI,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCONSTITUCION.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,REG_JUN_MR,PT_PVEM_MORENA,1,ROSALBA CANUL GONZALEZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCONSTITUCION.pdf,MORENA
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,REG_JUN_MR,PT_PVEM_MORENA,2,MATIAS GEREMIAS UC CAHUICH,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCONSTITUCION.pdf,PT
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,REG_JUN_MR,PT_PVEM_MORENA,3,MARTHA PATRICIA MENDEZ PENAGOS,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCONSTITUCION.pdf,PVEM
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,SIND_JUN_MR,PT_PVEM_MORENA,1,SEBASTIAN MONTEJO SANCHEZ,1,Candidaturas indigenas,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstMR_JunCONSTITUCION.pdf,MORENA
+3,4,CAMPECHE,,,1,CAMPECHE,1,PICH,REG_JUN_RP,MC,1,MAGDALENA BEATRIZ MOO CASTILLO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunPICH.pdf,MC
+3,4,CAMPECHE,,,1,CAMPECHE,2,TIXMUCUY,REG_JUN_RP,PRI,1,LOURDES LOPEZ PEREZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunTIXMUCUY.pdf,PRI
+3,4,CAMPECHE,,,1,CAMPECHE,3,ALFREDO V. BONFIL,REG_JUN_RP,PRI,1,MARLENE AZUCENA ZAMARRIPA TORRES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunALFREDO.pdf,PRI
+3,4,CAMPECHE,,,1,CAMPECHE,4,HAMPOLOL,REG_JUN_RP,CL,1,IZEL YESENIA PECH JUAREZ,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunHAMPOLOL.pdf,CL
+3,4,CAMPECHE,,,2,CALKINI,5,BECAL,REG_JUN_RP,MC,1,ANAILY CONCEPCION MAZUN ACOSTA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunBECAL.pdf,MC
+3,4,CAMPECHE,,,2,CALKINI,6,NUNKINI,REG_JUN_RP,PRI,1,IRMA LUCELY CHI HUCHIN,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunNUNKINI.pdf,PRI
+3,4,CAMPECHE,,,3,CARMEN,7,ATASTA,REG_JUN_RP,EDC,1,ISI KARINA RAMIREZ ESTRADA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunATASTA.pdf,EDC
+3,4,CAMPECHE,,,3,CARMEN,8,MAMANTEL,REG_JUN_RP,MC,1,JORGE JESUS MAGANA GUZMAN,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunMAMANTEL.pdf,MC
+3,4,CAMPECHE,,,3,CARMEN,9,SABANCUY,REG_JUN_RP,MC,1,DANIELA MAY NOVELO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunSABANCUY.pdf,MC
+3,4,CAMPECHE,,,4,CHAMPOTON,10,HOOL,REG_JUN_RP,PAN,1,SAUL ADRIAN DOMINGUEZ PEREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunHOOL.pdf,PAN
+3,4,CAMPECHE,,,4,CHAMPOTON,11,SIHOCHAC,REG_JUN_RP,PAN,1,ILIANA DEL ROSARIO SANDOVAL REYES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunSIHOCHAC.pdf,PAN
+3,4,CAMPECHE,,,4,CHAMPOTON,12,CARRILLO PUERTO,REG_JUN_RP,PAN,1,LIDIA PATRICIA PUCH AKE,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunCARRILLO.pdf,PAN
+3,4,CAMPECHE,,,5,HECELCHAKAN,13,POMUCH,REG_JUN_RP,MORENA,1,HERMINIA YAH COLLI,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunPOMUCH.pdf,MORENA
+3,4,CAMPECHE,,,6,HOPELCHEN,14,BOLONCHEN DE REJON,REG_JUN_RP,PRI,1,GUADALUPE ASUNCION SANDOVAL CANCHE,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunBOLONCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,15,DZIBALCHEN,REG_JUN_RP,PRI,1,VIRGINIA DEL CARMEN COBA CANUL,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunDZIBALCHEN.pdf,PRI
+3,4,CAMPECHE,,,6,HOPELCHEN,16,UKUM,REG_JUN_RP,PRI,1,IMELDA UC COH,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunUKUM.pdf,PRI
+3,4,CAMPECHE,,,8,TENABO,17,TINUN,REG_JUN_RP,PAN,1,YEMY CAROLINA CANUL FLORES,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunTINUN.pdf,PAN
+3,4,CAMPECHE,,,9,ESCARCEGA,18,CENTENARIO,REG_JUN_RP,CL,1,GLEEN ARTURO RIVERA RAMOS,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunCENTENARIO.pdf,CL
+3,4,CAMPECHE,,,9,ESCARCEGA,19,DIVISION DEL NORTE,REG_JUN_RP,MC,1,IGNACIO ESTRADA LEDEZMA,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunDIVISION.pdf,MC
+3,4,CAMPECHE,,,10,CANDELARIA,20,MIGUEL HIDALGO Y COSTILLA,REG_JUN_RP,MC,1,MATILDE SOLIS GERONIMO,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunMIGUEL.pdf,MC
+3,4,CAMPECHE,,,10,CANDELARIA,21,MONCLOVA,REG_JUN_RP,MC,1,BONIFACIO ARELLANO PEREZ,1,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunMONCLOVA.pdf,MC
+3,4,CAMPECHE,,,11,CALAKMUL,22,CONSTITUCION,REG_JUN_RP,MC,1,CITLALY CARMELITA LOPEZ LARA,2,,https://www.ieec.org.mx/Documentacion/Elecciones/2024/Casillas/Constancias/ConstRP_JunCONSTITUCION.pdf,MC

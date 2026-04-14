@@ -1,0 +1,1149 @@
+CIRCUNSCRIPCION,ID_ESTADO,NOMBRE_ESTADO,ID_DISTRITO_LOCAL,CABECERA_DISTRITAL_LOCAL,ID_MUNICIPIO,MUNICIPIO,ID_DEMARCACION_LOCAL,DEMARCACION_LOCAL,TIPO_DE_CANDIDATURA,NOMBRE_ACTOR_POLITICO,NUMERO_LISTA,PERSONA CANDIDATA,IDENTIDAD_SEXO_GENERICA,ACCION_AFIRMATIVA,RUTA_CONSTANCIA,PARTIDO_POLITICO
+,7,CHIAPAS,,,1,ACACOYAGUA,,,PRES_MUN,PCHU,1,JOSE ANTONIO MEZA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,SIND_MR,PCHU,2,LUCIA  DE LA CRUZ MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_MR,PCHU,3,OBED GARCIA PAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_MR,PCHU,4,SEBASTIANA ORTIZ GAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_MR,PCHU,5,FONFILIO PEREZ GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_MR,PCHU,6,MARIA CONCEPCION PEREZ MUNOZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_MR,PCHU,7,HUGO RENZI TSUZUKI ANTONIO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/001 ACACOYAGUA.pdf,PCHU
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_RP,MORENA,11,ERICA ANTONIO OVANDO ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_69.pdf,MORENA
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_RP,PES,12,CIELO  ESPINOZA AMORES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_2.pdf,PES
+,7,CHIAPAS,,,1,ACACOYAGUA,,,REG_RP,PVEM,13,CLAUDIAN KAORI KOMUKAI RAMOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_2.pdf,PVEM
+,7,CHIAPAS,,,2,ACALA,,,PRES_MUN,MORENA,1,MARIA PATRICIA COELLO ZAPATA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,SIND_MR,MORENA,2,JOSE RANULFO ROSALES HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_MR,MORENA,3,ELSA GOMEZ  VAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_MR,MORENA,4,GUILLERMO  CRUZ MATAMBU,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_MR,MORENA,5,INES  TORRES GOMEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_MR,MORENA,6,BRAYANT ALEXIS RUIZ COUTINO,1,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_MR,MORENA,7,DANIELA DE JESUS GUILLEN DIAZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/002 ACALA.pdf,MORENA
+,7,CHIAPAS,,,2,ACALA,,,REG_RP,PVEM,11,EDITH RUIZ DOMINGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_3.pdf,PVEM
+,7,CHIAPAS,,,2,ACALA,,,REG_RP,PVEM,12,CONCEPCION TORREZ HERNANDEZ,1,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_4.pdf,PVEM
+,7,CHIAPAS,,,2,ACALA,,,REG_RP,PVEM,13,ATANACIA CRUZ RODRIGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_5.pdf,PVEM
+,7,CHIAPAS,,,3,ACAPETAHUA,,,PRES_MUN,MORENA,1,CESAR MARTINEZ ANTONIO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,SIND_MR,MORENA,2,OLGA MARIA OCHOA PERERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_MR,MORENA,3,CARLOS REINERIO ESPINOZA ARANA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_MR,MORENA,4,JUANA NINO HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_MR,MORENA,5,YONI YUDIEL PASCACIO DE AQUINO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_MR,MORENA,6,JEFZY  DE JESUS CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_MR,MORENA,7,MOISES LOPEZ RODRIGUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/003 ACAPETAHUA.pdf,MORENA
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_RP,PVEM,11,ALMA YESENIA GOMEZ ORANTES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_6.pdf,PVEM
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_RP,PVEM,12,ROGELIO DE LOS SANTOS URBINA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_7.pdf,PVEM
+,7,CHIAPAS,,,3,ACAPETAHUA,,,REG_RP,PVEM,13,NADIA JANET CASTILLO SALAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_8.pdf,PVEM
+,7,CHIAPAS,,,4,ALTAMIRANO,,,PRES_MUN,PT,1,GASPAR SANTIZ JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,SIND_MR,PT,2,DELINA  ENCINO SANTIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_MR,PT,3,JULIO LOPEZ MORALES,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_MR,PT,4,JUANA HERNANDEZ SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_MR,PT,5,HUMBERTO VAZQUEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_MR,PT,6,MAGALY DEL ROCIO  TORRES MENDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_MR,PT,7,VICTOR MANUEL SANCHEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/004 ALTAMIRANO.pdf,PT
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_RP,PCHU,11,HILDA  MONTOYA OSEGUERA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_1.pdf,PCHU
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_RP,PCHU,12,ALFREDO GONZALEZ TORRES,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_2.pdf,PCHU
+,7,CHIAPAS,,,4,ALTAMIRANO,,,REG_RP,PCHU,13,CARMELINA  GOMEZ SANTIZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_3.pdf,PCHU
+,7,CHIAPAS,,,5,AMATAN,,,PRES_MUN,RSP,1,MAJIN AGUILAR UTRILLA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,SIND_MR,RSP,2,FANNY CASTELLANOS CASTELLANOS,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_MR,RSP,3,CORNELIO RUIZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_MR,RSP,4,DUBI ESTHER GOMEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_MR,RSP,5,LORENZO LOPEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_MR,RSP,6,JULIA CRUZ CASTELLANOS,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_MR,RSP,7,AGUSTIN LOPEZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/005 AMATAN.pdf,RSP
+,7,CHIAPAS,,,5,AMATAN,,,REG_RP,PMCH,11,ARACELI HERNANDES DE LA CRUZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_1.pdf,PMCH
+,7,CHIAPAS,,,5,AMATAN,,,REG_RP,PMCH,12,RODOLFO RUIZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_100.pdf,PMCH
+,7,CHIAPAS,,,5,AMATAN,,,REG_RP,MORENA,13,ANGELICA RODRIGUEZ MAYORGA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_65.pdf,MORENA
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,PRES_MUN,PVEM,1,ERNESTO TEODOMIRO OSORIO ESCOBAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,SIND_MR,PVEM,2,ROCIO GUADALUPE SAMAYOA JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_MR,PVEM,3,EPITACIO LUCAS SILVESTRE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_MR,PVEM,4,HERI DELLANIRA SANTIZO ABELAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_MR,PVEM,5,AROLDO BERNARDO BARRIOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_MR,PVEM,6,KAREN JAZMIN CAMPOS CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_MR,PVEM,7,ARISTEO VASQUEZ ROBLERO,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/006 AMATENANGO DE LA FRONTERA.pdf,PVEM
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_RP,PT,11,JULIETA MARTINEZ BERNARDO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_2.pdf,PT
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_RP,PT,12,DILNER GABRIEL TOMAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_3.pdf,PT
+,7,CHIAPAS,,,6,AMATENANGO DE LA FRONTERA,,,REG_RP,MORENA,13,ROSITA ANAHI QUINONEZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_64.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,PRES_MUN,MORENA,1,JULIETA GOMEZ  JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/007 AMATENANGO DEL VALLE.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,SIND_MR,MORENA,2,SALOMON LOPEZ  GORDILLO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/007 AMATENANGO DEL VALLE.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,REG_MR,MORENA,3,PETRONA LOPEZ  GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/007 AMATENANGO DEL VALLE.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,REG_MR,MORENA,4,JUAN PEREZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/007 AMATENANGO DEL VALLE.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,REG_MR,MORENA,5,MARGARITA  BAUTISTA  LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/007 AMATENANGO DEL VALLE.pdf,MORENA
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,REG_RP,PVEM,9,ROMELIA PEREZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_9.pdf,PVEM
+,7,CHIAPAS,,,7,AMATENANGO DEL VALLE,,,REG_RP,PCHU,10,ROSA ANGELICA GOMEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_4.pdf,PCHU
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,PRES_MUN,PVEM,1,MANUEL DE JESUS  MORENO FERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,SIND_MR,PVEM,2,KARLA NAYELY ROBLERO HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_MR,PVEM,3,MARCO ANTONIO  VAZQUEZ REYES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_MR,PVEM,4,MARTHA LETY VAZQUEZ GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_MR,PVEM,5,JORGE LUIS VELASCO GONZALEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_MR,PVEM,6,LEYDI MARGOTH BARRIOS GUILLEN,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_MR,PVEM,7,ERUBEY PEREZ MORALES,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/008 ANGEL ALBINO CORZO.pdf,PVEM
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_RP,MORENA,11,MAGDALENA GABRIELA SANTIAGO  SAMAYOA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_63.pdf,MORENA
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_RP,RSP,12,NELLY GUTIERREZ RAMOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_1.pdf,RSP
+,7,CHIAPAS,,,8,ANGEL ALBINO CORZO,,,REG_RP,PRI,13,NERY HELEN MATIAS SANTIZO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_2.pdf,PRI
+,7,CHIAPAS,,,9,ARRIAGA,,,PRES_MUN,PVEM,1,ALEJANDRO AQUILES PATRINOS  FERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,SIND_MR,PVEM,2,MARIA ALEJANDRA  MARTINEZ BEZARES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_MR,PVEM,3,JORGE LUIS SERRANO JIMENEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_MR,PVEM,4,MARIA ISABEL PINEDA CASTILLEJOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_MR,PVEM,5,JUAN FRANCISCO CUETO AVENDANO,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_MR,PVEM,6,LETICIA RUIZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_MR,PVEM,7,MARCO ANTONIO MENDOZA RAMOS,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/009 ARRIAGA.pdf,PVEM
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_RP,MORENA,11,ELIZABETH OCANA REYES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_62.pdf,MORENA
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_RP,MORENA,12,KEVIN LEONARDO LOPEZ ESPINOSA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_61.pdf,MORENA
+,7,CHIAPAS,,,9,ARRIAGA,,,REG_RP,MC,13,INES DOMINGUEZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_1.pdf,MC
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,PRES_MUN,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ONECIMO ESAU SANTIZO ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/010 BEJUCAL DE OCAMPO.pdf,MORENA
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,SIND_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,2,ALIRIA RAMIREZ ROBLERO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/010 BEJUCAL DE OCAMPO.pdf,PT
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,3,AUDON  VELAZQUEZ VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/010 BEJUCAL DE OCAMPO.pdf,PVEM
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,4,MARIANA HERNANDEZ RAMIREZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/010 BEJUCAL DE OCAMPO.pdf,RSP
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,5,ARTEMIO  MORALES  ESCALANTE,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/010 BEJUCAL DE OCAMPO.pdf,PES
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,REG_RP,PRI,9,UVICELDA RAMIREZ JUAREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_3.pdf,PRI
+,7,CHIAPAS,,,10,BEJUCAL DE OCAMPO,,,REG_RP,PRI,10,CENOVIO VELAZQUEZ Y VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_4.pdf,PRI
+,7,CHIAPAS,,,11,BELLA VISTA,,,PRES_MUN,PCHU,1,ROSEMBER LOPEZ ROBLERO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,SIND_MR,PCHU,2,AIDE LUVIA MENDEZ TRUJILLO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_MR,PCHU,3,LAURO PEREZ GONZALEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_MR,PCHU,4,ANETH AYLIN VELAZQUEZ ZUNUN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_MR,PCHU,5,PABLO LUIS VELAZQUEZ RAMIREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_MR,PCHU,6,LAURI ANAHI LAO MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_MR,PCHU,7,OSVALDO CARMEN SANTIZO VELAZQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/011 BELLA VISTA.pdf,PCHU
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_RP,PVEM,11,YURIANA BARRIOS  CIFUENTES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_10.pdf,PVEM
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_RP,PVEM,12,CAMILO ALEJO  VELASQUEZ ROBLERO,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_11.pdf,PVEM
+,7,CHIAPAS,,,11,BELLA VISTA,,,REG_RP,PVEM,13,ARITSAI MAZARIEGOS ALVARADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_12.pdf,PVEM
+,7,CHIAPAS,,,12,BERRIOZABAL,,,PRES_MUN,MORENA,1,JORGE ARTURO ACERO GOMEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,SIND_MR,MORENA,2,ANAHI GUADALUPE VELASCO MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_MR,MORENA,3,PEDRO ROSELIN YANEZ RINCON,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_MR,MORENA,4,SIRIA  GOMEZ  RODRIGUEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_MR,MORENA,5,DIEGO  BALCAZAR  AQUINO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_MR,MORENA,6,FLOR DE MARIA CASTANON  ESPINOSA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_MR,MORENA,7,RICARDO  GUTIERREZ  GUTIERREZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/012 BERRIOZABAL.pdf,MORENA
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_RP,PVEM,11,MARIA ODILIA SANCHEZ SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_13.pdf,PVEM
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_RP,PVEM,12,JONATHAN ALBERT DOMINGUEZ AGUILAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_14.pdf,PVEM
+,7,CHIAPAS,,,12,BERRIOZABAL,,,REG_RP,PVEM,13,VIRGINIA MICHEL LOPEZ JIMENEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_15.pdf,PVEM
+,7,CHIAPAS,,,13,BOCHIL,,,PRES_MUN,MORENA,1,SERGIO LUIS ZENTENO MENESES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,SIND_MR,MORENA,2,OLGA LIDIA PEREZ HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_MR,MORENA,3,IDELFONSO PEREZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_MR,MORENA,4,ROXANA NAYELI GOMEZ VAQUERIZO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_MR,MORENA,5,WALDO ALFREDO LOPEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_MR,MORENA,6,FATIMA CHANTAL PASTRANA ZENTENO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_MR,MORENA,7,HILBER RAQUEL ZENTENO CHACON,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/013 BOCHIL.pdf,MORENA
+,7,CHIAPAS,,,13,BOCHIL,,,REG_RP,PT,11,MARIA DEL CARMEN SANCHEZ ALVARADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_4.pdf,PT
+,7,CHIAPAS,,,13,BOCHIL,,,REG_RP,PRI,12,EDNA LISBETH FLORES SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_5.pdf,PRI
+,7,CHIAPAS,,,13,BOCHIL,,,REG_RP,PT,13,JESUS ELEAZAR SANCHEZ GIRON,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_5.pdf,PT
+,7,CHIAPAS,,,14,EL BOSQUE,,,PRES_MUN,PMCH,1,JOSE NAPOLEON GOMEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,SIND_MR,PMCH,2,DELIA  VANESA LOPEZ RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_MR,PMCH,3,MARIANO GONZALEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_MR,PMCH,4,FLORINDA DIAZ NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_MR,PMCH,5,ALEJANDRO  PEREZ GONZALEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_MR,PMCH,6,MARGARITA DIAZ RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_MR,PMCH,7,JAVIER  MENDEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/014 EL BOSQUE.pdf,PMCH
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_RP,PRI,11,DIONICIA GOMEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_6.pdf,PRI
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_RP,PRI,12,GERONIMO CACEREZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_7.pdf,PRI
+,7,CHIAPAS,,,14,EL BOSQUE,,,REG_RP,PRI,13,OLIVIA RUIZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_8.pdf,PRI
+,7,CHIAPAS,,,15,CACAHOATAN,,,PRES_MUN,PVEM,1,VICTOR ALFONSO PEREZ SALDANA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,SIND_MR,PVEM,2,YENIFER MARISOL MORALES VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_MR,PVEM,3,TIBURCIO SALAS  PEREZ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_MR,PVEM,4,ONY MAYREN JUAREZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_MR,PVEM,5,MARIANO ADRIAN MORALES LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_MR,PVEM,6,ANABEL HIDALGO BARRIOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_MR,PVEM,7,FLAVIO ROBERTO ROBLERO VELAZQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/015 CACAHOATAN.pdf,PVEM
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_RP,PT,11,SELENNE ADRIANA CANEL LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_6.pdf,PT
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_RP,MORENA,12,BRENDA ELIZABETH MEZA SANDOVAL,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_60.pdf,MORENA
+,7,CHIAPAS,,,15,CACAHOATAN,,,REG_RP,RSP,13,ALEJANDRA PAMELA GONZALEZ SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_2.pdf,RSP
+,7,CHIAPAS,,,16,CATAZAJA,,,PRES_MUN,PVEM,1,JOSE LUIS DAMAS  ORTIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,SIND_MR,PVEM,2,NADYELI DEL CARMEN OJEDA MENDOZA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_MR,PVEM,3,ABEL NAIN GUZMAN POTENCIANO,1,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_MR,PVEM,4,ANA MARIA GUTIERREZ DIAZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_MR,PVEM,5,DWAIGHT GUTIERREZ  PADILLA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_MR,PVEM,6,GEMA DE JESUS ENRIQUEZ  PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_MR,PVEM,7,EDUARDO GUADALUPE JIMENEZ GUZMAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/016 CATAZAJA.pdf,PVEM
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_RP,MORENA,11,FRANCISCA  DAMAS  DAMAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_48.pdf,MORENA
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_RP,MORENA,12,NELSON  SOLIS DIAZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_49.pdf,MORENA
+,7,CHIAPAS,,,16,CATAZAJA,,,REG_RP,PT,13,LILIAN  BALBOA GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_7.pdf,PT
+,7,CHIAPAS,,,17,CINTALAPA,,,PRES_MUN,MORENA,1,ERNESTO CRUZ DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,SIND_MR,MORENA,2,SALLY EDITH GALLARDO NUNEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_MR,MORENA,3,ARIOSTO LAZARO CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_MR,MORENA,4,BLANCA ELSA  PALACIOS BURGUETE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_MR,MORENA,5,FABIAN DE JESUS ROMAN  RODRIGUEZ ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_MR,MORENA,6,JOCELYNE BURGUETE GUTIERREZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_MR,MORENA,7,JOSUE  CHACON TOLEDO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/017 CINTALAPA.pdf,MORENA
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_RP,PT,11,MARIA EULALIA MARTINEZ RAMOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_8.pdf,PT
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_RP,PVEM,12,ALEJANDRA ARANDA NIETO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_16.pdf,PVEM
+,7,CHIAPAS,,,17,CINTALAPA,,,REG_RP,RSP,13,EVA ELIA GUZMAN GUTIERREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_3.pdf,RSP
+,7,CHIAPAS,,,18,COAPILLA,,,PRES_MUN,MORENA,1,YADIRA  PEREZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/018 COAPILLA.pdf,MORENA
+,7,CHIAPAS,,,18,COAPILLA,,,SIND_MR,MORENA,2,UBISTRAIN ESTRADA PATRICIO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/018 COAPILLA.pdf,MORENA
+,7,CHIAPAS,,,18,COAPILLA,,,REG_MR,MORENA,3,BLANCA CLARI ARAGON MORALES,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/018 COAPILLA.pdf,MORENA
+,7,CHIAPAS,,,18,COAPILLA,,,REG_MR,MORENA,4,ANGEL WILMAR CARBALLO SANTIAGO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/018 COAPILLA.pdf,MORENA
+,7,CHIAPAS,,,18,COAPILLA,,,REG_MR,MORENA,5,ALBA LIZBETH MORALES PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/018 COAPILLA.pdf,MORENA
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,PRES_MUN,PT,1,MARIO ANTONIO GUILLEN DOMINGUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,SIND_MR,PT,2,MARIA EUGENIA MENDEZ  MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,3,DANIEL OSWALDO PEREZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,4,ANDREA DIAZ  MONTOYA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,5,ANDRES  DEL CASTILLO  CASTELLANOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,6,SILVIA CAROLINA RAMIREZ  SOLORZANO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,7,CARLOS RODRIGO GUILLEN  PULIDO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_MR,PT,8,MARIA DEL PILAR ALBORES GUILLEN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/019 COMITAN DE DOMINGUEZ.pdf,PT
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_RP,PVEM,13,ANA CRISTEL  AGUIRRE  RODRIGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_17.pdf,PVEM
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_RP,PVEM,14,CARLOS ALEJANDRO CABALLERO PINTO,1,Candidaturas de personas jovenes,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_102.pdf,PVEM
+,7,CHIAPAS,,,19,COMITAN DE DOMINGUEZ,,,REG_RP,PVEM,15,MARIA EUGENIA  RECINOS  LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_19.pdf,PVEM
+,7,CHIAPAS,,,20,LA CONCORDIA,,,PRES_MUN,RSP,1,EMMANUEL DE JESUS CORDOVA GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,SIND_MR,RSP,2,ASUNCION  AGUILAR AGUILAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_MR,RSP,3,CRISTIAN  GOMEZ  GUILLEN ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_MR,RSP,4,JESUS GORDILLO  LARA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_MR,RSP,5,RAFAEL AGUILAR  CASTRO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_MR,RSP,6,DANIELA CASTRO GUZMAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_MR,RSP,7,ROMEO VIDAL LARA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/020 LA CONCORDIA.pdf,RSP
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_RP,PPCH,11,MAITE MONSERRAT  LOPEZ MAZA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PPCH_AYTO_RP_1.pdf,PPCH
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_RP,PT,12,IRMA GARCIA COUTINO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_9.pdf,PT
+,7,CHIAPAS,,,20,LA CONCORDIA,,,REG_RP,PPCH,13,JOSE ALONSO  HERNANDEZ  SERRANO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PPCH_AYTO_RP_2.pdf,PPCH
+,7,CHIAPAS,,,21,COPAINALA,,,PRES_MUN,MORENA,1,CARLOS  CRUZ CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,SIND_MR,MORENA,2,MIGUELA ISABEL  JIMENEZ VAZQUEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_MR,MORENA,3,GEMALLI REYES JUAREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_MR,MORENA,4,MARIA ELENA  JIMENEZ MALPICA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_MR,MORENA,5,FELIPE  TOVILLA LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_MR,MORENA,6,ADRIANA GUTIERREZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_MR,MORENA,7,GILMER RANGEL AGUILAR LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/021 COPAINALA.pdf,MORENA
+,7,CHIAPAS,,,21,COPAINALA,,,REG_RP,PVEM,11,MARBELLA GUADALUPE HERRERA SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_20.pdf,PVEM
+,7,CHIAPAS,,,21,COPAINALA,,,REG_RP,PRI,12,MARIA ANGELA GARCIA GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_9.pdf,PRI
+,7,CHIAPAS,,,21,COPAINALA,,,REG_RP,PVEM,13,ABNER  RAMIREZ MENDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_21.pdf,PVEM
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,PRES_MUN,PT,1,MANUEL GARCIA  NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,SIND_MR,PT,2,GLORIA PATRICIA GOMEZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_MR,PT,3,VICTORIO PEREZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_MR,PT,4,SARAI GARCIA LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_MR,PT,5,LINO  DIAZ NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_MR,PT,6,LUCIA SANCHEZ GARCIA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_MR,PT,7,ARMANDO DIAZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/022 CHALCHIHUITAN.pdf,PT
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_RP,MORENA,11,BRENDA PAOLA ALFARO OCANA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_50.pdf,MORENA
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_RP,MORENA,12,MARIANO GARCIA PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_51.pdf,MORENA
+,7,CHIAPAS,,,22,CHALCHIHUITAN,,,REG_RP,MORENA,13,CRISTINA GARCIA  PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_52.pdf,MORENA
+,7,CHIAPAS,,,23,CHAMULA,,,PRES_MUN,PT,1,PASCUAL SANCHEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,SIND_MR,PT,2,ARMINDA CONCEPCION ALVARADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,3,MANUEL LOPEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,4,LOLA PATRICIA PATISHTAN LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,5,MANUEL HERNANDEZ BAUTISTA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,6,SEBASTIANA PEREZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,7,JUAN SERGIO MENDEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_MR,PT,8,DOMINGA  JIMENEZ PATISHTAN,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/023 CHAMULA.pdf,PT
+,7,CHIAPAS,,,23,CHAMULA,,,REG_RP,PRI,13,DOMINGA  GOMEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_10.pdf,PRI
+,7,CHIAPAS,,,23,CHAMULA,,,REG_RP,MORENA,14,VERONICA DIAZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_53.pdf,MORENA
+,7,CHIAPAS,,,23,CHAMULA,,,REG_RP,PRI,15,SEBASTIAN PEREZ SANTIZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_11.pdf,PRI
+,7,CHIAPAS,,,24,CHANAL,,,PRES_MUN,RSP,1,ALEJANDRO GOMEZ ENTZIN,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/024 CHANAL.pdf,RSP
+,7,CHIAPAS,,,24,CHANAL,,,SIND_MR,RSP,2,MATILDE GOMEZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/024 CHANAL.pdf,RSP
+,7,CHIAPAS,,,24,CHANAL,,,REG_MR,RSP,3,ENRIQUE JIMENEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/024 CHANAL.pdf,RSP
+,7,CHIAPAS,,,24,CHANAL,,,REG_MR,RSP,4,ANGELICA NUNEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/024 CHANAL.pdf,RSP
+,7,CHIAPAS,,,24,CHANAL,,,REG_MR,RSP,5,CELESTINO LOPEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/024 CHANAL.pdf,RSP
+,7,CHIAPAS,,,24,CHANAL,,,REG_RP,PT,9,MARIA GOMEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_10.pdf,PT
+,7,CHIAPAS,,,24,CHANAL,,,REG_RP,PVEM,10,ROBERTA ARA MOSHAN,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_22.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,PRES_MUN,PVEM,1,AMANCIO FEDERICO LUCAS HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/025 CHAPULTENANGO.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,SIND_MR,PVEM,2,MARIA CELIA DIAZ  AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/025 CHAPULTENANGO.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,REG_MR,PVEM,3,HIPOLITO CRUZ MEZA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/025 CHAPULTENANGO.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,REG_MR,PVEM,4,KARLA  AGUILAR DOMINGUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/025 CHAPULTENANGO.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,REG_MR,PVEM,5,CIRO DOMINGUEZ RUEDA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/025 CHAPULTENANGO.pdf,PVEM
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,REG_RP,RSP,9,LIZETH YAJAIRA BURELO SANTOS,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_4.pdf,RSP
+,7,CHIAPAS,,,25,CHAPULTENANGO,,,REG_RP,PCHU,10,FELISA DIAZ DOMINGUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_5.pdf,PCHU
+,7,CHIAPAS,,,26,CHENALHO,,,PRES_MUN,PRI,1,ALBERTO  LOPEZ  GONZALEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,SIND_MR,PRI,2,GRACIELA HERNANDEZ CRUZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_MR,PRI,3,PEDRO PEREZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_MR,PRI,4,LIZBETH ALEJANDRA GOMEZ  RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_MR,PRI,5,VICENTE SANTIZ ARIAS,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_MR,PRI,6,CATARINA GOMEZ  HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_MR,PRI,7,JUAN MAURICIO SANTIZ  GUTIERREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/026 CHENALHO.pdf,PRI
+,7,CHIAPAS,,,26,CHENALHO,,,REG_RP,PT,11,RAQUELA  GOMEZ  GUTIERREZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_11.pdf,PT
+,7,CHIAPAS,,,26,CHENALHO,,,REG_RP,PVEM,12,MARTHA PEREZ RUIZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_23.pdf,PVEM
+,7,CHIAPAS,,,26,CHENALHO,,,REG_RP,MORENA,13,ROSALINDA PEREZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_54.pdf,MORENA
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,PRES_MUN,PVEM,1,LIMBANO DOMINGUEZ ROMAN,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,SIND_MR,PVEM,2,VERONICA CASTRO HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,3,DAVID  NARCIA RAMIREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,4,MARIELA TRUJILLO MALDONADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,5,KAREN ITZEL MENDEZ MOLINA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,6,CECILIA GUADALUPE SERRANO ALTAMIRANO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,7,ANGEL ALONSO GOMEZ FLORES,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_MR,PVEM,8,FLOR EDEN  DIAZ REYES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/027 CHIAPA DE CORZO.pdf,PVEM
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_RP,PT,13,MELISSA DEL CARMEN  PEREZ HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_12.pdf,PT
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_RP,MORENA,14,ESMERALDA  ESTRADA  CHACON,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_55.pdf,MORENA
+,7,CHIAPAS,,,27,CHIAPA DE CORZO,,,REG_RP,PT,15,FABIAN ORANTES ABADIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_43.pdf,PT
+,7,CHIAPAS,,,28,CHIAPILLA,,,PRES_MUN,RSP,1,BERSAIN GOMEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/028 CHIAPILLA.pdf,RSP
+,7,CHIAPAS,,,28,CHIAPILLA,,,SIND_MR,RSP,2,MARIA GUILLERMINA LOPEZ NANGULARI,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/028 CHIAPILLA.pdf,RSP
+,7,CHIAPAS,,,28,CHIAPILLA,,,REG_MR,RSP,3,NOLBERTO COUTINO  GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/028 CHIAPILLA.pdf,RSP
+,7,CHIAPAS,,,28,CHIAPILLA,,,REG_MR,RSP,4,VERONICA CASTRO TORRES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/028 CHIAPILLA.pdf,RSP
+,7,CHIAPAS,,,28,CHIAPILLA,,,REG_MR,RSP,5,RENE DANIEL VAZQUEZ VILLAFUERTE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/028 CHIAPILLA.pdf,RSP
+,7,CHIAPAS,,,28,CHIAPILLA,,,REG_RP,PVEM,9,LENI YULIANA RUIZ FONSECA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_24.pdf,PVEM
+,7,CHIAPAS,,,28,CHIAPILLA,,,REG_RP,MORENA,10,MARENA MADRIGAL  VILA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_56.pdf,MORENA
+,7,CHIAPAS,,,29,CHICOASEN,,,PRES_MUN,PMCH,1,BERSAIN  GUTIERREZ GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/029 CHICOASEN.pdf,PMCH
+,7,CHIAPAS,,,29,CHICOASEN,,,SIND_MR,PMCH,2,MARIA EUGENIA NUNEZ ESTRADA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/029 CHICOASEN.pdf,PMCH
+,7,CHIAPAS,,,29,CHICOASEN,,,REG_MR,PMCH,3,JOSE LUIS  PEREZ  RUIZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/029 CHICOASEN.pdf,PMCH
+,7,CHIAPAS,,,29,CHICOASEN,,,REG_MR,PMCH,4,CAROLINA  ESTRADA PEREZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/029 CHICOASEN.pdf,PMCH
+,7,CHIAPAS,,,29,CHICOASEN,,,REG_MR,PMCH,5,FARID NOEL ORTEGA ESTRADA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/029 CHICOASEN.pdf,PMCH
+,7,CHIAPAS,,,29,CHICOASEN,,,REG_RP,PAN,9,ELIZABETH  OVILLA COYAZO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_2.pdf,PRI
+,7,CHIAPAS,,,29,CHICOASEN,,,REG_RP,PT,10,ROSELIA LIBERTAD  MAZA  HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_13.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,PRES_MUN,PT,1,LISANDRO  BORRALLAS VERDUGO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,SIND_MR,PT,2,FABIOLA DEL CARMEN AGUILAR CASTELLANOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_MR,PT,3,SERGIO EDUARDO FLORES SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_MR,PT,4,TERESITA MORALES ESCOBAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_MR,PT,5,CRISTIAN LOPEZ GONZALEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_MR,PT,6,GUADALUPE  CRUZ HERRERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_MR,PT,7,SERGIO ENRIQUE  MENDEZ VERDUGO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/030 CHICOMUSELO.pdf,PT
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_RP,PPCH,11,MARIA ADRIANA LOPEZ MORALES,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PPCH_AYTO_RP_3.pdf,PPCH
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_RP,PPCH,12,IRAN ANTONIO ARRAZATE GOMEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PPCH_AYTO_RP_4.pdf,PPCH
+,7,CHIAPAS,,,30,CHICOMUSELO,,,REG_RP,PPCH,13,ERICA EGLY RAMIREZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PPCH_AYTO_RP_5.pdf,PPCH
+,7,CHIAPAS,,,31,CHILON,,,PRES_MUN,PT,1,MARIO HERNANDEZ AGUILAR,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,SIND_MR,PT,2,JUANA MIRIAM MORENO  GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,3,JOSE ARMANDO BALAM PECH,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,4,MARTHA ELENA  DEMEZA DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,5,GERARDO DANIEL  MORENO GOMEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,6,YAMELY GUZMAN JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,7,DOMINGO  GUTIERREZ  MORENO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_MR,PT,8,ANGELINA  CRUZ  NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/031 CHILON.pdf,PT
+,7,CHIAPAS,,,31,CHILON,,,REG_RP,MORENA,13,YASMIN MIRIAM HERNANDEZ CALVO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_57.pdf,MORENA
+,7,CHIAPAS,,,31,CHILON,,,REG_RP,MORENA,14,ROBERTO CARLOS GUZMAN GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_58.pdf,MORENA
+,7,CHIAPAS,,,31,CHILON,,,REG_RP,MORENA,15,EDITH LUPITA MORENO GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_59.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,PRES_MUN,MORENA,1,CARLOS GONZALEZ MORENO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,SIND_MR,MORENA,2,GEORGINA GORDILLO  ORDONEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_MR,MORENA,3,BRAULIO HUMBERTO MENDES VENTURA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_MR,MORENA,4,CIELO AGREDA VERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_MR,MORENA,5,LUIS CARLOS DIAZ GODINEZ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_MR,MORENA,6,BEATRIZ BERENICE HIDALGO BARTOLON,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_MR,MORENA,7,ELIODORO HERNANDEZ HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/032 ESCUINTLA.pdf,MORENA
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_RP,PVEM,11,CLAUDETH ADORAIM PEREZ ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_25.pdf,PVEM
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_RP,PVEM,12,CARLOS CELESTINO NIEVES,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_26.pdf,PVEM
+,7,CHIAPAS,,,32,ESCUINTLA,,,REG_RP,PES,13,FERNANDA MICHEL ZARAGOZA GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_3.pdf,PES
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,PRES_MUN,PT,1,ARCIDES  SANCHEZ RAMIREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/033 FRANCISCO LEON.pdf,PT
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,SIND_MR,PT,2,LILIANA GARCIA PABLO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/033 FRANCISCO LEON.pdf,PT
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,REG_MR,PT,3,JUAN ALTUNAR  CRUZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/033 FRANCISCO LEON.pdf,PT
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,REG_MR,PT,4,ROSALVA MEJIA SANTOS,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/033 FRANCISCO LEON.pdf,PT
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,REG_MR,PT,5,LUCIO MORALES MARTINEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/033 FRANCISCO LEON.pdf,PT
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,REG_RP,PVEM,9,VIANY ESMERALDA ALTUNAR CALDERON,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_27.pdf,PVEM
+,7,CHIAPAS,,,33,FRANCISCO LEON,,,REG_RP,MORENA,10,MARIA ROSELIA PABLO SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_44.pdf,MORENA
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,PRES_MUN,PVEM,1,ANIBAL ROBLERO CASTILLO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,SIND_MR,PVEM,2,MARIA GUADALUPE GONZALEZ CASTELLANOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_MR,PVEM,3,JOSE ANTONIO VILLATORO HERRERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_MR,PVEM,4,ROSALINDA  ZUNUN MEJIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_MR,PVEM,5,ULISES DEUDIEL CORDOVA LIO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_MR,PVEM,6,MARIA ISABEL  GARCIA  SAMAYOA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_MR,PVEM,7,ARIEL OLINTO MAZARIEGOS ORDONEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/034 FRONTERA COMALAPA.pdf,PVEM
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_RP,PT,11,BERSITA ELSIRA VAZQUEZ   DOMINGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_14.pdf,PT
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_RP,PT,12,REY DAVID GUTIERREZ VAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_15.pdf,PT
+,7,CHIAPAS,,,34,FRONTERA COMALAPA,,,REG_RP,PT,13,KARLA BRIGUITH CASTANON  ROBLERO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_16.pdf,PT
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,PRES_MUN,RSP,1,JUANA ELIZABETH DE LA CRUZ  MAZARIEGOS ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/035 FRONTERA HIDALGO.pdf,RSP
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,SIND_MR,RSP,2,GENARO SALVADOR ELIAS MORGA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/035 FRONTERA HIDALGO.pdf,RSP
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,REG_MR,RSP,3,BERENICE LOPEZ PALOMEQUE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/035 FRONTERA HIDALGO.pdf,RSP
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,REG_MR,RSP,4,OSCAR ZARATE SOTO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/035 FRONTERA HIDALGO.pdf,RSP
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,REG_MR,RSP,5,GLORIA GOMEZ CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/035 FRONTERA HIDALGO.pdf,RSP
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,REG_RP,MORENA,9,THALIA SELENE HERRERA HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_66.pdf,MORENA
+,7,CHIAPAS,,,35,FRONTERA HIDALGO,,,REG_RP,MC,10,PAOLA RAMIREZ ESCOBAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_2.pdf,MC
+,7,CHIAPAS,,,36,LA GRANDEZA,,,PRES_MUN,RSP,1,JOSE ARMANDO DIAZ PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/036 LA GRANDEZA.pdf,RSP
+,7,CHIAPAS,,,36,LA GRANDEZA,,,SIND_MR,RSP,2,DELMI ELUSAI MORALES GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/036 LA GRANDEZA.pdf,RSP
+,7,CHIAPAS,,,36,LA GRANDEZA,,,REG_MR,RSP,3,HUBER SANCHEZ MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/036 LA GRANDEZA.pdf,RSP
+,7,CHIAPAS,,,36,LA GRANDEZA,,,REG_MR,RSP,4,PAULA ANTELMA GALVEZ BRAVO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/036 LA GRANDEZA.pdf,RSP
+,7,CHIAPAS,,,36,LA GRANDEZA,,,REG_MR,RSP,5,ELDER ADIN RAMIREZ ROBLERO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/036 LA GRANDEZA.pdf,RSP
+,7,CHIAPAS,,,36,LA GRANDEZA,,,REG_RP,PMCH,9,DULCE NAYELI LOPEZ CASTILLO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_3.pdf,PMCH
+,7,CHIAPAS,,,36,LA GRANDEZA,,,REG_RP,PMCH,10,ELISEO  PEREZ ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_4.pdf,PMCH
+,7,CHIAPAS,,,37,HUEHUETAN,,,PRES_MUN,RSP,1,SIXTO  LOPEZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,SIND_MR,RSP,2,ESTHELA DE LEON SALAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_MR,RSP,3,HIRAM  BARRERA DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_MR,RSP,4,FANNY JUDITH MONTERROSA DEL TORO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_MR,RSP,5,CARGO CANCELADO  ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_MR,RSP,6,YEIMI CRUZ ROSARIO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_MR,RSP,7,GERARDO  REYES  ALVARADO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/037 HUEHUETAN.pdf,RSP
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_RP,PVEM,11,ELSY SAYURI NOLASCO ESPINOSA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_28.pdf,PVEM
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_RP,PT,12,ANA MELI CALDERON  GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_17.pdf,PT
+,7,CHIAPAS,,,37,HUEHUETAN,,,REG_RP,PVEM,13,GUSTAVO GARCIA  GUTIERREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_29.pdf,PVEM
+,7,CHIAPAS,,,38,HUITIUPAN,,,PRES_MUN,MORENA,1,AMALIA DEL CARMEN OCHOA  RAMOS ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,SIND_MR,MORENA,2,HEMERITO  HERNANDEZ  PEREZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_MR,MORENA,3,OLGA GORDILLO JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_MR,MORENA,4,CARLOS MARIO  MONTEJO URBINA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_MR,MORENA,5,MARTHA ELENA  RUIZ RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_MR,MORENA,6,DELMAR  CRUZ  RAMOS ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_MR,MORENA,7,ROXANA CAROL  SANTIAGO  LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/038 HUITIUPAN.pdf,MORENA
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_RP,RSP,11,MARICELA ORTIZ DEL CARPIO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_5.pdf,RSP
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_RP,RSP,12,SALVADOR TRINIDAD SANTIAGO ROBLEDO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_6.pdf,RSP
+,7,CHIAPAS,,,38,HUITIUPAN,,,REG_RP,RSP,13,GREGORIA GOMEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_7.pdf,RSP
+,7,CHIAPAS,,,39,HUIXTAN,,,PRES_MUN,PT,1,ROMEO DAMIAN HUET ALVAREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,SIND_MR,PT,2,FLOR MARTINEZ MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_MR,PT,3,ROBERTO MIGUEL  GOMEZ  HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_MR,PT,4,ANDREA  MENDEZ  GUZMAN ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_MR,PT,5,CARLOS  SANTIZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_MR,PT,6,CAROLINA  TON LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_MR,PT,7,PEDRO LUIS PEREZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/039 HUIXTAN.pdf,PT
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_RP,MORENA,11,CATALINA GOMEZ  DIAZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_45.pdf,MORENA
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_RP,MORENA,12,ARMANDO BOLOM ALVAREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_46.pdf,MORENA
+,7,CHIAPAS,,,39,HUIXTAN,,,REG_RP,MORENA,13,FLORINDA MICAELA  ICO  GOMEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_47.pdf,MORENA
+,7,CHIAPAS,,,40,HUIXTLA,,,PRES_MUN,PVEM,1,REGULO PALOMEQUE  SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,SIND_MR,PVEM,2,LUZ DEL CARMEN  NAZAR ENRIQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_MR,PVEM,3,FRANCISCO JAVIER AVILA SOLIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_MR,PVEM,4,MARTHA ELENA AGUILAR  GONZALEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_MR,PVEM,5,ADULFO DE LEON  CRUZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_MR,PVEM,6,MARIA ESTHER ARREVILLAGA PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_MR,PVEM,7,EXAL DE JESUS AGUILAR  RINCON ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/040 HUIXTLA.pdf,PVEM
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_RP,MORENA,11,GEORGINA  COUTINO  VERDUGO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_100.pdf,MORENA
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_RP,PT,12,SANDRA GABRIELA MARTINEZ CEJA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_18.pdf,PT
+,7,CHIAPAS,,,40,HUIXTLA,,,REG_RP,RSP,13,FLOR DELIA MARTINEZ ROJAS,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_8.pdf,RSP
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,PRES_MUN,MORENA,1,JHONY SEBASTIAN  LOPEZ  LOPEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,SIND_MR,MORENA,2,FLORIBEL  AGUILAR  PEREZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_MR,MORENA,3,IVAN  RODRIGUEZ GOMEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_MR,MORENA,4,DIANA LAURA  AGUILAR  GARCIA ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_MR,MORENA,5,CESAR ANTONIO  VAZQUEZ  DOMINGUEZ ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_MR,MORENA,6,HILDA CONI  CRUZ  RODRIGUEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_MR,MORENA,7,JOSE ERBIN  ROMERO  LOPEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/041 LA INDEPENDENCIA.pdf,MORENA
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_RP,PVEM,11,MAGDALENA  ALVARADO NARVAEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_30.pdf,PVEM
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_RP,PVEM,12,BRICIO JIMENEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_100.pdf,PVEM
+,7,CHIAPAS,,,41,LA INDEPENDENCIA,,,REG_RP,PVEM,13,ODALIS VAZQUEZ PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_32.pdf,PVEM
+,7,CHIAPAS,,,42,IXHUATAN,,,PRES_MUN,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARIA GUADALUPE  LOPEZ  CAMACHO ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/042 IXHUATAN.pdf,MORENA
+,7,CHIAPAS,,,42,IXHUATAN,,,SIND_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,2,CARLOS MARIO  NUNEZ  VAZQUEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/042 IXHUATAN.pdf,MORENA
+,7,CHIAPAS,,,42,IXHUATAN,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,3,ROSA LAURA  GOMEZ  GOMEZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/042 IXHUATAN.pdf,MORENA
+,7,CHIAPAS,,,42,IXHUATAN,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,4,SALOMON  DIAZ  HERNANDEZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/042 IXHUATAN.pdf,PVEM
+,7,CHIAPAS,,,42,IXHUATAN,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,5,JOANA YUSLEYDI  LOPEZ  SANCHEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/042 IXHUATAN.pdf,PMCH
+,7,CHIAPAS,,,42,IXHUATAN,,,REG_RP,PRD,9,JUANA SANCHEZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRD_AYTO_RP_1.pdf,PRD
+,7,CHIAPAS,,,42,IXHUATAN,,,REG_RP,PRD,10,MARIO HERNANDEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRD_AYTO_RP_2.pdf,PRD
+,7,CHIAPAS,,,43,IXTACOMITAN,,,PRES_MUN,MORENA,1,MIGUEL ANGEL MORENO PALACIOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/043 IXTACOMITAN.pdf,MORENA
+,7,CHIAPAS,,,43,IXTACOMITAN,,,SIND_MR,MORENA,2,BIANCA ADELIT SANCHEZ HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/043 IXTACOMITAN.pdf,MORENA
+,7,CHIAPAS,,,43,IXTACOMITAN,,,REG_MR,MORENA,3,TORIBIO DIAZ LORENZO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/043 IXTACOMITAN.pdf,MORENA
+,7,CHIAPAS,,,43,IXTACOMITAN,,,REG_MR,MORENA,4,PAMELA  DE LA CRUZ  PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/043 IXTACOMITAN.pdf,MORENA
+,7,CHIAPAS,,,43,IXTACOMITAN,,,REG_MR,MORENA,5,JOSE INES HERNANDEZ JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/043 IXTACOMITAN.pdf,MORENA
+,7,CHIAPAS,,,43,IXTACOMITAN,,,REG_RP,PT,9,MARLIN YUSSALETH LOPEZ CAMACHO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_19.pdf,PT
+,7,CHIAPAS,,,43,IXTACOMITAN,,,REG_RP,RSP,10,MARTHA CECILIA ESCANDON ALVAREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_9.pdf,RSP
+,7,CHIAPAS,,,44,IXTAPA,,,PRES_MUN,PT,1,ROBERTO JORDAN AGUILAR PAVON,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,SIND_MR,PT,2,ROMELIA ISELA  AGUILAR  GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_MR,PT,3,GREGORIO DE JESUS  SANCHEZ  RAMIREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_MR,PT,4,MARILU  RUIZ  PEREZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_MR,PT,5,ENRI NOE URBINA PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_MR,PT,6,GLADYS ARACELI RODRIGUEZ HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_MR,PT,7,FEDERICO  PEREZ  GUILLEN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/044 IXTAPA.pdf,PT
+,7,CHIAPAS,,,44,IXTAPA,,,REG_RP,MORENA,11,LAURA GUADALUPE FLORES  GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_31.pdf,MORENA
+,7,CHIAPAS,,,44,IXTAPA,,,REG_RP,PVEM,12,GRACIELA HERNANDEZ NAJERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_33.pdf,PVEM
+,7,CHIAPAS,,,44,IXTAPA,,,REG_RP,MORENA,13,FERNANDO AGUILAR PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_32.pdf,MORENA
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,PRES_MUN,RSP,1,JUAN IGNACIO GONZALEZ GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/045 IXTAPANGAJOYA.pdf,RSP
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,SIND_MR,RSP,2,ELBIA SHILON SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/045 IXTAPANGAJOYA.pdf,RSP
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,REG_MR,RSP,3,GREGORIO DIAZ RUIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/045 IXTAPANGAJOYA.pdf,RSP
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,REG_MR,RSP,4,MARIA ALEXANDRA RUIZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/045 IXTAPANGAJOYA.pdf,RSP
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,REG_MR,RSP,5,BARTOLO VILLEGAS JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/045 IXTAPANGAJOYA.pdf,RSP
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,REG_RP,PT,9,GUILLERMINA  CASTELLANOS CASTRO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_20.pdf,PT
+,7,CHIAPAS,,,45,IXTAPANGAJOYA,,,REG_RP,PT,10,CANDELARIO  HERNANDEZ ALVAREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_21.pdf,PT
+,7,CHIAPAS,,,46,JIQUIPILAS,,,PRES_MUN,MORENA,1,BLANCA YANETH CHIU LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,SIND_MR,MORENA,2,RICARDO SANCHEZ ZEBADUA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_MR,MORENA,3,BENERITA VELA  AVENDANO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_MR,MORENA,4,ROMEO GARCIA ESTRADA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_MR,MORENA,5,ARACELI VALLE  VICENTE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_MR,MORENA,6,CARLOS EDUARDO CALVO GIL,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_MR,MORENA,7,ALBA DANIELA SANTOS MENDOZA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/046 JIQUIPILAS.pdf,MORENA
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_RP,PVEM,11,ALEJANDRA SANCHEZ CERDA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_34.pdf,PVEM
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_RP,PVEM,12,MARGARITO PEREZ RUIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_35.pdf,PVEM
+,7,CHIAPAS,,,46,JIQUIPILAS,,,REG_RP,PVEM,13,LUZ CLARITA OROZCO CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_36.pdf,PVEM
+,7,CHIAPAS,,,47,JITOTOL,,,PRES_MUN,RSP,1,JOSE GREGORIO PEREZ MOLINA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,SIND_MR,RSP,2,MARIA GUADALUPE PEREZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_MR,RSP,3,MARTIN ROJAS ROJAS,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_MR,RSP,4,GREGORIA HERNANDEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_MR,RSP,5,FRANCISCO LOPEZ RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_MR,RSP,6,ADI YANETH PORTILLO DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_MR,RSP,7,YESENIA GUADALUPE DIAZ CRUZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/047 JITOTOL.pdf,RSP
+,7,CHIAPAS,,,47,JITOTOL,,,REG_RP,PVEM,11,MARIA DEL ROSARIO CORONEL VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_37.pdf,PVEM
+,7,CHIAPAS,,,47,JITOTOL,,,REG_RP,MORENA,12,BLANCA AIDA BEDRAN DEL CARPIO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_33.pdf,MORENA
+,7,CHIAPAS,,,47,JITOTOL,,,REG_RP,PT,13,CELIA PEREZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_22.pdf,PT
+,7,CHIAPAS,,,48,JUAREZ,,,PRES_MUN,PVEM,1,OSCAR SERRA CANTORAL,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,SIND_MR,PVEM,2,FELISA SOBERANO ZENTENO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_MR,PVEM,3,JESUS SILVA ARZAT,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_MR,PVEM,4,LUZ MARIA OCAMPO CELIS DEL ANGEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_MR,PVEM,5,ALBERTO ROMERO RODRIGUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_MR,PVEM,6,SHIRLY SHURABY REYES  GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_MR,PVEM,7,CARLOS AGUSTO MORALES CHAVEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/048 JUAREZ.pdf,PVEM
+,7,CHIAPAS,,,48,JUAREZ,,,REG_RP,PT,11,ROSA MARIA PAZ CONTRERAS,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_23.pdf,PT
+,7,CHIAPAS,,,48,JUAREZ,,,REG_RP,PCHU,12,MAYGUALIDA ROMERO GUICHARD,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_6.pdf,PCHU
+,7,CHIAPAS,,,48,JUAREZ,,,REG_RP,MORENA,13,CECILIA GUTIERREZ HERRERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_34.pdf,MORENA
+,7,CHIAPAS,,,49,LARRAINZAR,,,PRES_MUN,PRI,1,ANDRES RUIZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,SIND_MR,PRI,2,MARIA TERESA RUIZ SANTIZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_MR,PRI,3,ALFONSO HERMILO HERNANDEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_MR,PRI,4,ANDREA MARCELA TERATOL GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_MR,PRI,5,MARCELINO  RUIZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_MR,PRI,6,ANDREA  LOPEZ GONZALEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_MR,PRI,7,JOSE LUIS  DIAZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/049 LARRAINZAR.pdf,PRI
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_RP,RSP,11,ANTONIA LOPEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_10.pdf,RSP
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_RP,RSP,12,MANUEL NUNEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_11.pdf,RSP
+,7,CHIAPAS,,,49,LARRAINZAR,,,REG_RP,MORENA,13,MARIA MAGDALENA  HERNANDEZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_35.pdf,MORENA
+,7,CHIAPAS,,,50,LA LIBERTAD,,,PRES_MUN,CAND_IND1,1,PORFIRIO  CORREA LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/050 LA LIBERTAD.pdf,CAND_IND1
+,7,CHIAPAS,,,50,LA LIBERTAD,,,SIND_MR,CAND_IND1,2,YANET DEL ROSARIO VASQUEZ CABRERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/050 LA LIBERTAD.pdf,CAND_IND1
+,7,CHIAPAS,,,50,LA LIBERTAD,,,REG_MR,CAND_IND1,3,FREDY CONTRERAS LANDERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/050 LA LIBERTAD.pdf,CAND_IND1
+,7,CHIAPAS,,,50,LA LIBERTAD,,,REG_MR,CAND_IND1,4,KARLA FERNANDA MORENO OLAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/050 LA LIBERTAD.pdf,CAND_IND1
+,7,CHIAPAS,,,50,LA LIBERTAD,,,REG_MR,CAND_IND1,5,MIGUEL ANGEL CRUZ PARCERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/050 LA LIBERTAD.pdf,CAND_IND1
+,7,CHIAPAS,,,50,LA LIBERTAD,,,REG_RP,PT,9,ROSARIO PEREZ MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_24.pdf,PT
+,7,CHIAPAS,,,50,LA LIBERTAD,,,REG_RP,PT,10,CRISTOBAL LIZCANO SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_25.pdf,PT
+,7,CHIAPAS,,,51,MAPASTEPEC,,,PRES_MUN,PVEM,1,AMANDO ESPINOSA CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,SIND_MR,PVEM,2,IRANY KARINA GONZALEZ ALFARO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_MR,PVEM,3,OCTAVIO ANGEL  CUETO PIMENTEL,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_MR,PVEM,4,JOSSELIN VIRIDIANA MONTES GUTIERREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_MR,PVEM,5,SERGIO LUIS AGUILAR GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_MR,PVEM,6,FRIDA VIRIDIANA COUTINO  JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_MR,PVEM,7,ANGEL GABRIEL CASILLAS OVANDO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/051 MAPASTEPEC.pdf,PVEM
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_RP,MORENA,11,CECILIA RAQUEL CANO CIGARROA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_36.pdf,MORENA
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_RP,PT,12,MARLENI DE LA CRUZ AGUILAR ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_26.pdf,PT
+,7,CHIAPAS,,,51,MAPASTEPEC,,,REG_RP,MORENA,13,ELMER RUBEN NORIEGA CANO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_37.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,PRES_MUN,MORENA,1,BLADIMIR HERNANDEZ ALVAREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,SIND_MR,MORENA,2,MIRIAM VICTORIA MENDEZ SANTIZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,3,ALVARO LEON  GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,4,GABRIELA VELASCO LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,5,REY DAVID HERNANDEZ  HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,6,NAYELI  LOPEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,7,RAMIRO SANTIS LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_MR,MORENA,8,CARMEN FIDELINA RODRIGUEZ  SALAZAR,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/052 LAS MARGARITAS.pdf,MORENA
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_RP,PVEM,13,HILDA VERONICA DOMINGUEZ AGUILAR,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_38.pdf,PVEM
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_RP,PVEM,14,MOISES  VAZQUEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_39.pdf,PVEM
+,7,CHIAPAS,,,52,LAS MARGARITAS,,,REG_RP,PVEM,15,ANA MARIA  HERNANDEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_40.pdf,PVEM
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,PRES_MUN,PCHU,1,WILDER ALBERTO JACOB GUZMAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/053 MAZAPA DE MADERO.pdf,PCHU
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,SIND_MR,PCHU,2,ELMA DELLVI TRIGUEROZ VASQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/053 MAZAPA DE MADERO.pdf,PCHU
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,REG_MR,PCHU,3,ELGAR  PEREZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/053 MAZAPA DE MADERO.pdf,PCHU
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,REG_MR,PCHU,4,ANAJOSE GALVEZ GONZALEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/053 MAZAPA DE MADERO.pdf,PCHU
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,REG_MR,PCHU,5,PABLO  MORALES GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/053 MAZAPA DE MADERO.pdf,PCHU
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,REG_RP,PT,9,DULCE LIZBETH GONZALEZ GONZALEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_27.pdf,PT
+,7,CHIAPAS,,,53,MAZAPA DE MADERO,,,REG_RP,PT,10,FLOREBEL SANCHEZ GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_28.pdf,PT
+,7,CHIAPAS,,,54,MAZATAN,,,PRES_MUN,MORENA,1,SARA  BARRERA  SOLIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,SIND_MR,MORENA,2,OSMAR CHIU MARROQUIN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_MR,MORENA,3,SAIDA ROBLERO ESCOBAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_MR,MORENA,4,ALVARO IBARRA IBARIAS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_MR,MORENA,5,AZUCENA CIGARROA RODAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_MR,MORENA,6,EDEL JUAREZ MENDOZA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_MR,MORENA,7,KARLA MADRID  MENDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/054 MAZATAN.pdf,MORENA
+,7,CHIAPAS,,,54,MAZATAN,,,REG_RP,PT,11,MARLEN GUADALUPE VICTORIO CIGARROA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_29.pdf,PT
+,7,CHIAPAS,,,54,MAZATAN,,,REG_RP,RSP,12,YENI PALOMEQUE MORGA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_12.pdf,RSP
+,7,CHIAPAS,,,54,MAZATAN,,,REG_RP,PVEM,13,ARLYN CONCEPCION ARROYO HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_41.pdf,PVEM
+,7,CHIAPAS,,,55,METAPA,,,PRES_MUN,RSP,1,LUIS SALGADO CERVANTES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/055 METAPA.pdf,RSP
+,7,CHIAPAS,,,55,METAPA,,,SIND_MR,RSP,2,PETRONA RODRIGUEZ ANGEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/055 METAPA.pdf,RSP
+,7,CHIAPAS,,,55,METAPA,,,REG_MR,RSP,3,GERMAN MEZA  RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/055 METAPA.pdf,RSP
+,7,CHIAPAS,,,55,METAPA,,,REG_MR,RSP,4,GRECIA ESTEFANIA PEREZ  GUTIERREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/055 METAPA.pdf,RSP
+,7,CHIAPAS,,,55,METAPA,,,REG_MR,RSP,5,ALFREDO DOMINGUEZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/055 METAPA.pdf,RSP
+,7,CHIAPAS,,,55,METAPA,,,REG_RP,CAND_IND1,9,MARLENI MERIDA WONG,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/CI_AYTO_RP_3.pdf,CAND_IND1
+,7,CHIAPAS,,,55,METAPA,,,REG_RP,CAND_IND1,10,LEOBARDO  LOPEZ MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/CI_AYTO_RP_2.pdf,CAND_IND1
+,7,CHIAPAS,,,56,MITONTIC,,,PRES_MUN,PVEM,1,MARIA VELAZQUEZ ORTIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/056 MITONTIC.pdf,PVEM
+,7,CHIAPAS,,,56,MITONTIC,,,SIND_MR,PVEM,2,ROBERTO MENDEZ ORDONEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/056 MITONTIC.pdf,PVEM
+,7,CHIAPAS,,,56,MITONTIC,,,REG_MR,PVEM,3,PATRICIA VELASCO LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/056 MITONTIC.pdf,PVEM
+,7,CHIAPAS,,,56,MITONTIC,,,REG_MR,PVEM,4,ALBERTO VELASCO GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/056 MITONTIC.pdf,PVEM
+,7,CHIAPAS,,,56,MITONTIC,,,REG_MR,PVEM,5,SUSANA MENDEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/056 MITONTIC.pdf,PVEM
+,7,CHIAPAS,,,56,MITONTIC,,,REG_RP,PRI,9,YOLANDA SANTIZ VELASCO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_12.pdf,PRI
+,7,CHIAPAS,,,56,MITONTIC,,,REG_RP,MORENA,10,NELIA REYES VELAZQUEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_38.pdf,MORENA
+,7,CHIAPAS,,,57,MOTOZINTLA,,,PRES_MUN,PT,1,ALFONSO MEZA PIVARAL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,SIND_MR,PT,2,MARENY MORALES GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_MR,PT,3,BILMER ESAU  LOPEZ VASQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_MR,PT,4,GLADIS ALEJANDRA GOMEZ UTRILLA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_MR,PT,5,JOSE ALFREDO  JIMENEZ  PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_MR,PT,6,ANDREA  LOPEZ ZUNUN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_MR,PT,7,CARLOS RUBEN MAGANA GONZALEZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/057 MOTOZINTLA.pdf,PT
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_RP,PVEM,11,NOELIA SANCHEZ DE LEON,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_42.pdf,PVEM
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_RP,MORENA,12,CECILIA CAROLINA GONZALEZ RAMIREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_39.pdf,MORENA
+,7,CHIAPAS,,,57,MOTOZINTLA,,,REG_RP,RSP,13,IDEMI MOSQUEDA JIMENEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_13.pdf,RSP
+,7,CHIAPAS,,,58,NICOLAS RUIZ,,,PRES_MUN,MORENA,1,AUDELIO JIMENEZ GOMEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/058 NICOLAS RUIZ.pdf,MORENA
+,7,CHIAPAS,,,58,NICOLAS RUIZ,,,SIND_MR,MORENA,2,TRINIDAD YESSERED HERNANDEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/058 NICOLAS RUIZ.pdf,MORENA
+,7,CHIAPAS,,,58,NICOLAS RUIZ,,,REG_MR,MORENA,3,JOSE MANUEL JUAREZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/058 NICOLAS RUIZ.pdf,MORENA
+,7,CHIAPAS,,,58,NICOLAS RUIZ,,,REG_MR,MORENA,4,AGUSTINA  LOPEZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/058 NICOLAS RUIZ.pdf,MORENA
+,7,CHIAPAS,,,58,NICOLAS RUIZ,,,REG_MR,MORENA,5,RIGOBERTO  RAMIREZ CARDENAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/058 NICOLAS RUIZ.pdf,MORENA
+,7,CHIAPAS,,,59,OCOSINGO,,,PRES_MUN,PVEM,1,MANUELA ANGELICA MENDEZ CRUZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,SIND_MR,PVEM,2,MARTIN MARTINEZ  DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,3,SHIRLEY CRISTAL AGUILAR  BALLINAS ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,4,ISAIAS  LOPEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,5,REYNA CRUZ TOLEDO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,6,ELIAS HERNANDEZ MORENO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,7,MARINA MADAI TOLEDO LORENZO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_MR,PVEM,8,ESQUIVEL CRUZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/059 OCOSINGO.pdf,PVEM
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_RP,MORENA,13,YESENIA GUADALUPE ARGUELLO LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_40.pdf,MORENA
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_RP,MORENA,14,ANTONIO MENDEZ IZQUIERDO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_41.pdf,MORENA
+,7,CHIAPAS,,,59,OCOSINGO,,,REG_RP,MORENA,15,BEATRIZ ADRIANA GOMEZ RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_18.pdf,MORENA
+,7,CHIAPAS,,,60,OCOTEPEC,,,PRES_MUN,PT,1,ISIDRO BALDEMAR RAMOS  BONIFAS,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/060 OCOTEPEC.pdf,PT
+,7,CHIAPAS,,,60,OCOTEPEC,,,SIND_MR,PT,2,ELZA  HERNANDEZ  MUNOZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/060 OCOTEPEC.pdf,PT
+,7,CHIAPAS,,,60,OCOTEPEC,,,REG_MR,PT,3,ROMALDO  CRUZ  ESTEBAN ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/060 OCOTEPEC.pdf,PT
+,7,CHIAPAS,,,60,OCOTEPEC,,,REG_MR,PT,4,YURIDIA  RAMOS  VALLE,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/060 OCOTEPEC.pdf,PT
+,7,CHIAPAS,,,60,OCOTEPEC,,,REG_MR,PT,5,PETRONILO  MORALES VAZQUEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/060 OCOTEPEC.pdf,PT
+,7,CHIAPAS,,,60,OCOTEPEC,,,REG_RP,PRI,9,AURORA SANCHEZ VAZQUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_13.pdf,PRI
+,7,CHIAPAS,,,60,OCOTEPEC,,,REG_RP,PRI,10,POMPOSO PEREZ SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_14.pdf,PRI
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,PRES_MUN,PVEM,1,FRANCISCO JAVIER  CHAMBE  MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,SIND_MR,PVEM,2,ELSA RUIZ FERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_MR,PVEM,3,RENE ALBERTO  PIMENTEL MANDUJANO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_MR,PVEM,4,SARA CRUZ JUAREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_MR,PVEM,5,AMILCAR  DIAZ SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_MR,PVEM,6,ALMA ROSA MANCILLA  ESPINOSA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_MR,PVEM,7,JUAN FERNANDO JIMENEZ ALVARADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/061 OCOZOCOAUTLA DE ESPINOSA.pdf,PVEM
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_RP,PMCH,11,OLGA NAYELI ESTRADA HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_5.pdf,PMCH
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_RP,MORENA,12,NIDIA ALEJANDRA DE LOS SANTOS  SARMIENTO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_19.pdf,MORENA
+,7,CHIAPAS,,,61,OCOZOCOAUTLA DE ESPINOSA,,,REG_RP,PMCH,13,ALFONSO  ESTRADA PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_6.pdf,PMCH
+,7,CHIAPAS,,,62,OSTUACAN,,,PRES_MUN,MORENA,1,VICTOR MANUEL LOPEZ  JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,SIND_MR,MORENA,2,MARTHA JUAREZ  CADENA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_MR,MORENA,3,JUAN ANTONIO JIMENEZ HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_MR,MORENA,4,MARISOL  LOPEZ CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_MR,MORENA,5,JUAN JOSE  CASTELLANOS LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_MR,MORENA,6,PENIEL  MUNOZ MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_MR,MORENA,7,ALFREDO  SOSA CERINO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/062 OSTUACAN.pdf,MORENA
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_RP,RSP,11,CESIA SULEMA HERNANDEZ  VALLE,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_14.pdf,RSP
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_RP,PMCH,12,MARTHA ITZEL BALBOA HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_7.pdf,PMCH
+,7,CHIAPAS,,,62,OSTUACAN,,,REG_RP,RSP,13,GABRIEL DE JESUS CONSTANTINO ACOSTA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_100.pdf,RSP
+,7,CHIAPAS,,,63,OSUMACINTA,,,PRES_MUN,PAN_PRI_PRD,1,SAMUEL  ALEGRIA PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/063 OSUMACINTA.pdf,PAN
+,7,CHIAPAS,,,63,OSUMACINTA,,,SIND_MR,PAN_PRI_PRD,2,FABIOLA  SANCHEZ ARCHILA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/063 OSUMACINTA.pdf,PRI
+,7,CHIAPAS,,,63,OSUMACINTA,,,REG_MR,PAN_PRI_PRD,3,GERARDO LUIS PEREZ  DE LA CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/063 OSUMACINTA.pdf,PRD
+,7,CHIAPAS,,,63,OSUMACINTA,,,REG_MR,PAN_PRI_PRD,4,CINTHIA ELIZABETH GONZALEZ SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/063 OSUMACINTA.pdf,PAN
+,7,CHIAPAS,,,63,OSUMACINTA,,,REG_MR,PAN_PRI_PRD,5,ARCIDES  HERNANDEZ RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/063 OSUMACINTA.pdf,PAN
+,7,CHIAPAS,,,63,OSUMACINTA,,,REG_RP,PCHU,9,BLANCA NELI PEREZ ARCHILA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_7.pdf,PCHU
+,7,CHIAPAS,,,63,OSUMACINTA,,,REG_RP,PCHU,10,EDUARDO  GONZALEZ VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_8.pdf,PCHU
+,7,CHIAPAS,,,65,PALENQUE,,,PRES_MUN,PVEM,1,JORGE CABRERA AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,SIND_MR,PVEM,2,GUADALUPE  CORTES JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,3,DANIEL LOPEZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,4,CARMEN MORALES JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,5,CESAR EDUARDO DURAN  RIVAMAR,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,6,LUVIA ISABEL MARTINEZ  BALLINAS,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,7,DANIEL  SANCHEZ  MONTEJO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_MR,PVEM,8,XOCHITL IXTMAGEL ESPINOSA CAMERA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/065 PALENQUE.pdf,PVEM
+,7,CHIAPAS,,,65,PALENQUE,,,REG_RP,MORENA,13,CANDELARIA ARCOS  GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_20.pdf,MORENA
+,7,CHIAPAS,,,65,PALENQUE,,,REG_RP,PT,14,GLORIA VIANEY ZAMUDIO ALEJO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_30.pdf,PT
+,7,CHIAPAS,,,65,PALENQUE,,,REG_RP,MORENA,15,GILBERTO  TORRES PENATE ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_21.pdf,MORENA
+,7,CHIAPAS,,,67,PANTEPEC,,,PRES_MUN,PCHU,1,OSMAR WILIAN VELASCO GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/067 PANTEPEC.pdf,PCHU
+,7,CHIAPAS,,,67,PANTEPEC,,,SIND_MR,PCHU,2,MARUCA HERNANDEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/067 PANTEPEC.pdf,PCHU
+,7,CHIAPAS,,,67,PANTEPEC,,,REG_MR,PCHU,3,VICTOR HERNANDEZ GARCIA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/067 PANTEPEC.pdf,PCHU
+,7,CHIAPAS,,,67,PANTEPEC,,,REG_MR,PCHU,4,LOURDES ALVARADO CAMACHO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/067 PANTEPEC.pdf,PCHU
+,7,CHIAPAS,,,67,PANTEPEC,,,REG_MR,PCHU,5,ALEJANDRO GOMEZ AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/067 PANTEPEC.pdf,PCHU
+,7,CHIAPAS,,,67,PANTEPEC,,,REG_RP,PAN,9,VIRGINIA  HERNANDEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_3.pdf,PAN
+,7,CHIAPAS,,,67,PANTEPEC,,,REG_RP,PAN,10,LUCIO HERNANDEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_4.pdf,PAN
+,7,CHIAPAS,,,68,PICHUCALCO,,,PRES_MUN,MORENA,1,ANDRES CARBALLO CORDOVA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,SIND_MR,MORENA,2,ELVIRA  GONZALEZ HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_MR,MORENA,3,MARIANO CANTORAL GUZMAN,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_MR,MORENA,4,GENOVEVA DEL CARMEN  CRUZ MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_MR,MORENA,5,DIEGO ARMANDO RODRIGUEZ VAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_MR,MORENA,6,LEYLA JULISSA NAREZ AGUILAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_MR,MORENA,7,HEBER ISAI LOPEZ SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/068 PICHUCALCO.pdf,MORENA
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_RP,RSP,11,SUHEY DAYANA HERNANDEZ VERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_16.pdf,RSP
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_RP,RSP,12,JOSE ATILA LOPEZ QUIROLI,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_17.pdf,RSP
+,7,CHIAPAS,,,68,PICHUCALCO,,,REG_RP,PES,13,JOSEFA  CERNUDA  HERNANDEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_4.pdf,PES
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,PRES_MUN,MORENA,1,CARLOS ALBERTO ALBORES LIMA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,SIND_MR,MORENA,2,EDITH  CRUZ TRINIDAD ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_MR,MORENA,3,FELIPE DE JESUS ULLOA  DUQUE ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_MR,MORENA,4,MARIA ANGELICA ANTONIO  VELAZQUEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_MR,MORENA,5,WILBERT ISAI  SOLIS  LUIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_MR,MORENA,6,MARTHA ELENA LOPEZ SOLIS ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_MR,MORENA,7,GABRIEL ANTONIO  DE PAZ VAZQUEZ ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/069 PIJIJIAPAN.pdf,MORENA
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_RP,RSP,11,VERONICA ARCEO SOLIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_18.pdf,RSP
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_RP,RSP,12,JULIO ENRIQUE MONTOYA MARTINEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_19.pdf,RSP
+,7,CHIAPAS,,,69,PIJIJIAPAN,,,REG_RP,RSP,13,SAHIAN LILI CRUZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_20.pdf,RSP
+,7,CHIAPAS,,,70,EL PORVENIR,,,PRES_MUN,PT,1,JOSUE MAXIMILIANO GONZALEZ  PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/070 EL PORVENIR.pdf,PT
+,7,CHIAPAS,,,70,EL PORVENIR,,,SIND_MR,PT,2,MANDY VILLERMINDA SALAS PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/070 EL PORVENIR.pdf,PT
+,7,CHIAPAS,,,70,EL PORVENIR,,,REG_MR,PT,3,MARIO PEREZ MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/070 EL PORVENIR.pdf,PT
+,7,CHIAPAS,,,70,EL PORVENIR,,,REG_MR,PT,4,MARIA DIAZ MORALES,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/070 EL PORVENIR.pdf,PT
+,7,CHIAPAS,,,70,EL PORVENIR,,,REG_MR,PT,5,YURDI AVINADAB HERNANDEZ  GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/070 EL PORVENIR.pdf,PT
+,7,CHIAPAS,,,70,EL PORVENIR,,,REG_RP,RSP,9,RODE PEREZ  LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_21.pdf,RSP
+,7,CHIAPAS,,,70,EL PORVENIR,,,REG_RP,PCHU,10,VERONICA MELIDA VAZQUEZ MENDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_9.pdf,PCHU
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,PRES_MUN,PMCH,1,ERLEN  SANCHEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,SIND_MR,PMCH,2,FLORINDA PEREZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_MR,PMCH,3,JOSE LUIS  LOPEZ MARQUEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_MR,PMCH,4,DULCE DEL CARMEN  HIDALGO MORENO ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_MR,PMCH,5,JUVENCIO RUIZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_MR,PMCH,6,FLOR DANEYDA FLORES HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_MR,PMCH,7,MANUEL DE JESUS  VELASCO HERNANDEZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/071 PUEBLO NUEVO SOLISTAHUACAN.pdf,PMCH
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_RP,MORENA,11,MARIA ELENA GOMEZ ZENTENO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_22.pdf,MORENA
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_RP,MORENA,12,YAIR DE JESUS ARIAZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_68.pdf,MORENA
+,7,CHIAPAS,,,71,PUEBLO NUEVO SOLISTAHUACAN,,,REG_RP,MORENA,13,ANDREA LOPEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_101.pdf,MORENA
+,7,CHIAPAS,,,72,RAYON,,,PRES_MUN,RSP,1,DOMINGO GONZALEZ TREJO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/072 RAYON.pdf,RSP
+,7,CHIAPAS,,,72,RAYON,,,SIND_MR,RSP,2,JUANA  RODRIGUEZ SOLORZANO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/072 RAYON.pdf,RSP
+,7,CHIAPAS,,,72,RAYON,,,REG_MR,RSP,3,JOSE JULIAN PANIAGUA PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/072 RAYON.pdf,RSP
+,7,CHIAPAS,,,72,RAYON,,,REG_MR,RSP,4,MARIA NORMA ARIAS GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/072 RAYON.pdf,RSP
+,7,CHIAPAS,,,72,RAYON,,,REG_MR,RSP,5,BRENDA DEL CARMEN HERNANDEZ SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/072 RAYON.pdf,RSP
+,7,CHIAPAS,,,72,RAYON,,,REG_RP,PCHU,9,DIANA MARIELA ZENTENO AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_10.pdf,PCHU
+,7,CHIAPAS,,,72,RAYON,,,REG_RP,PCHU,10,VICTOR MANUEL FLORES GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_11.pdf,PCHU
+,7,CHIAPAS,,,73,REFORMA,,,PRES_MUN,MC,1,PEDRO  RAMIREZ RAMOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,SIND_MR,MC,2,DENISSE CADENAS VALENZUELA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_MR,MC,3,LORENZO  CONTRERAS RODRIGUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_MR,MC,4,MARISOL MEJIA RIOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_MR,MC,5,JOHANA CRISTHEL VIDAL RUEDAS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_MR,MC,6,CRISTINA  SALAZAR QUIRIO,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_MR,MC,7,JUAN DIEGO LARA RAMON,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/073 REFORMA.pdf,MC
+,7,CHIAPAS,,,73,REFORMA,,,REG_RP,MORENA,11,YESENIA JUDITH MARTINEZ DANTORI,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_24.pdf,PES
+,7,CHIAPAS,,,73,REFORMA,,,REG_RP,MORENA,12,HOMAR MARTINEZ RODRIGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_67.pdf,MORENA
+,7,CHIAPAS,,,73,REFORMA,,,REG_RP,MORENA,13,JANETH ALEJANDRA  PULIDO MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_25.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,PRES_MUN,MORENA,1,JESUS ANTONIO ORANTES NORIEGA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,SIND_MR,MORENA,2,MARIA FERNANDA ARGUELLO TAMAYO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_MR,MORENA,3,CHRISTIAN PAVEL PADILLA ALBORES,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_MR,MORENA,4,BRISCEYDA KAREN SANTIAGO DOMINGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_MR,MORENA,5,ANGEL JOEL ORDONEZ BERMUDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_MR,MORENA,6,GEORGINA GUADALUPE MEZA GORDILLO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_MR,MORENA,7,RUBEN ENRIQUE GARCIA DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/074 LAS ROSAS.pdf,MORENA
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_RP,PVEM,11,RAQUEL SANTIAGO ROBLES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_43.pdf,PVEM
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_RP,PVEM,12,FRANCISCO GOMEZ ORDOÑEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_101.pdf,PVEM
+,7,CHIAPAS,,,74,LAS ROSAS,,,REG_RP,PVEM,13,JUANA  GUZMAN  ALVARO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_45.pdf,PVEM
+,7,CHIAPAS,,,75,SABANILLA,,,PRES_MUN,MORENA,1,CARLOS CLEBER  GONZALEZ CABELLO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,SIND_MR,MORENA,2,ALMA LOPEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_MR,MORENA,3,VICTOR LEANDRO  MARTINEZ  LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_MR,MORENA,4,FENIA DE JESUS  LOPEZ CRUZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_MR,MORENA,5,SERGIO TORRES PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_MR,MORENA,6,BLANCA ESTELA  PEREZ CASTELLANOS ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_MR,MORENA,7,ELISEO  LOPEZ JIMENEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/075 SABANILLA.pdf,MORENA
+,7,CHIAPAS,,,75,SABANILLA,,,REG_RP,PT,11,MARIA DEL CARMEN JIMENEZ ENCINO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_31.pdf,PT
+,7,CHIAPAS,,,75,SABANILLA,,,REG_RP,PT,12,JENARO VAZQUEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_32.pdf,PT
+,7,CHIAPAS,,,75,SABANILLA,,,REG_RP,PT,13,JOVITA PEREZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_33.pdf,PT
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,PRES_MUN,PVEM,1,HUMBERTO SANCHEZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,SIND_MR,PVEM,2,IRENE CORDOVA VAZQUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_MR,PVEM,3,MANUEL MENDEZ SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_MR,PVEM,4,MARIA DEL SOCORRO  GUTIERREZ  LARA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_MR,PVEM,5,FRANCISCO  SANCHEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_MR,PVEM,6,MARIA ISABEL SANCHEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_MR,PVEM,7,RICARDO GONZALO MORAL LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/076 SALTO DE AGUA.pdf,PVEM
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_RP,MORENA,11,YOSELIN DEL CARMEN MENA RIOS,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_26.pdf,MORENA
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_RP,MORENA,12,NEEMIAS  VAZQUEZ GUTIERREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_27.pdf,MORENA
+,7,CHIAPAS,,,76,SALTO DE AGUA,,,REG_RP,MORENA,13,ARACELI LOPEZ PENATE,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_28.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,PRES_MUN,MORENA,1,FABIOLA RICCI DIESTEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,SIND_MR,MORENA,2,JORGE ALEJANDRO RUIZ HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,3,ROXANA MARIA RAMOS SANGEADO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,4,SERGIO NATAREN GUTIERREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,5,LAURA GABRIELA MUNOZ MONTOYA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,6,FIDEL KALAX RUIZ BURGUETE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,7,DAYANA CHACON MARTINEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_MR,MORENA,8,MAXIMILIANO PEREZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/077 SAN CRISTOBAL DE LAS CASAS.pdf,MORENA
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_RP,PT,13,LINA IRENE LIEVANO ALFARO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_34.pdf,PT
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_RP,PRI,14,MARIA JOSE  VELASCO  MOSCOSO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_15.pdf,PRI
+,7,CHIAPAS,,,77,SAN CRISTOBAL DE LAS CASAS,,,REG_RP,PVEM,15,LINDA  HIGUERA GUTIERREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_46.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,PRES_MUN,PVEM,1,EDIBERTO GUTIERREZ AGUILAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,SIND_MR,PVEM,2,FLOR DE LIZ  GUZMAN  REYES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_MR,PVEM,3,HUMBERTO VISAEL PEREZ GUTIERREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_MR,PVEM,4,ALEJANDRA  CHACON  VAZQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_MR,PVEM,5,ISMAEL JESUS  LOPEZ AQUINO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_MR,PVEM,6,ALEJANDRA GUADALUPE PEREZ VIZA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_MR,PVEM,7,FRANCISCO RODOLFO JIMENEZ VIZA,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/078 SAN FERNANDO.pdf,PVEM
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_RP,RSP,11,GABRIELA BEATRIZ JIMENEZ  HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_101.pdf,RSP
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_RP,MORENA,12,GABRIELA GALLEGOS MARINA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_29.pdf,MORENA
+,7,CHIAPAS,,,78,SAN FERNANDO,,,REG_RP,PCHU,13,AURA RAMONA AQUINO PALACIOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_12.pdf,PCHU
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,PRES_MUN,PRI,1,JUAN  LOPEZ MENDOZA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,SIND_MR,PRI,2,VERONICA LOPEZ TORRES,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_MR,PRI,3,MANUEL LOPEZ MENDOZA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_MR,PRI,4,ROSA SANTIZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_MR,PRI,5,SEBASTIAN SANTIZ CRUZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_MR,PRI,6,YOLANDA SANTIZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_MR,PRI,7,NICOLAS SANTIZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/079 SAN JUAN CANCUC.pdf,PRI
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_RP,MORENA,11,NATALIA LOPEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_2.pdf,MORENA
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_RP,MORENA,12,ANTONIO CRUZ TORRES,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_3.pdf,MORENA
+,7,CHIAPAS,,,79,SAN JUAN CANCUC,,,REG_RP,RSP,13,LUCIA DOMINGUEZ AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_23.pdf,RSP
+,7,CHIAPAS,,,80,SAN LUCAS,,,PRES_MUN,PVEM,1,GUADALUPE GUZMAN VILLARREAL,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/080 SAN LUCAS.pdf,PVEM
+,7,CHIAPAS,,,80,SAN LUCAS,,,SIND_MR,PVEM,2,HECTOR IVAN FLORES DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/080 SAN LUCAS.pdf,PVEM
+,7,CHIAPAS,,,80,SAN LUCAS,,,REG_MR,PVEM,3,CITLALI ESTEFANIA MARTINEZ SUAREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/080 SAN LUCAS.pdf,PVEM
+,7,CHIAPAS,,,80,SAN LUCAS,,,REG_MR,PVEM,4,RUSBEL BACILIO DIAZ SANTIAGO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/080 SAN LUCAS.pdf,PVEM
+,7,CHIAPAS,,,80,SAN LUCAS,,,REG_MR,PVEM,5,MARIA FLOSELO VAZQUEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/080 SAN LUCAS.pdf,PVEM
+,7,CHIAPAS,,,80,SAN LUCAS,,,REG_RP,RSP,9,MAYRA KARINA LOPEZ GUTIERREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_24.pdf,RSP
+,7,CHIAPAS,,,80,SAN LUCAS,,,REG_RP,MORENA,10,IRMA VAZQUEZ NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_4.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,PRES_MUN,MORENA,1,LEYDI YESENIA SALAS MERIDA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,SIND_MR,MORENA,2,JOSE MIXAR RAMIREZ MUNOZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_MR,MORENA,3,IRENE BERNARDA PEREZ ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_MR,MORENA,4,ISAI SALIM HERNANDEZ VERDUGO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_MR,MORENA,5,YURENI DIAZ RAMIREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_MR,MORENA,6,ANGEL ROBLERO PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_MR,MORENA,7,PASCASIA MAZARIEGOS ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/081 SILTEPEC.pdf,MORENA
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_RP,PVEM,11,ADA LUZ GONZALEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_47.pdf,PVEM
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_RP,PRI,12,YESENIA GUADALUPE MAZARIEGOS ROBLERO,2,Candidaturas de personas jovenes,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_100.pdf,PRI
+,7,CHIAPAS,,,81,SILTEPEC,,,REG_RP,PVEM,13,CALEB ORAN PEREZ GONZALEZ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_48.pdf,PVEM
+,7,CHIAPAS,,,82,SIMOJOVEL,,,PRES_MUN,MORENA,1,INOCENCIO AGENOR  DOMINGUEZ  HERNANDEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,SIND_MR,MORENA,2,ELENA LOPEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_MR,MORENA,3,MOISES RUIZ SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_MR,MORENA,4,AURIA MENDEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_MR,MORENA,5,MARIANO GOMEZ GIRON,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_MR,MORENA,6,NATALIA HERNANDEZ HERETIA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_MR,MORENA,7,LEONEL GOMEZ HERNANDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/082 SIMOJOVEL.pdf,MORENA
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_RP,PVEM,11,CATARINA CRUZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_49.pdf,PVEM
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_RP,PVEM,12,GUILLERMO ITURIEL GORDILLO PENAGOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_50.pdf,PVEM
+,7,CHIAPAS,,,82,SIMOJOVEL,,,REG_RP,PVEM,13,LUCIA DEL CARMEN GONZALEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_51.pdf,PVEM
+,7,CHIAPAS,,,83,SITALA,,,PRES_MUN,MORENA,1,GUADALUPE DEARA LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,SIND_MR,MORENA,2,MARDONIO GOMEZ CRUZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_MR,MORENA,3,MICAELA HERNANDEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_MR,MORENA,4,JAIME  CRUZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_MR,MORENA,5,NEYDA EDITH CANTE NUNEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_MR,MORENA,6,PEDRO PEREZ OSORIO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_MR,MORENA,7,JOSEFA NUNEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/083 SITALA.pdf,MORENA
+,7,CHIAPAS,,,83,SITALA,,,REG_RP,PVEM,11,JUANA RUIZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_52.pdf,PVEM
+,7,CHIAPAS,,,83,SITALA,,,REG_RP,PVEM,12,JERONIMO  GUZMAN PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_53.pdf,PVEM
+,7,CHIAPAS,,,83,SITALA,,,REG_RP,PVEM,13,YOLANDA PATRICIA MORALES LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_54.pdf,PVEM
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,PRES_MUN,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,JUAN CARLOS MORALES  HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,SIND_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,2,ROSA CANDELARIA DIAZ CULEBRO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,3,ANGEL DE LA ASUNCION  PEREZ NAJERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,4,KEIRI NAISET MUNOZ TORRES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,5,REYNOL  RUIZ  AVENDANO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,6,FLORIBEL GUILLEN RODRIGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,7,MARCO ANTONIO AVENDANO VIDAL,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/084 SOCOLTENANGO.pdf,MORENA
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_RP,PRI,11,LEYDI VILLATORO GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_17.pdf,PRI
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_RP,PRI,12,ARTURO NAVARRO SUAREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_18.pdf,PRI
+,7,CHIAPAS,,,84,SOCOLTENANGO,,,REG_RP,PRI,13,DIANA VERENICE  CABRERA VALENCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_19.pdf,PRI
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,PRES_MUN,RSP,1,FERNANDO APARICIO GOMEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/085 SOLOSUCHIAPA.pdf,RSP
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,SIND_MR,RSP,2,JENNY ZACARIAS PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/085 SOLOSUCHIAPA.pdf,RSP
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,REG_MR,RSP,3,JESUS GILBERTO MONTEJO ALVAREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/085 SOLOSUCHIAPA.pdf,RSP
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,REG_MR,RSP,4,MARIA MERCEDES HERNANDEZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/085 SOLOSUCHIAPA.pdf,RSP
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,REG_MR,RSP,5,ISABEL RAMIREZ RUIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/085 SOLOSUCHIAPA.pdf,RSP
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,REG_RP,PCHU,9,LILI DEL CARMEN  PENAGOS DE LA CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_13.pdf,PCHU
+,7,CHIAPAS,,,85,SOLOSUCHIAPA,,,REG_RP,PCHU,10,MARCOS DIONICIO NUNEZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_14.pdf,PCHU
+,7,CHIAPAS,,,86,SOYALO,,,PRES_MUN,PVEM,1,NADELIN FRANCISCO PEREZ PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/086 SOYALO.pdf,PVEM
+,7,CHIAPAS,,,86,SOYALO,,,SIND_MR,PVEM,2,DOMENICA ELISA HERNANDEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/086 SOYALO.pdf,PVEM
+,7,CHIAPAS,,,86,SOYALO,,,REG_MR,PVEM,3,JORGE DOMINGO SANCHEZ SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/086 SOYALO.pdf,PVEM
+,7,CHIAPAS,,,86,SOYALO,,,REG_MR,PVEM,4,KAREN YAMILETH HERNANDEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/086 SOYALO.pdf,PVEM
+,7,CHIAPAS,,,86,SOYALO,,,REG_MR,PVEM,5,FERNANDO RUIZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/086 SOYALO.pdf,PVEM
+,7,CHIAPAS,,,86,SOYALO,,,REG_RP,PMCH,9,ANA CRISTINA HERNANDEZ VIVAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_8.pdf,PMCH
+,7,CHIAPAS,,,86,SOYALO,,,REG_RP,PRI,10,ZORAIDA DIAZ GONZALEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_20.pdf,PRI
+,7,CHIAPAS,,,87,SUCHIAPA,,,PRES_MUN,MORENA,1,JORGE LORENZO LARA  CORDERO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,SIND_MR,MORENA,2,ALBA RUTH VICENTE GUMETA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_MR,MORENA,3,SEBASTIAN HERNANDEZ  PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_MR,MORENA,4,MA DEL ROSARIO PEREZ TOALA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_MR,MORENA,5,ROGER ALBERTO NANGUELU GUTIERREZ ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_MR,MORENA,6,DANIELA GUADALUPE FLORES CHANONA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_MR,MORENA,7,NELSON FERNANDO GOMEZ  NAFATE,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/087 SUCHIAPA.pdf,MORENA
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_RP,PVEM,11,DEYSI MARGARITA NAFATE VICENTE,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_55.pdf,PVEM
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_RP,PVEM,12,LUIS ROBERTO VELAZQUEZ  HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_56.pdf,PVEM
+,7,CHIAPAS,,,87,SUCHIAPA,,,REG_RP,PT,13,BLANCA NELLY  SIMUTA BAUTISTA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_35.pdf,PT
+,7,CHIAPAS,,,88,SUCHIATE,,,PRES_MUN,RSP,1,ELMER DE JESUS  VAZQUEZ GALLARDO,1,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,SIND_MR,RSP,2,CLAUDIA SELENE REYNA GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_MR,RSP,3,JULIO ALBERTO ESCOBAR OZUNA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_MR,RSP,4,VALERIA YERALDI SERRANO VELAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_MR,RSP,5,HERVIN MUNOZ ARELLANO,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_MR,RSP,6,EUGENIA HIDALGO ANDRADE,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_MR,RSP,7,DANNY ESTUARDO SOLARES BARRIOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/088 SUCHIATE.pdf,RSP
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_RP,MORENA,11,VIRGINIA  GUERRERO LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_5.pdf,MORENA
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_RP,MORENA,12,SERGIO ALFONSO PERALTA HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_6.pdf,MORENA
+,7,CHIAPAS,,,88,SUCHIATE,,,REG_RP,MORENA,13,ROSSIO VERONICA VILLATORO DE LA HUERTA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_7.pdf,MORENA
+,7,CHIAPAS,,,89,SUNUAPA,,,PRES_MUN,PAN_PRI_PRD,1,FREDI RAMIREZ DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/089 SUNUAPA.pdf,PRD
+,7,CHIAPAS,,,89,SUNUAPA,,,SIND_MR,PAN_PRI_PRD,2,ADY GONZALEZ  GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/089 SUNUAPA.pdf,PRI
+,7,CHIAPAS,,,89,SUNUAPA,,,REG_MR,PAN_PRI_PRD,3,GASPAR  SANCHEZ  SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/089 SUNUAPA.pdf,PAN
+,7,CHIAPAS,,,89,SUNUAPA,,,REG_MR,PAN_PRI_PRD,4,LUZ DEL ALBA HERNANDEZ MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/089 SUNUAPA.pdf,PRD
+,7,CHIAPAS,,,89,SUNUAPA,,,REG_MR,PAN_PRI_PRD,5,FABIAN  GARCIA  CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/089 SUNUAPA.pdf,PRD
+,7,CHIAPAS,,,89,SUNUAPA,,,REG_RP,MC,9,ERIKA LORENA  DIAZ  CASTELLANOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_3.pdf,MC
+,7,CHIAPAS,,,89,SUNUAPA,,,REG_RP,MC,10,REYNALDO LUJANO  SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_4.pdf,MC
+,7,CHIAPAS,,,90,TAPACHULA,,,PRES_MUN,MORENA,1,AARON YAMIL MELGAR BRAVO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,SIND_MR,MORENA,2,CLEOTILDE LIZBETH ORTIZ HUERTA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,3,JUAN CARLOS  D'AMIANO SOLIS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,4,CAMILA MARGARITA MORALES ASENCIO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,5,EDI ALBERTO  GARCIA  JUAREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,6,BERTHA MORENO ESPINOSA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,7,EMILIO AGUSTIN  ORDUNA MORGA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_MR,MORENA,8,ADRIANA BLAS SOLIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/090 TAPACHULA.pdf,MORENA
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_RP,PVEM,13,ROSA  CORTES  RUEDA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_57.pdf,PVEM
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_RP,PES,14,NANCY LOPEZ RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_5.pdf,PES
+,7,CHIAPAS,,,90,TAPACHULA,,,REG_RP,PAN,15,JANETH LETICIA LUENGO SANCHEZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_5.pdf,PAN
+,7,CHIAPAS,,,91,TAPALAPA,,,PRES_MUN,MORENA,1,GUADALUPE GOMEZ  GARCIA ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/091 TAPALAPA.pdf,MORENA
+,7,CHIAPAS,,,91,TAPALAPA,,,SIND_MR,MORENA,2,GERMANA GOMEZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/091 TAPALAPA.pdf,MORENA
+,7,CHIAPAS,,,91,TAPALAPA,,,REG_MR,MORENA,3,MARCOS  GOMEZ MORALES,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/091 TAPALAPA.pdf,MORENA
+,7,CHIAPAS,,,91,TAPALAPA,,,REG_MR,MORENA,4,YENISER  JIMENEZ  DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/091 TAPALAPA.pdf,MORENA
+,7,CHIAPAS,,,91,TAPALAPA,,,REG_MR,MORENA,5,TANIA MONSSERRAT  MORALES MORALES ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/091 TAPALAPA.pdf,MORENA
+,7,CHIAPAS,,,91,TAPALAPA,,,REG_RP,PRI,9,MATILDE MORALES  GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_21.pdf,PRI
+,7,CHIAPAS,,,91,TAPALAPA,,,REG_RP,PRI,10,JOSE ANGEL  VAZQUEZ JIMENEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_22.pdf,PRI
+,7,CHIAPAS,,,92,TAPILULA,,,PRES_MUN,PVEM,1,ROSEMBERG DIAZ UTRILLA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/092 TAPILULA.pdf,PVEM
+,7,CHIAPAS,,,92,TAPILULA,,,SIND_MR,PVEM,2,ELSY FLORES PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/092 TAPILULA.pdf,PVEM
+,7,CHIAPAS,,,92,TAPILULA,,,REG_MR,PVEM,3,LEOCADIO REYNOZA MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/092 TAPILULA.pdf,PVEM
+,7,CHIAPAS,,,92,TAPILULA,,,REG_MR,PVEM,4,VALERIA DEL CARMEN JIMENEZ MALDONADO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/092 TAPILULA.pdf,PVEM
+,7,CHIAPAS,,,92,TAPILULA,,,REG_MR,PVEM,5,RAFAEL RODRIGUEZ MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/092 TAPILULA.pdf,PVEM
+,7,CHIAPAS,,,92,TAPILULA,,,REG_RP,PT,9,MARIA GLACIELA ABARCA URQUIN,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_36.pdf,PT
+,7,CHIAPAS,,,92,TAPILULA,,,REG_RP,MORENA,10,AMANDA MIGUEL  MALDONADO  GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_42.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,PRES_MUN,MORENA,1,CESAR EDGAR  MARIN GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,SIND_MR,MORENA,2,MARIA ROSARIO PEREZ  FLORES,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_MR,MORENA,3,JOSE GUADALUPE  GUILLEN  GOMEZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_MR,MORENA,4,HORTENCIA  PEREZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_MR,MORENA,5,ALEXI AGUILAR  GUTIERREZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_MR,MORENA,6,ILSE VALENCIA JIMENEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_MR,MORENA,7,ERIK ALBERTO ALCARAZ ALBORES,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/093 TECPATAN.pdf,MORENA
+,7,CHIAPAS,,,93,TECPATAN,,,REG_RP,PRI,11,PATRICIA PEREZ FLORES,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_23.pdf,PRI
+,7,CHIAPAS,,,93,TECPATAN,,,REG_RP,PRI,12,RUBEN DARIO MEJIA TOVILLA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_24.pdf,PRI
+,7,CHIAPAS,,,93,TECPATAN,,,REG_RP,PRI,13,FRANCISCA CERON HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_25.pdf,PRI
+,7,CHIAPAS,,,94,TENEJAPA,,,PRES_MUN,MORENA,1,ROBERTO  GIRON  LUNA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,SIND_MR,MORENA,2,ROSA  GIRON  HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_MR,MORENA,3,MIGUEL GUZMAN  GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_MR,MORENA,4,VERONICA GIRON SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_MR,MORENA,5,SEBASTIAN LUNA GIRON,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_MR,MORENA,6,LUCIA  MEZA GIRON,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_MR,MORENA,7,SEBASTIAN PEREZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/094 TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_RP,PMCH,11,MARIBEL  LOPEZ  HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_9.pdf,PMCH
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_RP,PRI,12,FLORENCIA LUNA LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PRI_AYTO_RP_26.pdf,PRI
+,7,CHIAPAS,,,94,TENEJAPA,,,REG_RP,PMCH,13,DIEGO MEZA JIMENEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_101.pdf,PMCH
+,7,CHIAPAS,,,95,TEOPISCA,,,PRES_MUN,PVEM,1,LUIS ALBERTO VALDEZ DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,SIND_MR,PVEM,2,MERCEDES DE MARIA ZUNIGA MORENO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_MR,PVEM,3,JUAN CARLOS URBINA GORDILLO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_MR,PVEM,4,CANDELARIA CIELO GUILLEN GUILLEN,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_MR,PVEM,5,FELIPE SANCHEZ COLLAZO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_MR,PVEM,6,YAJAIRA MOLINA GARCIA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_MR,PVEM,7,FELIPE VAZQUEZ VAZQUEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/095 TEOPISCA.pdf,PVEM
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_RP,MORENA,11,GABRIELA VIRIDIANA VALDEZ ORDONEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_43.pdf,MORENA
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_RP,MORENA,12,JOSE MANUEL PEREZ MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_8.pdf,MORENA
+,7,CHIAPAS,,,95,TEOPISCA,,,REG_RP,PCHU,13,TERESA  DESAIDA HERRERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_15.pdf,PCHU
+,7,CHIAPAS,,,96,TILA,,,PRES_MUN,PVEM,1,NEISER HERNANDEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,SIND_MR,PVEM,2,OFELIA PEREZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_MR,PVEM,3,JOAQUIN LOPEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_MR,PVEM,4,AIDE VAZQUEZ MARTINEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_MR,PVEM,5,BENJAMIN MARTINEZ MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_MR,PVEM,6,FLOR DE LIZ GOMEZ HERNANDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_MR,PVEM,7,PEDRO LEONARDO PEREZ MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/096 TILA.pdf,PVEM
+,7,CHIAPAS,,,96,TILA,,,REG_RP,MC,11,ROMELIA LOPEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_5.pdf,MC
+,7,CHIAPAS,,,96,TILA,,,REG_RP,MC,12,DAVID JIMENEZ JIMENEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_6.pdf,MC
+,7,CHIAPAS,,,96,TILA,,,REG_RP,MORENA,13,MARIA ANGELICA  GUTIERREZ MARTINEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_9.pdf,MORENA
+,7,CHIAPAS,,,97,TONALA,,,PRES_MUN,PVEM,1,MANUEL DE JESUS NARCIA COUTINO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,SIND_MR,PVEM,2,MARIA GUISELA TORO  DE LA CRUZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_MR,PVEM,3,HOMERO CORZO CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_MR,PVEM,4,NAYADE ESCOBAR RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_MR,PVEM,5,FRANCISCO RUIZ SOLIS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_MR,PVEM,6,SARAMAR DECUIR FIGUEROA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_MR,PVEM,7,MIGUEL ANGEL VAZQUEZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/097 TONALA.pdf,PVEM
+,7,CHIAPAS,,,97,TONALA,,,REG_RP,MORENA,11,TONIA PRADO DE LOS SANTOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_10.pdf,MORENA
+,7,CHIAPAS,,,97,TONALA,,,REG_RP,PCHU,12,GRACIELA HERNANDEZ  GASGA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_16.pdf,PCHU
+,7,CHIAPAS,,,97,TONALA,,,REG_RP,MORENA,13,CESAR ALFREDO DE AQUINO PRADO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_11.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,PRES_MUN,MORENA,1,MARIO ARGELIO FONSECA  LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/098 TOTOLAPA.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,SIND_MR,MORENA,2,JUANA MARIA LOPEZ GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/098 TOTOLAPA.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,REG_MR,MORENA,3,MANUEL  LOPEZ DIAZ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/098 TOTOLAPA.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,REG_MR,MORENA,4,ANA LUISA DE LA CRUZ NUNEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/098 TOTOLAPA.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,REG_MR,MORENA,5,SABINO DAVID HERNANDEZ DE LA CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/098 TOTOLAPA.pdf,MORENA
+,7,CHIAPAS,,,98,TOTOLAPA,,,REG_RP,PCHU,9,JOSEF JACQUELINE YANEZ  GORDILLO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_17.pdf,PCHU
+,7,CHIAPAS,,,98,TOTOLAPA,,,REG_RP,PCHU,10,JOSE ELIGIO LOPEZ  DIAZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_18.pdf,PCHU
+,7,CHIAPAS,,,99,LA TRINITARIA,,,PRES_MUN,MORENA,1,DENIS GABRIEL SOLIS  ALVARADO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,SIND_MR,MORENA,2,NEYDY RODRIGUEZ MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_MR,MORENA,3,JESUS JIMENEZ SANTIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_MR,MORENA,4,YULISSA VIANETH PEREZ HERRERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_MR,MORENA,5,GABRIEL ALEJANDRO LOPEZ OCHOA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_MR,MORENA,6,DORA GUADALUPE MORALES VILLAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_MR,MORENA,7,RENE ALVAREZ AGUILAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/099 LA TRINITARIA.pdf,MORENA
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_RP,PVEM,11,CANDELARIA  CANCINO SANTIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_58.pdf,PVEM
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_RP,PVEM,12,SERGIO DAVID JIMENEZ GORDILLO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_59.pdf,PVEM
+,7,CHIAPAS,,,99,LA TRINITARIA,,,REG_RP,PVEM,13,ROCIO BARAJAS  LINAREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_60.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,PRES_MUN,PVEM,1,GRISELDA DE JESUS MENDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,SIND_MR,PVEM,2,SEBASTIAN LOPEZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_MR,PVEM,3,JUANA DE LOURDES ARCOS SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_MR,PVEM,4,FRANCISCO  LOPEZ DIAZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_MR,PVEM,5,LISANDRA MARIA VAZQUEZ ALVARO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_MR,PVEM,6,PASCUAL AUGUSTO LOPEZ GUZMAN,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_MR,PVEM,7,NORMA PARCERO LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/100 TUMBALA.pdf,PVEM
+,7,CHIAPAS,,,100,TUMBALA,,,REG_RP,MORENA,11,NANCY ZENTENO FIGUEROA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_12.pdf,MORENA
+,7,CHIAPAS,,,100,TUMBALA,,,REG_RP,RSP,12,JESSICA PEREZ GARCIA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_25.pdf,RSP
+,7,CHIAPAS,,,100,TUMBALA,,,REG_RP,MORENA,13,AUGUSTO SANCHEZ YANEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_13.pdf,MORENA
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,PRES_MUN,PAN_PRI_PRD,1,JULIO ENRIQUE GAMBOA ALTUZAR,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PRI
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,SIND_MR,PAN_PRI_PRD,2,YANETH GARCIA LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PAN
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_MR,PAN_PRI_PRD,3,BERSAIN MEJIA MIRANDA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PRI
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_MR,PAN_PRI_PRD,4,MARTHA  TERCERO MENDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PRI
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_MR,PAN_PRI_PRD,5,FELICITO ESPINOZA RECINOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PRD
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_MR,PAN_PRI_PRD,6,FATIMA  DEL ROSARIO MOTA PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PRI
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_MR,PAN_PRI_PRD,7,ARISTIDES IVAN  BARRIOS MONTES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/101 TUXTLA CHICO.pdf,PAN
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_RP,PVEM,11,ROSARIO ESMERALDA COUTINO ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_61.pdf,PVEM
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_RP,RSP,12,OLIVIA  REYES ARMENTO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_26.pdf,RSP
+,7,CHIAPAS,,,101,TUXTLA CHICO,,,REG_RP,PES,13,DILIA RAMIREZ SANTIZO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_6.pdf,PES
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,PRES_MUN,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ANGEL CARLOS  TORRES CULEBRO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,SIND_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,2,EMMA ITZEL ORANTES ORTEGA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,3,ANTONIO  MAYORGA ZUNIGA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,4,MARIA FREDEGUNDA ALEGRIA SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,5,MIGUEL ANGEL ZARATE IZQUIERDO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,6,INDRA PEREZ TOLEDO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,7,RODOLFO ALVAREZ GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,8,ANA PAOLA AGUILAR HIDALGO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/102 TUXTLA GUTIERREZ.pdf,MORENA
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_RP,PAN,13,ARELI GUADALUPE LATOURNERIE CASTELLANOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_6.pdf,PRI
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_RP,PAN,14,FRANCISCO ANTONIO ROJAS TOLEDO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PAN_AYTO_RP_7.pdf,PAN
+,7,CHIAPAS,,,102,TUXTLA GUTIERREZ,,,REG_RP,MC,15,MARCELA  ITURBE VARGAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MC_AYTO_RP_7.pdf,MC
+,7,CHIAPAS,,,103,TUZANTAN,,,PRES_MUN,PT,1,GRISSEL VAZQUEZ ZAMBRANO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,SIND_MR,PT,2,DELFINO JAIME PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_MR,PT,3,ELIANI RODAS ENGUMETA,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_MR,PT,4,SEBASTIAN GOMEZ ORDONEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_MR,PT,5,JULISSA VIANNEY MARROQUIN ESPINOSA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_MR,PT,6,LUIS GABRIEL NAVARRO CACERES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_MR,PT,7,AMPARO ARGUELLO JIMENEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/103 TUZANTAN.pdf,PT
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_RP,PVEM,11,GLADYS GABRIELA  BLAS SANTIAGO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_62.pdf,PVEM
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_RP,PVEM,12,JORGE VERA  RIOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_63.pdf,PVEM
+,7,CHIAPAS,,,103,TUZANTAN,,,REG_RP,PVEM,13,IVONNE ROBLERO TORRES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_64.pdf,PVEM
+,7,CHIAPAS,,,104,TZIMOL,,,PRES_MUN,RSP,1,VICTOR  ALFONSO GORDILLO MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,SIND_MR,RSP,2,FLOR DEL CARMEN PEREZ CORDOVA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_MR,RSP,3,OCTAVIO ALONZO FIGUEROA RUIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_MR,RSP,4,CRISELDA DEL CARMEN GARCIA LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_MR,RSP,5,ROBERTO SOLIS JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_MR,RSP,6,NATIVIDAD GUTIERREZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_MR,RSP,7,ELIZABETT DEL ROSARIO AGUILAR AGUILAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/104 TZIMOL.pdf,RSP
+,7,CHIAPAS,,,104,TZIMOL,,,REG_RP,PCHU,11,ALEJANDRA DEL ROSARIO MORENO GALLEGOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_19.pdf,PCHU
+,7,CHIAPAS,,,104,TZIMOL,,,REG_RP,PCHU,12,ISRAEL LOPEZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_20.pdf,PCHU
+,7,CHIAPAS,,,104,TZIMOL,,,REG_RP,MORENA,13,MARIA ESPERANZA GORDILLO GORDILLO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_14.pdf,MORENA
+,7,CHIAPAS,,,105,UNION JUAREZ,,,PRES_MUN,MC,1,FABIAN BARRIOS  DE LEON,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,SIND_MR,MC,2,MINELIA  DE LA CRUZ  HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_MR,MC,3,EVERARDO DE JESUS LOPEZ BARRIOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_MR,MC,4,DIANA ARISBETH  MORALES   ORTIZ ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_MR,MC,5,ISMAEL  DE LEON  NIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_MR,MC,6,BERTHA  LOPEZ  BALTAZAR,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_MR,MC,7,FELICIANO  HERRERA  BAMACA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/105 UNION JUAREZ.pdf,MC
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_RP,RSP,11,MARIA GUADALUPE GARCIA MUNOZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_27.pdf,RSP
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_RP,PCHU,12,GLORIA LOURDES LAU CASTILLO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_21.pdf,PCHU
+,7,CHIAPAS,,,105,UNION JUAREZ,,,REG_RP,PT,13,BLANCA JULIA ROBLERO VILLAGRAN,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_37.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,PRES_MUN,PT,1,FRANCISCO AUGUSTO  BORRAZ  AYAR,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,SIND_MR,PT,2,ROSA DEL CARMEN  COUTINO MORENO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_MR,PT,3,EDUARDO  ALBORES SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_MR,PT,4,GABRIELA GUADALUPE PASCACIO AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_MR,PT,5,OCTAVIO  COELLO VAZQUEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_MR,PT,6,ANA LIDIA DIAZ RAMIREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_MR,PT,7,CARLOS ALBERTO GORDILLO  VALDIVIEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/106 VENUSTIANO CARRANZA.pdf,PT
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_RP,MORENA,11,YOLANDA ELIZABETH ORDONEZ DE LA TORRE,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_15.pdf,MORENA
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_RP,PVEM,12,YESENIA JASIVE LOPEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_65.pdf,PVEM
+,7,CHIAPAS,,,106,VENUSTIANO CARRANZA,,,REG_RP,MORENA,13,MARCELO HERNANDEZ MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_16.pdf,MORENA
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,PRES_MUN,PVEM,1,GERARDO PEREZ GOMEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,SIND_MR,PVEM,2,ANA ISABEL ARRIETA CHINAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_MR,PVEM,3,LEONEL MARTINEZ REYES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_MR,PVEM,4,EVELIA  REYES NORIEGA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_MR,PVEM,5,JUAN ALBERTO GARCIA ESPINOSA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_MR,PVEM,6,DANIELA ANAYANCI PEREZ  ROMAN ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_MR,PVEM,7,LEONEL DE JESUS  MONZON TRINIDAD,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/107 VILLA COMALTITLAN.pdf,PVEM
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_RP,MORENA,11,SUCELY ROXANA LOPEZ GUILLEN,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_17.pdf,MORENA
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_RP,MORENA,12,JARDI RODULFO MONTES COBON,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_70.pdf,MORENA
+,7,CHIAPAS,,,107,VILLA COMALTITLAN,,,REG_RP,MORENA,13,PAOLA YAZMIN DOMINGUEZ RIVERA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_1.pdf,MORENA
+,7,CHIAPAS,,,108,VILLA CORZO,,,PRES_MUN,PVEM,1,JOSE IGNACIO NAGAYA VICENTE,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,SIND_MR,PVEM,2,LIDIA DEL ROSARIO GALLEGOS DURANTES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_MR,PVEM,3,MARTIN DE JESUS VAZQUEZ OCHOA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_MR,PVEM,4,MIRIAN DIAZ RODAS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_MR,PVEM,5,JOSE ALFREDO NAVARRO RUIZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_MR,PVEM,6,YOLANDA  AGUILAR CASTELLANOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_MR,PVEM,7,CARLOS MARTIN ALVAREZ VELASCO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/108 VILLA CORZO.pdf,PVEM
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_RP,MORENA,11,ELIZABETH ESPINOSA HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_71.pdf,MORENA
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_RP,MORENA,12,CARLOS DE JESUS PENAGOS SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_72.pdf,MORENA
+,7,CHIAPAS,,,108,VILLA CORZO,,,REG_RP,MORENA,13,DANHA LAURA ALONSO GUIRAO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_73.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,PRES_MUN,MORENA,1,VALERIA ROSALES SARMIENTO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,SIND_MR,MORENA,2,RUBIEL GALDAMEZ URBINA,1,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,3,ADRIANA MORALES MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,4,ROGER DE COSS CONDE,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,5,ZAHIRA DEL CARMEN MARTINEZ DOMINGUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,6,ROBERTO CHACON AVENDANO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,7,MARIA DE JESUS NANDAYAPA HERNANDEZ,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_MR,MORENA,8,ANAMIN BARRERA ARCE,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/109 VILLAFLORES.pdf,MORENA
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_RP,PVEM,13,PRYSCILA ESPONDA ROSALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_66.pdf,PVEM
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_RP,PT,14,ANA LAURA XICOTENCATL MONTIEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_38.pdf,PT
+,7,CHIAPAS,,,109,VILLAFLORES,,,REG_RP,PVEM,15,HUGO ALBERTO JIMENEZ CHACON,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_67.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,PRES_MUN,PVEM,1,JUAN ALBERTO UTRILLA LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,SIND_MR,PVEM,2,ARACELI DEL SOCORRO TALANGO VAZQUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_MR,PVEM,3,CARLOS ALBERTO VAZQUEZ GONZALEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_MR,PVEM,4,ALINE NATHALI LOPEZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_MR,PVEM,5,CESAR GUSTAVO LLAVEN VALDIVIEZO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_MR,PVEM,6,LEOPOLDA DEL CARMEN ZEPEDA TRUJILLO,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_MR,PVEM,7,LEONEL MAURICIO RODRIGUEZ  SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/110 YAJALON.pdf,PVEM
+,7,CHIAPAS,,,110,YAJALON,,,REG_RP,PES,11,YOLANDA MADALENA PEREZ MENDEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_7.pdf,PES
+,7,CHIAPAS,,,110,YAJALON,,,REG_RP,PES,12,JOSE LUIS SANCHEZ MARSEILLE,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_8.pdf,PES
+,7,CHIAPAS,,,110,YAJALON,,,REG_RP,PT,13,CLAUDIA ELENA  CONSTANTINO GUTIERREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_39.pdf,PT
+,7,CHIAPAS,,,111,ZINACANTAN,,,PRES_MUN,PRI,1,JOSE MARTINEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,SIND_MR,PRI,2,ANGELICA MARIA HERNANDEZ MONTOYA,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_MR,PRI,3,JUAN PEREZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_MR,PRI,4,MARIA MERCEDES VAZQUEZ GONZALEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_MR,PRI,5,ANTONIO FELIPE PEREZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_MR,PRI,6,MARIANA PRICILA GOMEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_MR,PRI,7,MARIANO DE LA CRUZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/111 ZINACANTAN.pdf,PRI
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_RP,MORENA,11,MARIA  PEREZ VAZQUEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_74.pdf,MORENA
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_RP,MORENA,12,JOSE  HERNANDEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_75.pdf,MORENA
+,7,CHIAPAS,,,111,ZINACANTAN,,,REG_RP,MORENA,13,ROSA HERNANDEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_76.pdf,MORENA
+,7,CHIAPAS,,,112,ALDAMA,,,PRES_MUN,PAN_PRI_PRD,1,CATARINA  PEREZ  RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/112 ALDAMA.pdf,PRI
+,7,CHIAPAS,,,112,ALDAMA,,,SIND_MR,PAN_PRI_PRD,2,FELIPE JIMENEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/112 ALDAMA.pdf,PRI
+,7,CHIAPAS,,,112,ALDAMA,,,REG_MR,PAN_PRI_PRD,3,PATRICIA  LUNEZ  SANTIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/112 ALDAMA.pdf,PRI
+,7,CHIAPAS,,,112,ALDAMA,,,REG_MR,PAN_PRI_PRD,4,LUCIO MANUEL LOPEZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/112 ALDAMA.pdf,PRI
+,7,CHIAPAS,,,112,ALDAMA,,,REG_MR,PAN_PRI_PRD,5,GUADALUPE LUNEZ SANTIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/112 ALDAMA.pdf,PRI
+,7,CHIAPAS,,,112,ALDAMA,,,REG_RP,MORENA,9,VERONICA SANTIZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_77.pdf,MORENA
+,7,CHIAPAS,,,112,ALDAMA,,,REG_RP,MORENA,10,LORENZO HERNANDEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_78.pdf,MORENA
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,PRES_MUN,PCHU,1,JUAN  GOMEZ MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,SIND_MR,PCHU,2,JHOANA JUDITH MONTERO NOYOLA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_MR,PCHU,3,MARTIN MONTEJO LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_MR,PCHU,4,CLENDY PEREZ ALVAREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_MR,PCHU,5,JHOVANI MENESES ENCINO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_MR,PCHU,6,ONELIA SANCHEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_MR,PCHU,7,MAURO HERNANDEZ VELIN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/113 BENEMERITO DE LAS AMERICAS.pdf,PCHU
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_RP,FXM,11,MARIA DOLORES  VILLASENOR ZARATE,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/FXM_AYTO_RP_1.pdf,FXM
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_RP,MORENA,12,LORENA VALLES VAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_79.pdf,MORENA
+,7,CHIAPAS,,,113,BENEMERITO DE LAS AMERICAS,,,REG_RP,PES,13,ALICIA MENDEZ REYES,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_9.pdf,PES
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,PRES_MUN,MORENA,1,OBDULIO GUTIERREZ GUTIERREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/114 MARAVILLA TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,SIND_MR,MORENA,2,ARELY HERNANDEZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/114 MARAVILLA TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,REG_MR,MORENA,3,JUAN VAZQUEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/114 MARAVILLA TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,REG_MR,MORENA,4,ZENAIDA GUZMAN GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/114 MARAVILLA TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,REG_MR,MORENA,5,ANGEL BONIFAS MENDOZA,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/114 MARAVILLA TENEJAPA.pdf,MORENA
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,REG_RP,RSP,9,HERMINA JUAREZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_28.pdf,RSP
+,7,CHIAPAS,,,114,MARAVILLA TENEJAPA,,,REG_RP,RSP,10,PASCUAL HERNANDEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_29.pdf,RSP
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,PRES_MUN,PT,1,ELEAZAR  PEREZ  GORDILLO ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/115 MARQUES DE COMILLAS.pdf,PT
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,SIND_MR,PT,2,DOLORES REMEDIO GUZMAN  SANTOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/115 MARQUES DE COMILLAS.pdf,PT
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,REG_MR,PT,3,RAMON OCTAVIO CRUZ  MARTINEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/115 MARQUES DE COMILLAS.pdf,PT
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,REG_MR,PT,4,MARIA DE LOS ANGELES  GOMEZ  RANGEL ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/115 MARQUES DE COMILLAS.pdf,PT
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,REG_MR,PT,5,JUAN  LOPEZ  DIAZ ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/115 MARQUES DE COMILLAS.pdf,PT
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,REG_RP,PCHU,9,DALIA ANGELICA  MEJIA  HERNANDEZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_22.pdf,PCHU
+,7,CHIAPAS,,,115,MARQUES DE COMILLAS,,,REG_RP,PCHU,10,BENJAMIN  FLORES MALDONADO,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_23.pdf,PCHU
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,PRES_MUN,RSP,1,MARIA AURORA SANTELIZ SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/116 MONTECRISTO DE GUERRERO.pdf,RSP
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,SIND_MR,RSP,2,MARIA RODRIGUES ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/116 MONTECRISTO DE GUERRERO.pdf,RSP
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,REG_MR,RSP,3,MANUEL ALEX PEREZ LOPEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/116 MONTECRISTO DE GUERRERO.pdf,RSP
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,REG_MR,RSP,4,ELIZABETH SANTIZO ANGEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/116 MONTECRISTO DE GUERRERO.pdf,RSP
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,REG_MR,RSP,5,GENEIVAR DE JESUS DIAZ  GUTIERREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/116 MONTECRISTO DE GUERRERO.pdf,RSP
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,REG_RP,MORENA,9,MARICELA LOPEZ BARTOLON,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_80.pdf,MORENA
+,7,CHIAPAS,,,116,MONTECRISTO DE GUERRERO,,,REG_RP,PCHU,10,ROSALIA SANTIZO PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_24.pdf,PCHU
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,PRES_MUN,PMCH,1,HUMBERTO HERNANDEZ  GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/117 SAN ANDRES DURAZNAL.pdf,PMCH
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,SIND_MR,PMCH,2,ROSANELI VAZQUEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/117 SAN ANDRES DURAZNAL.pdf,PMCH
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,REG_MR,PMCH,3,PRISCILIANO RUIZ PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/117 SAN ANDRES DURAZNAL.pdf,PMCH
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,REG_MR,PMCH,4,VIRGINIA  LOPEZ DIAZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/117 SAN ANDRES DURAZNAL.pdf,PMCH
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,REG_MR,PMCH,5,ALBERTO MENDEZ SANCHEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/117 SAN ANDRES DURAZNAL.pdf,PMCH
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,REG_RP,MORENA,9,ALICIA LOPEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_81.pdf,MORENA
+,7,CHIAPAS,,,117,SAN ANDRES DURAZNAL,,,REG_RP,MORENA,10,HERIBERTO MENDEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_82.pdf,MORENA
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,PRES_MUN,PT,1,SILVIANO MATEO GOMEZ  GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/118 SANTIAGO EL PINAR.pdf,PT
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,SIND_MR,PT,2,JUANA CRISTINA LOPEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/118 SANTIAGO EL PINAR.pdf,PT
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,REG_MR,PT,3,MANUEL  GOMEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/118 SANTIAGO EL PINAR.pdf,PT
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,REG_MR,PT,4,SEBASTIANA GOMEZ GOMEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/118 SANTIAGO EL PINAR.pdf,PT
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,REG_MR,PT,5,SILVIANO GOMEZ LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/118 SANTIAGO EL PINAR.pdf,PT
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,REG_RP,MORENA,9,CATALINA DIAZ LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_83.pdf,MORENA
+,7,CHIAPAS,,,118,SANTIAGO EL PINAR,,,REG_RP,MORENA,10,PEDRO  GOMEZ GOMEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_84.pdf,MORENA
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,PRES_MUN,PVEM,1,EMISELDA GONZALEZ ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/119 CAPITAN LUIS ANGEL VIDAL.pdf,PVEM
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,SIND_MR,PVEM,2,NOE VAZQUEZ PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/119 CAPITAN LUIS ANGEL VIDAL.pdf,PVEM
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,REG_MR,PVEM,3,LUVIA SOLIS ANGEL,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/119 CAPITAN LUIS ANGEL VIDAL.pdf,PVEM
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,REG_MR,PVEM,4,ANDERCI ROBLERO AGUILAR,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/119 CAPITAN LUIS ANGEL VIDAL.pdf,PVEM
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,REG_MR,PVEM,5,ANGELA PEREZ MORALES,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/119 CAPITAN LUIS ANGEL VIDAL.pdf,PVEM
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,REG_RP,MORENA,9,MARIELA   SALAS PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/MORENA_AYTO_RP_85.pdf,MORENA
+,7,CHIAPAS,,,119,CAPITAN LUIS ANGEL VIDAL,,,REG_RP,PMCH,10,CLAUDIA  FIGUEROA  ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PMCH_AYTO_RP_11.pdf,PMCH
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,PRES_MUN,MORENA,1,MARIA DE LA LUZ HERNANDEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/120 RINCON CHAMULA SAN PEDRO.pdf,MORENA
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,SIND_MR,MORENA,2,PRUDENCIO  AGUILAR  PEREZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/120 RINCON CHAMULA SAN PEDRO.pdf,MORENA
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,REG_MR,MORENA,3,MARIA  HERNANDEZ SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/120 RINCON CHAMULA SAN PEDRO.pdf,MORENA
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,REG_MR,MORENA,4,JEHU ALEXANDER URBINA ROBLERO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/120 RINCON CHAMULA SAN PEDRO.pdf,MORENA
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,REG_MR,MORENA,5,LUISA  HERNANDEZ  LOPEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/120 RINCON CHAMULA SAN PEDRO.pdf,MORENA
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,REG_RP,PT,9,MARIA  BAUTISTA  AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_40.pdf,PT
+,7,CHIAPAS,,,120,RINCON CHAMULA SAN PEDRO,,,REG_RP,PT,10,FLAVIO  LOPEZ  LOPEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_41.pdf,PT
+,7,CHIAPAS,,,121,EL PARRAL,,,PRES_MUN,MORENA,1,ELVIRA DEL CARMEN CASTANEDA MAZA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,SIND_MR,MORENA,2,ALFONSO RUIZ  VELAZQUEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_MR,MORENA,3,NADYA RUTH TIPACAMU RAMIREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_MR,MORENA,4,ROBERT GRAJALES TORRES,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_MR,MORENA,5,VERONICA PEREZ BRINDIS,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_MR,MORENA,6,ROSSEMBERG PEREZ  CRUZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_MR,MORENA,7,VALERIA CRISTEL MUNOZ HERNANDEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/121 EL PARRAL.pdf,MORENA
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_RP,PT,11,KARINA CAMACHO RAMIREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PT_AYTO_RP_42.pdf,PT
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_RP,PVEM,12,ELIDELMA  ROBLERO PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PVEM_AYTO_RP_68.pdf,PVEM
+,7,CHIAPAS,,,121,EL PARRAL,,,REG_RP,RSP,13,MARIA ANTONIA CASTILLEJO DE LA TORREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_30.pdf,RSP
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,PRES_MUN,MORENA,1,JESUS ENRIQUE REYES NAJERA,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/122 EMILIANO ZAPATA.pdf,MORENA
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,SIND_MR,MORENA,2,YATZARI HERNANDEZ GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/122 EMILIANO ZAPATA.pdf,MORENA
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,REG_MR,MORENA,3,SERGIO AVID RUIZ LLAVEN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/122 EMILIANO ZAPATA.pdf,MORENA
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,REG_MR,MORENA,4,BLANCA LIDIA GRAJALES  COUTINO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/122 EMILIANO ZAPATA.pdf,MORENA
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,REG_MR,MORENA,5,JUAN CARLOS MORALES HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/122 EMILIANO ZAPATA.pdf,MORENA
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,REG_RP,RSP,9,ALEJANDRA MORENO RUIZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_31.pdf,RSP
+,7,CHIAPAS,,,122,EMILIANO ZAPATA,,,REG_RP,RSP,10,FRUMENCIO LOPEZ  RUEDA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_32.pdf,RSP
+,7,CHIAPAS,,,123,MEZCALAPA,,,PRES_MUN,MORENA,1,JOSE TILO ALCUDIA  HERNANDEZ ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,SIND_MR,MORENA,2,DEYSY DEL CARMEN  RINCON DIAZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_MR,MORENA,3,JOSUE  URBINA PEREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_MR,MORENA,4,DEYBIRIANA  MARIN  GONZALEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_MR,MORENA,5,JORGE VICENTE  JUAREZ TELLES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_MR,MORENA,6,HANNIA GUILLERMINA RUEDAS  JIMENEZ,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_MR,MORENA,7,CARLOS  HERNANDEZ  DIAZ,1,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/123 MEZCALAPA.pdf,MORENA
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_RP,PES,11,SIRLEY DEL CARMEN  RUIZ  SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_100.pdf,PES
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_RP,PES,12,FERNANDO UGARTE  GONZALEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PES_AYTO_RP_11.pdf,PES
+,7,CHIAPAS,,,123,MEZCALAPA,,,REG_RP,RSP,13,ESTEFANIA MENDEZ LOPEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_33.pdf,RSP
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,PRES_MUN,PMCH,1,ARAIN JEU ROBLERO HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/124 HONDURAS DE LA SIERRA.pdf,PMCH
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,SIND_MR,PMCH,2,LORMA PAULINA MORENO ROBLERO,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/124 HONDURAS DE LA SIERRA.pdf,PMCH
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,REG_MR,PMCH,3,AUGUSTO AGUSTIN ROBLERO MORALES,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/124 HONDURAS DE LA SIERRA.pdf,PMCH
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,REG_MR,PMCH,4,TREYSI ADALID DIAZ PEREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/124 HONDURAS DE LA SIERRA.pdf,PMCH
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,REG_MR,PMCH,5,FERNANDO ROBLERO HERNANDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/AYUN/124 HONDURAS DE LA SIERRA.pdf,PMCH
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,REG_RP,RSP,9,ANGELA CRISTEL PEREZ  URBINA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/RSP_AYTO_RP_34.pdf,RSP
+,7,CHIAPAS,,,124,HONDURAS DE LA SIERRA,,,REG_RP,PCHU,10,SULMA ISABEL LOPEZ VAZQUEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/REG_RP/PCHU_AYTO_RP_25.pdf,PCHU
+3,7,CHIAPAS,1,TUXTLA GUTIERREZ,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARCELA CASTILLO ATRISTAIN,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/01 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,2,TUXTLA GUTIERREZ,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARIA MANDIOLA TOTORICAGUENA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/02 TUXTLA GUTIERREZ.pdf,PCHU
+3,7,CHIAPAS,3,CHIAPA DE CORZO,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ERIKA PAOLA MENDOZA SALDANA,2,Candidaturas de personas jovenes,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/03 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,4,YAJALON,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,JUAN MANUEL UTRILLA CONSTANTINO,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/04 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,5,SAN CRISTOBAL DE LAS CASAS,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,JUAN SALVADOR CAMACHO VELASCO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/05 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,6,COMITAN DE DOMINGUEZ,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,LUIS IGNACIO AVENDANO BERMUDEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/06 TUXTLA GUTIERREZ.pdf,PT
+3,7,CHIAPAS,7,OCOSINGO,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,BERTHA FLORES SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/07 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,8,SIMOJOVEL,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,JOSE URIEL ESTRADA MARTINEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/08 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,9,PALENQUE,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARIA ROSELIA JIMENEZ PEREZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/09 TUXTLA GUTIERREZ.pdf,PT
+3,7,CHIAPAS,10,LA TRINITARIA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ERVIN LEONEL PEREZ ALFARO,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/10 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,11,BOCHIL,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,SELENE JOSEFINA SANCHEZ CRUZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/11 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,12,PICHUCALCO,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ALEJANDRA GOMEZ MENDOZA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/12 TUXTLA GUTIERREZ.pdf,PMCH
+3,7,CHIAPAS,13,TUXTLA GUTIERREZ,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,GETSEMANI MORENO MARTINEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/13 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,14,CINTALAPA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARITZA MOLINA MOLINA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/14 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,15,TONALA,,,,,DIP_LOC_MR,MORENA,1,FARIDE ABUD GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/15 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,16,HUIXTLA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,JAVIER JIMENEZ JIMENEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/16 TUXTLA GUTIERREZ.pdf,PCHU
+3,7,CHIAPAS,17,MOTOZINTLA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ISMAEL  BRITO MAZARIEGOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/17 TUXTLA GUTIERREZ.pdf,PVEM
+3,7,CHIAPAS,18,TAPACHULA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ELVIRA CATALINA AGUIAR ALVAREZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/18 TUXTLA GUTIERREZ.pdf,PT
+3,7,CHIAPAS,19,TAPACHULA,,,,,DIP_LOC_MR,MORENA,1,FREDDY ESCOBAR SANCHEZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/19 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,20,LAS MARGARITAS,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,ANA MARIA SOLIS RUIZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/20 TUXTLA GUTIERREZ.pdf,PT
+3,7,CHIAPAS,21,VENUSTIANO CARRANZA,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARIA ISABEL RODRIGUEZ JIMENEZ ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/21 TUXTLA GUTIERREZ.pdf,PES
+3,7,CHIAPAS,22,CHAMULA,,,,,DIP_LOC_MR,PAN_PRI_PRD,1,DOMINGO VELAZQUEZ MENDEZ,1,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/22 TUXTLA GUTIERREZ.pdf,PRI
+3,7,CHIAPAS,23,VILLAFLORES,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,MARIO FRANCISCO GUILLEN GUILLEN,1,,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/23 TUXTLA GUTIERREZ.pdf,MORENA
+3,7,CHIAPAS,24,CHILON,,,,,DIP_LOC_MR,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,FLOR DE MARIA GUIRAO AGUILAR,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias/DIP/24 TUXTLA GUTIERREZ.pdf,RSP
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PAN,1,JOVANNIE MARICELA IBARRA GALLARDO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_23.pdf,PAN
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PRI,1,ANA KAREN RUIZ COUTINO,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_1.pdf,PRI
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PVEM,1,VALERIA SANTIAGO BARRIENTOS,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_21.pdf,PVEM
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PT,1,MARIA REYES DIEGO GOMEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_3.pdf,PT
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MC,1,ANDREA NEGRON SANCHEZ,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_19.pdf,MC
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,1,WENDY ARLET HERNANDEZ ICHIN,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_5.pdf,MORENA
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,RSP,1,SILVIA ESTHER ARGUELLO GARCIA,2,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_7.pdf,RSP
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PRI,2,RUBEN ANTONIO  ZUARTH ESQUINCA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_9.pdf,PRI
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PVEM,2,JORGE LUIS LLAVEN ABARCA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_17.pdf,PVEM
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PT,2,ABUNDIO PEREGRINO GARCIA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_31.pdf,PT
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,2,FERMIN HIDALGO GONZALEZ RAMIREZ,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_11.pdf,MORENA
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,PVEM,3,ROSA LINDA LOPEZ SANCHEZ,2,Candidaturas indigenas,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_29.pdf,PVEM
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,3,LUZ MARIA CASTILLO MORENO,2,Candidaturas de discapacidad,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_13.pdf,MORENA
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,4,JOSE JESUS DOMINGUEZ CASTELLANOS,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_27.pdf,MORENA
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,5,MARIA TERESA CAMPOS FLORES,2,Candidaturas de la diversidad sexual,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_25.pdf,MORENA
+3,7,CHIAPAS,,,,,,,DIP_LOC_RP,MORENA,6,JOSE ANGEL DEL VALLE MOLINA,1,,https://computos2024.iepc-chiapas.org/docs/constancias_rp/DIP_LOC_RP/Constancias_de_Diputaciones_RP_15.pdf,MORENA
+,7,CHIAPAS,,,,,,,GOB,PVEM_PT_PCHU_MORENA_PMCH_PPCH_PES_RSP_FXM,1,OSCAR EDUARDO RAMIREZ AGUILAR,1,,,MORENA
