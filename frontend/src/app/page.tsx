@@ -1,4 +1,5 @@
 "use client";
+import dynamic from "next/dynamic";
 import React, { useEffect, useMemo, useState } from "react";
 import DeckGL from "@deck.gl/react";
 import { MVTLayer } from "@deck.gl/geo-layers";
@@ -192,8 +193,7 @@ type ViewState = typeof INITIAL_VIEW_STATE & {
   transitionDuration?: number;
 };
 
-export default function CommandCenter() {
-  const [isMounted, setIsMounted] = useState(false);
+function CommandCenterUI() {
   const [query, setQuery] = useState("");
   const [hoverInfo, setHoverInfo] = useState<HoverInfo | null>(null);
   const [viewState, setViewState] = useState<ViewState>(INITIAL_VIEW_STATE);
@@ -205,11 +205,6 @@ export default function CommandCenter() {
   const [is3D, setIs3D] = useState(true);
   const activeMunicipioFilter: number | null = null;
   const activeDLFilter: number | null = null;
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- CSR mount guard requerido para evitar hydration mismatches por extensiones.
-    setIsMounted(true);
-  }, []);
 
   useEffect(() => {
     if (!selectedFeature?.properties) return;
@@ -367,8 +362,8 @@ export default function CommandCenter() {
         lineWidthMinPixels: 1,
         getElevation: (feature: MVTFeature) => {
           const totalVotos = Number(feature.properties?.total_votos_calculados || 0);
-          // UX ENTERPRISE: Relieve topográfico ultra discreto (Factor 0.08) en lugar de muros gigantes
-          return totalVotos === 0 ? 0 : Math.max(2, totalVotos * 0.08);
+          // UX ENTERPRISE: Relieve topográfico basado en Raíz Cuadrada para aplanar picos.
+          return totalVotos === 0 ? 0 : Math.max(5, Math.sqrt(totalVotos) * 20);
         },
         extruded: is3D,
         wireframe: true,
@@ -503,15 +498,9 @@ export default function CommandCenter() {
     );
   };
 
-  // 3. BLOQUEO DE RENDERIZADO SSR CON BLINDAJE ANTIVIRUS
-  if (!isMounted) {
-    return <div suppressHydrationWarning className="w-full h-screen bg-gray-950"></div>;
-  }
-
-  // 4. Renderizado normal del lado del cliente
   return (
-    <div suppressHydrationWarning className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
-      <div suppressHydrationWarning className="absolute inset-0 z-0">
+    <div className="relative w-full h-screen bg-gray-950 overflow-hidden text-slate-200">
+      <div className="absolute inset-0 z-0">
         <DeckGL
           viewState={viewState}
           onViewStateChange={({ viewState: nextViewState }) =>
@@ -680,3 +669,17 @@ export default function CommandCenter() {
     </div>
   );
 }
+
+// BYPASS GLOBAL DE HIDRATACIÓN: Next.js no intentará renderizar el mapa en el servidor.
+// Protege el componente de extensiones invasivas como Bitdefender.
+export default dynamic(() => Promise.resolve(CommandCenterUI), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-screen bg-gray-950 flex flex-col items-center justify-center">
+      <div className="w-12 h-12 border-4 border-teal-500/30 border-t-teal-500 rounded-full animate-spin mb-4"></div>
+      <p className="text-teal-500 font-mono tracking-widest animate-pulse text-sm">
+        INICIALIZANDO MOTOR ESPACIAL...
+      </p>
+    </div>
+  ),
+});

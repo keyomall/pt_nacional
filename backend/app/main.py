@@ -218,40 +218,12 @@ async def get_vector_tile_dynamic(
             else "NULL::integer"
         )
 
-        has_casillas_sql = sa.text(
-            "SELECT to_regclass('public.eleccion_2024_casillas') IS NOT NULL"
-        )
-        has_casillas = bool((await conn.execute(has_casillas_sql)).scalar())
-
-        if has_casillas:
-            geo_context_sql = """
-            geo_context AS (
-                -- Agrupación optimizada para inyectar IDs sin multiplicar filas
-                SELECT NULLIF(regexp_replace(id_entidad::text, '[^0-9-]', '', 'g'), '')::integer AS id_entidad,
-                       NULLIF(regexp_replace(seccion::text, '[^0-9-]', '', 'g'), '')::integer AS seccion,
-                       MAX(NULLIF(regexp_replace(id_municipio::text, '[^0-9-]', '', 'g'), '')::integer) AS id_municipio,
-                       MAX(NULLIF(regexp_replace(id_distrito_local::text, '[^0-9-]', '', 'g'), '')::integer) AS id_distrito_local,
-                       MAX(NULLIF(regexp_replace(id_distrito_federal::text, '[^0-9-]', '', 'g'), '')::integer) AS id_distrito_federal
-                FROM eleccion_2024_casillas
-                GROUP BY NULLIF(regexp_replace(id_entidad::text, '[^0-9-]', '', 'g'), '')::integer,
-                         NULLIF(regexp_replace(seccion::text, '[^0-9-]', '', 'g'), '')::integer
-            ),
-            """
-        else:
-            geo_context_sql = f"""
-            geo_context AS (
-                -- Fallback cuando no existe la tabla maestra de casillas
-                SELECT {id_ent_int_expr} AS id_entidad,
-                       {seccion_int_expr} AS seccion,
-                       MAX({mun_expr}) AS id_municipio,
-                       MAX({dl_expr}) AS id_distrito_local,
-                       MAX({df_expr}) AS id_distrito_federal
-                FROM {_quote_ident(tabla_destino)} v
-                WHERE {id_ent_int_expr} IS NOT NULL
-                  AND {seccion_int_expr} IS NOT NULL
-                GROUP BY {id_ent_int_expr}, {seccion_int_expr}
-            ),
-            """
+        geo_context_sql = """
+        geo_context AS (
+            SELECT id_entidad, seccion, id_municipio, id_distrito_local, id_distrito_federal
+            FROM dim_geo_secciones
+        ),
+        """
 
         query = sa.text(
             f"""
