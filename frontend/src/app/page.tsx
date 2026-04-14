@@ -313,25 +313,30 @@ export default function CommandCenter() {
         data: tileUrl,
         minZoom: 0,
         maxZoom: 14,
-        getFillColor: (feature: MVTFeature) => {
-          const rawVotes = feature.properties?.votos_desglosados;
-          const votos =
-            typeof rawVotes === "object" && rawVotes !== null
-              ? (rawVotes as Record<string, number | string>)
-              : {};
-          const keys = Object.keys(votos);
-          if (keys.length === 0) return [45, 212, 191, 100];
-          const maxParty = keys.reduce((a, b) => {
-            const va = Number(votos[a] ?? 0);
-            const vb = Number(votos[b] ?? 0);
-            return va > vb ? a : b;
-          }, keys[0] || "");
+        getFillColor: (f: MVTFeature) => {
+          const rawVotos = f.properties?.votos_desglosados;
+          let votos: Record<string, number | string> = {};
+          try {
+            votos =
+              typeof rawVotos === "string"
+                ? (JSON.parse(rawVotos || "{}") as Record<string, number | string>)
+                : (rawVotos || {});
+          } catch {
+            votos = {};
+          }
+          const maxParty = Object.keys(votos).reduce(
+            (a, b) => (Number(votos[a]) > Number(votos[b]) ? a : b),
+            ""
+          );
+
+          // Zonas sin registro o sin votos (Rellena los huecos negros)
+          if (!maxParty || Number(votos[maxParty]) === 0) return [30, 41, 59, 150];
 
           if (maxParty.includes("MORENA")) return [115, 32, 39, 210];
           if (maxParty.includes("PAN")) return [0, 85, 184, 210];
           if (maxParty.includes("PRI")) return [0, 149, 59, 210];
           if (maxParty.includes("MC")) return [242, 115, 32, 210];
-          return [45, 212, 191, 100];
+          return [45, 212, 191, 150];
         },
         getElevation: (feature: MVTFeature) =>
           Number(feature.properties?.total_votos_calculados ?? 0) * 5,
@@ -360,13 +365,83 @@ export default function CommandCenter() {
     ? processVotesData(selectedFeature.properties?.votos_desglosados)
     : [];
 
-  const hoverProperties = (
-    hoverInfo?.object as { properties?: { id_entidad?: number | string; seccion?: number | string } } | undefined
-  )?.properties;
-  const hoverEntidadRaw = hoverInfo?.object?.id_entidad ?? hoverProperties?.id_entidad;
-  const hoverSeccionRaw = hoverInfo?.object?.seccion ?? hoverProperties?.seccion;
-  const hoverEntidadId = Number(hoverEntidadRaw);
-  const hoverEntidadLabel = ENTIDADES_MX[hoverEntidadId] || `Entidad ${hoverEntidadRaw ?? "-"}`;
+  // --- RENDERIZADOR DE TOOLTIP INTELIGENTE ---
+  const renderTooltip = () => {
+    if (!hoverInfo || !hoverInfo.object) return null;
+
+    const props = (
+      hoverInfo.object as {
+        properties?: {
+          id_entidad?: number | string;
+          seccion?: number | string;
+          votos_desglosados?: Record<string, number | string> | string;
+          total_votos_calculados?: number | string;
+        };
+      }
+    ).properties ?? {
+      id_entidad: hoverInfo.object.id_entidad,
+      seccion: hoverInfo.object.seccion,
+      votos_desglosados: hoverInfo.object.votos_desglosados,
+      total_votos_calculados: hoverInfo.object.total_votos_calculados,
+    };
+
+    const { id_entidad, seccion, votos_desglosados, total_votos_calculados } = props;
+    let rawVotos: Record<string, number | string> = {};
+    try {
+      rawVotos =
+        typeof votos_desglosados === "string"
+          ? (JSON.parse(votos_desglosados || "{}") as Record<string, number | string>)
+          : (votos_desglosados || {});
+    } catch {
+      rawVotos = {};
+    }
+
+    const parties = Object.keys(rawVotos)
+      .map((key) => ({ name: key.replace(/_/g, " "), votos: Number(rawVotos[key]) }))
+      .sort((a, b) => b.votos - a.votos);
+
+    const winner = parties.length > 0 && parties[0].votos > 0 ? parties[0] : null;
+    const entidadLabel = ENTIDADES_MX[Number(id_entidad)] || `Entidad ${id_entidad}`;
+    const totalLabel = Number(total_votos_calculados ?? 0).toLocaleString();
+
+    return (
+      <div
+        className="absolute z-50 bg-gray-950/95 backdrop-blur-xl border border-gray-800 p-4 rounded-2xl shadow-2xl pointer-events-none w-64 animate-in fade-in duration-200"
+        style={{ left: hoverInfo.x + 15, top: hoverInfo.y + 15 }}
+      >
+        <div className="text-[10px] font-black text-teal-500 uppercase tracking-widest mb-2 border-b border-gray-800 pb-2">
+          {formatCargo(activeElection)} • 2024
+        </div>
+
+        <div className="mb-3">
+          <div className="text-white font-bold text-lg leading-tight">{entidadLabel}</div>
+          <div className="text-gray-500 text-xs font-mono">Sección Electoral: {seccion}</div>
+        </div>
+
+        {winner ? (
+          <div className="space-y-2 bg-gray-900/50 p-2 rounded-lg border border-gray-800/50">
+            <div className="flex justify-between items-center">
+              <span className="text-xs text-gray-400">Fuerza Ganadora:</span>
+              <span
+                className="text-[10px] font-black px-2 py-1 rounded bg-gray-800 truncate max-w-[120px]"
+                style={{ color: getPartyColor(winner.name) }}
+              >
+                {winner.name}
+              </span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-xs text-gray-400">Votos Emitidos:</span>
+              <span className="text-sm font-black text-white">{totalLabel}</span>
+            </div>
+          </div>
+        ) : (
+          <div className="text-xs text-gray-500 italic p-2 bg-gray-900/30 rounded-lg text-center border border-gray-800/30">
+            Sin registros de votación en esta sección.
+          </div>
+        )}
+      </div>
+    );
+  };
 
   // 3. BLOQUEO DE RENDERIZADO SSR CON BLINDAJE ANTIVIRUS
   if (!isMounted) {
@@ -389,29 +464,8 @@ export default function CommandCenter() {
         </DeckGL>
       </div>
 
-      {hoverInfo?.object && (
-        <div
-          className="absolute z-50 bg-gray-900/90 backdrop-blur-md border border-gray-700/50 p-3 rounded-lg shadow-2xl pointer-events-none text-sm"
-          style={{ left: hoverInfo.x + 15, top: hoverInfo.y + 15 }}
-        >
-          <div className="font-bold text-teal-400 mb-1 border-b border-gray-700 pb-1">
-            {hoverEntidadLabel} | Seccion {hoverSeccionRaw ?? "-"}
-          </div>
-          <div className="text-gray-300">
-            Total Votos:{" "}
-            <span className="text-white font-bold">
-              {hoverInfo.object.total_votos_calculados ??
-                (hoverInfo.object as { properties?: { total_votos_calculados?: number } }).properties
-                  ?.total_votos_calculados}
-            </span>
-          </div>
-          <div className="mt-2 text-xs text-gray-400 max-w-xs break-words">
-            {typeof hoverInfo.object.votos_desglosados === "string"
-              ? `${hoverInfo.object.votos_desglosados.substring(0, 100)}...`
-              : `${JSON.stringify(hoverInfo.object.votos_desglosados ?? {}).substring(0, 100)}...`}
-          </div>
-        </div>
-      )}
+      {/* TOOLTIP DINÁMICO E INTELIGENTE */}
+      {renderTooltip()}
 
       <div className="absolute top-6 left-6 z-10 w-96 flex gap-2">
         <div className="flex-1 bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-2 shadow-2xl flex items-center px-3 focus-within:border-teal-500 transition-colors">

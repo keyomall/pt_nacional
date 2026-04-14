@@ -159,14 +159,14 @@ async def get_vector_tile_dynamic(
                     ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
                     g.id_entidad,
                     g.seccion,
-                    {votos_expr} AS votos_desglosados,
-                    {total_expr} AS total_votos_calculados
+                    COALESCE(({votos_expr}), '{{}}'::jsonb) AS votos_desglosados,
+                    COALESCE(({total_expr}), 0) AS total_votos_calculados
                 FROM geometria_secciones g
-                JOIN {_quote_ident(tabla_destino)} v
+                LEFT JOIN {_quote_ident(tabla_destino)} v
                   ON g.id_entidad = {id_ent_expr} AND g.seccion = {seccion_expr}
                 JOIN bounds
                   ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
-                {where_clause}
+                WHERE 1=1 {where_clause}
             )
             SELECT ST_AsMVT(mvtgeom, 'elecciones') AS tile FROM mvtgeom;
             """
