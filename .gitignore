@@ -13,6 +13,9 @@ pgdata/
 docker/db/data/
 docker/db/pgdata/
 docker/postgres/data/
+*.zip
+*.rar
+*.7z
 *.log
 .DS_Store
 Thumbs.db
