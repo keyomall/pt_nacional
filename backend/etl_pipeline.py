@@ -143,7 +143,8 @@ class INEDataProcessor:
         for column in vote_columns:
             votes_df[column] = pd.to_numeric(votes_df[column], errors="coerce")
 
-        votes_df = votes_df.where(pd.notna(votes_df), None)
+        # Forzamos dtype object para evitar que pandas reintroduzca NaN en columnas float.
+        votes_df = votes_df.astype(object).where(pd.notna(votes_df), None)
         payload = votes_df.to_dict(orient="records")
         return payload
 
