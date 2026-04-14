@@ -218,13 +218,29 @@ async def get_vector_tile_dynamic(
             else "NULL::integer"
         )
 
-        query = sa.text(
-            f"""
-            WITH bounds AS (
-                SELECT ST_TileEnvelope(:z, :x, :y) AS geom
-            ),
+        has_casillas_sql = sa.text(
+            "SELECT to_regclass('public.eleccion_2024_casillas') IS NOT NULL"
+        )
+        has_casillas = bool((await conn.execute(has_casillas_sql)).scalar())
+
+        if has_casillas:
+            geo_context_sql = """
             geo_context AS (
                 -- Agrupación optimizada para inyectar IDs sin multiplicar filas
+                SELECT NULLIF(regexp_replace(id_entidad::text, '[^0-9-]', '', 'g'), '')::integer AS id_entidad,
+                       NULLIF(regexp_replace(seccion::text, '[^0-9-]', '', 'g'), '')::integer AS seccion,
+                       MAX(NULLIF(regexp_replace(id_municipio::text, '[^0-9-]', '', 'g'), '')::integer) AS id_municipio,
+                       MAX(NULLIF(regexp_replace(id_distrito_local::text, '[^0-9-]', '', 'g'), '')::integer) AS id_distrito_local,
+                       MAX(NULLIF(regexp_replace(id_distrito_federal::text, '[^0-9-]', '', 'g'), '')::integer) AS id_distrito_federal
+                FROM eleccion_2024_casillas
+                GROUP BY NULLIF(regexp_replace(id_entidad::text, '[^0-9-]', '', 'g'), '')::integer,
+                         NULLIF(regexp_replace(seccion::text, '[^0-9-]', '', 'g'), '')::integer
+            ),
+            """
+        else:
+            geo_context_sql = f"""
+            geo_context AS (
+                -- Fallback cuando no existe la tabla maestra de casillas
                 SELECT {id_ent_int_expr} AS id_entidad,
                        {seccion_int_expr} AS seccion,
                        MAX({mun_expr}) AS id_municipio,
@@ -235,6 +251,14 @@ async def get_vector_tile_dynamic(
                   AND {seccion_int_expr} IS NOT NULL
                 GROUP BY {id_ent_int_expr}, {seccion_int_expr}
             ),
+            """
+
+        query = sa.text(
+            f"""
+            WITH bounds AS (
+                SELECT ST_TileEnvelope(:z, :x, :y) AS geom
+            ),
+            {geo_context_sql}
             mvtgeom AS (
                 SELECT ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
                        g.id_entidad,
@@ -248,9 +272,11 @@ async def get_vector_tile_dynamic(
                 JOIN bounds
                   ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
                 LEFT JOIN geo_context c
-                  ON g.id_entidad = c.id_entidad AND g.seccion = c.seccion
+                  ON g.id_entidad::integer = c.id_entidad::integer
+                 AND g.seccion::integer = c.seccion::integer
                 LEFT JOIN {_quote_ident(tabla_destino)} v
-                  ON g.id_entidad = {id_ent_int_expr} AND g.seccion = {seccion_int_expr}
+                  ON g.id_entidad::integer = {id_ent_int_expr}
+                 AND g.seccion::integer = {seccion_int_expr}
                 WHERE 1=1 {where_sql}
             )
             SELECT ST_AsMVT(mvtgeom, 'elecciones') AS tile FROM mvtgeom;

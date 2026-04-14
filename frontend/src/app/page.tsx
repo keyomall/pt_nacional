@@ -367,8 +367,8 @@ export default function CommandCenter() {
         lineWidthMinPixels: 1,
         getElevation: (feature: MVTFeature) => {
           const totalVotos = Number(feature.properties?.total_votos_calculados || 0);
-          // UX: Suavizamos la elevación (*1.5 en lugar de *5) y 0 para vacíos
-          return totalVotos === 0 ? 0 : Math.max(10, totalVotos * 1.5);
+          // UX ENTERPRISE: Relieve topográfico ultra discreto (Factor 0.08) en lugar de muros gigantes
+          return totalVotos === 0 ? 0 : Math.max(2, totalVotos * 0.08);
         },
         extruded: is3D,
         wireframe: true,
