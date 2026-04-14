@@ -18,5 +18,6 @@ docker/postgres/data/
 *.rar
 *.7z
 *.log
+logs/
 .DS_Store
 Thumbs.db
