@@ -11,9 +11,11 @@ Nota: El módulo solo define lógica y utilidades. No ejecuta carga automática 
 from __future__ import annotations
 
 import logging
+import re
+import unicodedata
 from contextlib import contextmanager
 from pathlib import Path
-from typing import Dict, Generator, Iterable, List, Optional, Sequence, Set, Tuple
+from typing import Any, Dict, Generator, Iterable, List, Optional, Sequence, Set, Tuple
 
 import geopandas as gpd
 import pandas as pd
@@ -31,6 +33,7 @@ TARGET_CRS = "EPSG:4326"
 
 # Valores nulos comunes en datasets de cómputos electorales.
 NULL_SENTINELS: Tuple[str, ...] = ("-", "N/A", "NA", "n/a", "na", "")
+DEFAULT_ENCODINGS: Tuple[str, ...] = ("utf-8-sig", "latin1", "iso-8859-1")
 
 
 logger = logging.getLogger("etl_pipeline")
@@ -106,6 +109,88 @@ class INEDataProcessor:
         self.chunk_size = chunk_size
 
     @staticmethod
+    def _strip_accents(value: str) -> str:
+        normalized = unicodedata.normalize("NFKD", value)
+        return "".join(char for char in normalized if not unicodedata.combining(char))
+
+    @staticmethod
+    def _is_preserve_key_column(column_name: str) -> bool:
+        name = column_name.upper().strip()
+        return "CLAVE_" in name or name in {"CLAVE_CASILLA", "CLAVE_ACTA", "CASILLA"}
+
+    @staticmethod
+    def _is_fk_like_column(column_name: str) -> bool:
+        name = column_name.upper().strip()
+        fk_tokens = (
+            "ID_ENTIDAD",
+            "ID_DISTRITO",
+            "ID_DISTRITO_FEDERAL",
+            "ID_DISTRITO_LOCAL",
+            "ID_MUNICIPIO",
+            "ID_DEMARCACION",
+            "SECCION",
+            "ID_ESTADO",
+        )
+        return name.startswith("ID_") or any(token in name for token in fk_tokens)
+
+    @staticmethod
+    def _normalize_text_value(value: Any) -> Any:
+        if value is None:
+            return None
+        text = str(value).strip()
+        if not text:
+            return None
+        text = INEDataProcessor._strip_accents(text)
+        return text.upper()
+
+    @staticmethod
+    def _clean_excel_escaped_value(value: Any, preserve_leading_zeros: bool) -> Any:
+        if value is None:
+            return None
+        text = str(value).strip()
+        if not text:
+            return None
+
+        if text in NULL_SENTINELS:
+            return None
+
+        # Patrones Excel tipo ="004" y variantes.
+        match = re.fullmatch(r'="?([^"]*)"?', text)
+        if match and text.startswith("="):
+            text = match.group(1).strip()
+
+        # Quitar comillas simples envolventes frecuentes en claves INE.
+        if text.startswith("'") and text.endswith("'") and len(text) >= 2:
+            text = text[1:-1]
+        text = text.replace("'", "")
+        text = text.strip()
+        if not text:
+            return None
+
+        if preserve_leading_zeros:
+            return text
+
+        if re.fullmatch(r"\d+", text):
+            return int(text)
+        return text
+
+    def _sanitize_row(self, row: pd.Series) -> Dict[str, Any]:
+        clean_row: Dict[str, Any] = {}
+        for column, value in row.items():
+            preserve_zeros = self._is_preserve_key_column(column)
+            cleaned = self._clean_excel_escaped_value(value, preserve_leading_zeros=preserve_zeros)
+
+            upper_column = column.upper().strip()
+            if cleaned is not None and self._is_fk_like_column(column) and not preserve_zeros:
+                cleaned = self._clean_excel_escaped_value(cleaned, preserve_leading_zeros=False)
+
+            if cleaned is not None and any(token in upper_column for token in ("MUNICIPIO", "CANDIDAT", "NOMBRE")):
+                cleaned = self._normalize_text_value(cleaned)
+
+            clean_row[column] = cleaned
+        return clean_row
+
+    @staticmethod
     def _normalize_nulls(df: pd.DataFrame) -> pd.DataFrame:
         normalized = df.replace({value: None for value in NULL_SENTINELS})
         normalized = normalized.where(pd.notna(normalized), None)
@@ -153,7 +238,7 @@ class INEDataProcessor:
         csv_path: str | Path,
         skiprows: int = 7,
         sep: str = ",",
-        encoding: str = "latin-1",
+        encoding: Optional[str] = None,
     ) -> Iterable[pd.DataFrame]:
         """
         Lee CSV del INE en bloques para minimizar consumo de RAM.
@@ -163,21 +248,37 @@ class INEDataProcessor:
             raise ETLPipelineError(f"Archivo CSV no encontrado: {source}")
 
         logger.info("Iniciando lectura chunked de %s", source)
-        try:
-            yield from pd.read_csv(
-                source,
-                skiprows=skiprows,
-                sep=sep,
-                chunksize=self.chunk_size,
-                dtype=str,
-                encoding=encoding,
-                keep_default_na=True,
-                na_values=list(NULL_SENTINELS),
-                low_memory=False,
-            )
-        except Exception as exc:
-            logger.exception("Error al leer CSV INE: %s", source)
-            raise ETLPipelineError("Fallo durante lectura CSV por chunks.") from exc
+        encodings = (encoding,) if encoding else DEFAULT_ENCODINGS
+        last_error: Optional[Exception] = None
+
+        for trial_encoding in encodings:
+            try:
+                logger.info("[INFO] Intentando lectura con encoding=%s", trial_encoding)
+                yield from pd.read_csv(
+                    source,
+                    skiprows=skiprows,
+                    sep=sep,
+                    chunksize=self.chunk_size,
+                    dtype=str,
+                    encoding=trial_encoding,
+                    keep_default_na=True,
+                    na_values=list(NULL_SENTINELS),
+                    low_memory=False,
+                )
+                return
+            except UnicodeDecodeError as exc:
+                last_error = exc
+                logger.warning(
+                    "[WARNING] Fallo de decodificación con encoding=%s en %s. Probando fallback.",
+                    trial_encoding,
+                    source,
+                )
+            except Exception as exc:
+                last_error = exc
+                logger.exception("Error al leer CSV INE %s con encoding=%s", source, trial_encoding)
+                break
+
+        raise ETLPipelineError("Fallo durante lectura CSV por chunks.") from last_error
 
     def transform_chunk(
         self,
@@ -187,6 +288,18 @@ class INEDataProcessor:
         drop_vote_columns: bool = False,
     ) -> pd.DataFrame:
         transformed = self._normalize_nulls(chunk.copy())
+        clean_rows: List[Dict[str, Any]] = []
+        for row_index, row in transformed.iterrows():
+            try:
+                clean_rows.append(self._sanitize_row(row))
+            except Exception as exc:
+                logger.error("Fila descartada por error de sanitización. index=%s error=%s", row_index, exc)
+
+        transformed = pd.DataFrame(clean_rows, columns=transformed.columns)
+        if transformed.empty:
+            logger.warning("[WARNING] Chunk vacío después de sanitización.")
+            return transformed
+
         vote_columns = self._infer_vote_columns(transformed, metadata_columns=metadata_columns)
         transformed[payload_column] = self._build_votes_payload(transformed, vote_columns)
 
@@ -205,7 +318,7 @@ class INEDataProcessor:
         csv_path: str | Path,
         skiprows: int = 7,
         sep: str = ",",
-        encoding: str = "latin-1",
+        encoding: Optional[str] = None,
         metadata_columns: Optional[Sequence[str]] = None,
         payload_column: str = "votos_coaliciones",
         drop_vote_columns: bool = False,
@@ -231,7 +344,7 @@ class INEDataProcessor:
         if_exists: str = "append",
         skiprows: int = 7,
         sep: str = ",",
-        encoding: str = "latin-1",
+        encoding: Optional[str] = None,
         metadata_columns: Optional[Sequence[str]] = None,
         payload_column: str = "votos_coaliciones",
         drop_vote_columns: bool = False,
@@ -252,6 +365,9 @@ class INEDataProcessor:
             payload_column=payload_column,
             drop_vote_columns=drop_vote_columns,
         ):
+            if transformed_chunk.empty:
+                logger.warning("[WARNING] Chunk omitido por quedar vacío tras sanitización.")
+                continue
             write_mode = if_exists if first_chunk else "append"
             transformed_chunk.to_sql(
                 name=target_table,
@@ -401,8 +517,88 @@ def build_default_components(
     return connector, ine_processor, magar_processor
 
 
+def run_fire_test() -> Dict[str, int]:
+    """
+    Ejecuta prueba de fuego solicitada:
+    - Federal PRES_2024.csv -> tabla de votos
+    - Local INTEGRACION_2024_AGS.csv -> tabla de candidaturas
+    """
+    pres_path = Path(
+        r"A:\proyectos\pt_nacional\x\año\2024\federal\base de datos\20240608_2030_COMPUTOS_PRES\PRES_2024.csv"
+    )
+    integracion_csv_path = Path(r"A:\proyectos\pt_nacional\x\año\2024\local\AGS_PEL_2024\INTEGRACION_2024_AGS.csv")
+
+    table_votos = "ine_votos_federal_pres_2024_test"
+    table_candidaturas = "ine_candidaturas_local_ags_2024_test"
+
+    connector, ine_processor, _ = build_default_components()
+    connector.test_connection()
+
+    rows_votos = ine_processor.load_csv_to_postgres(
+        csv_path=pres_path,
+        target_table=table_votos,
+        if_exists="replace",
+        skiprows=7,
+        sep="|",
+        encoding=None,
+        metadata_columns=[
+            "CLAVE_CASILLA",
+            "CLAVE_ACTA",
+            "ID_ENTIDAD",
+            "ENTIDAD",
+            "ID_DISTRITO_FEDERAL",
+            "DISTRITO_FEDERAL",
+            "SECCION",
+            "ID_CASILLA",
+            "TIPO_CASILLA",
+            "EXT_CONTIGUA",
+            "CASILLA",
+            "TIPO_ACTA",
+            "LISTA_NOMINAL",
+            "TOTAL_VOTOS_CALCULADOS",
+            "OBSERVACIONES",
+            "MECANISMOS_TRASLADO",
+            "FECHA_HORA",
+        ],
+    )
+
+    rows_candidaturas = ine_processor.load_csv_to_postgres(
+        csv_path=integracion_csv_path,
+        target_table=table_candidaturas,
+        if_exists="replace",
+        skiprows=0,
+        sep=",",
+        encoding=None,
+        metadata_columns=[
+            "CIRCUNSCRIPCION",
+            "ID_ESTADO",
+            "NOMBRE_ESTADO",
+            "ID_DISTRITO_LOCAL",
+            "CABECERA_DISTRITAL_LOCAL",
+            "ID_MUNICIPIO",
+            "MUNICIPIO",
+            "ID_DEMARCACION_LOCAL",
+            "DEMARCACION_LOCAL",
+            "TIPO_DE_CANDIDATURA",
+            "NOMBRE_ACTOR_POLITICO",
+            "NUMERO_LISTA",
+            "PERSONA_CANDIDATA",
+            "IDENTIDAD_SEXO_GENERICA",
+            "ACCION AFIRMATIVA",
+            "RUTA_CONSTANCIA",
+            "PARTIDO_POLITICO",
+        ],
+    )
+
+    logger.info("[INFO] PRUEBA DE FUEGO COMPLETADA | votos=%s candidaturas=%s", rows_votos, rows_candidaturas)
+    connector.dispose()
+    return {"votos": rows_votos, "candidaturas": rows_candidaturas}
+
+
 if __name__ == "__main__":
+    result = run_fire_test()
     logger.info(
-        "Módulo ETL cargado correctamente. "
-        "No se ejecuta ingesta automática; utilice las clases para cargas controladas."
+        "[INFO] RESULTADO FINAL PRUEBA DE FUEGO | filas_votos=%s | filas_candidaturas=%s",
+        result["votos"],
+        result["candidaturas"],
     )
