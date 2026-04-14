@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  // Config options en blanco para respetar la tipificación estricta de NextJS
+  // Aseguramos que Turbopack no se confunda con lockfiles en directorios superiores.
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
+  // Compatibilidad defensiva para configuraciones heredadas.
+  experimental: {
+    turbo: {
+      root: "./",
+    },
+  },
 };
 
 export default nextConfig;
