@@ -29,6 +29,9 @@ const INITIAL_VIEW_STATE = {
 type HoverObject = {
   id_entidad?: number | string;
   seccion?: number | string;
+  id_municipio?: number | string;
+  id_distrito_local?: number | string;
+  id_distrito_federal?: number | string;
   total_votos_calculados?: number;
   votos_desglosados?: unknown;
 };
@@ -43,6 +46,9 @@ type MVTFeature = {
   properties?: {
     id_entidad?: number | string;
     seccion?: number | string;
+    id_municipio?: number | string;
+    id_distrito_local?: number | string;
+    id_distrito_federal?: number | string;
     votos_desglosados?: Record<string, number | string> | string;
     total_votos_calculados?: number | string;
   };
@@ -327,7 +333,8 @@ export default function CommandCenter() {
         data: tileUrl,
         minZoom: 0,
         maxZoom: 14,
-        opacity: 0.65,
+        // OPACIDAD ADAPTATIVA: En 2D (is3D=false) es más transparente para leer toponimia
+        opacity: is3D ? 0.75 : 0.45,
         getFillColor: (f: MVTFeature) => {
           const rawVotos = f.properties?.votos_desglosados;
           const totalVotos = Number(f.properties?.total_votos_calculados || 0);
@@ -388,7 +395,7 @@ export default function CommandCenter() {
     ? processVotesData(selectedFeature.properties?.votos_desglosados)
     : [];
 
-  // --- RENDERIZADOR DE TOOLTIP INTELIGENTE ---
+  // --- RENDERIZADOR DE TOOLTIP INTELIGENTE (GEOGRAPHIC HUD) ---
   const renderTooltip = () => {
     if (!hoverInfo || !hoverInfo.object) return null;
 
@@ -397,6 +404,9 @@ export default function CommandCenter() {
         properties?: {
           id_entidad?: number | string;
           seccion?: number | string;
+          id_municipio?: number | string;
+          id_distrito_local?: number | string;
+          id_distrito_federal?: number | string;
           votos_desglosados?: Record<string, number | string> | string;
           total_votos_calculados?: number | string;
         };
@@ -404,11 +414,22 @@ export default function CommandCenter() {
     ).properties ?? {
       id_entidad: hoverInfo.object.id_entidad,
       seccion: hoverInfo.object.seccion,
+      id_municipio: hoverInfo.object.id_municipio,
+      id_distrito_local: hoverInfo.object.id_distrito_local,
+      id_distrito_federal: hoverInfo.object.id_distrito_federal,
       votos_desglosados: hoverInfo.object.votos_desglosados,
       total_votos_calculados: hoverInfo.object.total_votos_calculados,
     };
 
-    const { id_entidad, seccion, votos_desglosados, total_votos_calculados } = props;
+    const {
+      id_entidad,
+      seccion,
+      id_municipio,
+      id_distrito_local,
+      id_distrito_federal,
+      votos_desglosados,
+      total_votos_calculados,
+    } = props;
     let rawVotos: Record<string, number | string> = {};
     try {
       rawVotos =
@@ -430,7 +451,7 @@ export default function CommandCenter() {
 
     return (
       <div
-        className="absolute z-50 bg-gray-950/95 backdrop-blur-xl border border-gray-800 p-4 rounded-2xl shadow-2xl pointer-events-none w-64 animate-in fade-in duration-200"
+        className="absolute z-50 bg-gray-950/95 backdrop-blur-xl border border-gray-800 p-4 rounded-2xl shadow-2xl pointer-events-none w-72 animate-in fade-in duration-200"
         style={{ left: hoverInfo.x + 15, top: hoverInfo.y + 15 }}
       >
         <div className="text-[10px] font-black text-teal-500 uppercase tracking-widest mb-2 border-b border-gray-800 pb-2">
@@ -439,7 +460,22 @@ export default function CommandCenter() {
 
         <div className="mb-3">
           <div className="text-white font-bold text-lg leading-tight">{entidadLabel}</div>
-          <div className="text-gray-500 text-xs font-mono">Sección Electoral: {seccion}</div>
+          {/* GEOGRAPHIC BREADCRUMB (LINAJE ESPACIAL) */}
+          <div className="flex flex-wrap items-center gap-1 text-[10px] text-gray-400 font-mono mt-1 bg-gray-900/50 p-1.5 rounded-md border border-gray-800">
+            <span title="Municipio" className="text-teal-200/70">
+              MUN: {id_municipio || "N/A"}
+            </span>
+            <span className="text-gray-700">/</span>
+            <span title="Distrito Federal" className="text-purple-200/70">
+              DF: {id_distrito_federal || "N/A"}
+            </span>
+            <span className="text-gray-700">/</span>
+            <span title="Distrito Local" className="text-blue-200/70">
+              DL: {id_distrito_local || "N/A"}
+            </span>
+            <span className="text-gray-700">/</span>
+            <span className="text-white font-bold">SEC: {seccion}</span>
+          </div>
         </div>
 
         {winner && total > 0 ? (
@@ -516,7 +552,9 @@ export default function CommandCenter() {
         <button
           onClick={toggle3D}
           className={`bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-3 transition-colors ${is3D ? "text-teal-400" : "text-gray-400 hover:text-white"}`}
-          title={is3D ? "Cambiar a mapa plano 2D" : "Cambiar a volumétrico 3D"}
+          title={
+            is3D ? "Cambiar a mapa plano 2D y revelar nombres" : "Cambiar a volumétrico 3D"
+          }
         >
           <Layers className="w-5 h-5" />
         </button>

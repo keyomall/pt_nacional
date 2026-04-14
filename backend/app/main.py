@@ -154,14 +154,24 @@ async def get_vector_tile_dynamic(
             WITH bounds AS (
                 SELECT ST_TileEnvelope(:z, :x, :y) AS geom
             ),
+            geo_context AS (
+                -- Extraemos el linaje geográfico único por sección
+                SELECT DISTINCT id_entidad, seccion, id_municipio, id_distrito_local, id_distrito_federal
+                FROM eleccion_2024_casillas
+            ),
             mvtgeom AS (
                 SELECT
                     ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
                     g.id_entidad,
                     g.seccion,
+                    c.id_municipio,
+                    c.id_distrito_local,
+                    c.id_distrito_federal,
                     COALESCE(({votos_expr}), '{{}}'::jsonb) AS votos_desglosados,
                     COALESCE(({total_expr}), 0) AS total_votos_calculados
                 FROM geometria_secciones g
+                LEFT JOIN geo_context c
+                  ON g.id_entidad = c.id_entidad AND g.seccion = c.seccion
                 LEFT JOIN {_quote_ident(tabla_destino)} v
                   ON g.id_entidad = {id_ent_expr} AND g.seccion = {seccion_expr}
                 JOIN bounds
