@@ -162,6 +162,26 @@ const toTitleCase = (str: string) => {
     .join(" ");
 };
 
+// MOTOR DE TOPONIMIA (Diccionario Inteligente)
+const resolveMunicipioName = (entidadId: number, municipioId: number) => {
+  if (!municipioId) return "N/A";
+  // Muestra de Michoacán (Se escalará a BD nacional en Fase 12)
+  if (entidadId === 16) {
+    const michoacanMap: Record<number, string> = {
+      103: "Uruapan",
+      53: "Morelia",
+      65: "Patzcuaro",
+      48: "Lazaro Cardenas",
+      112: "Zamora",
+      113: "Zitacuaro",
+      14: "Apatzingan",
+      102: "Tzintzuntzan",
+    };
+    return michoacanMap[municipioId] || `Mun. ${municipioId}`;
+  }
+  return `Mun. ${municipioId}`;
+};
+
 const parseVotesObject = (
   votosDesglosados: Record<string, number | string> | string | undefined
 ): Record<string, number | string> => {
@@ -435,7 +455,9 @@ function CommandCenterUI() {
       rawVotos = {};
     }
 
-    const total = Number(total_votos_calculados || 0);
+    // FIX CRÍTICO: Auto-Suma Dinámica. Si la BD envió 0, calculamos el total sumando el JSONB.
+    const sumVotos = Object.values(rawVotos).reduce((a, b) => Number(a) + Number(b), 0) as number;
+    const total = Number(total_votos_calculados) > 0 ? Number(total_votos_calculados) : sumVotos;
     const parties = Object.keys(rawVotos)
       .map((key) => ({ name: key.replace(/_/g, " "), votos: Number(rawVotos[key]) }))
       .sort((a, b) => b.votos - a.votos);
@@ -457,19 +479,33 @@ function CommandCenterUI() {
           <div className="text-white font-bold text-lg leading-tight">{entidadLabel}</div>
           {/* GEOGRAPHIC BREADCRUMB (LINAJE ESPACIAL) */}
           <div className="flex flex-wrap items-center gap-1 text-[10px] text-gray-400 font-mono mt-1 bg-gray-900/50 p-1.5 rounded-md border border-gray-800">
-            <span title="Municipio" className="text-teal-200/70">
-              MUN: {id_municipio || "N/A"}
+            <span
+              title="Municipio"
+              className="text-teal-200/70 cursor-help border-b border-teal-200/30 border-dashed"
+            >
+              {resolveMunicipioName(Number(id_entidad), Number(id_municipio))}
             </span>
             <span className="text-gray-700">/</span>
-            <span title="Distrito Federal" className="text-purple-200/70">
+            <span
+              title="Distrito Federal"
+              className="text-purple-200/70 cursor-help border-b border-purple-200/30 border-dashed"
+            >
               DF: {id_distrito_federal || "N/A"}
             </span>
             <span className="text-gray-700">/</span>
-            <span title="Distrito Local" className="text-blue-200/70">
+            <span
+              title="Distrito Local"
+              className="text-blue-200/70 cursor-help border-b border-blue-200/30 border-dashed"
+            >
               DL: {id_distrito_local || "N/A"}
             </span>
             <span className="text-gray-700">/</span>
-            <span className="text-white font-bold">SEC: {seccion}</span>
+            <span
+              title="Seccion Electoral"
+              className="text-white font-bold cursor-help border-b border-white/30 border-dashed"
+            >
+              SEC: {seccion}
+            </span>
           </div>
         </div>
 
