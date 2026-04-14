@@ -1,10 +1,14 @@
 import logging
 import os
+import signal
 import socket
 import subprocess
 import sys
 import time
 from datetime import datetime
+import atexit
+from urllib.error import URLError
+from urllib.request import urlopen
 
 try:
     import psutil
@@ -38,7 +42,17 @@ PORTS_TO_CLEAR = {
 class BootSentinel:
     def __init__(self):
         self.processes = []
+        self._shutdown_called = False
+        atexit.register(self.shutdown)
+        signal.signal(signal.SIGINT, self._handle_signal)
+        if hasattr(signal, "SIGTERM"):
+            signal.signal(signal.SIGTERM, self._handle_signal)
         logger.info("=== INICIANDO SECUENCIA SENTINEL 2024 ===")
+
+    def _handle_signal(self, signum, _frame):
+        logger.info(f"\n[*] Senal {signum} recibida. Iniciando protocolo de cierre limpio...")
+        self.shutdown()
+        raise SystemExit(0)
 
     def sweep_zombies(self):
         """Escanea y aniquila cualquier proceso que ocupe nuestros puertos vitales."""
@@ -80,6 +94,26 @@ class BootSentinel:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
             return sock.connect_ex(("127.0.0.1", port)) == 0
 
+    def wait_http_ready(self, url, retries, process=None):
+        """
+        Espera una respuesta HTTP valida.
+        Si el proceso muere antes de responder, falla inmediatamente.
+        """
+        while retries > 0:
+            if process is not None and process.poll() is not None:
+                return False
+            try:
+                with urlopen(url, timeout=1.5) as response:
+                    if 200 <= response.status < 500:
+                        return True
+            except URLError:
+                pass
+            except Exception:
+                pass
+            time.sleep(1)
+            retries -= 1
+        return False
+
     def start_docker_infrastructure(self):
         """Inicia PostgreSQL y Redis via Docker Compose."""
         logger.info(">> FASE 2: VERIFICANDO INFRAESTRUCTURA CORE (DOCKER)...")
@@ -108,20 +142,36 @@ class BootSentinel:
         if not os.path.exists(python_executable):
             python_executable = "python"
 
-        backend_cmd = [python_executable, "-m", "uvicorn", "app.main:app", "--reload", "--port", "8000"]
+        backend_cmd = [
+            python_executable,
+            "-m",
+            "uvicorn",
+            "app.main:app",
+            "--reload",
+            "--port",
+            "8000",
+            "--http",
+            "h11",
+        ]
         backend_proc = subprocess.Popen(backend_cmd, cwd="backend")
         self.processes.append(backend_proc)
 
-        retries = 10
+        # Validacion fuerte: puerto abierto + endpoint real respondiendo.
+        retries = 15
         while retries > 0 and not self.is_port_in_use(8000):
+            if backend_proc.poll() is not None:
+                break
             time.sleep(1)
             retries -= 1
 
-        if retries == 0:
+        backend_ok = retries > 0 and self.wait_http_ready(
+            "http://127.0.0.1:8000/api/health", retries=12, process=backend_proc
+        )
+        if not backend_ok:
             logger.error("[FATAL] Backend fallo en el arranque.")
             self.shutdown()
             sys.exit(1)
-        logger.info("[OK] API Backend operativa en puerto 8000.")
+        logger.info("[OK] API Backend operativa en puerto 8000 (health check validado).")
 
     def start_frontend(self):
         """Levanta Next.js."""
@@ -130,16 +180,21 @@ class BootSentinel:
         frontend_proc = subprocess.Popen(["npm", "run", "dev"], cwd="frontend", shell=shell_flag)
         self.processes.append(frontend_proc)
 
-        retries = 15
+        retries = 20
         while retries > 0 and not self.is_port_in_use(3000):
+            if frontend_proc.poll() is not None:
+                break
             time.sleep(1)
             retries -= 1
 
-        if retries == 0:
+        frontend_ok = retries > 0 and self.wait_http_ready(
+            "http://127.0.0.1:3000", retries=15, process=frontend_proc
+        )
+        if not frontend_ok:
             logger.error("[FATAL] Frontend fallo en el arranque.")
             self.shutdown()
             sys.exit(1)
-        logger.info("[OK] Frontend UI operativo en puerto 3000.")
+        logger.info("[OK] Frontend UI operativo en puerto 3000 (HTTP validado).")
 
     def run(self):
         try:
@@ -163,6 +218,9 @@ class BootSentinel:
             self.shutdown()
 
     def shutdown(self):
+        if self._shutdown_called:
+            return
+        self._shutdown_called = True
         for proc in self.processes:
             if proc.poll() is None:
                 proc.terminate()
