@@ -6,6 +6,15 @@ import { Map } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { PickingInfo } from "@deck.gl/core";
 import { AlertCircle, PieChart, RotateCcw, Search } from "lucide-react";
+import {
+  Bar,
+  BarChart,
+  Cell,
+  ResponsiveContainer,
+  Tooltip as RechartsTooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const MAP_STYLE = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
 
@@ -32,9 +41,54 @@ type HoverInfo = PickingInfo<HoverObject> & {
 
 type MVTFeature = {
   properties?: {
+    id_entidad?: number | string;
+    seccion?: number | string;
     votos_desglosados?: Record<string, number | string> | string;
     total_votos_calculados?: number | string;
   };
+};
+
+type ChartVoteItem = {
+  name: string;
+  votos: number;
+};
+
+const processVotesData = (
+  votosDesglosados: Record<string, number | string> | string | undefined
+): ChartVoteItem[] => {
+  if (!votosDesglosados) return [];
+  let rawData: Record<string, number | string> = {};
+
+  if (typeof votosDesglosados === "string") {
+    try {
+      rawData = JSON.parse(votosDesglosados) as Record<string, number | string>;
+    } catch {
+      return [];
+    }
+  } else {
+    rawData = votosDesglosados;
+  }
+
+  return Object.keys(rawData)
+    .map((key) => ({
+      name: key.replace(/_/g, " "),
+      votos: Number(rawData[key]),
+    }))
+    .filter((item) => Number.isFinite(item.votos) && item.votos > 0)
+    .sort((a, b) => b.votos - a.votos)
+    .slice(0, 7);
+};
+
+const getPartyColor = (partyName: string): string => {
+  const p = partyName.toUpperCase();
+  if (p.includes("MORENA")) return "#A52A2A";
+  if (p.includes("PAN")) return "#0055B8";
+  if (p.includes("PRI")) return "#00953B";
+  if (p.includes("MC")) return "#F27320";
+  if (p.includes("PT")) return "#E01F26";
+  if (p.includes("PVEM") || p.includes("VERDE")) return "#5CB85C";
+  if (p.includes("PRD")) return "#FFD700";
+  return "#2DD4BF";
 };
 
 type ViewState = typeof INITIAL_VIEW_STATE & {
@@ -49,8 +103,10 @@ export default function CommandCenter() {
   const [activeElection, setActiveElection] = useState("PRESIDENCIA");
   const [activeEntidadFilter, setActiveEntidadFilter] = useState<number | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
+  const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- CSR mount guard requerido para evitar hydration mismatches por extensiones.
     setIsMounted(true);
   }, []);
 
@@ -144,9 +200,21 @@ export default function CommandCenter() {
         autoHighlight: true,
         highlightColor: [255, 255, 255, 120],
         onHover: (info: PickingInfo<HoverObject>) => setHoverInfo(info as HoverInfo),
+        onClick: (info: PickingInfo<MVTFeature>) => {
+          if (info.object) {
+            setSelectedFeature(info.object as MVTFeature);
+          } else {
+            setSelectedFeature(null);
+          }
+        },
       }),
     ],
     [activeElection, activeEntidadFilter, tileUrl]
+  );
+
+  const selectedVotesData = useMemo(
+    () => processVotesData(selectedFeature?.properties?.votos_desglosados),
+    [selectedFeature]
   );
 
   if (!isMounted) {
@@ -223,8 +291,8 @@ export default function CommandCenter() {
         </div>
       )}
 
-      <div className="absolute top-6 right-6 z-10 w-80">
-        <div className="bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-5 shadow-2xl">
+      <div className="absolute top-6 right-6 z-10 w-96 max-h-[calc(100vh-3rem)] flex flex-col pointer-events-none">
+        <div className="bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-5 shadow-2xl pointer-events-auto overflow-y-auto custom-scrollbar">
           <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase flex items-center gap-2 mb-2">
             <PieChart className="w-4 h-4" />
             Inteligencia Electoral
@@ -233,6 +301,79 @@ export default function CommandCenter() {
             CAPA: {activeElection.replace("_", " ")}{" "}
             {activeEntidadFilter ? `| EDON: ${activeEntidadFilter}` : "| NACIONAL"}
           </h3>
+
+          {!selectedFeature?.properties ? (
+            <div className="flex flex-col items-center justify-center h-48 border border-dashed border-gray-700 rounded-xl p-4 text-center">
+              <p className="text-gray-500 text-xs">
+                Haz clic en un polígono (Sección) en el mapa para extraer el análisis forense de los votos.
+              </p>
+            </div>
+          ) : (
+            <div className="animate-in fade-in slide-in-from-right-4 duration-500">
+              <div className="flex justify-between items-center mb-4 bg-gray-950 p-3 rounded-lg border border-gray-800">
+                <div>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Entidad</p>
+                  <p className="text-xl font-bold text-white">
+                    {selectedFeature.properties.id_entidad ?? "-"}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Sección</p>
+                  <p className="text-xl font-bold text-teal-400">
+                    {selectedFeature.properties.seccion ?? "-"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">
+                  Total Votos Emitidos
+                </p>
+                <p className="text-3xl font-black text-white">
+                  {Number(selectedFeature.properties.total_votos_calculados ?? 0).toLocaleString()}
+                </p>
+              </div>
+
+              <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-2">
+                Distribución Política (Top 7)
+              </p>
+              <div className="h-64 w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    layout="vertical"
+                    data={selectedVotesData}
+                    margin={{ top: 0, right: 20, left: -20, bottom: 0 }}
+                  >
+                    <XAxis type="number" hide />
+                    <YAxis
+                      dataKey="name"
+                      type="category"
+                      axisLine={false}
+                      tickLine={false}
+                      tick={{ fill: "#9ca3af", fontSize: 10 }}
+                      width={90}
+                    />
+                    <RechartsTooltip
+                      cursor={{ fill: "rgba(255,255,255,0.05)" }}
+                      contentStyle={{
+                        backgroundColor: "#111827",
+                        borderColor: "#374151",
+                        borderRadius: "0.5rem",
+                        fontSize: "12px",
+                      }}
+                      itemStyle={{ color: "#fff", fontWeight: "bold" }}
+                      formatter={(value: number | string) => [Number(value).toLocaleString(), "Votos"]}
+                    />
+                    <Bar dataKey="votos" radius={[0, 4, 4, 0]} barSize={15}>
+                      {selectedVotesData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={getPartyColor(entry.name)} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
