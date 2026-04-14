@@ -113,39 +113,39 @@ const ENTIDADES_MX: Record<number, string> = {
   6: "Colima",
   7: "Chiapas",
   8: "Chihuahua",
-  9: "Ciudad de Mexico",
+  9: "Ciudad de México",
   10: "Durango",
   11: "Guanajuato",
   12: "Guerrero",
   13: "Hidalgo",
   14: "Jalisco",
-  15: "Estado de Mexico",
-  16: "Michoacan",
+  15: "Estado de México",
+  16: "Michoacán",
   17: "Morelos",
   18: "Nayarit",
-  19: "Nuevo Leon",
+  19: "Nuevo León",
   20: "Oaxaca",
   21: "Puebla",
-  22: "Queretaro",
+  22: "Querétaro",
   23: "Quintana Roo",
-  24: "San Luis Potosi",
+  24: "San Luis Potosí",
   25: "Sinaloa",
   26: "Sonora",
   27: "Tabasco",
   28: "Tamaulipas",
   29: "Tlaxcala",
   30: "Veracruz",
-  31: "Yucatan",
+  31: "Yucatán",
   32: "Zacatecas",
 };
 
 const formatCargo = (cargo: string) => {
   const map: Record<string, string> = {
-    PRESIDENCIA: "Presidencia de la Republica",
-    SENADURIA: "Senadurias",
+    PRESIDENCIA: "Presidencia de la República",
+    SENADURIA: "Senadurías",
     DIPUTACION_FEDERAL: "Diputaciones Federales",
     GUBERNATURA: "Gubernatura Estatal",
-    AYUNTAMIENTO: "Ayuntamientos y Alcaldias",
+    AYUNTAMIENTO: "Ayuntamientos y Alcaldías",
     DIPUTACION_LOCAL: "Diputaciones Locales",
   };
   return map[cargo] || cargo.replace(/_/g, " ");
@@ -163,23 +163,25 @@ const toTitleCase = (str: string) => {
 };
 
 // MOTOR DE TOPONIMIA (Diccionario Inteligente)
-const resolveMunicipioName = (entidadId: number, municipioId: number) => {
-  if (!municipioId) return "N/A";
+const resolveMunicipioName = (entidadId: unknown, municipioId: unknown) => {
+  const ent = Number(entidadId);
+  const mun = Number(municipioId);
+  if (!mun) return "N/A";
   // Muestra de Michoacán (Se escalará a BD nacional en Fase 12)
-  if (entidadId === 16) {
+  if (ent === 16) {
     const michoacanMap: Record<number, string> = {
       103: "Uruapan",
       53: "Morelia",
-      65: "Patzcuaro",
-      48: "Lazaro Cardenas",
+      65: "Pátzcuaro",
+      48: "Lázaro Cárdenas",
       112: "Zamora",
-      113: "Zitacuaro",
-      14: "Apatzingan",
+      113: "Zitácuaro",
+      14: "Apatzingán",
       102: "Tzintzuntzan",
     };
-    return michoacanMap[municipioId] || `Mun. ${municipioId}`;
+    return michoacanMap[mun] || `Municipio ${mun}`;
   }
-  return `Mun. ${municipioId}`;
+  return `Municipio ${mun}`;
 };
 
 const parseVotesObject = (
@@ -447,7 +449,7 @@ function CommandCenterUI() {
 
     return (
       <div
-        className="absolute z-50 bg-gray-950/95 backdrop-blur-xl border border-gray-800 p-4 rounded-2xl shadow-2xl pointer-events-none w-72 animate-in fade-in duration-200"
+        className="absolute z-50 bg-gray-950/95 backdrop-blur-xl border border-gray-800 p-4 rounded-2xl shadow-2xl pointer-events-none w-80 animate-in fade-in duration-200"
         style={{ left: hoverInfo.x + 15, top: hoverInfo.y + 15 }}
       >
         <div className="text-[10px] font-black text-teal-500 uppercase tracking-widest mb-2 border-b border-gray-800 pb-2">
@@ -456,35 +458,26 @@ function CommandCenterUI() {
 
         <div className="mb-3">
           <div className="text-white font-bold text-lg leading-tight">{entidadLabel}</div>
-          {/* GEOGRAPHIC BREADCRUMB (LINAJE ESPACIAL) */}
-          <div className="flex flex-wrap items-center gap-1 text-[10px] text-gray-400 font-mono mt-1 bg-gray-900/50 p-1.5 rounded-md border border-gray-800">
-            <span
-              title="Municipio"
-              className="text-teal-200/70 cursor-help border-b border-teal-200/30 border-dashed"
-            >
-              {resolveMunicipioName(Number(id_entidad), Number(id_municipio))}
-            </span>
-            <span className="text-gray-700">/</span>
-            <span
-              title="Distrito Federal"
-              className="text-purple-200/70 cursor-help border-b border-purple-200/30 border-dashed"
-            >
-              DF: {id_distrito_federal || "N/A"}
-            </span>
-            <span className="text-gray-700">/</span>
-            <span
-              title="Distrito Local"
-              className="text-blue-200/70 cursor-help border-b border-blue-200/30 border-dashed"
-            >
-              DL: {id_distrito_local || "N/A"}
-            </span>
-            <span className="text-gray-700">/</span>
-            <span
-              title="Seccion Electoral"
-              className="text-white font-bold cursor-help border-b border-white/30 border-dashed"
-            >
-              SEC: {seccion}
-            </span>
+          {/* LINAJE GEOGRÁFICO EXPLÍCITO (Sin acrónimos crípticos) */}
+          <div className="grid grid-cols-2 gap-2 text-[10px] font-mono mt-2 bg-gray-900/50 p-2 rounded-md border border-gray-800">
+            <div className="flex flex-col">
+              <span className="text-gray-500 uppercase">Municipio</span>
+              <span className="text-teal-200 font-bold">
+                {resolveMunicipioName(id_entidad, id_municipio)}
+              </span>
+            </div>
+            <div className="flex flex-col text-right">
+              <span className="text-gray-500 uppercase">Distrito Local</span>
+              <span className="text-blue-200 font-bold">{id_distrito_local || "N/A"}</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-gray-500 uppercase">Distrito Federal</span>
+              <span className="text-purple-200 font-bold">{id_distrito_federal || "N/A"}</span>
+            </div>
+            <div className="flex flex-col text-right">
+              <span className="text-gray-500 uppercase">Sección</span>
+              <span className="text-white font-bold text-xs">{seccion}</span>
+            </div>
           </div>
         </div>
 
@@ -493,7 +486,7 @@ function CommandCenterUI() {
             <div className="flex justify-between items-center">
               <span className="text-xs text-gray-400">Fuerza Ganadora:</span>
               <span
-                className="text-[10px] font-black px-2 py-1 rounded bg-gray-800 truncate max-w-[120px]"
+                className="text-[10px] font-black px-2 py-1 rounded bg-gray-800 text-white truncate max-w-[140px]"
                 style={{ color: getPartyColor(winner.name) }}
               >
                 {winner.name}
@@ -584,17 +577,30 @@ function CommandCenterUI() {
             </div>
           ) : (
             <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-              <div className="flex justify-between items-center mb-4 bg-gray-950 p-3 rounded-lg border border-gray-800">
-                <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Entidad</p>
-                  <p className="text-xl font-bold text-white">
-                    {selectedFeature.properties.id_entidad ?? "-"}
-                  </p>
+              <div className="flex flex-col mb-4 bg-gray-950 p-4 rounded-lg border border-gray-800">
+                <div className="flex justify-between items-center mb-2">
+                  <div>
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wider">Entidad</p>
+                    {/* FIX: Aplicamos el diccionario y el casting numérico */}
+                    <p className="text-lg font-bold text-white">
+                      {ENTIDADES_MX[Number(selectedFeature.properties.id_entidad)] ||
+                        `Estado ${selectedFeature.properties.id_entidad}`}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wider">Sección</p>
+                    <p className="text-xl font-bold text-teal-400">
+                      {selectedFeature.properties.seccion}
+                    </p>
+                  </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Sección</p>
-                  <p className="text-xl font-bold text-teal-400">
-                    {selectedFeature.properties.seccion ?? "-"}
+                <div className="pt-2 border-t border-gray-800">
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Municipio</p>
+                  <p className="text-sm font-medium text-gray-300">
+                    {resolveMunicipioName(
+                      selectedFeature.properties.id_entidad,
+                      selectedFeature.properties.id_municipio
+                    )}
                   </p>
                 </div>
               </div>

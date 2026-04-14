@@ -41,7 +41,7 @@ class AnalyticsEngine:
             sql_geo = sa.text(
                 """
                 SELECT id_municipio, id_distrito_federal, id_distrito_local
-                FROM eleccion_2024_casillas
+                FROM dim_geo_secciones
                 WHERE id_entidad = :ent AND seccion = :sec
                 LIMIT 1
                 """
