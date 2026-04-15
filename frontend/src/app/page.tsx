@@ -174,6 +174,7 @@ function CommandCenterUI() {
   const [viewState, setViewState] = useState<ViewState>(INITIAL_VIEW_STATE);
   const [activeElection, setActiveElection] = useState("PRESIDENCIA");
   const [activeEntidadFilter, setActiveEntidadFilter] = useState<number | null>(null);
+  const [activeMunicipioFilter, setActiveMunicipioFilter] = useState<number | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
   const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
@@ -377,7 +378,9 @@ function CommandCenterUI() {
               twitter: p.redes_sociales?.twitter || "",
               facebook: p.redes_sociales?.facebook || "",
             });
-            if (p.biografia) setBioData({ biografia: p.biografia });
+            if (p.biografia || p.trayectoria?.length > 0) {
+              setBioData({ biografia: p.biografia, trayectoria: p.trayectoria || [] });
+            }
           }
         })
         .catch(() => console.log("Expediente nuevo, no existe en BD aún."));
@@ -413,7 +416,14 @@ function CommandCenterUI() {
       }
 
       if (data.entidad_id) setActiveEntidadFilter(data.entidad_id);
+      if (data.municipio_id) setActiveMunicipioFilter(data.municipio_id);
       if (data.cargo_inferido) setActiveElection(data.cargo_inferido);
+
+      // NUEVO: Si el motor detecta un candidato, abre su expediente directamente
+      if (data.candidato_inferido) {
+        setActiveDossierCandidate(data.candidato_inferido);
+        setShowDossier(true);
+      }
       setSelectedFeature(null);
       setWinnerIdentity(null);
     } catch (error) {
@@ -423,7 +433,7 @@ function CommandCenterUI() {
   };
 
   const tileUrl = activeEntidadFilter
-    ? `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}?entidad_filter=${activeEntidadFilter}`
+    ? `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}?entidad_filter=${activeEntidadFilter}${activeMunicipioFilter ? `&municipio_filter=${activeMunicipioFilter}` : ""}`
     : `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}`;
   const boundaryMunUrl = `http://localhost:8000/api/v1/mapa/boundaries/municipios/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
   const boundaryDLUrl = `http://localhost:8000/api/v1/mapa/boundaries/distritos_locales/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
@@ -1143,28 +1153,37 @@ function CommandCenterUI() {
                   )
                 )}
 
-                {/* Trayectoria */}
+                {/* Trayectoria Dinámica Extraída de BD */}
                 <div>
                   <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-4 uppercase border-b border-gray-800 pb-2">
                     Trayectoria Electoral Detectada
                   </h3>
                   <div className="space-y-4 border-l-2 border-gray-700 ml-3 pl-5">
-                    <div className="relative">
-                      <div className="absolute -left-[26px] top-1 w-3 h-3 bg-green-500 rounded-full border-2 border-gray-900 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
-                      <p className="text-xs font-bold text-gray-400">CICLO 2024</p>
-                      <p className="text-base font-bold text-white uppercase">
-                        {activeElection.replace("_", " ")}
+                    {bioData?.trayectoria && bioData.trayectoria.length > 0 ? (
+                      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                      bioData.trayectoria.map((item: any, idx: number) => (
+                        <div key={idx} className="relative">
+                          <div className="absolute -left-[26px] top-1 w-3 h-3 bg-green-500 rounded-full border-2 border-gray-900 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+                          <p className="text-xs font-bold text-gray-400">CICLO {item.ciclo}</p>
+                          <p className="text-base font-bold text-white uppercase">
+                            {item.cargo.replace(/_/g, " ")}
+                          </p>
+                          <p className="text-sm text-gray-400 mt-1">
+                            Siglado:{" "}
+                            <span className="text-white font-mono">{item.siglado || "S/D"}</span>
+                          </p>
+                          <p className="text-sm text-gray-400">
+                            Resultado:{" "}
+                            <span className="text-green-400 font-bold">{item.resultado}</span>
+                          </p>
+                        </div>
+                      ))
+                    ) : (
+                      <p className="text-sm text-gray-500 italic">
+                        No hay registros de trayectoria previos en la base de datos local para este
+                        perfil.
                       </p>
-                      <p className="text-sm text-gray-400 mt-1">
-                        Siglado: <span className="text-white font-mono">MORENA - PT - PVEM</span>
-                      </p>
-                      <p className="text-sm text-gray-400">
-                        Resultado:{" "}
-                        <span className="text-green-400 font-bold">
-                          VICTORIA (CANDIDATO ELECTO)
-                        </span>
-                      </p>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>

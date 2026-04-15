@@ -393,29 +393,45 @@ async def get_nombre_municipio(entidad: int, municipio: int):
 
 @app.get("/api/v1/edi/profile/{candidato_nombre}")
 async def get_candidato_profile(candidato_nombre: str):
-    """Busca el expediente guardado de un candidato."""
-    query = sa.text(
-        """
-        SELECT biografia, telefono, redes_sociales, foto_perfil_url
-        FROM edi_candidatos
-        WHERE nombre_completo ILIKE :nombre LIMIT 1
-    """
-    )
+    """Busca el expediente guardado y genera su trayectoria dinámica."""
     async with async_engine.connect() as conn:
-        result = await conn.execute(query, {"nombre": candidato_nombre})
-        row = result.fetchone()
+        # 1. Buscar Perfil Editado (EDI)
+        query_perfil = sa.text(
+            """
+            SELECT biografia, telefono, redes_sociales, foto_perfil_url
+            FROM edi_candidatos
+            WHERE nombre_completo ILIKE :nombre LIMIT 1
+        """
+        )
+        res_perfil = await conn.execute(query_perfil, {"nombre": candidato_nombre})
+        row_perfil = res_perfil.fetchone()
 
-    if row:
-        return {
-            "status": "success",
-            "data": {
-                "biografia": row[0] or "",
-                "telefono": row[1] or "",
-                "redes_sociales": row[2] or {},
-                "foto_perfil_url": row[3] or "",
-            },
-        }
-    raise HTTPException(status_code=404, detail="Expediente no encontrado")
+        # 2. Generar Trayectoria Dinámica (Buscando en catálogos electorales)
+        # Ajustar nombre de tabla según tu BD ('ine_candidaturas_local_2024')
+        query_trayectoria = sa.text(
+            """
+            SELECT '2024' as ciclo, tipo_candidatura as cargo, partido_origen as siglado, 'VICTORIA/PARTICIPACIÓN' as resultado
+            FROM ine_candidaturas_local_2024
+            WHERE actor_politico ILIKE :nombre OR candidato ILIKE :nombre
+            LIMIT 5
+        """
+        )
+        res_tray = await conn.execute(query_trayectoria, {"nombre": f"%{candidato_nombre}%"})
+        trayectorias = [
+            {"ciclo": t[0], "cargo": t[1], "siglado": t[2], "resultado": t[3]}
+            for t in res_tray.fetchall()
+        ]
+
+    # Preparamos la respuesta garantizando que la estructura no falle en el frontend
+    response_data = {
+        "biografia": row_perfil[0] if row_perfil else "",
+        "telefono": row_perfil[1] if row_perfil else "",
+        "redes_sociales": row_perfil[2] if row_perfil else {},
+        "foto_perfil_url": row_perfil[3] if row_perfil else "",
+        "trayectoria": trayectorias,
+    }
+
+    return {"status": "success", "data": response_data}
 
 
 @app.post("/api/v1/edi/profile")

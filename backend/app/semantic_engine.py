@@ -176,10 +176,12 @@ class SemanticIntentEngine:
 
         intent = {
             "entidad_id": None,
+            "municipio_id": None,
             "cargo_inferido": None,
             "partido_inferido": None,
             "distrito_local_id": None,
             "distrito_federal_id": None,
+            "candidato_inferido": None,
             "accion": "flyTo",
             "bbox": None,
             "warning": None,
@@ -218,6 +220,43 @@ class SemanticIntentEngine:
         df_match = re.search(r"distrito\s+(?:federal\s+)?(\d+)(?:\s+federal)?", normalized_query)
         if df_match:
             intent["distrito_federal_id"] = int(df_match.group(1))
+
+        intent["candidato_inferido"] = None
+
+        # NUEVO: Motor de Inferencia Nominal (Busqueda por nombre de Candidato)
+        # Si la consulta tiene mas de 4 caracteres, buscamos si coincide con algun candidato
+        if len(normalized_query) > 4:
+            # Buscamos en el catalogo local (Ajusta el nombre de la tabla segun tu ingesta real)
+            sql_candidato = sa.text(
+                """
+                SELECT actor_politico, id_entidad, id_municipio, id_distrito_local, tipo_candidatura
+                FROM ine_candidaturas_local_2024
+                WHERE unaccent(lower(actor_politico)) ILIKE :q OR unaccent(lower(candidato)) ILIKE :q
+                LIMIT 1
+            """
+            )
+            # Nota: Si PostgreSQL no tiene unaccent habilitado, el fallback es ILIKE normal:
+            sql_candidato_fallback = sa.text(
+                """
+                SELECT actor_politico, id_entidad, id_municipio, id_distrito_local, tipo_candidatura
+                FROM ine_candidaturas_local_2024
+                WHERE actor_politico ILIKE :q OR candidato ILIKE :q
+                LIMIT 1
+            """
+            )
+            try:
+                res_cand = await db_session.execute(sql_candidato_fallback, {"q": f"%{normalized_query}%"})
+                cand_row = res_cand.fetchone()
+                if cand_row:
+                    intent["candidato_inferido"] = cand_row[0]
+                    intent["entidad_id"] = cand_row[1]
+                    if cand_row[2]:
+                        intent["municipio_id"] = cand_row[2]
+                    if cand_row[3]:
+                        intent["distrito_local_id"] = cand_row[3]
+                    intent["cargo_inferido"] = cand_row[4]
+            except Exception as e:
+                print(f"[!] Error en busqueda nominal: {e}")
 
         # 4. Calcular Bounding Box si hay entidad detectada
         if intent["entidad_id"]:
