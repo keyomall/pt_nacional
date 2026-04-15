@@ -99,155 +99,61 @@ def health_check():
 
 @app.get("/api/v1/mapa/tiles/{cargo}/{z}/{x}/{y}")
 async def get_vector_tile_dynamic(
-    cargo: str,
-    z: int,
-    x: int,
-    y: int,
+    cargo: str, z: int, x: int, y: int,
     entidad_filter: Optional[int] = None,
     municipio_filter: Optional[int] = None,
     distrito_local_filter: Optional[int] = None,
-    distrito_federal_filter: Optional[int] = None,
+    distrito_federal_filter: Optional[int] = None
 ):
     cargo_key = cargo.upper()
     tabla_destino = TABLAS_VOTOS.get(cargo_key)
-
+    
     if not tabla_destino:
         return Response(content=b"", media_type="application/x-protobuf")
 
-    where_clauses = []
-    params = {"z": z, "x": x, "y": y}
-
-    if entidad_filter:
-        where_clauses.append("g.id_entidad = :ent_filter")
-        params["ent_filter"] = entidad_filter
-    if municipio_filter:
-        where_clauses.append(
-            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_municipio = :mun_filter AND id_entidad = g.id_entidad)"
-        )
-        params["mun_filter"] = municipio_filter
-    if distrito_local_filter:
-        where_clauses.append(
-            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_local = :dl_filter AND id_entidad = g.id_entidad)"
-        )
-        params["dl_filter"] = distrito_local_filter
-    if distrito_federal_filter:
-        where_clauses.append(
-            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_federal = :df_filter AND id_entidad = g.id_entidad)"
-        )
-        params["df_filter"] = distrito_federal_filter
-
-    where_sql = " AND ".join(where_clauses)
-    if where_sql:
-        where_sql = " AND " + where_sql
-
     async with async_engine.connect() as conn:
-        schema_sql = sa.text(
-            """
-            SELECT column_name
-            FROM information_schema.columns
-            WHERE table_schema = 'public' AND table_name = :table_name
-            """
-        )
-        schema_result = await conn.execute(schema_sql, {"table_name": tabla_destino})
-        table_columns = {row[0] for row in schema_result.fetchall()}
-
-        id_ent_col = (
-            "id_entidad"
-            if "id_entidad" in table_columns
-            else "ID_ENTIDAD"
-            if "ID_ENTIDAD" in table_columns
-            else None
-        )
-        seccion_col = (
-            "seccion"
-            if "seccion" in table_columns
-            else "SECCION"
-            if "SECCION" in table_columns
-            else None
-        )
-        if not id_ent_col or not seccion_col:
+        # SUPER-PARCHE DE RESILIENCIA: Detectar nombres reales de columnas
+        col_query = sa.text(f"SELECT column_name FROM information_schema.columns WHERE table_name = '{tabla_destino}'")
+        col_res = await conn.execute(col_query)
+        cols = [r[0] for r in col_res.fetchall()]
+        
+        if not cols:
+            # Si la tabla no existe o no tiene datos, retornamos un tile vacío
             return Response(content=b"", media_type="application/x-protobuf")
 
-        votos_col = (
-            "votos_desglosados"
-            if "votos_desglosados" in table_columns
-            else "votos_coaliciones"
-            if "votos_coaliciones" in table_columns
-            else "VOTOS_DESGLOSADOS"
-            if "VOTOS_DESGLOSADOS" in table_columns
-            else "VOTOS_COALICIONES"
-            if "VOTOS_COALICIONES" in table_columns
-            else None
-        )
-        total_col = (
-            "total_votos_calculados"
-            if "total_votos_calculados" in table_columns
-            else "TOTAL_VOTOS_CALCULADOS"
-            if "TOTAL_VOTOS_CALCULADOS" in table_columns
-            else None
-        )
-        mun_col = (
-            "id_municipio"
-            if "id_municipio" in table_columns
-            else "ID_MUNICIPIO"
-            if "ID_MUNICIPIO" in table_columns
-            else None
-        )
-        dl_col = (
-            "id_distrito_local"
-            if "id_distrito_local" in table_columns
-            else "ID_DISTRITO_LOCAL"
-            if "ID_DISTRITO_LOCAL" in table_columns
-            else None
-        )
-        df_col = (
-            "id_distrito_federal"
-            if "id_distrito_federal" in table_columns
-            else "ID_DISTRITO_FEDERAL"
-            if "ID_DISTRITO_FEDERAL" in table_columns
-            else None
-        )
+        # Mapeo tolerante (Sensible a Mayúsculas/Minúsculas)
+        col_entidad = next((c for c in cols if c.lower() in ['id_entidad', 'id_estado']), 'id_entidad')
+        col_seccion = next((c for c in cols if c.lower() == 'seccion'), 'seccion')
+        col_votos = next((c for c in cols if c.lower() == 'votos_desglosados'), 'votos_desglosados')
+        col_total = next((c for c in cols if c.lower() == 'total_votos_calculados'), 'total_votos_calculados')
 
-        id_ent_expr = f"v.{_quote_ident(id_ent_col)}"
-        seccion_expr = f"v.{_quote_ident(seccion_col)}"
-        id_ent_int_expr = (
-            f"NULLIF(regexp_replace({id_ent_expr}::text, '[^0-9-]', '', 'g'), '')::integer"
-        )
-        seccion_int_expr = (
-            f"NULLIF(regexp_replace({seccion_expr}::text, '[^0-9-]', '', 'g'), '')::integer"
-        )
-        votos_expr = (
-            f"COALESCE(v.{_quote_ident(votos_col)}::jsonb, '{{}}'::jsonb)"
-            if votos_col
-            else "'{}'::jsonb"
-        )
-        total_expr = (
-            f"COALESCE(NULLIF(regexp_replace(v.{_quote_ident(total_col)}::text, '[^0-9.-]', '', 'g'), '')::numeric, 0)"
-            if total_col
-            else "0"
-        )
-        mun_expr = (
-            f"NULLIF(regexp_replace(v.{_quote_ident(mun_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
-            if mun_col
-            else "NULL::integer"
-        )
-        dl_expr = (
-            f"NULLIF(regexp_replace(v.{_quote_ident(dl_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
-            if dl_col
-            else "NULL::integer"
-        )
-        df_expr = (
-            f"NULLIF(regexp_replace(v.{_quote_ident(df_col)}::text, '[^0-9-]', '', 'g'), '')::integer"
-            if df_col
-            else "NULL::integer"
-        )
+        # Construcción dinámica de filtros WHERE y JOINS
+        joins_sql = ""
+        where_clauses = []
+        params = {"z": z, "x": x, "y": y}
+        
+        if entidad_filter:
+            where_clauses.append("g.id_entidad = :ent_filter")
+            params["ent_filter"] = entidad_filter
 
-        geo_context_sql = """
-        geo_context AS (
-            SELECT id_entidad, seccion, id_municipio, id_distrito_local, id_distrito_federal
-            FROM dim_geo_secciones
-        ),
-        """
+        # Utilizamos dim_geo_secciones si existe para filtros avanzados
+        if municipio_filter or distrito_local_filter or distrito_federal_filter:
+            joins_sql = """
+            JOIN dim_geo_secciones c ON g.id_entidad = c.id_entidad AND g.seccion = c.seccion
+            """
+            if municipio_filter:
+                where_clauses.append("c.id_municipio = :mun_filter")
+                params["mun_filter"] = municipio_filter
+            if distrito_local_filter:
+                where_clauses.append("c.id_distrito_local = :dl_filter")
+                params["dl_filter"] = distrito_local_filter
+            if distrito_federal_filter:
+                where_clauses.append("c.id_distrito_federal = :df_filter")
+                params["df_filter"] = distrito_federal_filter
+
+        where_sql = " AND ".join(where_clauses)
+        if where_sql:
+            where_sql = " AND " + where_sql
 
         query = sa.text(f"""
             WITH bounds AS (
@@ -257,24 +163,27 @@ async def get_vector_tile_dynamic(
                 SELECT ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
                        g.id_entidad,
                        g.seccion,
-                       -- COALESCE garantiza que el frontend reciba un JSON vacío si no hay votos, previniendo crashes
-                       COALESCE(v.votos_desglosados, '{{}}'::jsonb) AS votos_desglosados,
-                       COALESCE(v.total_votos_calculados, 0) AS total_votos_calculados
+                       COALESCE(v."{col_votos}", '{{}}'::jsonb) AS votos_desglosados,
+                       COALESCE(v."{col_total}", 0) AS total_votos_calculados
                 FROM geometria_secciones g
                 JOIN bounds ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
-                -- FIX CRÍTICO: LEFT JOIN asegura que el polígono exista aunque no haya resultados electorales cargados
-                LEFT JOIN {tabla_destino} v ON g.id_entidad = v.id_entidad AND g.seccion = v.seccion
+                {joins_sql}
+                LEFT JOIN {tabla_destino} v ON g.id_entidad::INTEGER = v."{col_entidad}"::INTEGER AND g.seccion::INTEGER = v."{col_seccion}"::INTEGER
                 WHERE 1=1 {where_sql}
             )
             SELECT ST_AsMVT(mvtgeom, 'elecciones') AS tile FROM mvtgeom;
         """)
-
-        result = await conn.execute(query, params)
-        tile = result.scalar()
-
-
+        
+        try:
+            result = await conn.execute(query, params)
+            tile = result.scalar()
+        except Exception as e:
+            print(f"[!] Error generando MVT: {e}")
+            return Response(content=b"", media_type="application/x-protobuf")
+            
     if not tile:
         return Response(content=b"", media_type="application/x-protobuf")
+        
     return Response(content=bytes(tile), media_type="application/x-protobuf")
 
 

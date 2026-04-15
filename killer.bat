@@ -8,14 +8,14 @@ chcp 65001 >nul
 set "CLI_MODE=0"
 if not "%~1"=="" (
   set "CLI_MODE=1"
-  if /I "%~1"=="start" goto start_dev
-  if /I "%~1"=="prod" goto start_prod
+  if /I "%~1"=="start" goto start_prod
+  if /I "%~1"=="dev" goto start_dev
   if /I "%~1"=="check" goto check_env
   if /I "%~1"=="path" goto show_path
   if /I "%~1"=="kill" goto kill_only
   if /I "%~1"=="exit" goto end_ok
   echo [ERROR] Argumento no valido: %~1
-  echo         Usa: killer.bat ^<start^|prod^|check^|path^|kill^|exit^>
+  echo         Usa: killer.bat ^<start^|dev^|check^|path^|kill^|exit^>
   exit /b 2
 )
 
@@ -25,8 +25,8 @@ echo ============================================================
 echo   PT NACIONAL ^| COMMAND CENTER BOOT MENU
 echo ============================================================
 echo.
-echo   [1] Iniciar en MODO DESARROLLO (Dev Mode)
-echo   [2] Iniciar en MODO PRODUCCION (Enterprise Build - Sin errores UI)
+echo   [1] Iniciar en MODO PRODUCCION (Enterprise Build - DEFAULT)
+echo   [2] Iniciar en MODO DESARROLLO (Dev Mode)
 echo   [3] Verificar entorno y dependencias
 echo   [4] Mostrar ruta de trabajo
 echo   [5] Aniquilar procesos y liberar puertos (Limpieza Forense)
@@ -34,8 +34,8 @@ echo   [6] Salir
 echo.
 set /p "opt=Selecciona una opcion [1-6]: "
 
-if "%opt%"=="1" goto start_dev
-if "%opt%"=="2" goto start_prod
+if "%opt%"=="1" goto start_prod
+if "%opt%"=="2" goto start_dev
 if "%opt%"=="3" goto check_env
 if "%opt%"=="4" goto show_path
 if "%opt%"=="5" goto kill_only
@@ -121,15 +121,6 @@ if "%CLI_MODE%"=="1" exit /b 0
 set /p "dummy=Presiona Enter para volver al menu..."
 goto menu
 
-:start_dev
-cls
-echo ============================================================
-echo   ARRANQUE EN MODO DESARROLLO (DEV MODE)
-echo ============================================================
-echo.
-set "ENV_MODE=dev"
-goto run_sentinel
-
 :start_prod
 cls
 echo ============================================================
@@ -139,6 +130,15 @@ echo [!] NOTA: El Sentinel compilara el frontend antes de iniciar.
 echo [!] Esto eliminara los overlays de error y optimizara la velocidad.
 echo.
 set "ENV_MODE=prod"
+goto run_sentinel
+
+:start_dev
+cls
+echo ============================================================
+echo   ARRANQUE EN MODO DESARROLLO (DEV MODE)
+echo ============================================================
+echo.
+set "ENV_MODE=dev"
 goto run_sentinel
 
 :run_sentinel
