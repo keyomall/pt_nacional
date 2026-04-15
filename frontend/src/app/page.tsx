@@ -66,7 +66,8 @@ type ChartVoteItem = {
 };
 
 // Utilidad para extraer y ordenar el JSONB de votos
-const processVotesData = (votosDesglosados: unknown) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const processVotesData = (votosDesglosados: any) => {
   if (!votosDesglosados) return [];
   const rawData = typeof votosDesglosados === "string" ? JSON.parse(votosDesglosados) : votosDesglosados;
 
@@ -622,7 +623,18 @@ function CommandCenterUI() {
                 </p>
                 {winnerIdentity ? (
                   <>
-                    <p className="text-lg font-bold text-white leading-tight uppercase">
+                            {/* FIX: Extraemos el partido líder para pintar el nombre del candidato con su color institucional */}
+                            <p
+                              className="text-lg font-bold leading-tight uppercase drop-shadow-md"
+                              style={{
+                                color: processVotesData(selectedFeature.properties.votos_desglosados)[0]
+                                  ? getPartyColor(
+                                      processVotesData(selectedFeature.properties.votos_desglosados)[0]
+                                        .name
+                                    )
+                                  : "#FFFFFF",
+                              }}
+                            >
                       {winnerIdentity.candidato}
                     </p>
                     <p className="text-[11px] text-gray-400 mt-1 uppercase font-mono">
@@ -672,7 +684,7 @@ function CommandCenterUI() {
                       axisLine={false}
                       tickLine={false}
                       tick={{ fill: "#9ca3af", fontSize: 10 }}
-                      width={130}
+                      width={170}
                       interval={0}
                     />
                     <RechartsTooltip

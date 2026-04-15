@@ -24,6 +24,8 @@ export default function RootLayout({
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      {/* FIX CRÍTICO: Blindaje del MetadataWrapper contra inyecciones de extensiones */}
+      <head suppressHydrationWarning />
       <body
         className={`${inter.className} min-h-full flex flex-col bg-gray-950`}
         suppressHydrationWarning
