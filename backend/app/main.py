@@ -2,13 +2,15 @@ import os
 from typing import Optional
 
 import sqlalchemy as sa
-from fastapi import FastAPI, Response
+from fastapi import FastAPI, Response, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from contextlib import asynccontextmanager
 from app.db import engine, Base
 from app.analytics_engine import AnalyticsEngine
+from app.edi_engine import EDIEngine
 from app.semantic_engine import SemanticIntentEngine
 import app.models  # Forzar carga de modelos SQLAlchemy antes de create_all
 
@@ -59,6 +61,11 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan
 )
+
+# Montar carpeta de medios estáticos
+media_dir = os.path.join(os.getcwd(), "media_edi")
+os.makedirs(media_dir, exist_ok=True)
+app.mount("/media", StaticFiles(directory=media_dir), name="media")
 
 # Configuración estricta de CORS para el Frontend
 app.add_middleware(
@@ -328,3 +335,46 @@ async def get_boundary_tile(
     if not tile:
         return Response(content=b"", media_type="application/x-protobuf")
     return Response(content=bytes(tile), media_type="application/x-protobuf")
+
+
+# --- APIs DEL EXPEDIENTE DIGITAL DE INTELIGENCIA (EDI) ---
+@app.post("/api/v1/edi/upload")
+async def upload_candidato_foto(file: UploadFile = File(...)):
+    """Recibe la foto, le quita el fondo con IA y la comprime."""
+    try:
+        contents = await file.read()
+        url_imagen = EDIEngine.procesar_imagen_perfil(contents)
+        if not url_imagen:
+            raise HTTPException(status_code=500, detail="Fallo en el motor de IA al procesar la imagen.")
+        return {"status": "success", "url": url_imagen}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/v1/edi/scan_wiki")
+async def scan_wikipedia_data(url: str = Form(...)):
+    """Minería de datos desde URL externa."""
+    data = EDIEngine.escanear_wikipedia(url)
+    if not data:
+        raise HTTPException(status_code=404, detail="No se pudo extraer información de la URL.")
+    return {"status": "success", "data": data}
+
+
+@app.get("/api/v1/catalogo/municipio")
+async def get_nombre_municipio(entidad: int, municipio: int):
+    """Resuelve el nombre real del municipio consultando la base de datos (Ingesta Local)."""
+    # Intentamos buscar el nombre en la tabla de candidaturas de ayuntamientos que ingerimos previamente
+    query = sa.text(
+        """
+        SELECT actor_politico as nombre_municipio
+        FROM ine_candidaturas_local_2024
+        WHERE id_entidad = :ent AND id_municipio = :mun AND tipo_candidatura ILIKE '%AYUNTAMIENTO%'
+        LIMIT 1
+    """
+    )
+    async with async_engine.connect() as conn:
+        result = await conn.execute(query, {"ent": entidad, "mun": municipio})
+        row = result.fetchone()
+        if row and row[0]:
+            return {"nombre": row[0].strip().upper()}
+    return {"nombre": f"MUNICIPIO {municipio}"}  # Fallback seguro

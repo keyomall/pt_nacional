@@ -137,12 +137,6 @@ const formatCargo = (cargo: string) => {
   return map[cargo] || cargo.replace(/_/g, " ");
 };
 
-const resolveMunicipioName = (entidadId: any, municipioId: any) => {
-  void entidadId;
-  const mun = Number(municipioId);
-  return mun ? `MUNICIPIO ${mun}` : "N/A";
-};
-
 const parseVotesObject = (
   votosDesglosados: Record<string, number | string> | string | undefined
 ): Record<string, number | string> => {
@@ -192,6 +186,74 @@ function CommandCenterUI() {
   // Estados EDI
   const [showDossier, setShowDossier] = useState(false);
   const [activeDossierCandidate, setActiveDossierCandidate] = useState<string | null>(null);
+  const [municipiosCache, setMunicipiosCache] = useState<Record<string, string>>({});
+  const [isUploading, setIsUploading] = useState(false);
+  const [profileImgUrl, setProfileImgUrl] = useState<string | null>(null);
+  const [wikiUrl, setWikiUrl] = useState("");
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [bioData, setBioData] = useState<any>(null);
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
+
+  const getMunicipioName = async (entidadId: number, municipioId: number) => {
+    if (!municipioId) return "N/A";
+    const cacheKey = `${entidadId}_${municipioId}`;
+    if (municipiosCache[cacheKey]) return municipiosCache[cacheKey];
+
+    try {
+      const res = await fetch(
+        `http://localhost:8000/api/v1/catalogo/municipio?entidad=${entidadId}&municipio=${municipioId}`
+      );
+      if (res.ok) {
+        const data = await res.json();
+        setMunicipiosCache((prev) => ({ ...prev, [cacheKey]: data.nombre }));
+        return data.nombre;
+      }
+    } catch (e) {
+      console.error("Error fetching municipio:", e);
+    }
+    return `MUN. ${municipioId}`;
+  };
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploading(true);
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const res = await fetch("http://localhost:8000/api/v1/edi/upload", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.url) setProfileImgUrl(`http://localhost:8000${data.url}`);
+    } catch (error) {
+      console.error("Error subiendo archivo:", error);
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
+  const handleWikiScan = async () => {
+    if (!wikiUrl) return;
+    const formData = new FormData();
+    formData.append("url", wikiUrl);
+    try {
+      const res = await fetch("http://localhost:8000/api/v1/edi/scan_wiki", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.data) {
+        setBioData(data.data);
+        if (data.data.foto_url && !profileImgUrl) setProfileImgUrl(data.data.foto_url);
+      }
+    } catch (error) {
+      console.error("Error escaneando Wikipedia:", error);
+    }
+  };
 
   useEffect(() => {
     if (!selectedFeature?.properties) return;
@@ -240,14 +302,31 @@ function CommandCenterUI() {
     return () => controller.abort();
   }, [selectedFeature, activeElection]);
 
+  useEffect(() => {
+    if (selectedFeature?.properties?.id_municipio) {
+      getMunicipioName(
+        Number(selectedFeature.properties.id_entidad),
+        Number(selectedFeature.properties.id_municipio)
+      );
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedFeature]);
+
   const executeSearch = async () => {
     if (query.trim() === "") return;
-    setNotification(null);
+    setNotification("Procesando intención espacial...");
     try {
       const res = await fetch(`http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`);
+      if (!res.ok) throw new Error("Fallo en el servidor (500)");
       const data = await res.json();
-      if (data.warning) setNotification(data.warning);
-      if (data.bbox) {
+
+      if (data.warning) {
+        setNotification(data.warning);
+      } else {
+        setNotification(null);
+      }
+
+      if (data.bbox && data.bbox.length === 4) {
         const longitude = (data.bbox[0] + data.bbox[2]) / 2;
         const latitude = (data.bbox[1] + data.bbox[3]) / 2;
         setViewState((prev) => ({
@@ -257,6 +336,8 @@ function CommandCenterUI() {
           zoom: 7.5,
           transitionDuration: 2500,
         }));
+      } else {
+        setNotification("No se detectaron coordenadas espaciales para esta búsqueda.");
       }
 
       if (data.entidad_id) setActiveEntidadFilter(data.entidad_id);
@@ -264,7 +345,8 @@ function CommandCenterUI() {
       setSelectedFeature(null);
       setWinnerIdentity(null);
     } catch (error) {
-      console.error("Error en motor semántico:", error);
+      console.error("Error crítico en motor semántico:", error);
+      setNotification("Error de conexión con el Motor Semántico. Verifica el backend.");
     }
   };
 
@@ -441,7 +523,8 @@ function CommandCenterUI() {
             <div className="flex flex-col">
               <span className="text-gray-500 uppercase">Municipio</span>
               <span className="text-teal-200 font-bold">
-                {resolveMunicipioName(id_entidad, id_municipio)}
+                {municipiosCache[`${Number(id_entidad)}_${Number(id_municipio)}`] ||
+                  (id_municipio ? `MUN. ${id_municipio}` : "N/A")}
               </span>
             </div>
             <div className="flex flex-col text-right">
@@ -670,15 +753,15 @@ function CommandCenterUI() {
                     <p className="text-[9px] text-gray-500 uppercase tracking-wider">Municipio</p>
                     <p
                       className="text-xs font-medium text-teal-100 truncate"
-                      title={resolveMunicipioName(
-                        selectedFeature.properties.id_entidad,
-                        selectedFeature.properties.id_municipio
-                      )}
+                      title={
+                        municipiosCache[
+                          `${Number(selectedFeature.properties.id_entidad)}_${Number(selectedFeature.properties.id_municipio)}`
+                        ] || "Cargando..."
+                      }
                     >
-                      {resolveMunicipioName(
-                        selectedFeature.properties.id_entidad,
-                        selectedFeature.properties.id_municipio
-                      )}
+                      {municipiosCache[
+                        `${Number(selectedFeature.properties.id_entidad)}_${Number(selectedFeature.properties.id_municipio)}`
+                      ] || "Cargando..."}
                     </p>
                   </div>
                   <div className="col-span-1 text-center border-l border-r border-gray-800 px-2">
@@ -821,13 +904,24 @@ function CommandCenterUI() {
             <div className="flex flex-1 overflow-hidden">
               {/* Columna Izquierda: Biometría y Perfil */}
               <div className="w-1/3 bg-gray-950/50 border-r border-gray-800 p-6 flex flex-col items-center">
-                <div className="w-48 h-48 rounded-2xl border-2 border-dashed border-gray-600 bg-gray-800/50 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 hover:bg-gray-800 transition-all overflow-hidden relative group shadow-inner">
-                  <p className="text-[11px] text-gray-400 text-center px-4 group-hover:text-teal-400">
-                    Arrastra imagen aquí
-                    <br />
-                    (IA removerá el fondo y optimizará)
-                  </p>
-                </div>
+                   {/* FIX CRÍTICO: Input de archivo oculto y zona interactiva */}
+                   <input type="file" ref={fileInputRef} onChange={handleFileUpload} className="hidden" accept="image/*" />
+                   <div
+                     onClick={() => fileInputRef.current?.click()}
+                     className="w-48 h-48 rounded-2xl border-2 border-dashed border-gray-600 bg-gray-800/50 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 hover:bg-gray-800 transition-all overflow-hidden relative group shadow-inner"
+                   >
+                      {isUploading ? (
+                        <div className="animate-spin w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full"></div>
+                      ) : profileImgUrl ? (
+                        <img src={profileImgUrl} alt="Perfil" className="w-full h-full object-cover object-top" />
+                      ) : (
+                        <p className="text-[11px] text-gray-400 text-center px-4 group-hover:text-teal-400">
+                          Clic o Arrastrar imagen
+                          <br />
+                          (IA quitará el fondo)
+                        </p>
+                      )}
+                   </div>
                 <h1 className="mt-6 text-2xl font-black text-white text-center uppercase leading-tight">
                   {activeDossierCandidate}
                 </h1>
@@ -842,7 +936,7 @@ function CommandCenterUI() {
 
               {/* Columna Derecha: Inteligencia y Scraping */}
               <div className="w-2/3 p-6 overflow-y-auto custom-scrollbar flex flex-col gap-6">
-                {/* Escáner Web */}
+                {/* Escáner Web Funcional */}
                 <div className="bg-gray-950 p-5 rounded-xl border border-gray-800 shadow-md">
                   <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-3 uppercase">
                     Minería de Datos (Escáner Web)
@@ -850,14 +944,24 @@ function CommandCenterUI() {
                   <div className="flex gap-2">
                     <input
                       type="text"
-                      placeholder="Pegar URL de Wikipedia, SaberVotar o Noticias..."
+                      value={wikiUrl}
+                      onChange={(e) => setWikiUrl(e.target.value)}
+                      placeholder="Pegar URL de Wikipedia, SaberVotar..."
                       className="flex-1 bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm text-white outline-none focus:border-teal-500"
                     />
-                    <button className="bg-teal-700 hover:bg-teal-600 text-white px-6 rounded text-xs font-bold tracking-wider">
+                    <button onClick={handleWikiScan} className="bg-teal-700 hover:bg-teal-600 text-white px-6 rounded text-xs font-bold tracking-wider">
                       EXTRAER
                     </button>
                   </div>
                 </div>
+
+                {/* Resultados de la Biografía */}
+                {bioData && (
+                  <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700 text-sm text-gray-300 leading-relaxed text-justify">
+                    <p className="text-xs text-teal-500 mb-2 font-mono">Dato Extraído de la Red:</p>
+                    {bioData.biografia}
+                  </div>
+                )}
 
                 {/* Trayectoria */}
                 <div>
