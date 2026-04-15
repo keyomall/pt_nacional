@@ -6,7 +6,7 @@ import { MVTLayer } from "@deck.gl/geo-layers";
 import { Map } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { PickingInfo } from "@deck.gl/core";
-import { AlertCircle, CheckSquare, Layers, PieChart, RotateCcw, Search } from "lucide-react";
+import { Search, PieChart, AlertCircle, Layers, Filter, X, CheckSquare } from "lucide-react";
 import {
   Bar,
   BarChart,
@@ -138,12 +138,9 @@ const formatCargo = (cargo: string) => {
 };
 
 const resolveMunicipioName = (entidadId: any, municipioId: any) => {
-  const ent = Number(entidadId);
+  void entidadId;
   const mun = Number(municipioId);
-  if (!mun) return "N/A";
-  // En la Fase 12.5 conectaremos esto a un endpoint en vivo.
-  // Por ahora, devolvemos el ID formateado elegantemente para evitar el fallo de renderizado.
-  return `Municipio ${mun} (EDO ${ent})`;
+  return mun ? `MUNICIPIO ${mun}` : "N/A";
 };
 
 const parseVotesObject = (
@@ -189,6 +186,10 @@ function CommandCenterUI() {
   const [showMun, setShowMun] = useState(false);
   const [showDL, setShowDL] = useState(false);
   const [showDF, setShowDF] = useState(false);
+  // Estados Menú Maestro
+  const [showMenu, setShowMenu] = useState(false);
+  const [selectedYear, setSelectedYear] = useState<number>(2024);
+  // Estados EDI
   const [showDossier, setShowDossier] = useState(false);
   const [activeDossierCandidate, setActiveDossierCandidate] = useState<string | null>(null);
 
@@ -244,21 +245,11 @@ function CommandCenterUI() {
     setNotification(null);
     try {
       const res = await fetch(`http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`);
-      const data: {
-        bbox?: number[];
-        cargo_inferido?: string | null;
-        entidad_id?: number | null;
-        warning?: string | null;
-      } = await res.json();
-
-      if (data.warning) {
-        setNotification(data.warning);
-      }
-
-      if (Array.isArray(data.bbox) && data.bbox.length === 4) {
+      const data = await res.json();
+      if (data.warning) setNotification(data.warning);
+      if (data.bbox) {
         const longitude = (data.bbox[0] + data.bbox[2]) / 2;
         const latitude = (data.bbox[1] + data.bbox[3]) / 2;
-
         setViewState((prev) => ({
           ...prev,
           longitude,
@@ -268,25 +259,13 @@ function CommandCenterUI() {
         }));
       }
 
-      if (data.entidad_id) {
-        setActiveEntidadFilter(data.entidad_id);
-      }
-      if (data.cargo_inferido) {
-        setActiveElection(data.cargo_inferido);
-      }
+      if (data.entidad_id) setActiveEntidadFilter(data.entidad_id);
+      if (data.cargo_inferido) setActiveElection(data.cargo_inferido);
       setSelectedFeature(null);
       setWinnerIdentity(null);
     } catch (error) {
       console.error("Error en motor semántico:", error);
     }
-  };
-
-  const handleReset = () => {
-    setActiveElection("PRESIDENCIA");
-    setActiveEntidadFilter(null);
-    setQuery("");
-    setNotification(null);
-    setViewState({ ...INITIAL_VIEW_STATE, transitionDuration: 2000 });
   };
 
   const tileUrl = activeEntidadFilter
@@ -523,16 +502,15 @@ function CommandCenterUI() {
       {/* TOOLTIP DINÁMICO E INTELIGENTE */}
       {renderTooltip()}
 
-      {/* OMNIBOX CENTRALIZADO Y CONTROLES */}
+      {/* CENTRO DE MANDO: OMNIBOX Y BOTÓN MENÚ */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 w-[48rem] flex flex-col gap-3">
-        {/* Barra de Búsqueda */}
         <div className="flex gap-2 w-full shadow-2xl">
-          <div className="flex-1 bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-2 flex items-center px-4 focus-within:border-teal-500 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all">
+          <div className="flex-1 bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-2 flex items-center px-4 focus-within:border-teal-500 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all">
             <Search className="w-5 h-5 text-teal-400 mr-3" />
             <input
               type="text"
               className="bg-transparent w-full outline-none text-base placeholder-gray-500 text-white"
-              placeholder="Ej: Resultados de presidencia en Nuevo León..."
+              placeholder="Ej: Resultados de ayuntamientos en Nuevo León..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && executeSearch()}
@@ -544,15 +522,84 @@ function CommandCenterUI() {
               BUSCAR
             </button>
           </div>
-
+          {/* BOTÓN MENÚ MAESTRO */}
           <button
-            onClick={handleReset}
-            className="bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-3 hover:bg-gray-800 transition-colors"
-            title="Restaurar Visión Nacional"
+            onClick={() => setShowMenu(!showMenu)}
+            className={`bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-3 transition-colors flex items-center gap-2 ${showMenu ? "bg-gray-800 text-white border-teal-500/50" : "text-gray-400 hover:text-white hover:bg-gray-800"}`}
+            title="Menú de Elecciones"
           >
-            <RotateCcw className="w-6 h-6 text-gray-400" />
+            <Filter className="w-6 h-6" />
           </button>
         </div>
+
+        {/* MODAL MENÚ MAESTRO (Desplegable) */}
+        {showMenu && (
+          <div className="w-full bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 shadow-2xl animate-in fade-in slide-in-from-top-2 relative">
+            <button
+              onClick={() => setShowMenu(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-white"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <div className="flex gap-8">
+              {/* Selector de Años */}
+              <div className="w-1/4 border-r border-gray-800 pr-6">
+                <h4 className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-4">
+                  Ciclo Electoral
+                </h4>
+                <div className="flex flex-col gap-2">
+                  {[2024, 2021, 2018].map((year) => (
+                    <button
+                      key={year}
+                      onClick={() => setSelectedYear(year)}
+                      className={`text-left px-4 py-2 rounded-lg text-sm font-bold transition-all ${selectedYear === year ? "bg-teal-900/40 text-teal-400 border border-teal-800" : "text-gray-500 hover:bg-gray-800 hover:text-gray-300"}`}
+                    >
+                      {year}{" "}
+                      {year !== 2024 && (
+                        <span className="text-[9px] ml-2 text-gray-600 bg-gray-800 px-1 rounded">
+                          PRÓX.
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                  <button className="text-left px-4 py-2 rounded-lg text-sm font-bold text-gray-500 hover:bg-gray-800 hover:text-gray-300">
+                    HISTÓRICO
+                  </button>
+                </div>
+              </div>
+
+              {/* Selector de Cargos */}
+              <div className="w-3/4">
+                <h4 className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-4">
+                  Elecciones Disponibles ({selectedYear})
+                </h4>
+                <div className="grid grid-cols-2 gap-3">
+                  {[
+                    { id: "PRESIDENCIA", name: "Presidencia de la República" },
+                    { id: "SENADURIA", name: "Senadurías" },
+                    { id: "DIPUTACION_FEDERAL", name: "Diputaciones Federales" },
+                    { id: "GUBERNATURA", name: "Gubernaturas" },
+                    { id: "AYUNTAMIENTO", name: "Ayuntamientos y Alcaldías" },
+                    { id: "DIPUTACION_LOCAL", name: "Diputaciones Locales" },
+                  ].map((cargo) => (
+                    <button
+                      key={cargo.id}
+                      disabled={selectedYear !== 2024}
+                      onClick={() => {
+                        setActiveElection(cargo.id);
+                        setShowMenu(false);
+                        setSelectedFeature(null);
+                      }}
+                      className={`text-left px-4 py-3 rounded-xl border text-sm font-bold transition-all ${activeElection === cargo.id ? "bg-teal-900/30 border-teal-500/50 text-white shadow-[0_0_10px_rgba(45,212,191,0.1)]" : "bg-gray-950 border-gray-800 text-gray-400 hover:border-gray-600 hover:text-white"} ${selectedYear !== 2024 ? "opacity-50 cursor-not-allowed" : ""}`}
+                    >
+                      {cargo.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Toggles de Demarcaciones (Fronteras) */}
         <div className="flex justify-center gap-4">
@@ -593,18 +640,6 @@ function CommandCenterUI() {
       {/* PANEL ANALÍTICO DERECHO */}
       <div className="absolute top-6 right-6 z-10 w-[26rem] max-h-[calc(100vh-3rem)] flex flex-col pointer-events-none">
         <div className="bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-5 shadow-2xl pointer-events-auto overflow-y-auto custom-scrollbar">
-          <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase flex items-center gap-2 mb-2">
-            <PieChart className="w-4 h-4" /> Inteligencia Electoral
-          </h2>
-
-          {/* FIX: Cabecera legible sin residuos técnicos ("EDON 16") */}
-          <h3 className="text-xs text-teal-500 font-mono tracking-widest border-b border-gray-800 pb-2 mb-4 break-words uppercase">
-            CAPA: {formatCargo(activeElection)} |{" "}
-            {activeEntidadFilter
-              ? ENTIDADES_MX[Number(activeEntidadFilter)] || `ENTIDAD ${activeEntidadFilter}`
-              : "NACIONAL"}
-          </h3>
-
           {!selectedFeature ? (
             <div className="flex flex-col items-center justify-center h-48 border border-dashed border-gray-700 rounded-xl p-4 text-center">
               <p className="text-gray-500 text-xs">
@@ -763,85 +798,87 @@ function CommandCenterUI() {
         </div>
       </div>
 
-      {/* EXPEDIENTE DIGITAL DE INTELIGENCIA (MODAL GLASSMORPHISM) */}
+      {/* EXPEDIENTE DIGITAL DE INTELIGENCIA (MODAL EDI) */}
       {showDossier && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-950/80 backdrop-blur-sm animate-in fade-in">
-          <div className="bg-gray-900 border border-gray-700 w-[50rem] h-[35rem] rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative">
-            {/* Header del Expediente */}
+          <div className="bg-gray-900 border border-gray-700 w-[60rem] h-[40rem] rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative">
+            {/* Header */}
             <div className="bg-gray-950 p-4 border-b border-gray-800 flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
                 <h2 className="text-teal-500 font-mono tracking-widest text-sm">
-                  SISTEMA DE INTELIGENCIA / EXPEDIENTE CLASIFICADO
+                  EXPEDIENTE DIGITAL DE INTELIGENCIA (EDI)
                 </h2>
               </div>
               <button
                 onClick={() => setShowDossier(false)}
-                className="text-gray-400 hover:text-white font-bold text-xl px-2"
+                className="text-gray-400 hover:text-white font-bold text-2xl px-2"
               >
                 &times;
               </button>
             </div>
 
             <div className="flex flex-1 overflow-hidden">
-              {/* Columna Izquierda: Identidad y Biometría */}
+              {/* Columna Izquierda: Biometría y Perfil */}
               <div className="w-1/3 bg-gray-950/50 border-r border-gray-800 p-6 flex flex-col items-center">
-                {/* Zona de Drag & Drop para procesar foto con IA */}
-                <div className="w-40 h-40 rounded-full border-2 border-dashed border-gray-600 bg-gray-800/50 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 hover:bg-gray-800 transition-all overflow-hidden relative group">
-                  <p className="text-[10px] text-gray-400 text-center px-4 group-hover:text-teal-400">
+                <div className="w-48 h-48 rounded-2xl border-2 border-dashed border-gray-600 bg-gray-800/50 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 hover:bg-gray-800 transition-all overflow-hidden relative group shadow-inner">
+                  <p className="text-[11px] text-gray-400 text-center px-4 group-hover:text-teal-400">
                     Arrastra imagen aquí
                     <br />
-                    (La IA quitará el fondo)
+                    (IA removerá el fondo y optimizará)
                   </p>
-                  {/* Imagen procesada iría aquí */}
                 </div>
-                <h1 className="mt-4 text-xl font-black text-white text-center uppercase leading-tight">
+                <h1 className="mt-6 text-2xl font-black text-white text-center uppercase leading-tight">
                   {activeDossierCandidate}
                 </h1>
-                <p className="text-xs text-teal-400 mt-1 border border-teal-900 bg-teal-950/30 px-2 py-1 rounded">
-                  PERFIL POLÍTICO ACTIVO
+                <p className="text-xs text-teal-400 mt-2 border border-teal-900 bg-teal-950/30 px-3 py-1 rounded">
+                  PERFIL ACTIVO
                 </p>
 
-                <button className="mt-6 w-full py-2 bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded text-xs font-bold tracking-widest text-white transition-colors">
-                  EDITAR FICHA
+                <button className="mt-8 w-full py-3 bg-teal-800/40 hover:bg-teal-700 border border-teal-600/50 rounded text-xs font-bold tracking-widest text-teal-100 transition-colors shadow-lg">
+                  MODO EDICIÓN (ADMIN)
                 </button>
               </div>
 
-              {/* Columna Derecha: Minería de Datos y Trayectoria */}
-              <div className="w-2/3 p-6 overflow-y-auto custom-scrollbar">
-                {/* Minería Web */}
-                <div className="mb-6 bg-gray-950 p-4 rounded-xl border border-gray-800">
+              {/* Columna Derecha: Inteligencia y Scraping */}
+              <div className="w-2/3 p-6 overflow-y-auto custom-scrollbar flex flex-col gap-6">
+                {/* Escáner Web */}
+                <div className="bg-gray-950 p-5 rounded-xl border border-gray-800 shadow-md">
                   <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-3 uppercase">
                     Minería de Datos (Escáner Web)
                   </h3>
                   <div className="flex gap-2">
                     <input
                       type="text"
-                      placeholder="Pegar URL de Wikipedia o SaberVotar..."
-                      className="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 text-xs text-white outline-none focus:border-teal-500"
+                      placeholder="Pegar URL de Wikipedia, SaberVotar o Noticias..."
+                      className="flex-1 bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm text-white outline-none focus:border-teal-500"
                     />
-                    <button className="bg-teal-700 hover:bg-teal-600 text-white px-4 rounded text-xs font-bold">
-                      ESCANEAR
+                    <button className="bg-teal-700 hover:bg-teal-600 text-white px-6 rounded text-xs font-bold tracking-wider">
+                      EXTRAER
                     </button>
                   </div>
                 </div>
 
                 {/* Trayectoria */}
-                <div className="mb-6">
-                  <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-3 uppercase">
-                    Trayectoria y Resultados Electorales
+                <div>
+                  <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-4 uppercase border-b border-gray-800 pb-2">
+                    Trayectoria Electoral Detectada
                   </h3>
-                  <div className="space-y-3 border-l-2 border-gray-700 ml-2 pl-4">
-                    {/* Elemento de ejemplo */}
+                  <div className="space-y-4 border-l-2 border-gray-700 ml-3 pl-5">
                     <div className="relative">
-                      <div className="absolute -left-[21px] top-1 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-gray-900"></div>
-                      <p className="text-xs font-bold text-gray-400">2024</p>
-                      <p className="text-sm font-bold text-white uppercase">
+                      <div className="absolute -left-[26px] top-1 w-3 h-3 bg-green-500 rounded-full border-2 border-gray-900 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+                      <p className="text-xs font-bold text-gray-400">CICLO 2024</p>
+                      <p className="text-base font-bold text-white uppercase">
                         {activeElection.replace("_", " ")}
                       </p>
-                      <p className="text-xs text-gray-400">
-                        Siglado: <span className="text-white">MORENA - PT - PVEM</span> | Resultado:{" "}
-                        <span className="text-green-400 font-bold">VICTORIA</span>
+                      <p className="text-sm text-gray-400 mt-1">
+                        Siglado: <span className="text-white font-mono">MORENA - PT - PVEM</span>
+                      </p>
+                      <p className="text-sm text-gray-400">
+                        Resultado:{" "}
+                        <span className="text-green-400 font-bold">
+                          VICTORIA (CANDIDATO ELECTO)
+                        </span>
                       </p>
                     </div>
                   </div>
