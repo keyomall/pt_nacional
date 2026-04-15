@@ -121,13 +121,19 @@ async def get_vector_tile_dynamic(
         where_clauses.append("g.id_entidad = :ent_filter")
         params["ent_filter"] = entidad_filter
     if municipio_filter:
-        where_clauses.append("c.id_municipio = :mun_filter")
+        where_clauses.append(
+            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_municipio = :mun_filter AND id_entidad = g.id_entidad)"
+        )
         params["mun_filter"] = municipio_filter
     if distrito_local_filter:
-        where_clauses.append("c.id_distrito_local = :dl_filter")
+        where_clauses.append(
+            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_local = :dl_filter AND id_entidad = g.id_entidad)"
+        )
         params["dl_filter"] = distrito_local_filter
     if distrito_federal_filter:
-        where_clauses.append("c.id_distrito_federal = :df_filter")
+        where_clauses.append(
+            "g.seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_federal = :df_filter AND id_entidad = g.id_entidad)"
+        )
         params["df_filter"] = distrito_federal_filter
 
     where_sql = " AND ".join(where_clauses)
@@ -243,35 +249,25 @@ async def get_vector_tile_dynamic(
         ),
         """
 
-        query = sa.text(
-            f"""
+        query = sa.text(f"""
             WITH bounds AS (
                 SELECT ST_TileEnvelope(:z, :x, :y) AS geom
             ),
-            {geo_context_sql}
             mvtgeom AS (
                 SELECT ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom,
                        g.id_entidad,
                        g.seccion,
-                       c.id_municipio,
-                       c.id_distrito_local,
-                       c.id_distrito_federal,
-                       {votos_expr} AS votos_desglosados,
-                       {total_expr} AS total_votos_calculados
+                       -- COALESCE garantiza que el frontend reciba un JSON vacío si no hay votos, previniendo crashes
+                       COALESCE(v.votos_desglosados, '{{}}'::jsonb) AS votos_desglosados,
+                       COALESCE(v.total_votos_calculados, 0) AS total_votos_calculados
                 FROM geometria_secciones g
-                JOIN bounds
-                  ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
-                LEFT JOIN geo_context c
-                  ON g.id_entidad::integer = c.id_entidad::integer
-                 AND g.seccion::integer = c.seccion::integer
-                LEFT JOIN {_quote_ident(tabla_destino)} v
-                  ON g.id_entidad::integer = {id_ent_int_expr}
-                 AND g.seccion::integer = {seccion_int_expr}
+                JOIN bounds ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
+                -- FIX CRÍTICO: LEFT JOIN asegura que el polígono exista aunque no haya resultados electorales cargados
+                LEFT JOIN {tabla_destino} v ON g.id_entidad = v.id_entidad AND g.seccion = v.seccion
                 WHERE 1=1 {where_sql}
             )
             SELECT ST_AsMVT(mvtgeom, 'elecciones') AS tile FROM mvtgeom;
-            """
-        )
+        """)
 
         result = await conn.execute(query, params)
         tile = result.scalar()

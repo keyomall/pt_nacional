@@ -258,21 +258,53 @@ class SemanticIntentEngine:
             except Exception as e:
                 print(f"[!] Error en busqueda nominal: {e}")
 
-        # 4. Calcular Bounding Box si hay entidad detectada
+        # ACTUALIZACIÓN FORENSE: Calcular Bounding Box DIRECTO desde la geometría maestra
         if intent["entidad_id"]:
-            sql = sa.text(
-                """
-                SELECT ST_Extent(geometry) as bbox
-                FROM geometria_secciones
-                WHERE id_entidad = :ent_id
-                """
-            )
-            result = await db_session.execute(sql, {"ent_id": intent["entidad_id"]})
-            box_str = result.scalar()
+            filtros_bbox = ["id_entidad = :ent_id"]
+            params_bbox = {"ent_id": intent["entidad_id"]}
 
-            if box_str:
-                coords = re.findall(r"[-+]?\d*\.\d+|\d+", str(box_str))
-                if len(coords) == 4:
-                    intent["bbox"] = [float(coords[0]), float(coords[1]), float(coords[2]), float(coords[3])]
+            # Usar identificadores si el motor de regex los detectó
+            if intent["municipio_id"]:
+                # Asumimos que dim_geo_secciones o la tabla geométrica tiene los IDs
+                filtros_bbox.append(
+                    "seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_municipio = :mun_id AND id_entidad = :ent_id)"
+                )
+                params_bbox["mun_id"] = intent["municipio_id"]
+            if intent["distrito_local_id"]:
+                filtros_bbox.append(
+                    "seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_local = :dl_id AND id_entidad = :ent_id)"
+                )
+                params_bbox["dl_id"] = intent["distrito_local_id"]
+            if intent["distrito_federal_id"]:
+                filtros_bbox.append(
+                    "seccion IN (SELECT seccion FROM dim_geo_secciones WHERE id_distrito_federal = :df_id AND id_entidad = :ent_id)"
+                )
+                params_bbox["df_id"] = intent["distrito_federal_id"]
+
+            where_bbox = " AND ".join(filtros_bbox)
+
+            # Consulta aislada: Nunca uses INNER JOIN con tablas de votos aquí.
+            sql_bbox = sa.text(
+                f"""
+                SELECT ST_Extent(geometry)
+                FROM geometria_secciones
+                WHERE {where_bbox}
+            """
+            )
+
+            try:
+                result = await db_session.execute(sql_bbox, params_bbox)
+                box_str = result.scalar()
+                if box_str:
+                    coords = re.findall(r"[-+]?\d*\.\d+|\d+", box_str)
+                    if len(coords) == 4:
+                        intent["bbox"] = [
+                            float(coords[0]),
+                            float(coords[1]),
+                            float(coords[2]),
+                            float(coords[3]),
+                        ]
+            except Exception as e:
+                print(f"[!] Error calculando BBOX Geográfico: {e}")
 
         return intent

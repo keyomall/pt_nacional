@@ -11,7 +11,6 @@ import {
   ChevronDown,
   Paperclip,
   RotateCcw,
-  Send,
   User,
   X,
 } from "lucide-react";
@@ -426,39 +425,24 @@ function CommandCenterUI() {
   const executeSearch = async () => {
     if (query.trim() === "") return;
     setIsSearching(true);
-    setNotification(null);
+    setNotification("Analizando intención espacial...");
 
     try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 8000);
       const res = await fetch(
-        `http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`,
-        { signal: controller.signal }
+        `http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`
       );
-      clearTimeout(timeoutId);
-
-      if (!res.ok) {
-        throw new Error(`El motor semantico devolvio un error ${res.status}. Verifica la base de datos.`);
-      }
-
+      if (!res.ok) throw new Error(`El motor semántico falló (Error ${res.status}). Verifica el Backend.`);
       const data = await res.json();
 
       if (data.warning) setNotification(data.warning);
+      else setNotification(null); // Limpiar si todo fue exitoso
 
       if (data.bbox && data.bbox.length === 4) {
         const longitude = (data.bbox[0] + data.bbox[2]) / 2;
         const latitude = (data.bbox[1] + data.bbox[3]) / 2;
-        setViewState((prev) => ({
-          ...prev,
-          longitude,
-          latitude,
-          zoom: 8,
-          transitionDuration: 2500,
-        }));
+        setViewState((prev) => ({ ...prev, longitude, latitude, zoom: 8, transitionDuration: 2500 }));
       } else {
-        setNotification(
-          "Busqueda procesada, pero no se encontraron coordenadas exactas (Bounding Box vacio)."
-        );
+        setNotification("Se detectó la entidad, pero el motor no pudo calcular las coordenadas exactas de vuelo.");
       }
 
       if (data.entidad_id) setActiveEntidadFilter(data.entidad_id);
@@ -474,14 +458,10 @@ function CommandCenterUI() {
       setSelectedFeature(null);
       setWinnerIdentity(null);
       setQuery("");
-    } catch (error) {
-      const typedError = error as Error;
-      console.error("Error critico:", typedError);
-      setNotification(
-        typedError.name === "AbortError"
-          ? "Tiempo de espera agotado. El servidor tardo demasiado."
-          : `Fallo del sistema: ${typedError.message}`
-      );
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      console.error("Error crítico en Omnibox:", error);
+      setNotification(`Fallo del Sistema: ${error.message}`);
     } finally {
       setIsSearching(false);
     }
@@ -506,26 +486,16 @@ function CommandCenterUI() {
         minZoom: 0,
         maxZoom: 14,
         opacity: 0.65,
-        getFillColor: (f: MVTFeature) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        getFillColor: (f: any) => {
           const rawVotos = f.properties?.votos_desglosados;
+          const votos = typeof rawVotos === "string" ? JSON.parse(rawVotos || "{}") : (rawVotos || {});
           const totalVotos = Number(f.properties?.total_votos_calculados || 0);
-          let votos: Record<string, number | string> = {};
-          try {
-            votos =
-              typeof rawVotos === "string"
-                ? (JSON.parse(rawVotos || "{}") as Record<string, number | string>)
-                : (rawVotos || {});
-          } catch {
-            votos = {};
-          }
 
-          if (totalVotos === 0 && Object.keys(votos).length === 0) return [0, 0, 0, 0];
+          // FIX: Si no hay votos, devolvemos un gris azulado traslúcido para ver el territorio
+          if (totalVotos === 0 && Object.keys(votos).length === 0) return [30, 41, 59, 150];
 
-          const maxParty = Object.keys(votos).reduce(
-            (a, b) => (Number(votos[a]) > Number(votos[b]) ? a : b),
-            ""
-          );
-          if (!maxParty) return [0, 0, 0, 0];
+          const maxParty = Object.keys(votos).reduce((a, b) => Number(votos[a]) > Number(votos[b]) ? a : b, "");
 
           if (maxParty.includes("MORENA")) return [115, 32, 39, 210];
           if (maxParty.includes("PAN")) return [0, 85, 184, 210];
@@ -780,21 +750,17 @@ function CommandCenterUI() {
               }}
             />
 
-            {/* Boton Enviar */}
+            {/* Boton BUSCAR */}
             <button
               onClick={executeSearch}
               disabled={query.trim() === "" || isSearching}
-              className={`p-2.5 rounded-full transition-all flex items-center justify-center ml-2 ${
+              className={`ml-2 text-white text-xs font-black tracking-widest py-2.5 px-8 rounded-xl transition-all shadow-[0_0_15px_rgba(45,212,191,0.2)] flex items-center justify-center min-w-[120px] ${
                 query.trim() !== "" && !isSearching
-                  ? "bg-teal-600 text-white shadow-lg hover:bg-teal-500"
-                  : "bg-gray-700/50 text-gray-500 cursor-not-allowed"
+                  ? "bg-teal-600/90 hover:bg-teal-500"
+                  : "bg-gray-700/50 cursor-not-allowed"
               }`}
             >
-              {isSearching ? (
-                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-              ) : (
-                <Send className="w-5 h-5" />
-              )}
+              {isSearching ? <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div> : "BUSCAR"}
             </button>
           </div>
         </div>
@@ -1147,6 +1113,7 @@ function CommandCenterUI() {
                       {isUploading ? (
                         <div className="animate-spin w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full"></div>
                       ) : profileImgUrl ? (
+                        // eslint-disable-next-line @next/next/no-img-element
                         <img src={profileImgUrl} alt="Perfil" className="w-full h-full object-cover object-top" />
                       ) : (
                         <p className="text-[11px] text-gray-400 text-center px-4 group-hover:text-teal-400">
