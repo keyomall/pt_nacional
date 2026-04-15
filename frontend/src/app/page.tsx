@@ -193,6 +193,14 @@ function CommandCenterUI() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [bioData, setBioData] = useState<any>(null);
   const fileInputRef = React.useRef<HTMLInputElement>(null);
+  const [isEditMode, setIsEditMode] = useState(false);
+  const [dossierForm, setDossierForm] = useState({
+    biografia: "",
+    telefono: "",
+    twitter: "",
+    facebook: "",
+  });
+  const [isSaving, setIsSaving] = useState(false);
 
   const getMunicipioName = async (entidadId: number, municipioId: number) => {
     if (!municipioId) return "N/A";
@@ -248,10 +256,39 @@ function CommandCenterUI() {
       const data = await res.json();
       if (data.data) {
         setBioData(data.data);
+        setDossierForm((prev) => ({ ...prev, biografia: data.data.biografia }));
         if (data.data.foto_url && !profileImgUrl) setProfileImgUrl(data.data.foto_url);
       }
     } catch (error) {
       console.error("Error escaneando Wikipedia:", error);
+    }
+  };
+
+  const handleSaveDossier = async () => {
+    if (!activeDossierCandidate) return;
+    setIsSaving(true);
+    try {
+      const payload = {
+        nombre_completo: activeDossierCandidate,
+        biografia: dossierForm.biografia,
+        telefono: dossierForm.telefono,
+        redes_sociales: { twitter: dossierForm.twitter, facebook: dossierForm.facebook },
+        foto_perfil_url: profileImgUrl ? profileImgUrl.replace("http://localhost:8000", "") : "",
+      };
+
+      const res = await fetch("http://localhost:8000/api/v1/edi/profile", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        setIsEditMode(false);
+        setNotification("Expediente clasificado guardado con éxito.");
+      }
+    } catch (error) {
+      console.error("Error guardando expediente:", error);
+    } finally {
+      setIsSaving(false);
     }
   };
 
@@ -311,6 +348,41 @@ function CommandCenterUI() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedFeature]);
+
+  useEffect(() => {
+    if (showDossier && activeDossierCandidate) {
+      // Reset state
+      setIsEditMode(false);
+      setProfileImgUrl(null);
+      setBioData(null);
+      setWikiUrl("");
+      setDossierForm({ biografia: "", telefono: "", twitter: "", facebook: "" });
+
+      // Fetch profile from DB
+      fetch(`http://localhost:8000/api/v1/edi/profile/${encodeURIComponent(activeDossierCandidate)}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.status === "success") {
+            const p = data.data;
+            if (p.foto_perfil_url) {
+              setProfileImgUrl(
+                p.foto_perfil_url.startsWith("http")
+                  ? p.foto_perfil_url
+                  : `http://localhost:8000${p.foto_perfil_url}`
+              );
+            }
+            setDossierForm({
+              biografia: p.biografia || "",
+              telefono: p.telefono || "",
+              twitter: p.redes_sociales?.twitter || "",
+              facebook: p.redes_sociales?.facebook || "",
+            });
+            if (p.biografia) setBioData({ biografia: p.biografia });
+          }
+        })
+        .catch(() => console.log("Expediente nuevo, no existe en BD aún."));
+    }
+  }, [showDossier, activeDossierCandidate]);
 
   const executeSearch = async () => {
     if (query.trim() === "") return;
@@ -929,9 +1001,25 @@ function CommandCenterUI() {
                   PERFIL ACTIVO
                 </p>
 
-                <button className="mt-8 w-full py-3 bg-teal-800/40 hover:bg-teal-700 border border-teal-600/50 rounded text-xs font-bold tracking-widest text-teal-100 transition-colors shadow-lg">
-                  MODO EDICIÓN (ADMIN)
-                </button>
+                {isEditMode ? (
+                  <button
+                    onClick={handleSaveDossier}
+                    className="mt-8 w-full py-3 bg-teal-600 hover:bg-teal-500 border border-teal-400 rounded text-xs font-black tracking-widest text-white transition-colors shadow-[0_0_15px_rgba(45,212,191,0.4)] flex justify-center items-center"
+                  >
+                    {isSaving ? (
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    ) : (
+                      "GUARDAR EXPEDIENTE"
+                    )}
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setIsEditMode(true)}
+                    className="mt-8 w-full py-3 bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded text-xs font-bold tracking-widest text-white transition-colors shadow-lg"
+                  >
+                    MODO EDICIÓN (ADMIN)
+                  </button>
+                )}
               </div>
 
               {/* Columna Derecha: Inteligencia y Scraping */}
@@ -955,12 +1043,104 @@ function CommandCenterUI() {
                   </div>
                 </div>
 
-                {/* Resultados de la Biografía */}
-                {bioData && (
-                  <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700 text-sm text-gray-300 leading-relaxed text-justify">
-                    <p className="text-xs text-teal-500 mb-2 font-mono">Dato Extraído de la Red:</p>
-                    {bioData.biografia}
+                {/* Panel de Datos Personales y Biografía */}
+                {isEditMode ? (
+                  <div className="bg-gray-900 p-5 rounded-xl border border-teal-900/50 flex flex-col gap-4 shadow-inner">
+                    <div>
+                      <label className="text-[10px] text-teal-500 font-bold uppercase tracking-widest mb-1 block">
+                        Teléfono / Contacto
+                      </label>
+                      <input
+                        type="text"
+                        value={dossierForm.telefono}
+                        onChange={(e) =>
+                          setDossierForm({ ...dossierForm, telefono: e.target.value })
+                        }
+                        className="w-full bg-gray-950 border border-gray-800 rounded px-3 py-2 text-sm text-white outline-none focus:border-teal-500"
+                        placeholder="+52 ..."
+                      />
+                    </div>
+                    <div className="flex gap-4">
+                      <div className="flex-1">
+                        <label className="text-[10px] text-teal-500 font-bold uppercase tracking-widest mb-1 block">
+                          Twitter (X)
+                        </label>
+                        <input
+                          type="text"
+                          value={dossierForm.twitter}
+                          onChange={(e) =>
+                            setDossierForm({ ...dossierForm, twitter: e.target.value })
+                          }
+                          className="w-full bg-gray-950 border border-gray-800 rounded px-3 py-2 text-sm text-white outline-none focus:border-teal-500"
+                          placeholder="@usuario"
+                        />
+                      </div>
+                      <div className="flex-1">
+                        <label className="text-[10px] text-teal-500 font-bold uppercase tracking-widest mb-1 block">
+                          Facebook
+                        </label>
+                        <input
+                          type="text"
+                          value={dossierForm.facebook}
+                          onChange={(e) =>
+                            setDossierForm({ ...dossierForm, facebook: e.target.value })
+                          }
+                          className="w-full bg-gray-950 border border-gray-800 rounded px-3 py-2 text-sm text-white outline-none focus:border-teal-500"
+                          placeholder="/usuario"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="text-[10px] text-teal-500 font-bold uppercase tracking-widest mb-1 block">
+                        Extracto Biográfico (Editable)
+                      </label>
+                      <textarea
+                        value={dossierForm.biografia}
+                        onChange={(e) =>
+                          setDossierForm({ ...dossierForm, biografia: e.target.value })
+                        }
+                        className="w-full bg-gray-950 border border-gray-800 rounded px-3 py-2 text-sm text-gray-300 outline-none focus:border-teal-500 h-32 resize-none custom-scrollbar"
+                        placeholder="Ingresa el resumen biográfico o extraelo de Wikipedia..."
+                      ></textarea>
+                    </div>
                   </div>
+                ) : (
+                  (dossierForm.biografia || dossierForm.telefono) && (
+                    <div className="bg-gray-900/50 p-5 rounded-xl border border-gray-800 shadow-md">
+                      {dossierForm.telefono && (
+                        <p className="text-sm text-white mb-2">
+                          <span className="text-gray-500 text-xs font-mono mr-2">TEL:</span>
+                          {dossierForm.telefono}
+                        </p>
+                      )}
+                      {(dossierForm.twitter || dossierForm.facebook) && (
+                        <div className="flex gap-4 mb-4">
+                          {dossierForm.twitter && (
+                            <p className="text-sm text-blue-400">
+                              <span className="text-gray-500 text-xs font-mono mr-2">X:</span>
+                              {dossierForm.twitter}
+                            </p>
+                          )}
+                          {dossierForm.facebook && (
+                            <p className="text-sm text-blue-500">
+                              <span className="text-gray-500 text-xs font-mono mr-2">FB:</span>
+                              {dossierForm.facebook}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                      {dossierForm.biografia && (
+                        <>
+                          <h4 className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-2">
+                            Perfil Analítico:
+                          </h4>
+                          <p className="text-sm text-gray-300 leading-relaxed text-justify">
+                            {dossierForm.biografia}
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  )
                 )}
 
                 {/* Trayectoria */}

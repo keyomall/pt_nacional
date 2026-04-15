@@ -1,16 +1,19 @@
 import os
+import uuid
 from typing import Optional
 
 import sqlalchemy as sa
 from fastapi import FastAPI, Response, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from contextlib import asynccontextmanager
 from app.db import engine, Base
 from app.analytics_engine import AnalyticsEngine
 from app.edi_engine import EDIEngine
+from app.models_edi import CandidatoEDI
 from app.semantic_engine import SemanticIntentEngine
 import app.models  # Forzar carga de modelos SQLAlchemy antes de create_all
 
@@ -75,6 +78,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Esquema de validación Pydantic
+class CandidatoPayload(BaseModel):
+    nombre_completo: str
+    biografia: str = ""
+    telefono: str = ""
+    redes_sociales: dict = {}
+    foto_perfil_url: str = ""
 
 
 @app.get("/api/health")
@@ -378,3 +389,86 @@ async def get_nombre_municipio(entidad: int, municipio: int):
         if row and row[0]:
             return {"nombre": row[0].strip().upper()}
     return {"nombre": f"MUNICIPIO {municipio}"}  # Fallback seguro
+
+
+@app.get("/api/v1/edi/profile/{candidato_nombre}")
+async def get_candidato_profile(candidato_nombre: str):
+    """Busca el expediente guardado de un candidato."""
+    query = sa.text(
+        """
+        SELECT biografia, telefono, redes_sociales, foto_perfil_url
+        FROM edi_candidatos
+        WHERE nombre_completo ILIKE :nombre LIMIT 1
+    """
+    )
+    async with async_engine.connect() as conn:
+        result = await conn.execute(query, {"nombre": candidato_nombre})
+        row = result.fetchone()
+
+    if row:
+        return {
+            "status": "success",
+            "data": {
+                "biografia": row[0] or "",
+                "telefono": row[1] or "",
+                "redes_sociales": row[2] or {},
+                "foto_perfil_url": row[3] or "",
+            },
+        }
+    raise HTTPException(status_code=404, detail="Expediente no encontrado")
+
+
+@app.post("/api/v1/edi/profile")
+async def save_candidato_profile(payload: CandidatoPayload):
+    """Guarda o actualiza el expediente del candidato."""
+    # Referencia explícita del modelo para asegurar carga/import del esquema EDI.
+    _ = CandidatoEDI
+    async with async_engine.begin() as conn:
+        # Verificar si existe
+        check_query = sa.text("SELECT id FROM edi_candidatos WHERE nombre_completo = :nombre")
+        result = await conn.execute(check_query, {"nombre": payload.nombre_completo})
+        row = result.fetchone()
+
+        import json
+        redes_json = json.dumps(payload.redes_sociales)
+
+        if row:
+            # Update
+            update_query = sa.text(
+                """
+                UPDATE edi_candidatos
+                SET biografia = :bio, telefono = :tel, redes_sociales = :redes::jsonb, foto_perfil_url = :foto
+                WHERE nombre_completo = :nombre
+            """
+            )
+            await conn.execute(
+                update_query,
+                {
+                    "bio": payload.biografia,
+                    "tel": payload.telefono,
+                    "redes": redes_json,
+                    "foto": payload.foto_perfil_url,
+                    "nombre": payload.nombre_completo,
+                },
+            )
+        else:
+            # Insert
+            insert_query = sa.text(
+                """
+                INSERT INTO edi_candidatos (id, nombre_completo, biografia, telefono, redes_sociales, foto_perfil_url)
+                VALUES (:id, :nombre, :bio, :tel, :redes::jsonb, :foto)
+            """
+            )
+            await conn.execute(
+                insert_query,
+                {
+                    "id": uuid.uuid4().hex,
+                    "nombre": payload.nombre_completo,
+                    "bio": payload.biografia,
+                    "tel": payload.telefono,
+                    "redes": redes_json,
+                    "foto": payload.foto_perfil_url,
+                },
+            )
+
+    return {"status": "success", "message": "Expediente guardado correctamente"}
