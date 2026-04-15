@@ -65,28 +65,18 @@ type ChartVoteItem = {
   votos: number;
 };
 
-const processVotesData = (
-  votosDesglosados: Record<string, number | string> | string | undefined
-): ChartVoteItem[] => {
+// Utilidad para extraer y ordenar el JSONB de votos
+const processVotesData = (votosDesglosados: unknown) => {
   if (!votosDesglosados) return [];
-  let rawData: Record<string, number | string> = {};
-
-  if (typeof votosDesglosados === "string") {
-    try {
-      rawData = JSON.parse(votosDesglosados) as Record<string, number | string>;
-    } catch {
-      return [];
-    }
-  } else {
-    rawData = votosDesglosados;
-  }
+  const rawData = typeof votosDesglosados === "string" ? JSON.parse(votosDesglosados) : votosDesglosados;
 
   return Object.keys(rawData)
     .map((key) => ({
-      name: key.replace(/_/g, " "),
+      // FIX: Reemplazar guiones bajos por un formato limpio de coalición
+      name: key.replace(/_/g, " - "),
       votos: Number(rawData[key]),
     }))
-    .filter((item) => Number.isFinite(item.votos) && item.votos > 0)
+    .filter((item) => item.votos > 0)
     .sort((a, b) => b.votos - a.votos)
     .slice(0, 7);
 };
@@ -440,7 +430,7 @@ function CommandCenterUI() {
     const sumVotos = Object.values(rawVotos).reduce((a, b) => Number(a) + Number(b), 0) as number;
     const total = Number(total_votos_calculados) > 0 ? Number(total_votos_calculados) : sumVotos;
     const parties = Object.keys(rawVotos)
-      .map((key) => ({ name: key.replace(/_/g, " "), votos: Number(rawVotos[key]) }))
+      .map((key) => ({ name: key.replace(/_/g, " - "), votos: Number(rawVotos[key]) }))
       .sort((a, b) => b.votos - a.votos);
 
     const winner = parties.length > 0 && parties[0].votos > 0 ? parties[0] : null;
@@ -554,22 +544,22 @@ function CommandCenterUI() {
         </div>
       )}
 
-      <div className="absolute top-6 right-6 z-10 w-96 max-h-[calc(100vh-3rem)] flex flex-col pointer-events-none">
+      {/* PANEL ANALÍTICO DERECHO */}
+      <div className="absolute top-6 right-6 z-10 w-[26rem] max-h-[calc(100vh-3rem)] flex flex-col pointer-events-none">
         <div className="bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-5 shadow-2xl pointer-events-auto overflow-y-auto custom-scrollbar">
           <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase flex items-center gap-2 mb-2">
-            <PieChart className="w-4 h-4" />
-            Inteligencia Electoral
+            <PieChart className="w-4 h-4" /> Inteligencia Electoral
           </h2>
-          <h3 className="text-xs text-teal-500 font-mono tracking-widest border-b border-gray-800 pb-2 mb-4 break-words">
-            CAPA: {formatCargo(activeElection)}
+
+          {/* FIX: Cabecera legible sin residuos técnicos ("EDON 16") */}
+          <h3 className="text-xs text-teal-500 font-mono tracking-widest border-b border-gray-800 pb-2 mb-4 break-words uppercase">
+            CAPA: {formatCargo(activeElection)} |{" "}
             {activeEntidadFilter
-              ? ` | ${ENTIDADES_MX[activeEntidadFilter]?.toUpperCase() || activeEntidadFilter}`
-              : " | NACIONAL"}
-            {activeMunicipioFilter ? ` | MUN: ${activeMunicipioFilter}` : ""}
-            {activeDLFilter ? ` | DTTO: ${activeDLFilter}` : ""}
+              ? ENTIDADES_MX[Number(activeEntidadFilter)] || `ENTIDAD ${activeEntidadFilter}`
+              : "NACIONAL"}
           </h3>
 
-          {!selectedFeature?.properties ? (
+          {!selectedFeature ? (
             <div className="flex flex-col items-center justify-center h-48 border border-dashed border-gray-700 rounded-xl p-4 text-center">
               <p className="text-gray-500 text-xs">
                 Haz clic en un polígono (Sección) en el mapa para extraer el análisis forense de los votos.
@@ -577,60 +567,92 @@ function CommandCenterUI() {
             </div>
           ) : (
             <div className="animate-in fade-in slide-in-from-right-4 duration-500">
+              {/* FIX: Cuadrícula completa de linaje geográfico (Simetría con el Tooltip) */}
               <div className="flex flex-col mb-4 bg-gray-950 p-4 rounded-lg border border-gray-800">
-                <div className="flex justify-between items-center mb-2">
+                <div className="flex justify-between items-center mb-3 border-b border-gray-800 pb-3">
                   <div>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wider">Entidad</p>
-                    {/* FIX: Aplicamos el diccionario y el casting numérico */}
-                    <p className="text-lg font-bold text-white">
+                    <p className="text-xl font-bold text-white uppercase">
                       {ENTIDADES_MX[Number(selectedFeature.properties.id_entidad)] ||
                         `Estado ${selectedFeature.properties.id_entidad}`}
                     </p>
                   </div>
-                  <div className="text-right">
+                  <div className="text-right flex flex-col items-end">
                     <p className="text-[10px] text-gray-500 uppercase tracking-wider">Sección</p>
-                    <p className="text-xl font-bold text-teal-400">
+                    <p className="text-2xl font-black text-teal-400 bg-teal-900/20 px-3 py-1 rounded-md border border-teal-800/50">
                       {selectedFeature.properties.seccion}
                     </p>
                   </div>
                 </div>
-                <div className="pt-2 border-t border-gray-800">
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wider">Municipio</p>
-                  <p className="text-sm font-medium text-gray-300">
-                    {resolveMunicipioName(
-                      selectedFeature.properties.id_entidad,
-                      selectedFeature.properties.id_municipio
-                    )}
-                  </p>
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="col-span-1">
+                    <p className="text-[9px] text-gray-500 uppercase tracking-wider">Municipio</p>
+                    <p
+                      className="text-xs font-medium text-teal-100 truncate"
+                      title={resolveMunicipioName(
+                        selectedFeature.properties.id_entidad,
+                        selectedFeature.properties.id_municipio
+                      )}
+                    >
+                      {resolveMunicipioName(
+                        selectedFeature.properties.id_entidad,
+                        selectedFeature.properties.id_municipio
+                      )}
+                    </p>
+                  </div>
+                  <div className="col-span-1 text-center border-l border-r border-gray-800 px-2">
+                    <p className="text-[9px] text-gray-500 uppercase tracking-wider">Dist. Local</p>
+                    <p className="text-xs font-medium text-blue-300">
+                      {selectedFeature.properties.id_distrito_local || "N/A"}
+                    </p>
+                  </div>
+                  <div className="col-span-1 text-right">
+                    <p className="text-[9px] text-gray-500 uppercase tracking-wider">Dist. Fed.</p>
+                    <p className="text-xs font-medium text-purple-300">
+                      {selectedFeature.properties.id_distrito_federal || "N/A"}
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div className="mb-6">
-                <div className="mb-4 bg-gradient-to-r from-teal-900/30 to-transparent p-4 rounded-xl border-l-2 border-teal-500">
-                  <p className="text-[10px] text-teal-400 uppercase tracking-wider mb-1">
-                    Fuerza Ganadora Estimada
-                  </p>
-                  {winnerIdentity ? (
-                    <>
-                      <p className="text-lg font-bold text-white leading-tight">
-                        {toTitleCase(winnerIdentity.candidato)}
-                      </p>
-                      <p className="text-xs text-gray-400 mt-1">{winnerIdentity.detalle}</p>
-                    </>
-                  ) : (
-                    <div className="animate-pulse flex flex-col gap-2 mt-2">
-                      <div className="h-4 bg-gray-800 rounded w-3/4"></div>
-                      <div className="h-3 bg-gray-800 rounded w-1/2"></div>
-                    </div>
-                  )}
-                </div>
+              {/* BLOQUE DE IDENTIDAD NOMINAL */}
+              <div className="mb-4 bg-gradient-to-r from-teal-900/30 to-transparent p-4 rounded-xl border-l-2 border-teal-500">
+                <p className="text-[10px] text-teal-400 uppercase tracking-wider mb-1">
+                  Fuerza Ganadora Estimada
+                </p>
+                {winnerIdentity ? (
+                  <>
+                    <p className="text-lg font-bold text-white leading-tight uppercase">
+                      {winnerIdentity.candidato}
+                    </p>
+                    <p className="text-[11px] text-gray-400 mt-1 uppercase font-mono">
+                      {winnerIdentity.detalle}
+                    </p>
+                  </>
+                ) : (
+                  <div className="animate-pulse flex flex-col gap-2 mt-2">
+                    <div className="h-4 bg-gray-800 rounded w-3/4"></div>
+                    <div className="h-3 bg-gray-800 rounded w-1/2"></div>
+                  </div>
+                )}
+              </div>
 
-                <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">
-                  Total Votos Emitidos
-                </p>
-                <p className="text-3xl font-black text-white">
-                  {Number(selectedFeature.properties.total_votos_calculados ?? 0).toLocaleString()}
-                </p>
+              <div className="mb-6 flex justify-between items-end border-b border-gray-800 pb-3">
+                <div>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">
+                    Total Votos Emitidos
+                  </p>
+                  <p className="text-3xl font-black text-white">
+                    {(
+                      Number(selectedFeature.properties.total_votos_calculados) > 0
+                        ? Number(selectedFeature.properties.total_votos_calculados)
+                        : processVotesData(selectedFeature.properties.votos_desglosados).reduce(
+                            (sum, item) => sum + item.votos,
+                            0
+                          )
+                    ).toLocaleString()}
+                  </p>
+                </div>
               </div>
 
               <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-2">
@@ -640,17 +662,16 @@ function CommandCenterUI() {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     layout="vertical"
-                    data={chartData}
+                    data={processVotesData(selectedFeature.properties.votos_desglosados)}
                     margin={{ top: 0, right: 20, left: -20, bottom: 0 }}
                   >
                     <XAxis type="number" hide />
-                    {/* FIX: width ampliado a 130 para coaliciones y tick ajustado */}
                     <YAxis
                       dataKey="name"
                       type="category"
                       axisLine={false}
                       tickLine={false}
-                      tick={{ fill: "#9ca3af", fontSize: 10, fontWeight: 500 }}
+                      tick={{ fill: "#9ca3af", fontSize: 10 }}
                       width={130}
                       interval={0}
                     />
@@ -661,14 +682,17 @@ function CommandCenterUI() {
                         borderColor: "#374151",
                         borderRadius: "0.5rem",
                         fontSize: "12px",
+                        textTransform: "uppercase",
                       }}
                       itemStyle={{ color: "#fff", fontWeight: "bold" }}
-                      formatter={(value: number) => [value.toLocaleString(), "Votos"]}
+                      formatter={(value: number) => [value.toLocaleString(), "VOTOS"]}
                     />
                     <Bar dataKey="votos" radius={[0, 4, 4, 0]} barSize={15}>
-                      {chartData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={getPartyColor(entry.name)} />
-                      ))}
+                      {processVotesData(selectedFeature.properties.votos_desglosados).map(
+                        (entry, index) => (
+                          <Cell key={`cell-${index}`} fill={getPartyColor(entry.name)} />
+                        )
+                      )}
                     </Bar>
                   </BarChart>
                 </ResponsiveContainer>
