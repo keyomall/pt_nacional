@@ -41,7 +41,7 @@ PORTS_TO_CLEAR = {
 
 class BootSentinel:
     def __init__(self):
-        self.processes = []
+        self.processes = {}
         self._shutdown_called = False
         atexit.register(self.shutdown)
         signal.signal(signal.SIGINT, self._handle_signal)
@@ -154,7 +154,7 @@ class BootSentinel:
             "h11",
         ]
         backend_proc = subprocess.Popen(backend_cmd, cwd="backend")
-        self.processes.append(backend_proc)
+        self.processes["backend"] = backend_proc
 
         # Validacion fuerte: puerto abierto + endpoint real respondiendo.
         retries = 15
@@ -174,27 +174,41 @@ class BootSentinel:
         logger.info("[OK] API Backend operativa en puerto 8000 (health check validado).")
 
     def start_frontend(self):
-        """Levanta Next.js."""
         logger.info(">> FASE 4: INICIANDO COMMAND CENTER (FRONTEND)...")
-        shell_flag = os.name == "nt"
-        frontend_proc = subprocess.Popen(["npm", "run", "dev"], cwd="frontend", shell=shell_flag)
-        self.processes.append(frontend_proc)
-
-        retries = 20
-        while retries > 0 and not self.is_port_in_use(3000):
-            if frontend_proc.poll() is not None:
-                break
-            time.sleep(1)
-            retries -= 1
-
-        frontend_ok = retries > 0 and self.wait_http_ready(
-            "http://127.0.0.1:3000", retries=15, process=frontend_proc
-        )
-        if not frontend_ok:
-            logger.error("[FATAL] Frontend fallo en el arranque.")
-            self.shutdown()
-            sys.exit(1)
-        logger.info("[OK] Frontend UI operativo en puerto 3000 (HTTP validado).")
+        frontend_dir = os.path.join(os.getcwd(), 'frontend')
+        
+        env_mode = os.environ.get("COMMAND_CENTER_ENV", "dev")
+        
+        if env_mode == "prod":
+            logger.info(">>> MODO PRODUCCIÓN DETECTADO. Iniciando compilación (Build)...")
+            logger.info(">>> Esto puede tardar unos minutos la primera vez. Por favor espera...")
+            # 1. Compilar
+            build_process = subprocess.Popen(
+                ["npm", "run", "build"],
+                cwd=frontend_dir,
+                shell=True
+            )
+            build_process.wait()
+            
+            if build_process.returncode != 0:
+                logger.error("Error crítico durante la compilación del Frontend. Abortando.")
+                return
+                
+            logger.info(">>> Compilación exitosa. Iniciando servidor de producción...")
+            # 2. Iniciar Producción
+            self.processes['frontend'] = subprocess.Popen(
+                ["npm", "start"],
+                cwd=frontend_dir,
+                shell=True
+            )
+        else:
+            logger.info(">>> MODO DESARROLLO DETECTADO.")
+            # Modo Dev normal
+            self.processes['frontend'] = subprocess.Popen(
+                ["npm", "run", "dev"],
+                cwd=frontend_dir,
+                shell=True
+            )
 
     def run(self):
         try:
@@ -221,7 +235,7 @@ class BootSentinel:
         if self._shutdown_called:
             return
         self._shutdown_called = True
-        for proc in self.processes:
+        for proc in self.processes.values():
             if proc.poll() is None:
                 proc.terminate()
                 try:

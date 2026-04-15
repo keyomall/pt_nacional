@@ -8,13 +8,14 @@ chcp 65001 >nul
 set "CLI_MODE=0"
 if not "%~1"=="" (
   set "CLI_MODE=1"
-  if /I "%~1"=="start" goto start_all
+  if /I "%~1"=="start" goto start_dev
+  if /I "%~1"=="prod" goto start_prod
   if /I "%~1"=="check" goto check_env
   if /I "%~1"=="path" goto show_path
   if /I "%~1"=="kill" goto kill_only
   if /I "%~1"=="exit" goto end_ok
   echo [ERROR] Argumento no valido: %~1
-  echo         Usa: killer.bat ^<start^|check^|path^|kill^|exit^>
+  echo         Usa: killer.bat ^<start^|prod^|check^|path^|kill^|exit^>
   exit /b 2
 )
 
@@ -24,19 +25,21 @@ echo ============================================================
 echo   PT NACIONAL ^| COMMAND CENTER BOOT MENU
 echo ============================================================
 echo.
-echo   [1] Iniciar sistema completo (Docker + Backend + Frontend)
-echo   [2] Verificar entorno y dependencias
-echo   [3] Mostrar ruta de trabajo
-echo   [4] Aniquilar procesos y liberar puertos (Solo limpieza)
-echo   [5] Salir
+echo   [1] Iniciar en MODO DESARROLLO (Dev Mode)
+echo   [2] Iniciar en MODO PRODUCCION (Enterprise Build - Sin errores UI)
+echo   [3] Verificar entorno y dependencias
+echo   [4] Mostrar ruta de trabajo
+echo   [5] Aniquilar procesos y liberar puertos (Limpieza Forense)
+echo   [6] Salir
 echo.
-set /p "opt=Selecciona una opcion [1-5]: "
+set /p "opt=Selecciona una opcion [1-6]: "
 
-if "%opt%"=="1" goto start_all
-if "%opt%"=="2" goto check_env
-if "%opt%"=="3" goto show_path
-if "%opt%"=="4" goto kill_only
-if "%opt%"=="5" goto end_ok
+if "%opt%"=="1" goto start_dev
+if "%opt%"=="2" goto start_prod
+if "%opt%"=="3" goto check_env
+if "%opt%"=="4" goto show_path
+if "%opt%"=="5" goto kill_only
+if "%opt%"=="6" goto end_ok
 
 echo.
 echo [ERROR] Opcion invalida. Intenta de nuevo.
@@ -118,13 +121,27 @@ if "%CLI_MODE%"=="1" exit /b 0
 set /p "dummy=Presiona Enter para volver al menu..."
 goto menu
 
-:start_all
+:start_dev
 cls
 echo ============================================================
-echo   ARRANQUE COMPLETO DEL SISTEMA
+echo   ARRANQUE EN MODO DESARROLLO (DEV MODE)
 echo ============================================================
 echo.
+set "ENV_MODE=dev"
+goto run_sentinel
 
+:start_prod
+cls
+echo ============================================================
+echo   ARRANQUE EN MODO PRODUCCION (ENTERPRISE BUILD)
+echo ============================================================
+echo [!] NOTA: El Sentinel compilara el frontend antes de iniciar.
+echo [!] Esto eliminara los overlays de error y optimizara la velocidad.
+echo.
+set "ENV_MODE=prod"
+goto run_sentinel
+
+:run_sentinel
 if not exist "boot_sentinel.py" (
   echo [FATAL] Falta boot_sentinel.py en la raiz del proyecto.
   if "%CLI_MODE%"=="1" exit /b 1
@@ -140,10 +157,12 @@ if errorlevel 1 (
   goto menu
 )
 
-echo [INFO] Ejecutando boot_sentinel.py con: %PYTHON_EXE%
+echo [INFO] Ejecutando boot_sentinel.py con: %PYTHON_EXE% (Modo: %ENV_MODE%)
 echo [INFO] Para apagar todo de forma limpia usa Ctrl+C.
 echo.
 
+:: Pasamos la variable de entorno al Sentinel
+set "COMMAND_CENTER_ENV=%ENV_MODE%"
 call "%PYTHON_EXE%" boot_sentinel.py
 set "BOOT_EXIT=%errorlevel%"
 
