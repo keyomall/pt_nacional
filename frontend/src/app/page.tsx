@@ -137,26 +137,13 @@ const formatCargo = (cargo: string) => {
   return map[cargo] || cargo.replace(/_/g, " ");
 };
 
-// MOTOR DE TOPONIMIA (Diccionario Inteligente)
-const resolveMunicipioName = (entidadId: unknown, municipioId: unknown) => {
+const resolveMunicipioName = (entidadId: any, municipioId: any) => {
   const ent = Number(entidadId);
   const mun = Number(municipioId);
   if (!mun) return "N/A";
-  // Muestra de Michoacán (Se escalará a BD nacional en Fase 12)
-  if (ent === 16) {
-    const michoacanMap: Record<number, string> = {
-      103: "Uruapan",
-      53: "Morelia",
-      65: "Pátzcuaro",
-      48: "Lázaro Cárdenas",
-      112: "Zamora",
-      113: "Zitácuaro",
-      14: "Apatzingán",
-      102: "Tzintzuntzan",
-    };
-    return michoacanMap[mun] || `Municipio ${mun}`;
-  }
-  return `Municipio ${mun}`;
+  // En la Fase 12.5 conectaremos esto a un endpoint en vivo.
+  // Por ahora, devolvemos el ID formateado elegantemente para evitar el fallo de renderizado.
+  return `Municipio ${mun} (EDO ${ent})`;
 };
 
 const parseVotesObject = (
@@ -202,6 +189,8 @@ function CommandCenterUI() {
   const [showMun, setShowMun] = useState(false);
   const [showDL, setShowDL] = useState(false);
   const [showDF, setShowDF] = useState(false);
+  const [showDossier, setShowDossier] = useState(false);
+  const [activeDossierCandidate, setActiveDossierCandidate] = useState<string | null>(null);
 
   useEffect(() => {
     if (!selectedFeature?.properties) return;
@@ -285,8 +274,10 @@ function CommandCenterUI() {
       if (data.cargo_inferido) {
         setActiveElection(data.cargo_inferido);
       }
+      setSelectedFeature(null);
+      setWinnerIdentity(null);
     } catch (error) {
-      console.error("Error en motor semantico:", error);
+      console.error("Error en motor semántico:", error);
     }
   };
 
@@ -677,20 +668,24 @@ function CommandCenterUI() {
                 </p>
                 {winnerIdentity ? (
                   <>
-                            {/* FIX: Extraemos el partido líder para pintar el nombre del candidato con su color institucional */}
-                            <p
-                              className="text-lg font-bold leading-tight uppercase drop-shadow-md"
-                              style={{
-                                color: processVotesData(selectedFeature.properties.votos_desglosados)[0]
-                                  ? getPartyColor(
-                                      processVotesData(selectedFeature.properties.votos_desglosados)[0]
-                                        .name
-                                    )
-                                  : "#FFFFFF",
-                              }}
-                            >
+                    {/* FIX: Extraemos el partido líder para pintar el nombre del candidato con su color institucional */}
+                    <button
+                      onClick={() => {
+                        setActiveDossierCandidate(winnerIdentity.candidato);
+                        setShowDossier(true);
+                      }}
+                      className="text-lg font-bold leading-tight uppercase drop-shadow-md text-left hover:underline decoration-teal-500 decoration-2 transition-all cursor-pointer"
+                      style={{
+                        color: processVotesData(selectedFeature.properties.votos_desglosados)[0]
+                          ? getPartyColor(processVotesData(selectedFeature.properties.votos_desglosados)[0].name)
+                          : "#FFFFFF",
+                      }}
+                    >
                       {winnerIdentity.candidato}
-                    </p>
+                      <span className="ml-2 text-[10px] bg-teal-900/50 text-teal-300 px-2 py-0.5 rounded border border-teal-500/50">
+                        ABRIR EXPEDIENTE
+                      </span>
+                    </button>
                     <p className="text-[11px] text-gray-400 mt-1 uppercase font-mono">
                       {winnerIdentity.detalle}
                     </p>
@@ -767,6 +762,95 @@ function CommandCenterUI() {
           )}
         </div>
       </div>
+
+      {/* EXPEDIENTE DIGITAL DE INTELIGENCIA (MODAL GLASSMORPHISM) */}
+      {showDossier && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-950/80 backdrop-blur-sm animate-in fade-in">
+          <div className="bg-gray-900 border border-gray-700 w-[50rem] h-[35rem] rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative">
+            {/* Header del Expediente */}
+            <div className="bg-gray-950 p-4 border-b border-gray-800 flex justify-between items-center">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                <h2 className="text-teal-500 font-mono tracking-widest text-sm">
+                  SISTEMA DE INTELIGENCIA / EXPEDIENTE CLASIFICADO
+                </h2>
+              </div>
+              <button
+                onClick={() => setShowDossier(false)}
+                className="text-gray-400 hover:text-white font-bold text-xl px-2"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div className="flex flex-1 overflow-hidden">
+              {/* Columna Izquierda: Identidad y Biometría */}
+              <div className="w-1/3 bg-gray-950/50 border-r border-gray-800 p-6 flex flex-col items-center">
+                {/* Zona de Drag & Drop para procesar foto con IA */}
+                <div className="w-40 h-40 rounded-full border-2 border-dashed border-gray-600 bg-gray-800/50 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 hover:bg-gray-800 transition-all overflow-hidden relative group">
+                  <p className="text-[10px] text-gray-400 text-center px-4 group-hover:text-teal-400">
+                    Arrastra imagen aquí
+                    <br />
+                    (La IA quitará el fondo)
+                  </p>
+                  {/* Imagen procesada iría aquí */}
+                </div>
+                <h1 className="mt-4 text-xl font-black text-white text-center uppercase leading-tight">
+                  {activeDossierCandidate}
+                </h1>
+                <p className="text-xs text-teal-400 mt-1 border border-teal-900 bg-teal-950/30 px-2 py-1 rounded">
+                  PERFIL POLÍTICO ACTIVO
+                </p>
+
+                <button className="mt-6 w-full py-2 bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded text-xs font-bold tracking-widest text-white transition-colors">
+                  EDITAR FICHA
+                </button>
+              </div>
+
+              {/* Columna Derecha: Minería de Datos y Trayectoria */}
+              <div className="w-2/3 p-6 overflow-y-auto custom-scrollbar">
+                {/* Minería Web */}
+                <div className="mb-6 bg-gray-950 p-4 rounded-xl border border-gray-800">
+                  <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-3 uppercase">
+                    Minería de Datos (Escáner Web)
+                  </h3>
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      placeholder="Pegar URL de Wikipedia o SaberVotar..."
+                      className="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 text-xs text-white outline-none focus:border-teal-500"
+                    />
+                    <button className="bg-teal-700 hover:bg-teal-600 text-white px-4 rounded text-xs font-bold">
+                      ESCANEAR
+                    </button>
+                  </div>
+                </div>
+
+                {/* Trayectoria */}
+                <div className="mb-6">
+                  <h3 className="text-xs text-gray-500 font-bold tracking-widest mb-3 uppercase">
+                    Trayectoria y Resultados Electorales
+                  </h3>
+                  <div className="space-y-3 border-l-2 border-gray-700 ml-2 pl-4">
+                    {/* Elemento de ejemplo */}
+                    <div className="relative">
+                      <div className="absolute -left-[21px] top-1 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-gray-900"></div>
+                      <p className="text-xs font-bold text-gray-400">2024</p>
+                      <p className="text-sm font-bold text-white uppercase">
+                        {activeElection.replace("_", " ")}
+                      </p>
+                      <p className="text-xs text-gray-400">
+                        Siglado: <span className="text-white">MORENA - PT - PVEM</span> | Resultado:{" "}
+                        <span className="text-green-400 font-bold">VICTORIA</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
