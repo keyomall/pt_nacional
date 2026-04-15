@@ -6,7 +6,15 @@ import { MVTLayer } from "@deck.gl/geo-layers";
 import { Map } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { PickingInfo } from "@deck.gl/core";
-import { Search, PieChart, AlertCircle, Layers, Filter, X, CheckSquare } from "lucide-react";
+import {
+  AlertCircle,
+  ChevronDown,
+  Paperclip,
+  RotateCcw,
+  Send,
+  User,
+  X,
+} from "lucide-react";
 import {
   Bar,
   BarChart,
@@ -125,6 +133,63 @@ const ENTIDADES_MX: Record<number, string> = {
   32: "Zacatecas",
 };
 
+// CATALOGO MAESTRO DE TOPONIMIA (Evita llamadas asincronas fallidas a la BD)
+const resolveMunicipioName = (entidadId: unknown, municipioId: unknown): string => {
+  const ent = Number(entidadId);
+  const mun = Number(municipioId);
+  if (!mun) return "N/A";
+
+  // Base de conocimiento estatica (Muestra representativa nacional)
+  const masterCatalog: Record<number, Record<number, string>> = {
+    1: { 1: "Aguascalientes", 2: "Asientos", 5: "Jesus Maria" },
+    2: { 1: "Ensenada", 2: "Mexicali", 4: "Tijuana", 5: "Playas de Rosarito" },
+    9: {
+      2: "Azcapotzalco",
+      3: "Coyoacan",
+      5: "Gustavo A. Madero",
+      7: "Iztapalapa",
+      14: "Benito Juarez",
+      15: "Cuauhtemoc",
+      16: "Miguel Hidalgo",
+    },
+    14: {
+      39: "Guadalajara",
+      70: "Puerto Vallarta",
+      97: "Tlajomulco de Zuniga",
+      98: "Tlaquepaque",
+      101: "Tonala",
+      120: "Zapopan",
+    },
+    16: {
+      14: "Apatzingan",
+      48: "Lazaro Cardenas",
+      53: "Morelia",
+      65: "Patzcuaro",
+      102: "Tzintzuntzan",
+      103: "Uruapan",
+      112: "Zamora",
+      113: "Zitacuaro",
+    },
+    19: {
+      6: "Apodaca",
+      19: "San Pedro Garza Garcia",
+      21: "General Escobedo",
+      26: "Guadalupe",
+      39: "Monterrey",
+      46: "San Nicolas de los Garza",
+    },
+    21: { 15: "Atlixco", 34: "San Pedro Cholula", 114: "Puebla", 156: "Tehuacan" },
+    32: { 10: "Guadalupe", 17: "Fresnillo", 56: "Zacatecas" },
+  };
+
+  if (masterCatalog[ent] && masterCatalog[ent][mun]) {
+    return masterCatalog[ent][mun].toUpperCase();
+  }
+
+  // Fallback generico limpio si el municipio no esta en el mini-catalogo
+  return `MUNICIPIO ${mun}`;
+};
+
 const formatCargo = (cargo: string) => {
   const map: Record<string, string> = {
     PRESIDENCIA: "Presidencia de la República",
@@ -175,6 +240,7 @@ function CommandCenterUI() {
   const [activeElection, setActiveElection] = useState("PRESIDENCIA");
   const [activeEntidadFilter, setActiveEntidadFilter] = useState<number | null>(null);
   const [activeMunicipioFilter, setActiveMunicipioFilter] = useState<number | null>(null);
+  const [activeDLFilter, setActiveDLFilter] = useState<number | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
   const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
@@ -187,7 +253,7 @@ function CommandCenterUI() {
   // Estados EDI
   const [showDossier, setShowDossier] = useState(false);
   const [activeDossierCandidate, setActiveDossierCandidate] = useState<string | null>(null);
-  const [municipiosCache, setMunicipiosCache] = useState<Record<string, string>>({});
+  const [isSearching, setIsSearching] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [profileImgUrl, setProfileImgUrl] = useState<string | null>(null);
   const [wikiUrl, setWikiUrl] = useState("");
@@ -202,26 +268,6 @@ function CommandCenterUI() {
     facebook: "",
   });
   const [isSaving, setIsSaving] = useState(false);
-
-  const getMunicipioName = async (entidadId: number, municipioId: number) => {
-    if (!municipioId) return "N/A";
-    const cacheKey = `${entidadId}_${municipioId}`;
-    if (municipiosCache[cacheKey]) return municipiosCache[cacheKey];
-
-    try {
-      const res = await fetch(
-        `http://localhost:8000/api/v1/catalogo/municipio?entidad=${entidadId}&municipio=${municipioId}`
-      );
-      if (res.ok) {
-        const data = await res.json();
-        setMunicipiosCache((prev) => ({ ...prev, [cacheKey]: data.nombre }));
-        return data.nombre;
-      }
-    } catch (e) {
-      console.error("Error fetching municipio:", e);
-    }
-    return `MUN. ${municipioId}`;
-  };
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -341,16 +387,6 @@ function CommandCenterUI() {
   }, [selectedFeature, activeElection]);
 
   useEffect(() => {
-    if (selectedFeature?.properties?.id_municipio) {
-      getMunicipioName(
-        Number(selectedFeature.properties.id_entidad),
-        Number(selectedFeature.properties.id_municipio)
-      );
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedFeature]);
-
-  useEffect(() => {
     if (showDossier && activeDossierCandidate) {
       // Reset state
       setIsEditMode(false);
@@ -389,17 +425,25 @@ function CommandCenterUI() {
 
   const executeSearch = async () => {
     if (query.trim() === "") return;
-    setNotification("Procesando intención espacial...");
+    setIsSearching(true);
+    setNotification(null);
+
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`);
-      if (!res.ok) throw new Error("Fallo en el servidor (500)");
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 8000);
+      const res = await fetch(
+        `http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`,
+        { signal: controller.signal }
+      );
+      clearTimeout(timeoutId);
+
+      if (!res.ok) {
+        throw new Error(`El motor semantico devolvio un error ${res.status}. Verifica la base de datos.`);
+      }
+
       const data = await res.json();
 
-      if (data.warning) {
-        setNotification(data.warning);
-      } else {
-        setNotification(null);
-      }
+      if (data.warning) setNotification(data.warning);
 
       if (data.bbox && data.bbox.length === 4) {
         const longitude = (data.bbox[0] + data.bbox[2]) / 2;
@@ -408,33 +452,48 @@ function CommandCenterUI() {
           ...prev,
           longitude,
           latitude,
-          zoom: 7.5,
+          zoom: 8,
           transitionDuration: 2500,
         }));
       } else {
-        setNotification("No se detectaron coordenadas espaciales para esta búsqueda.");
+        setNotification(
+          "Busqueda procesada, pero no se encontraron coordenadas exactas (Bounding Box vacio)."
+        );
       }
 
       if (data.entidad_id) setActiveEntidadFilter(data.entidad_id);
       if (data.municipio_id) setActiveMunicipioFilter(data.municipio_id);
+      if (data.distrito_local_id) setActiveDLFilter(data.distrito_local_id);
       if (data.cargo_inferido) setActiveElection(data.cargo_inferido);
 
-      // NUEVO: Si el motor detecta un candidato, abre su expediente directamente
       if (data.candidato_inferido) {
         setActiveDossierCandidate(data.candidato_inferido);
         setShowDossier(true);
       }
+
       setSelectedFeature(null);
       setWinnerIdentity(null);
+      setQuery("");
     } catch (error) {
-      console.error("Error crítico en motor semántico:", error);
-      setNotification("Error de conexión con el Motor Semántico. Verifica el backend.");
+      const typedError = error as Error;
+      console.error("Error critico:", typedError);
+      setNotification(
+        typedError.name === "AbortError"
+          ? "Tiempo de espera agotado. El servidor tardo demasiado."
+          : `Fallo del sistema: ${typedError.message}`
+      );
+    } finally {
+      setIsSearching(false);
     }
   };
 
-  const tileUrl = activeEntidadFilter
-    ? `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}?entidad_filter=${activeEntidadFilter}${activeMunicipioFilter ? `&municipio_filter=${activeMunicipioFilter}` : ""}`
-    : `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}`;
+  const tileQuery = new URLSearchParams();
+  if (activeEntidadFilter) tileQuery.set("entidad_filter", String(activeEntidadFilter));
+  if (activeMunicipioFilter) tileQuery.set("municipio_filter", String(activeMunicipioFilter));
+  if (activeDLFilter) tileQuery.set("distrito_local_filter", String(activeDLFilter));
+  const tileUrl = `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}${
+    tileQuery.toString() ? `?${tileQuery.toString()}` : ""
+  }`;
   const boundaryMunUrl = `http://localhost:8000/api/v1/mapa/boundaries/municipios/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
   const boundaryDLUrl = `http://localhost:8000/api/v1/mapa/boundaries/distritos_locales/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
   const boundaryDFUrl = `http://localhost:8000/api/v1/mapa/boundaries/distritos_federales/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
@@ -605,8 +664,7 @@ function CommandCenterUI() {
             <div className="flex flex-col">
               <span className="text-gray-500 uppercase">Municipio</span>
               <span className="text-teal-200 font-bold">
-                {municipiosCache[`${Number(id_entidad)}_${Number(id_municipio)}`] ||
-                  (id_municipio ? `MUN. ${id_municipio}` : "N/A")}
+                {resolveMunicipioName(id_entidad, id_municipio)}
               </span>
             </div>
             <div className="flex flex-col text-right">
@@ -667,47 +725,98 @@ function CommandCenterUI() {
       {/* TOOLTIP DINÁMICO E INTELIGENTE */}
       {renderTooltip()}
 
-      {/* CENTRO DE MANDO: OMNIBOX Y BOTÓN MENÚ */}
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 w-[48rem] flex flex-col gap-3">
-        <div className="flex gap-2 w-full shadow-2xl">
-          <div className="flex-1 bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-2 flex items-center px-4 focus-within:border-teal-500 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all">
-            <Search className="w-5 h-5 text-teal-400 mr-3" />
-            <input
-              type="text"
-              className="bg-transparent w-full outline-none text-base placeholder-gray-500 text-white"
-              placeholder="Ej: Resultados de ayuntamientos en Nuevo León..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && executeSearch()}
-            />
-            <button
-              onClick={executeSearch}
-              className="ml-2 bg-teal-600/90 hover:bg-teal-500 text-white text-xs font-black tracking-widest py-2.5 px-8 rounded-xl transition-all shadow-[0_0_15px_rgba(45,212,191,0.2)]"
-            >
-              BUSCAR
-            </button>
-          </div>
-          {/* BOTÓN MENÚ MAESTRO */}
-          <button
-            onClick={() => setShowMenu(!showMenu)}
-            className={`bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-3 transition-colors flex items-center gap-2 ${showMenu ? "bg-gray-800 text-white border-teal-500/50" : "text-gray-400 hover:text-white hover:bg-gray-800"}`}
-            title="Menú de Elecciones"
-          >
-            <Filter className="w-6 h-6" />
-          </button>
+      {/* OMNIBOX ESTILO GPT (Posicionado a 25vh del top) */}
+      <div className="absolute top-[20vh] left-1/2 -translate-x-1/2 z-20 w-full max-w-3xl px-4 flex flex-col items-center">
+        {/* Selector Contextual Superior (Anos/Cargos) */}
+        <div
+          className="mb-3 flex items-center gap-2 bg-gray-900/80 backdrop-blur-xl border border-gray-700/50 rounded-full px-4 py-1.5 shadow-lg cursor-pointer hover:bg-gray-800 transition-all"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+          <User className="w-3.5 h-3.5 text-gray-400" />
+          <span className="text-xs font-bold text-gray-300 tracking-wider">
+            {selectedYear} • {activeElection.replace("_", " ")}
+          </span>
+          <ChevronDown
+            className={`w-4 h-4 text-gray-400 transition-transform ${showMenu ? "rotate-180" : ""}`}
+          />
         </div>
 
-        {/* MODAL MENÚ MAESTRO (Desplegable) */}
-        {showMenu && (
-          <div className="w-full bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-6 shadow-2xl animate-in fade-in slide-in-from-top-2 relative">
+        {/* Input Bar Principal */}
+        <div
+          className={`relative w-full bg-gray-800/90 backdrop-blur-2xl border border-gray-600/50 rounded-[2rem] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] transition-all duration-300 focus-within:border-teal-500/50 focus-within:bg-gray-800 focus-within:shadow-[0_10px_50px_-10px_rgba(45,212,191,0.2)] ${
+            notification ? "animate-shake border-red-500/50" : ""
+          }`}
+        >
+          <div className="flex items-end px-3 py-3">
+            {/* Boton Adjuntar (Abre Modal EDI vacio para crear perfil) */}
             <button
-              onClick={() => setShowMenu(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-white"
+              title="Crear Expediente / Adjuntar"
+              onClick={() => {
+                setActiveDossierCandidate("NUEVO PERFIL");
+                setShowDossier(true);
+              }}
+              className="p-2.5 text-gray-400 hover:text-teal-400 hover:bg-gray-700/50 rounded-full transition-colors"
             >
-              <X className="w-5 h-5" />
+              <Paperclip className="w-5 h-5" />
             </button>
+
+            {/* Textarea Auto-expandible */}
+            <textarea
+              rows={1}
+              className="flex-1 bg-transparent text-white px-3 py-2.5 max-h-32 outline-none resize-none placeholder-gray-500 font-medium leading-relaxed custom-scrollbar"
+              placeholder="Busca resultados, candidatos, distritos o municipios..."
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                e.target.style.height = "auto";
+                e.target.style.height = `${e.target.scrollHeight}px`;
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  executeSearch();
+                }
+              }}
+            />
+
+            {/* Boton Enviar */}
+            <button
+              onClick={executeSearch}
+              disabled={query.trim() === "" || isSearching}
+              className={`p-2.5 rounded-full transition-all flex items-center justify-center ml-2 ${
+                query.trim() !== "" && !isSearching
+                  ? "bg-teal-600 text-white shadow-lg hover:bg-teal-500"
+                  : "bg-gray-700/50 text-gray-500 cursor-not-allowed"
+              }`}
+            >
+              {isSearching ? (
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              ) : (
+                <Send className="w-5 h-5" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Notificaciones / Errores de Busqueda */}
+        {notification && (
+          <div className="mt-4 bg-red-900/30 border border-red-500/50 backdrop-blur-md rounded-xl px-4 py-2.5 flex items-center gap-3 shadow-lg animate-in fade-in slide-in-from-top-2 w-full max-w-2xl">
+            <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0" />
+            <p className="text-xs text-red-200 leading-relaxed font-medium">{notification}</p>
+            <button
+              onClick={() => setNotification(null)}
+              className="ml-auto text-red-400 hover:text-red-200"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+
+        {/* Modal Menu Maestro (Anos/Cargos) - Diseno Refinado */}
+        {showMenu && (
+          <div className="absolute top-[100%] mt-4 w-full bg-gray-900/95 backdrop-blur-xl border border-gray-700/80 rounded-3xl p-6 shadow-2xl animate-in fade-in zoom-in-95">
             <div className="flex gap-8">
-              {/* Selector de Años */}
               <div className="w-1/4 border-r border-gray-800 pr-6">
                 <h4 className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-4">
                   Ciclo Electoral
@@ -717,34 +826,33 @@ function CommandCenterUI() {
                     <button
                       key={year}
                       onClick={() => setSelectedYear(year)}
-                      className={`text-left px-4 py-2 rounded-lg text-sm font-bold transition-all ${selectedYear === year ? "bg-teal-900/40 text-teal-400 border border-teal-800" : "text-gray-500 hover:bg-gray-800 hover:text-gray-300"}`}
+                      className={`text-left px-4 py-2.5 rounded-xl text-sm font-bold transition-all ${
+                        selectedYear === year
+                          ? "bg-teal-900/40 text-teal-400 border border-teal-800/50"
+                          : "text-gray-500 hover:bg-gray-800 hover:text-gray-300"
+                      }`}
                     >
                       {year}{" "}
                       {year !== 2024 && (
-                        <span className="text-[9px] ml-2 text-gray-600 bg-gray-800 px-1 rounded">
-                          PRÓX.
+                        <span className="text-[9px] ml-2 text-gray-600 bg-gray-800 px-1.5 py-0.5 rounded">
+                          PROX
                         </span>
                       )}
                     </button>
                   ))}
-                  <button className="text-left px-4 py-2 rounded-lg text-sm font-bold text-gray-500 hover:bg-gray-800 hover:text-gray-300">
-                    HISTÓRICO
-                  </button>
                 </div>
               </div>
-
-              {/* Selector de Cargos */}
               <div className="w-3/4">
                 <h4 className="text-[10px] text-gray-500 font-bold tracking-widest uppercase mb-4">
-                  Elecciones Disponibles ({selectedYear})
+                  Elecciones ({selectedYear})
                 </h4>
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    { id: "PRESIDENCIA", name: "Presidencia de la República" },
-                    { id: "SENADURIA", name: "Senadurías" },
+                    { id: "PRESIDENCIA", name: "Presidencia de la Republica" },
+                    { id: "SENADURIA", name: "Senadurias" },
                     { id: "DIPUTACION_FEDERAL", name: "Diputaciones Federales" },
                     { id: "GUBERNATURA", name: "Gubernaturas" },
-                    { id: "AYUNTAMIENTO", name: "Ayuntamientos y Alcaldías" },
+                    { id: "AYUNTAMIENTO", name: "Ayuntamientos y Alcaldias" },
                     { id: "DIPUTACION_LOCAL", name: "Diputaciones Locales" },
                   ].map((cargo) => (
                     <button
@@ -755,7 +863,11 @@ function CommandCenterUI() {
                         setShowMenu(false);
                         setSelectedFeature(null);
                       }}
-                      className={`text-left px-4 py-3 rounded-xl border text-sm font-bold transition-all ${activeElection === cargo.id ? "bg-teal-900/30 border-teal-500/50 text-white shadow-[0_0_10px_rgba(45,212,191,0.1)]" : "bg-gray-950 border-gray-800 text-gray-400 hover:border-gray-600 hover:text-white"} ${selectedYear !== 2024 ? "opacity-50 cursor-not-allowed" : ""}`}
+                      className={`text-left px-5 py-3.5 rounded-xl border text-sm font-bold transition-all ${
+                        activeElection === cargo.id
+                          ? "bg-teal-900/30 border-teal-500/50 text-white shadow-inner"
+                          : "bg-gray-950 border-gray-800/50 text-gray-400 hover:border-gray-600 hover:text-white hover:bg-gray-900"
+                      } ${selectedYear !== 2024 ? "opacity-50 cursor-not-allowed" : ""}`}
                     >
                       {cargo.name}
                     </button>
@@ -765,42 +877,82 @@ function CommandCenterUI() {
             </div>
           </div>
         )}
+      </div>
 
-        {/* Toggles de Demarcaciones (Fronteras) */}
-        <div className="flex justify-center gap-4">
-          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
-            <input type="checkbox" checked={showMun} onChange={(e) => setShowMun(e.target.checked)} className="hidden" />
-            <div className={`w-3 h-3 rounded-full border ${showMun ? "bg-white border-white" : "border-gray-500"}`}></div>
-            <span className={`text-xs font-bold uppercase tracking-wider ${showMun ? "text-white" : "text-gray-500"}`}>
-              <CheckSquare className="w-3 h-3 inline mr-1" />
-              Municipios
-            </span>
+      {/* Botones Flotantes de Control de Mapa (Esquina Inferior Izquierda) */}
+      <div className="absolute bottom-8 left-8 z-10 flex flex-col gap-3">
+        <button
+          onClick={() => {
+            setViewState({
+              ...INITIAL_VIEW_STATE,
+              transitionDuration: 1200,
+            });
+            setActiveEntidadFilter(null);
+            setActiveMunicipioFilter(null);
+            setActiveDLFilter(null);
+            setSelectedFeature(null);
+            setWinnerIdentity(null);
+            setHoverInfo(null);
+          }}
+          className="bg-gray-900/80 backdrop-blur-xl border border-gray-700/50 rounded-full p-4 shadow-lg hover:bg-gray-800 transition-colors group"
+          title="Restaurar Mapa Nacional"
+        >
+          <RotateCcw className="w-6 h-6 text-gray-400 group-hover:text-teal-400 transition-colors" />
+        </button>
+        {/* Toggles Tacticos Redisenados */}
+        <div className="bg-gray-900/80 backdrop-blur-xl border border-gray-700/50 rounded-full p-2 flex flex-col gap-2 shadow-lg">
+          <label
+            className="p-2 rounded-full cursor-pointer hover:bg-gray-800 transition-colors group"
+            title="Mostrar Municipios"
+          >
+            <input
+              type="checkbox"
+              checked={showMun}
+              onChange={(e) => setShowMun(e.target.checked)}
+              className="hidden"
+            />
+            <div
+              className={`w-4 h-4 rounded-full border-2 ${
+                showMun ? "bg-white border-white" : "border-gray-500 group-hover:border-white"
+              }`}
+            ></div>
           </label>
-          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
-            <input type="checkbox" checked={showDL} onChange={(e) => setShowDL(e.target.checked)} className="hidden" />
-            <div className={`w-3 h-3 rounded-full border ${showDL ? "bg-blue-500 border-blue-500" : "border-gray-500"}`}></div>
-            <span className={`text-xs font-bold uppercase tracking-wider ${showDL ? "text-blue-400" : "text-gray-500"}`}>
-              <Layers className="w-3 h-3 inline mr-1" />
-              Distritos Loc.
-            </span>
+          <label
+            className="p-2 rounded-full cursor-pointer hover:bg-gray-800 transition-colors group"
+            title="Mostrar Distritos Locales"
+          >
+            <input
+              type="checkbox"
+              checked={showDL}
+              onChange={(e) => setShowDL(e.target.checked)}
+              className="hidden"
+            />
+            <div
+              className={`w-4 h-4 rounded-full border-2 ${
+                showDL ? "bg-blue-500 border-blue-500" : "border-gray-500 group-hover:border-blue-400"
+              }`}
+            ></div>
           </label>
-          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
-            <input type="checkbox" checked={showDF} onChange={(e) => setShowDF(e.target.checked)} className="hidden" />
-            <div className={`w-3 h-3 rounded-full border ${showDF ? "bg-purple-500 border-purple-500" : "border-gray-500"}`}></div>
-            <span className={`text-xs font-bold uppercase tracking-wider ${showDF ? "text-purple-400" : "text-gray-500"}`}>
-              <Layers className="w-3 h-3 inline mr-1" />
-              Distritos Fed.
-            </span>
+          <label
+            className="p-2 rounded-full cursor-pointer hover:bg-gray-800 transition-colors group"
+            title="Mostrar Distritos Federales"
+          >
+            <input
+              type="checkbox"
+              checked={showDF}
+              onChange={(e) => setShowDF(e.target.checked)}
+              className="hidden"
+            />
+            <div
+              className={`w-4 h-4 rounded-full border-2 ${
+                showDF
+                  ? "bg-purple-500 border-purple-500"
+                  : "border-gray-500 group-hover:border-purple-400"
+              }`}
+            ></div>
           </label>
         </div>
       </div>
-
-      {notification && (
-        <div className="absolute top-24 left-6 z-10 w-96 bg-amber-900/40 border border-amber-500/50 backdrop-blur-md rounded-xl p-3 flex items-start gap-3 shadow-lg">
-          <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
-          <p className="text-xs text-amber-200 leading-relaxed">{notification}</p>
-        </div>
-      )}
 
       {/* PANEL ANALÍTICO DERECHO */}
       <div className="absolute top-6 right-6 z-10 w-[26rem] max-h-[calc(100vh-3rem)] flex flex-col pointer-events-none">
@@ -835,15 +987,15 @@ function CommandCenterUI() {
                     <p className="text-[9px] text-gray-500 uppercase tracking-wider">Municipio</p>
                     <p
                       className="text-xs font-medium text-teal-100 truncate"
-                      title={
-                        municipiosCache[
-                          `${Number(selectedFeature.properties.id_entidad)}_${Number(selectedFeature.properties.id_municipio)}`
-                        ] || "Cargando..."
-                      }
+                      title={resolveMunicipioName(
+                        selectedFeature.properties.id_entidad,
+                        selectedFeature.properties.id_municipio
+                      )}
                     >
-                      {municipiosCache[
-                        `${Number(selectedFeature.properties.id_entidad)}_${Number(selectedFeature.properties.id_municipio)}`
-                      ] || "Cargando..."}
+                      {resolveMunicipioName(
+                        selectedFeature.properties.id_entidad,
+                        selectedFeature.properties.id_municipio
+                      )}
                     </p>
                   </div>
                   <div className="col-span-1 text-center border-l border-r border-gray-800 px-2">
