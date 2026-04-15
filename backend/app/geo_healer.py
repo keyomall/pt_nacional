@@ -108,6 +108,63 @@ async def heal_geo_catalog():
         except Exception as e:
             print(f"[-] Aviso: {e}")
 
+        # ==========================================
+        # FASE GIS: MATERIALIZACIÓN DE DEMARCACIONES
+        # ==========================================
+        print("[*] Forjando geometrías maestras de Municipios (ST_Union)...")
+        await conn.execute(sa.text("DROP TABLE IF EXISTS geom_municipios;"))
+        await conn.execute(
+            sa.text(
+                """
+                CREATE TABLE geom_municipios AS
+                SELECT d.id_entidad, d.id_municipio, ST_Union(g.geometry) as geometry
+                FROM dim_geo_secciones d
+                JOIN geometria_secciones g ON d.id_entidad = g.id_entidad AND d.seccion = g.seccion
+                WHERE d.id_municipio IS NOT NULL
+                GROUP BY d.id_entidad, d.id_municipio;
+                """
+            )
+        )
+        await conn.execute(
+            sa.text("CREATE INDEX idx_geom_mun ON geom_municipios USING GIST (geometry);")
+        )
+
+        print("[*] Forjando geometrías maestras de Distritos Locales (ST_Union)...")
+        await conn.execute(sa.text("DROP TABLE IF EXISTS geom_distritos_locales;"))
+        await conn.execute(
+            sa.text(
+                """
+                CREATE TABLE geom_distritos_locales AS
+                SELECT d.id_entidad, d.id_distrito_local, ST_Union(g.geometry) as geometry
+                FROM dim_geo_secciones d
+                JOIN geometria_secciones g ON d.id_entidad = g.id_entidad AND d.seccion = g.seccion
+                WHERE d.id_distrito_local IS NOT NULL
+                GROUP BY d.id_entidad, d.id_distrito_local;
+                """
+            )
+        )
+        await conn.execute(
+            sa.text("CREATE INDEX idx_geom_dl ON geom_distritos_locales USING GIST (geometry);")
+        )
+
+        print("[*] Forjando geometrías maestras de Distritos Federales (ST_Union)...")
+        await conn.execute(sa.text("DROP TABLE IF EXISTS geom_distritos_federales;"))
+        await conn.execute(
+            sa.text(
+                """
+                CREATE TABLE geom_distritos_federales AS
+                SELECT d.id_entidad, d.id_distrito_federal, ST_Union(g.geometry) as geometry
+                FROM dim_geo_secciones d
+                JOIN geometria_secciones g ON d.id_entidad = g.id_entidad AND d.seccion = g.seccion
+                WHERE d.id_distrito_federal IS NOT NULL
+                GROUP BY d.id_entidad, d.id_distrito_federal;
+                """
+            )
+        )
+        await conn.execute(
+            sa.text("CREATE INDEX idx_geom_df ON geom_distritos_federales USING GIST (geometry);")
+        )
+
     print("[+] Auto-Curacion completada. La tabla dim_geo_secciones esta lista para el HUD.")
 
 

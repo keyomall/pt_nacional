@@ -282,3 +282,49 @@ async def get_ganador_nominal(cargo: str, entidad: int, seccion: int, partido: s
             db=conn,
         )
     return identidad
+
+
+@app.get("/api/v1/mapa/boundaries/{tipo}/{z}/{x}/{y}")
+async def get_boundary_tile(
+    tipo: str, z: int, x: int, y: int, entidad_filter: Optional[int] = None
+):
+    # Mapeo de seguridad
+    tablas_fronteras = {
+        "municipios": "geom_municipios",
+        "distritos_locales": "geom_distritos_locales",
+        "distritos_federales": "geom_distritos_federales",
+    }
+
+    tabla = tablas_fronteras.get(tipo.lower())
+    if not tabla:
+        return Response(content=b"", media_type="application/x-protobuf")
+
+    where_clause = "WHERE 1=1"
+    params = {"z": z, "x": x, "y": y}
+
+    if entidad_filter:
+        where_clause += " AND id_entidad = :ent_filter"
+        params["ent_filter"] = entidad_filter
+
+    query = sa.text(
+        f"""
+        WITH bounds AS (
+            SELECT ST_TileEnvelope(:z, :x, :y) AS geom
+        ),
+        mvtgeom AS (
+            SELECT ST_AsMVTGeom(ST_Transform(g.geometry, 3857), bounds.geom) AS geom
+            FROM {_quote_ident(tabla)} g
+            JOIN bounds ON ST_Intersects(ST_Transform(g.geometry, 3857), bounds.geom)
+            {where_clause}
+        )
+        SELECT ST_AsMVT(mvtgeom, 'boundaries') AS tile FROM mvtgeom;
+        """
+    )
+
+    async with async_engine.connect() as conn:
+        result = await conn.execute(query, params)
+        tile = result.scalar()
+
+    if not tile:
+        return Response(content=b"", media_type="application/x-protobuf")
+    return Response(content=bytes(tile), media_type="application/x-protobuf")

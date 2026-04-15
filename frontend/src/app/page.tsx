@@ -6,7 +6,7 @@ import { MVTLayer } from "@deck.gl/geo-layers";
 import { Map } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { PickingInfo } from "@deck.gl/core";
-import { AlertCircle, PieChart, RotateCcw, Search } from "lucide-react";
+import { AlertCircle, CheckSquare, Layers, PieChart, RotateCcw, Search } from "lucide-react";
 import {
   Bar,
   BarChart,
@@ -58,11 +58,6 @@ type MVTFeature = {
 type WinnerIdentity = {
   candidato: string;
   detalle: string;
-};
-
-type ChartVoteItem = {
-  name: string;
-  votos: number;
 };
 
 // Utilidad para extraer y ordenar el JSONB de votos
@@ -142,17 +137,6 @@ const formatCargo = (cargo: string) => {
   return map[cargo] || cargo.replace(/_/g, " ");
 };
 
-const toTitleCase = (str: string) => {
-  if (!str) return "";
-  return str
-    .toLowerCase()
-    .split(" ")
-    .map((word) =>
-      word.length > 2 || word === "df" ? word.charAt(0).toUpperCase() + word.slice(1) : word
-    )
-    .join(" ");
-};
-
 // MOTOR DE TOPONIMIA (Diccionario Inteligente)
 const resolveMunicipioName = (entidadId: unknown, municipioId: unknown) => {
   const ent = Number(entidadId);
@@ -215,8 +199,9 @@ function CommandCenterUI() {
   const [notification, setNotification] = useState<string | null>(null);
   const [selectedFeature, setSelectedFeature] = useState<MVTFeature | null>(null);
   const [winnerIdentity, setWinnerIdentity] = useState<WinnerIdentity | null>(null);
-  const activeMunicipioFilter: number | null = null;
-  const activeDLFilter: number | null = null;
+  const [showMun, setShowMun] = useState(false);
+  const [showDL, setShowDL] = useState(false);
+  const [showDF, setShowDF] = useState(false);
 
   useEffect(() => {
     if (!selectedFeature?.properties) return;
@@ -265,46 +250,43 @@ function CommandCenterUI() {
     return () => controller.abort();
   }, [selectedFeature, activeElection]);
 
-  const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && query.trim() !== "") {
-      setNotification(null);
-      try {
-        const res = await fetch(
-          `http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`
-        );
-        const data: {
-          bbox?: number[];
-          cargo_inferido?: string | null;
-          entidad_id?: number | null;
-          warning?: string | null;
-        } = await res.json();
+  const executeSearch = async () => {
+    if (query.trim() === "") return;
+    setNotification(null);
+    try {
+      const res = await fetch(`http://localhost:8000/api/v1/search/intent?q=${encodeURIComponent(query)}`);
+      const data: {
+        bbox?: number[];
+        cargo_inferido?: string | null;
+        entidad_id?: number | null;
+        warning?: string | null;
+      } = await res.json();
 
-        if (data.warning) {
-          setNotification(data.warning);
-        }
-
-        if (Array.isArray(data.bbox) && data.bbox.length === 4) {
-          const longitude = (data.bbox[0] + data.bbox[2]) / 2;
-          const latitude = (data.bbox[1] + data.bbox[3]) / 2;
-
-          setViewState((prev) => ({
-            ...prev,
-            longitude,
-            latitude,
-            zoom: 7.5,
-            transitionDuration: 2500,
-          }));
-        }
-
-        if (data.entidad_id) {
-          setActiveEntidadFilter(data.entidad_id);
-        }
-        if (data.cargo_inferido) {
-          setActiveElection(data.cargo_inferido);
-        }
-      } catch (error) {
-        console.error("Error en motor semantico:", error);
+      if (data.warning) {
+        setNotification(data.warning);
       }
+
+      if (Array.isArray(data.bbox) && data.bbox.length === 4) {
+        const longitude = (data.bbox[0] + data.bbox[2]) / 2;
+        const latitude = (data.bbox[1] + data.bbox[3]) / 2;
+
+        setViewState((prev) => ({
+          ...prev,
+          longitude,
+          latitude,
+          zoom: 7.5,
+          transitionDuration: 2500,
+        }));
+      }
+
+      if (data.entidad_id) {
+        setActiveEntidadFilter(data.entidad_id);
+      }
+      if (data.cargo_inferido) {
+        setActiveElection(data.cargo_inferido);
+      }
+    } catch (error) {
+      console.error("Error en motor semantico:", error);
     }
   };
 
@@ -319,6 +301,9 @@ function CommandCenterUI() {
   const tileUrl = activeEntidadFilter
     ? `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}?entidad_filter=${activeEntidadFilter}`
     : `http://localhost:8000/api/v1/mapa/tiles/${activeElection}/{z}/{x}/{y}`;
+  const boundaryMunUrl = `http://localhost:8000/api/v1/mapa/boundaries/municipios/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
+  const boundaryDLUrl = `http://localhost:8000/api/v1/mapa/boundaries/distritos_locales/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
+  const boundaryDFUrl = `http://localhost:8000/api/v1/mapa/boundaries/distritos_federales/{z}/{x}/{y}${activeEntidadFilter ? `?entidad_filter=${activeEntidadFilter}` : ""}`;
 
   const layers = useMemo(
     () => [
@@ -373,14 +358,46 @@ function CommandCenterUI() {
           }
         },
       }),
+      new MVTLayer({
+        id: `boundary-mun-${activeEntidadFilter || "nac"}`,
+        data: boundaryMunUrl,
+        visible: showMun,
+        filled: false,
+        stroked: true,
+        lineWidthMinPixels: 2,
+        getLineColor: [255, 255, 255, 200],
+      }),
+      new MVTLayer({
+        id: `boundary-dl-${activeEntidadFilter || "nac"}`,
+        data: boundaryDLUrl,
+        visible: showDL,
+        filled: false,
+        stroked: true,
+        lineWidthMinPixels: 3,
+        getLineColor: [59, 130, 246, 255],
+      }),
+      new MVTLayer({
+        id: `boundary-df-${activeEntidadFilter || "nac"}`,
+        data: boundaryDFUrl,
+        visible: showDF,
+        filled: false,
+        stroked: true,
+        lineWidthMinPixels: 4,
+        getLineColor: [168, 85, 247, 255],
+      }),
     ],
-    [activeElection, activeEntidadFilter, tileUrl]
+    [
+      activeElection,
+      activeEntidadFilter,
+      boundaryDFUrl,
+      boundaryDLUrl,
+      boundaryMunUrl,
+      showDF,
+      showDL,
+      showMun,
+      tileUrl,
+    ]
   );
-
-  // OPTIMIZACIÓN: Extraer y procesar datos solo una vez cuando hay selección
-  const chartData = selectedFeature
-    ? processVotesData(selectedFeature.properties?.votos_desglosados)
-    : [];
 
   // --- RENDERIZADOR DE TOOLTIP INTELIGENTE (GEOGRAPHIC HUD) ---
   const renderTooltip = () => {
@@ -515,27 +532,64 @@ function CommandCenterUI() {
       {/* TOOLTIP DINÁMICO E INTELIGENTE */}
       {renderTooltip()}
 
-      <div className="absolute top-6 left-6 z-10 w-96 flex gap-2">
-        <div className="flex-1 bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-2 shadow-2xl flex items-center px-3 focus-within:border-teal-500 transition-colors">
-          <div className="flex items-center bg-gray-950 rounded-xl px-3 py-2 border border-gray-800 w-full">
-            <Search className="w-5 h-5 text-teal-400 mr-2" />
+      {/* OMNIBOX CENTRALIZADO Y CONTROLES */}
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 w-[48rem] flex flex-col gap-3">
+        {/* Barra de Búsqueda */}
+        <div className="flex gap-2 w-full shadow-2xl">
+          <div className="flex-1 bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-2 flex items-center px-4 focus-within:border-teal-500 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all">
+            <Search className="w-5 h-5 text-teal-400 mr-3" />
             <input
               type="text"
-              className="bg-transparent w-full outline-none text-sm placeholder-gray-500 text-white"
-              placeholder="Ej: Resultados ayuntamientos Michoacan..."
+              className="bg-transparent w-full outline-none text-base placeholder-gray-500 text-white"
+              placeholder="Ej: Resultados de presidencia en Nuevo León..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              onKeyDown={handleSearch}
+              onKeyDown={(e) => e.key === "Enter" && executeSearch()}
             />
+            <button
+              onClick={executeSearch}
+              className="ml-2 bg-teal-600/90 hover:bg-teal-500 text-white text-xs font-black tracking-widest py-2.5 px-8 rounded-xl transition-all shadow-[0_0_15px_rgba(45,212,191,0.2)]"
+            >
+              BUSCAR
+            </button>
           </div>
+
+          <button
+            onClick={handleReset}
+            className="bg-gray-900/90 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-3 hover:bg-gray-800 transition-colors"
+            title="Restaurar Visión Nacional"
+          >
+            <RotateCcw className="w-6 h-6 text-gray-400" />
+          </button>
         </div>
-        <button
-          onClick={handleReset}
-          className="bg-gray-900/80 backdrop-blur-md border border-gray-700/50 rounded-2xl p-3 hover:bg-gray-800 transition-colors"
-          title="Vision Nacional"
-        >
-          <RotateCcw className="w-5 h-5 text-gray-400 hover:text-white" />
-        </button>
+
+        {/* Toggles de Demarcaciones (Fronteras) */}
+        <div className="flex justify-center gap-4">
+          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
+            <input type="checkbox" checked={showMun} onChange={(e) => setShowMun(e.target.checked)} className="hidden" />
+            <div className={`w-3 h-3 rounded-full border ${showMun ? "bg-white border-white" : "border-gray-500"}`}></div>
+            <span className={`text-xs font-bold uppercase tracking-wider ${showMun ? "text-white" : "text-gray-500"}`}>
+              <CheckSquare className="w-3 h-3 inline mr-1" />
+              Municipios
+            </span>
+          </label>
+          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
+            <input type="checkbox" checked={showDL} onChange={(e) => setShowDL(e.target.checked)} className="hidden" />
+            <div className={`w-3 h-3 rounded-full border ${showDL ? "bg-blue-500 border-blue-500" : "border-gray-500"}`}></div>
+            <span className={`text-xs font-bold uppercase tracking-wider ${showDL ? "text-blue-400" : "text-gray-500"}`}>
+              <Layers className="w-3 h-3 inline mr-1" />
+              Distritos Loc.
+            </span>
+          </label>
+          <label className="flex items-center gap-2 bg-gray-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-gray-700/50 cursor-pointer hover:bg-gray-800 transition-colors">
+            <input type="checkbox" checked={showDF} onChange={(e) => setShowDF(e.target.checked)} className="hidden" />
+            <div className={`w-3 h-3 rounded-full border ${showDF ? "bg-purple-500 border-purple-500" : "border-gray-500"}`}></div>
+            <span className={`text-xs font-bold uppercase tracking-wider ${showDF ? "text-purple-400" : "text-gray-500"}`}>
+              <Layers className="w-3 h-3 inline mr-1" />
+              Distritos Fed.
+            </span>
+          </label>
+        </div>
       </div>
 
       {notification && (
